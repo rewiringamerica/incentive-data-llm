@@ -33,7 +33,7 @@ The current structure is that GPT looks for all `.txt` files in a supplied folde
 ### Sending the data to GPT
 1. Compile if necessary with `tsc`.
 1. Run the script: `node build/gpt_runner.js --folder=<name of folder with text data>`. Run `node build/gpt_runner.js --help` for details on other flags.
-1. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutesRight now we send all files in parallel to GPT because we're not operating at a level where rate limiting is a concern: we can have 3,500 requests per minute throughout our organization.
+1. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. Right now we send all files in parallel to GPT because we're not operating at a level where rate limiting is a concern: we can have 3,500 requests per minute throughout our organization.
 1. At the end, the script will output a CSV file into the `out/` directory.
 
 ### Post-processing the data
