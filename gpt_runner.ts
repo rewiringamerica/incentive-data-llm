@@ -68,33 +68,55 @@ const csv_opts = {
     ]
 };
 
+async function retrieveMetadata(folder: string, file: string): Promise<object> {
+    const metadata_file = path.parse(file).name + "_metadata.json"
+    try {
+        const metadata = await fs.readFile(path.join(INCENTIVES_FILE_BASE, folder, metadata_file), { encoding: 'utf8' })
+        return JSON.parse(metadata);
+    } catch (err) {
+        // This is expected.
+        // TODO(separate file not found error from other things that might go wrong)
+        console.log(`No metadata file found: ${path.join(INCENTIVES_FILE_BASE, folder, file)}`);
+        return {};
+    }
+}
+
 async function main() {
     const opts = program.opts();
 
     let promises: Promise<void>[] = [];
     let output: object[] = [];
+    let metadata_fields: Set<string> = new Set<string>();
     for (const folder of opts.folders) {
         const files = await fs.readdir(path.join(INCENTIVES_FILE_BASE, folder));
         for (const file of files) {
             if (!file.endsWith(".txt")) continue;
             const txt = await fs.readFile(path.join(INCENTIVES_FILE_BASE, folder, file), { encoding: 'utf8' });
             if (txt.length == 0) continue;
+
+            const metadata_json = await retrieveMetadata(folder, file);
+            for (const field in metadata_json) {
+                metadata_fields.add(field);
+            }
+
+
             console.log(`Querying GPT with ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
             let promise = queryGpt(txt).then(msg => {
                 if (msg == "") return;
                 console.log(`Got response from ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
-                const records = JSON.parse(msg);
-                let incentive_order_key = 0;
-                for (const record of records) {
-                    try {
+                try {
+                    const records = JSON.parse(msg);
+                    let incentive_order_key = 0;
+                    for (const record of records) {
                         record['state'] = folder;
                         record['file'] = file; // For debugging.
                         record['order'] = incentive_order_key;
-                        output.push(record);
-                    } catch (error) {
-                        console.error(`Error parsing csv: ${error}, ${record}`);
+                        var combined = { ...record, ...metadata_json };
+                        output.push(combined);
+                        incentive_order_key += 1;
                     }
-                    incentive_order_key += 1;
+                } catch (error) {
+                    console.error(`Error parsing csv: ${error}, ${msg}`);
                 }
             });
             promises.push(promise);
@@ -102,6 +124,10 @@ async function main() {
     }
 
     await Promise.allSettled(promises).then(async () => {
+        for (const field of metadata_fields) {
+            csv_opts.fields.push(field);
+        }
+
         const parser = new AsyncParser(csv_opts);
         const csv = await parser.parse(output).promise();
         fs.writeFile(path.join(OUTPUT_DIR, opts.output_file), csv);
