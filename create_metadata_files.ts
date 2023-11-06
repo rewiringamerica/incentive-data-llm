@@ -1,4 +1,3 @@
-import { AsyncParser } from '@json2csv/node';
 import { program } from 'commander';
 
 import fs = require('node:fs/promises');
