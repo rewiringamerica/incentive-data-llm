@@ -6,6 +6,10 @@ import fs = require('node:fs/promises');
 import path = require('node:path');
 
 import { INCENTIVES_FILE_BASE, OUTPUT_DIR, CSV_OPTS } from './constants.js';
+import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE_2_USER } from "./prompt.js"
+
+
+
 import { queryPalm } from "./palm_wrapper.js";
 import { queryGpt } from "./gpt_wrapper.js";
 
@@ -55,10 +59,9 @@ async function main() {
                 metadata_fields.add(field);
             }
 
-
             console.log(`Querying ${opts.model_family} with ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
             let queryFunc = opts.model_family == 'palm' ? queryPalm : queryGpt;
-            let promise = queryFunc(txt).then(msg => {
+            let promise = queryFunc(txt, SYSTEM, [[EXAMPLE_1_USER, EXAMPLE_1_RESPONSE], [EXAMPLE_2_USER, EXAMPLE_2_RESPONSE]]).then(msg => {
                 if (msg == "") return;
                 console.log(`Got response from ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
                 try {
@@ -82,7 +85,8 @@ async function main() {
 
     await Promise.allSettled(promises).then(async () => {
         for (const field of metadata_fields) {
-            CSV_OPTS.fields.push(field);
+            // Metadata fields go in front.
+            CSV_OPTS.fields.unshift(field);
         }
 
         const parser = new AsyncParser(CSV_OPTS);

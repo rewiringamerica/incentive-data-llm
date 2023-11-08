@@ -1,7 +1,5 @@
 import aiplatform from '@google-cloud/aiplatform';
 
-import { generateMessagesPalm } from "./prompt.js";
-
 // Imports the Google Cloud Prediction service client
 const { PredictionServiceClient } = aiplatform.v1;
 
@@ -20,13 +18,25 @@ const model = 'chat-bison-32k';
 const predictionServiceClient = new PredictionServiceClient(clientOptions);
 const endpoint = `projects/${project}/locations/us-central1/publishers/${publisher}/models/${model}`;
 
-export async function queryPalm(input_text: string): Promise<string> {
+function generateMessagesPalm(input_text: string, system: string, examples: [string, string][]) {
+    let examples_list: object[] = [];
+    for (const [user, response] of examples) {
+        examples_list.push({ input: { content: user }, output: { content: response } })
+    }
+    return {
+        context: system,
+        examples: examples_list,
+        messages: [
+            { author: "user", content: input_text },
+        ]
+    }
+}
+
+export async function queryPalm(input_text: string, system: string, examples: [string, string][]): Promise<string> {
     if (input_text.trim().length === 0) {
         throw new TypeError("Input text can't be empty string");
     }
-    const prompt = generateMessagesPalm(input_text);
-    // Count tokens for the purpose of deciding if we need a model with a longer context window (which is more expensive).
-    let token_count = 100; // We give a bit of buffer to account for other tokens needed to form the request.
+    const prompt = generateMessagesPalm(input_text, system, examples);
     // TODO: add token counting
 
     const instanceValue = helpers.toValue(prompt);

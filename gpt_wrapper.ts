@@ -1,8 +1,6 @@
-import { Configuration, OpenAIApi } from "openai";
+import { ChatCompletionRequestMessage, Configuration, OpenAIApi } from "openai";
 
 import { encode } from 'gpt-3-encoder';
-import { generateMessagesGpt } from "./prompt.js";
-
 import { config } from 'dotenv';
 
 config();
@@ -14,11 +12,25 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 
-export async function queryGpt(input_text: string): Promise<string> {
+export function generateMessagesGpt(text: string, system: string, examples: [string, string][]): ChatCompletionRequestMessage[] {
+
+    let output: ChatCompletionRequestMessage[] = [];
+    output.push({ role: "system", content: system });
+    for (const [user, assistant] of examples) {
+        output.push({ role: "user", content: user });
+        output.push({ role: "assistant", content: assistant });
+    }
+    output.push({ role: "user", content: text });
+
+    return output;
+}
+
+
+export async function queryGpt(input_text: string, system: string, examples: [string, string][]): Promise<string> {
     if (input_text.trim().length === 0) {
         throw new TypeError("Input text can't be empty string");
     }
-    const messages = generateMessagesGpt(input_text);
+    const messages = generateMessagesGpt(input_text, system, examples);
     // Count tokens for the purpose of deciding if we need a model with a longer context window (which is more expensive).
     let token_count = 100; // We give a bit of buffer to account for other tokens needed to form the request.
     for (const message of messages) {

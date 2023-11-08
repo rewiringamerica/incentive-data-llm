@@ -1,6 +1,4 @@
-import { ChatCompletionRequestMessage } from "openai";
-
-const SYSTEM: string = `You are a helpful assistant. I'm going to give you a list of data fields, and then I will give you a series of passages that contain financial incentives. I want you to populate the fields in valid JSON format, with one record for each incentive. You MUST respond with valid JSON, no matter what.
+export const SYSTEM: string = `You are a helpful assistant. I'm going to give you a list of data fields, and then I will give you a series of passages that contain financial incentives. I want you to populate the fields in valid JSON format, with one record for each incentive. You MUST respond with valid JSON, no matter what.
 
 An incentive is typically for a specific appliance or tool, like a heat pump, a battery, or a smaller tool like a snowblower. There are also free incentives like a home inspection for weatherization.
 
@@ -49,7 +47,7 @@ financing: if information is given related to how to finance the project, includ
 
 The following are required fields and you must create an answer for them: technology, program_description, program_start, rebate_type, rebate_value, number, and amount_type.`
 
-const EXAMPLE_1_USER: string = `Air Source Heat Pump Water Heater Rebate
+export const EXAMPLE_1_USER: string = `Air Source Heat Pump Water Heater Rebate
 These incentives are valid for purchases made between January 1, 2023, and December 31, 2023.
 
 Requirements
@@ -91,7 +89,7 @@ Rebate Amounts
 Single Stage Snow Blower - 25% of Price up to $150
 Riding Lawn Mower - 50% of price up to $1000`
 
-const EXAMPLE_1_RESPONSE = `[
+export const EXAMPLE_1_RESPONSE = `[
     {
       "technology": "HVAC - Air Source Heat Pump",
       "program_description": "$350 per heating ton rebate for qualifying Air Source Heat Pump Water Heater (30 Gallon Minimum)",
@@ -170,7 +168,7 @@ const EXAMPLE_1_RESPONSE = `[
     }
 ]`
 
-const EXAMPLE_2_USER: string = `Electric Vehicles (EVs)
+export const EXAMPLE_2_USER: string = `Electric Vehicles (EVs)
 This incentive is currently paused due to lack of funds.
 
 Rebate may apply to the purchase of a new vehicle and will be automatically at the time of sale.
@@ -198,7 +196,7 @@ Has not been modified from the original equipment manufacturer power train speci
 Has a gross vehicle weight rating of 3,000 pounds or less
 Has a maximum speed of 25 mph`
 
-const EXAMPLE_2_RESPONSE = `[
+export const EXAMPLE_2_RESPONSE = `[
   {
     "technology": "New Electric Vehicle",
     "program_description": "$750 rebate for new All Electric Plug-In Vehicle (EV), capped at 50% of purchase price",
@@ -245,27 +243,3 @@ const EXAMPLE_2_RESPONSE = `[
     "financing": "Financing is available via Empower Loans. For more details, see www.empower.com."
   }
 ]`
-
-export function generateMessagesGpt(incentive_text: string): ChatCompletionRequestMessage[] {
-  return [
-    { role: "system", content: SYSTEM },
-    { role: "user", content: EXAMPLE_1_USER },
-    { role: "assistant", content: EXAMPLE_1_RESPONSE },
-    { role: "user", content: EXAMPLE_2_USER },
-    { role: "assistant", content: EXAMPLE_2_RESPONSE },
-    { role: "user", content: incentive_text },
-  ]
-}
-
-export function generateMessagesPalm(incentive_text: string) {
-  return {
-    context: SYSTEM,
-    examples: [
-      { input: { content: EXAMPLE_1_USER }, output: { content: EXAMPLE_1_RESPONSE } },
-      { input: { content: EXAMPLE_2_USER }, output: { content: EXAMPLE_2_RESPONSE } },
-    ],
-    messages: [
-      { author: "user", content: incentive_text },
-    ]
-  }
-}
