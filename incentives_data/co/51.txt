@@ -1,0 +1,16 @@
+Home Battery System Rebates
+$1000 per unit for a non-dispatchable unit on a TOU rate
+$2000 per unit for a dispatchable unit on a TOU rate
+
+Requirements
+
+Minimum usable capacity of 8 kWh
+Rated for installation at elevation
+Installations must comply with all applicable electrical and building codes.
+Installations must operate on a Time of Use rate when a TOU rate option may become available
+Installations must provide battery system data access when this technology may become available
+Proof of installation
+Picture of installed unit
+Electrician invoice
+State electrical permit
+All items must be new

@@ -1,0 +1,89 @@
+
+Heating, ventilation, air conditioning (HVAC)
+
+
+Air source heat pumps
+
+Tier 1 air source heat pump split system (Non-cold climate)
+$1,500
+• 16.0 SEER & 9.0 HSPF or 15.2 SEER2 & 7.8 HSPF2
+• Must be AHRI matched
+• Change over temperature < 35F
+
+Tier 2 air source heat pump split system (Cold climate)
+$2,000
+• 16.0 SEER & 9.5 HSPF or 15.2 SEER2 & 8.1 HSPF2
+• Must be AHRI matched
+• Change over temperature < 5F
+• Cold climate HP – certified by NEEP, CEE, AHRI or ENERGY STAR®
+
+
+Ductless mini-splits
+Ductless mini-split $500/ton
+• 21.0 SEER & 9.5 HSPF or 21.0 SEER2 & 9.1 HSPF2
+• Must be AHRI matched
+• Cold climate HP – certified by NEEP, CEE, AHRI or ENERGY STAR® 
+
+
+
+
+Ground source heat pumps
+
+Ground source heat pump (water to water)
+$3,000
+• 16.1 EER
+• 3.1 COP
+• ENERGY STAR® certified
+• Closed loop
+
+Ground source heat pump (water to air)
+$3,000
+• 17.1 EER
+• 3.6 COP
+• ENERGY STAR® certified
+• Closed loop
+
+
+
+Electric water heaters
+Heat pump water heater, <55 gallons
+$800
+• Replacement situation
+• ENERGY STAR® certified
+• 3.3 UEF
+
+
+Heat pump water heater, >55 gallons
+$800
+• Replacement situation
+• ENERGY STAR® certified
+• 3.3 UEF
+
+
+Communication control
+$100 
+• Must be CTA-2045 certified (EcoPort)
+• Must be connected to new eligible HPWH
+
+
+
+
+
+Smart thermostat
+$35
+$70 maximum per home
+• Must replace non-programmable/non-smart thermostat
+• ENERGY STAR® certified
+Thermostats rebate is intended for retrofit HVAC projects where an ENERGY STAR certified smart thermostat is being installed as part of a new equipment upgrade. 
+
+
+
+
+Whole house mechanical ventilation
+
+Energy recovery ventilator or Heat recovery ventilator
+Mechanical ventilation (whole house)
+$500
+Min 50% efficiency on sensible exchange
+Must measure air flows for compliance
+Install ventilation per ASHRAE 62.2 - 2013 mechanical ventilation requirements

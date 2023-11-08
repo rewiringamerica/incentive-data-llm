@@ -1,0 +1,26 @@
+Participants in the Residential Battery Storage program receive the following benefits:  
+	•	Incentive of up to $1,500 for new battery system installations  
+	◦	Incentive amount is calculated at $100 per kilowatt-hour of usable battery system energy capacity 
+	•	Strategic advice on how to use their battery to minimize their energy bill 
+	•	Battery operating strategies balanced to meet their priorities: 
+	◦	Maximizing solar energy self-consumption 
+	◦	Minimizing energy bills  
+	◦	Resiliency for emergency power 
+	◦	Security for essential energy loads  
+
+To take advantage of this offer: 
+	1	Review 'Program Requirements' tab to confirm eligibility.
+	2	Discuss battery storage system options with a Participating Solar Contractor. We advise getting at least two competitive bids. 
+	3	Consider financing options, such as Fort Collins Utilities Epic Loan. 
+	4	Get the project started! 
+
+Participant must be a Fort Collins Utilities residential electric customer proposing a compatible battery storage system permanently connected to the Fort Collins Utilities distribution grid. The battery system must also remain connected to the internet.  
+Customers must meet eligibility and interconnection requirements of the Residential Solar Rebate Program and shall use the PowerClerk application platform, populating the battery incentive fields. One or more batteries can be added to an existing solar PV system or new solar PV system installation. Incentives are available for new battery system installations only.  
+
+The program is designed to align with the customer’s battery system warranty terms. 
+Installation incentives are subject to program participation and availability of funds. To reserve 2022 incentive funding, you must submit an application by November 30, 2022.
+
+The battery system must be programmed either for storing surplus solar energy to meet site loads or optimized to the Time-of-Day rate structure.
+Customers shall support Fort Collins Utilities in accessing battery inverter operation data for monitoring purposes.
+Fort Collins Utilities allows permanently installed battery energy storage systems to interconnect to the grid, subject to Fort Collins' Interconnection Standards. Solar contractors shall use the PowerClerk application platform when adding a battery to a new or existing solar PV system in Fort Collins. Contractors must receive approval for interconnection and be issued a building permit prior to construction. See the Solar Contractor Resources page for application details, code requirements and acceptable DER system configurations. 
+Customers can charge or discharge batteries at any time. All energy consumed from the Fort Collins Utilities distribution grid or returned to the distribution grid is charged or credited according to the Time of Day rate structure and Residential Net Metering Rate.  Customers may charge batteries using power from the grid, but this practice has implications for claiming the Residential Energy Tax Credit.  

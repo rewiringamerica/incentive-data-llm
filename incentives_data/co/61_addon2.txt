@@ -1,0 +1,13 @@
+Electric vehicle chargers
+All equipment and installation costs are required to be submitted on one application
+One rebate per installed charger; multiple charge ports do not qualify for multiple rebates
+Managed charger programs include member system led demand response control or time of use electric rate
+Photo of purchased equipment/installation required
+Level 2 (L2) - No retail sale or fee collection capability
+50% of total equipment and installation costs up to $500 for non-managed chargers
+50% of total equipment and installation costs up to $1000 for managed chargers
+DCFC and L2 - Retail sale or fee collection capable
+50% of total equipment and installation costs up to $1000 for L2
+50% of total equipment and installation costs up to $3000 for DCFC rated between 50-75 kW
+50% of total equipment and installation costs up to $5000 for DCFC rated between 76-149 kW
+50% of total equipment and installation costs up to $7500 for DCFC rated 150 kW & above

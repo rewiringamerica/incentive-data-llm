@@ -1,0 +1,36 @@
+Heat Pump Rebate Eligibility
+To qualify for a rebate on a heat pump, you must:
+
+Be a residential electric customer of Xcel Energy in Colorado
+Equipment must be installed by a current participating contractoropens in a new window
+Installation Requirements
+In order to qualify for this rebate, your contractor must be a current participating contractor opens in a new window. Contractors who frequently perform rebate-quality work are at the top of the list. Learn more about quality Installation in this video (external link).
+
+
+
+
+ASHP Qualifying Equipment Information
+For air source heat pumps, a thermostatic expansion valve (TXV) is required. A TXV helps regulates the refrigerant flow to the indoor components with precision and efficiency. 
+
+Efficiency ratings for air source heat pumps are typically higher with a matched furnace. The furnace does not have to be new in order to match. 
+
+High Efficiency ASHP with Quality Installation Rebate
+Efficiency Minimums: 15.2 SEER2, 11.7 EER2, 7.8 HSPF2 
+Rebate: $1,700
+Cold Climate ASHP with Quality Installation Rebate
+Efficiency Minimums: 18 SEER2, 11.7 EER2, 8.1 HSPF2
+Additional Requirements: Must have a low temp heating efficiency (COP at 5° F >= 1.75 AND on ashp.neep.org. The heating capacity at 5° F must be at least 70% of the 47° F rated heating capacity.
+Rebate: $2,200
+GSHP with Quality Installation Rebate
+Efficiency Minimums: 16 EER2, 3.3 COP
+Rebate: $600 per heating ton
+High Efficiency MSHP Rebate
+Efficiency Minimums: 15.2 SEER2, 11.5 EER2, 7.8 HSPF2
+Rebate: $1,700
+Cold Climate MSHP Rebate
+Efficiency Minimums: 18 SEER2, 11.5 EER2, 8.5 HSPF2**
+Additional Requirements: Must have a low temp heating efficiency (COP at 5° F >= 1.75 AND on ashp.neep.org. The heating capacity at 5° F must be at least 70% of the 47° F rated heating capacity.
+Rebate: $2,200
+Bonus Rebate Available:
+The insulation and air sealing $600 bonus rebate is available to customers who install Xcel Energy rebate-qualifying insulation and air sealing measures within six months of the installation of a Xcel Energy rebate-qualifying space-heating heat pump, based on invoice dates.
+

@@ -1,0 +1,1977 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<!-- Google Tag Manager -->
+				<script>(function(w,d,s,l,i){w.GATrackingId='UA-204542169-26';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayer','GTM-WKGQMK5');</script>
+				<!-- End Google Tag Manager --><!-- Google Tag Manager for GA4 -->
+				<script>(function(w,d,s,l,i){w.GAMeasurementID='G-KP9KW7BR1Y';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayerGA4','GTM-K73C5PS');</script>
+				<!-- End Google Tag Manager for GA4 -->
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+	<script>
+		function populateAntiForgery(token) {
+			var input = document.createElement("input");
+			input.name = "__RequestVerificationToken";
+			input.type = "hidden";
+			input.value = token;
+			var absPat = /^https?:\/\/|^\/\//i;
+			var forms = document.getElementsByTagName("form");
+			for (var i = 0; i < forms.length; i++) {
+				if (forms[i].method == "post" &&
+					!forms[i].querySelector('[name="__RequestVerificationToken"]') &&
+					!absPat.test(forms[i].getAttribute("action"))) {
+					forms[i].appendChild(input.cloneNode());
+				}
+			}
+		}
+
+		function getAntiForgeryToken(callback, error) {
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "/antiforgery");
+			xhr.addEventListener("load", function() {
+				try {
+					if (this.status !== 200) {
+						throw Error("Invalid status. Could not retrieve antiforgery token.");
+		}
+					var obj = JSON.parse(this.responseText);
+					callback(obj.token);
+				} catch (e) {
+					typeof error === "function" && error(e);
+				}
+			});
+			xhr.send();
+		}
+
+		getAntiForgeryToken(function(token) {
+			if (document.readyState === "complete"
+				|| document.readyState === "loaded" 
+				|| document.readyState === "interactive") {
+				populateAntiForgery(token);
+				return;
+			}
+			document.addEventListener("DOMContentLoaded", function() {
+				populateAntiForgery(token);
+			}, false);
+		}, console.error);
+			</script>
+			
+	
+<script type="text/javascript">
+		window.departmentHeader = {};
+		window.pageSectionTracker = {};
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= true;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = false;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="rKGuACpLOe4PcRUiaiPWuCA1i10GR_IAEYCT67RsJZs" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109343567-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109343567-1');
+</script>
+	
+	
+	<meta name="theme-color" content="#547e2a">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>FAQs • Aspen, CO • CivicEngage</title>
+	
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+<link href="/-854355953.css" rel="stylesheet" type="text/css" />	<link href="/-17081582.css" rel="stylesheet" type="text/css" />	<link href="/886614266.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	
+	<link rel="stylesheet" href="/App_Themes/CP/nmenu.css" type="text/css">
+
+    
+	<!-- Dynamic Header Scripts -->
+	
+	<!--Reference Stylesheet-->
+	
+    
+		<!--Dynamic Header Styles-->
+	<style type="text/css">
+	
+	</style>
+	
+	
+	
+
+
+
+	<script src="/248816995.js" type="text/javascript"></script>
+	
+	
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	<script>jQuery(document).click(function (event) {
+	var target = jQuery(event.target);
+	if (target.attr('src') && target.parents('.image').length && target.parents('.widget').length) {
+		var text = target.attr('title');
+		
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Image',
+				eventAction: 'Image - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.is('button') || target.hasClass('button') || target.parents().hasClass('button')) {
+		var text = "";
+		if (target.parents('.button')[0]) {
+			text = target.parents('.button')[0].text;
+		} else if (target.text().length) {
+			text = target.text();
+		} else if (target.attr('title').length) {
+			text = target.attr('title');
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Button',
+				eventAction: 'Button - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetCustomHtml').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Custom Html',
+				eventAction: 'Custom Html Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.editor').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Editor',
+				eventAction: 'Editor Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.GraphicLinks').length) {
+		var text = "";
+		var targetGraphicLink = target;
+		if (target.hasClass('widgetGraphicLinksLink')) {
+			targetGraphicLink = jQuery(target.children()[0]);
+		}
+		if (targetGraphicLink.hasClass('text')) {
+			text = targetGraphicLink.text();
+		} else if (targetGraphicLink.attr('src').length) {
+			if (targetGraphicLink.attr('alt').length) {
+				text = targetGraphicLink.attr('alt');
+			} else {
+				text = targetGraphicLink.attr('src');
+			}
+		} else {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Graphic Links',
+				eventAction: 'Graphic Link - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.InfoAdvanced').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Info Advanced',
+				eventAction: 'Info Advanced Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.list').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'List',
+				eventAction: 'List Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.megaMenuItem').length || target.parents('.topMenuItem').length) {
+		var megaMenuText = jQuery('.topMenuItem.mouseover').find('span').text();
+		var breadCrumbs = [];
+		jQuery('.breadCrumbs > li').each(function () {
+			 breadCrumbs.push(this.textContent);
+		});
+		var pageTitle = breadCrumbs.join('>');
+		var subTitleText = target.parents('.megaMenuItem').children('.widgetTitle').children().text();
+		var text = "";
+		if (pageTitle) {
+			text += pageTitle + " | ";
+		} else {
+			text += document.title + ' - ';
+		}
+		if (target.text() == "" && megaMenuText == "") {
+			text += "N/A";
+		} else if (target.text().length && megaMenuText.length) {
+			if (megaMenuText == target.text()) {
+				text += megaMenuText;
+			} else {
+				text += megaMenuText + " - " + subTitleText + " - " + target.text();
+			}
+		} else if (target.text() == "") {
+			text += megaMenuText;
+		} else {
+			text += target.text();
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Mega Menu',
+				eventAction: 'Mega Menu : ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetNewsFlash').length && target.parents('.widgetItem').length) {
+		var text = jQuery(target.parents('.widgetItem')[0]).find('.widgetTitle').children().text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'News Flash',
+				eventAction: 'News Flash - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.hasClass('widgetQuickLinksLink') || target.find('.widgetQuickLinksLink').length) {
+		var text = target.text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Quick Links',
+				eventAction: 'Quick Links - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.attr('src') && target.parents('.cpSlideshow').length) {
+		var text = target.attr('title');
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Slideshow',
+				eventAction: 'Slideshow - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetText').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Text',
+				eventAction: 'Text Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+});</script>
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#contentarea" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+	
+	
+
+<link href="/745732998.css" rel="stylesheet" type="text/css" />
+
+<div tabindex="0"></div>
+<div id="SplashMessageWrapper" class="cp-Splash-wrapper">
+    <div role="dialog" aria-labelledby="cp-Splash-title" aria-describedby="editorContentDesc" aria-modal="true" tabindex="-1" id="SplashMessage" class="hidden cp-Splash cp-Splash--modal is-open">
+        <div class="cp-Splash-header">
+            <h3 class="cp-Splash-title" id="cp-Splash-title">Loading</h3>
+            <button class="cp-Splash-Btn cp-Splash-close" aria-label="Close this modal" title="Close this window">
+                <svg id="iconClose" viewBox="0 0 25 25">
+                    <polygon style="fill:currentcolor"
+                             points="18.806,6.98 18.075,6.248 12.532,11.792 6.989,6.248 6.257,6.98 11.786,12.508 6.212,18.084 6.943,18.815 12.532,13.224 18.12,18.815 18.851,18.084 13.277,12.508"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="cp-Splash-body">
+            <div class="cp-Splash-Prose editorContent fr-view fr-element" id="editorContentDesc">
+                <!-- Content from the Froala Editor will go here. -->
+                Loading
+            </div>
+        </div>
+        <div class="cp-Splash-footer">
+            <button class="cp-Splash-Btn cp-Splash-Btn--NoShow">Do Not Show Again</button>
+            <button class="cp-Splash-Btn cp-Splash-Btn--Close">Close</button>
+        </div>
+    </div>
+</div>
+<div tabindex="0"></div>
+
+<script src="/Assets/Scripts/APIClient.js"></script>
+<script src="/Assets/Scripts/MomentJs/2.29.1/moment.min.js"></script>
+<script src="/Assets/Scripts/SplashModal/SplashModalRender.js"></script>
+<script>
+
+		$(document).ready(function () {
+			var filter = {
+				targetId: '',
+				targetType: 0
+			}
+
+            new SplashModalRender().triggerRender(filter);
+		});
+</script>
+	
+<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="6" />
+	<input type="hidden" id="hdnContentCollectionID" value="9dd17759-87ea-4283-9b9c-cb1c70ebe70c" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="17" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" value="25" />
+	<input type="hidden" id="pagePageID" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+		<input type="hidden" id="hdnModuleID" value="25" />
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP mui-fixed" style="">
+					
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create a Website Account</a> <span class="welcomeMessage">- Manage notification subscriptions, save form progress and more. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+	        <li><a href="/MyAccount" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Website Sign In</span></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
+        });
+
+			
+				$('#loggedOutToolbarSignInButton').click(function (event) {
+					event.preventDefault();
+					window.location.href = '/MyAccount/?from=url&url=' + encodeURIComponent(window.location.href.replace(window.location.origin, '')) + '&dn=' + window.location.host;
+				});
+			
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
+    })
+</script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="bodyContainerTS">
+<!-- Header Container --><header data-cpRole="structuralContainer" id="headerContainerTS">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="bannerLogoWrapTS">
+<div data-cpRole="banner" id="bannerLogoTS" class="bannerLogoTS empty">
+
+
+
+
+				<a style="			display: block; text-align: center;
+" class="bannerObject" href="/" target="_self"><img alt="Home page" class="bannerObject" height="226" src="/ImageRepository/Document?documentID=9419" width="260" /></a>
+
+</div>
+</div><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavGovernment" class="navMainItem mainNavItem mainNavItem1" href="/27/Government" target="_self">Government</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavIWantTo" class="navMainItem mainNavItem mainNavItem2" href="/9/I-Want-To" target="_self">I Want To...</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavThingstoDoinAspen" class="navMainItem mainNavItem mainNavItem3" href="/31/Things-to-Do-in-Aspen" target="_self">Things to Do in Aspen</a><!--
+			--><!--
+			--></li><!----><li id="MainItem35" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="35" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavDoingBusiness" class="navMainItem mainNavItem mainNavItem4" href="/35/Doing-Business" target="_self">Doing Business</a><!--
+			--><!--
+			--></li><!----><li id="MainItem148" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="148" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavEnvironment" class="navMainItem mainNavItem mainNavItem5" href="/148/Environment" target="_self">Environment</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=25&themeID=17&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = true;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="1"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="ccc2859068-ba07-4379-837a-df4f0e850bc3" data-containerid="c2859068-ba07-4379-837a-df4f0e850bc3" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="ccbf202e21-228a-4d8b-b447-acedd1230834" data-containerid="bf202e21-228a-4d8b-b447-acedd1230834" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc4ffc17e2-ee6d-4276-a132-07fcdcf093b1" data-containerid="4ffc17e2-ee6d-4276-a132-07fcdcf093b1" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu35" class="contentTop mainNavMegaMenu megaMenuContainer pageID_35 hidden" data-orientation="horizontal">	<div id="cc81b0ac11-2298-4b0d-bd55-febe48253736" data-containerid="81b0ac11-2298-4b0d-bd55-febe48253736" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu148" class="contentTop mainNavMegaMenu megaMenuContainer pageID_148 hidden" data-orientation="horizontal">	<div id="cccfe367dc-2e25-409e-ac84-3c19f1ace391" data-containerid="cfe367dc-2e25-409e-ac84-3c19f1ace391" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</header><!-- Banner --><div data-cpRole="structuralContainer" id="bannerContainerTS" class="noOverflowTS">
+<div data-cpRole="banner" id="banner1"><div data-cpRole="structuralContainer" id="bannerSizingTS">
+<div data-cpRole="structuralContainer" id="bannerSearchTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="searchTS">	<div id="ccde3beee5-f57d-4c39-be58-3293a61d247b" data-containerid="de3beee5-f57d-4c39-be58-3293a61d247b" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="0da75fd4-42a6-4005-9eda-8d447f52e3ad">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idb3515c8c-57d0-42f7-a509-d1547cce3b7f" style="" data-widgetcontainerid="b3515c8c-57d0-42f7-a509-d1547cce3b7f">	
+<div data-widget-id="2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButton2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDept2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDept2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDept2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+	<style scoped type="text/css">.widgetOptionSet38 {
+background: #FFFFFF99;
+box-shadow: 0px 3px 10px #00000066;
+border-radius: 100px;
+padding: 4px;
+}</style>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin65 widgetOptionSet38" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBox2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca" cp5ph="true" id="searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca" name="searchField" onchange="searchBtnApplyQuery();" placeholder="How can we help?" title="How can we help?" type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButton2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca" role="button"><img alt="Search" class="imageHover" data-hover="/ImageRepository/Document?documentID=9424" data-image="/ImageRepository/Document?documentID=9425" src="/ImageRepository/Document?documentID=9425" /></a>
+
+			<label class="searchLabel" for="searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #333333;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #333333;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #333333;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #333333;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBox2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca
+	{
+        color: #333333;
+		background: #FCFCFC;
+box-shadow: 0px 3px 6px #0000004D;
+border-radius: 100px;
+border: 0;
+height: 65px;
+font-family: Jost;
+font-size: 1.2em;
+padding: 0 80px 0 20px;
+	}
+	.widgetSearch .widgetBody .widgetSearchButton2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca
+	{
+		margin: 2px 10px 0 0;
+	}
+	.widgetSearch .widgetSearch-onlyDept2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDept2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchField2cb49e20-ab1d-4cb4-95f0-2961b0acf5ca").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+
+
+
+			<div id="bannerImagesJSON55" class="hidden"></div>
+				<div id="bannerSlideshowControls_banner1" class="bannerSlideshowControlsNew none " style="display:none">
+					<button id="arrowPrev_banner1" class="arrowNew prev cp-Btn--nonStyled" aria-label="Banner Arrow Previous"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowLeft"></use></svg></button>
+					<button id="arrowNext_banner1" class="arrowNew next cp-Btn--nonStyled" aria-label="Banner Arrow Next"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowRight"></use></svg></button>
+				</div>
+			<script type="text/javascript">
+				onOrLive($(window), function () {
+					$.when(window.Pages.rwdSetupComplete)
+						.done(function () {
+							renderExternalBannerSlideshow('banner1',
+									{"BannerOptionID":55,"ThemeID":17,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":"5","SlideshowTransition":0,"SlideShowTransitionTiming":"1","ImageScale":true,"ImageAlignment":1,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":160,"BannerOptionID":55,"FileName":"/ImageRepository/Document?documentID=11351","Height":1736,"Width":2600,"StartingOn":"\/Date(1695834000000)\/","StoppingOn":"\/Date(1700805600000)\/","IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":161,"BannerOptionID":55,"FileName":"/ImageRepository/Document?documentID=11350","Height":1735,"Width":2600,"StartingOn":"\/Date(1695834000000)\/","StoppingOn":"\/Date(1700805600000)\/","IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":162,"BannerOptionID":55,"FileName":"/ImageRepository/Document?documentID=11345","Height":1733,"Width":2600,"StartingOn":"\/Date(1695834000000)\/","StoppingOn":"\/Date(1700805600000)\/","IsLink":false,"LinkAddress":null,"Sequence":2,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":163,"BannerOptionID":55,"FileName":"/ImageRepository/Document?documentID=11342","Height":1736,"Width":2600,"StartingOn":"\/Date(1695834000000)\/","StoppingOn":"\/Date(1700805600000)\/","IsLink":false,"LinkAddress":null,"Sequence":3,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":164,"BannerOptionID":55,"FileName":"/ImageRepository/Document?documentID=11341","Height":1735,"Width":2600,"StartingOn":"\/Date(1695834000000)\/","StoppingOn":"\/Date(1700805600000)\/","IsLink":false,"LinkAddress":null,"Sequence":4,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""}],"BannerVideos":[{"BannerVideoID":2,"BannerOptionID":55,"VideoFileName":"","ImageFileName":"EmptyBannerBkg202304061121243132.png","IsLink":false,"LinkAddress":null,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","VideoFileID":"00000000-0000-0000-0000-000000000000","ImageFileID":"00000000-0000-0000-0000-000000000000","VideoWidth":0,"VideoHeight":0,"ImageWidth":0,"ImageHeight":0,"LinkedVideoUrl":"","RecordStatus":0,"AltText":null}],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
+								'/App_Themes/2023 - Interior/Images/',
+								'Rotating',
+								'3');
+						});
+				}, "load");				
+			</script>
+
+
+</div>
+</div><!-- Content container --><div data-cpRole="structuralContainer" id="mainContainerTS">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="mainWrapTS" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="outerContentWrapTS" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="contentWrapTS" class="contentWrap">
+<div data-cpRole="breadCrumbs" id="breadCrumbs" class="breadCrumbContainer">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/">Home</a></li><li>FAQs</li>
+		</ol>
+
+	   
+    
+</div>
+<div data-cpRole="mainContentContainer" id="moduleContent">
+
+<div id="ctl00_ctl00_MainContent_BodyWrapper">
+	
+	<script type="text/javascript"><!--
+	var isie6 = false, isie7 = false, isie6or7 = false;
+	var intCountryCode = 840;
+
+	function setUrlLength(editor) {
+		//Toggle Image Context Menu Items
+		setMenuItems(editor);
+		//setContentBackgroundColor(editor);
+		removeIEParagraphs(editor);
+	}
+	function setUrlLengthAndToolToggle(editor) {
+		var minToolsGroups = 2; // Number of MinimumSetOfTools tools groups.
+		
+		// Hide the MinimumSetOfTools on load.
+		var toolbar = editor.get_toolContainer(); // Get toolbar container.
+		var toolgroups = toolbar.getElementsByTagName("UL"); // Get all toolgroups containers.
+		
+		for (var i = toolgroups.length - 1; i >= minToolsGroups; i--)			toolgroups[i].style.display = "none";
+		
+		if (editor.isIE) {
+			var elem = editor.get_element();
+			elem.style.height = "430px";
+ 			elem.style.minHeight = "430px";
+		}
+		
+		// Toggle Image Context Menu Items.
+		setMenuItems(editor);
+		//setContentBackgroundColor(editor);
+		removeIEParagraphs(editor);
+	}
+//--></script><!--[if IE 6]><script type="text/javascript">isie6 = true; isie6or7 = true;</script><![endif]-->
+<!--[if IE 7]><script type="text/javascript">isie7 = true; isie6or7 = true;</script><![endif]-->
+
+	
+
+	<form name="aspnetForm" method="post" action="./faq.aspx?qid=566" id="aspnetForm" style="display:inline;" onsubmit="return headerValidationCallback();" enctype="multipart/form-data" autocomplete="off">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=S17JLwJo03EkQraZ-RgEv6lNnBVVEWSFNQfz3kNXeQAlxBgUr0afVghRJQTfdxrzxDCS3mdaYh4P1S9Yx6mVLtr27_MPyNPP8dOWnIkP64DpdTSEWuEnyLk9nJphWpr1EkH-XMqmBxdR6uKjLYoovKmxpx2-nHRzclsinS9Oi_fBj6GWeCAAcHdQuB5d3vlGNRsLoPspvJIiUaSxSkdS8o_zFCBnDcZo6CV8GjyzYZi36gGv351ICU59_ii8ml9_MejAi3YYTr57h8LRtp6tOub2UChatawrWYnZBmA8TKWT2jdG1W-iEAPoJKzKG9WPrn5rDFyuXFw4-gthxJjKTzDzayQQRRp8oDhzsunAuKdQwJ_-v0x6LQTnW5nZpYLve70SV0odRFWGuu4Xe_x_TqMdxZfQdlwd6cdvhcceXgsAh44jC_jk4_8dexK-yMmXwjd1QHB2-2EA4jyVYqal4z9JoGRAXeJRk_tJ6ImqvNMrd80vDOmkq3Xkwd-VadPuIQ45-nJQNB9EcCj5r1Pp7J73DWy25nmAi2EwbKxhKf0LGVXA4M2VmmU5EE1B-WpcOjCvMxDlEC1ldlzSENgTUBoq9sBPvLBKbh0O52_9HbsgeubnUn4F4emmChK7m5CBCqYZSzdxui3mDN3noGAPxbHMJw4veMXE1b7uw-bfga29A4xqfqC6oXaRuFMkY7FRAn3G9KPtUVRIqgsI5eqRBqg__wJxVtLmzFLKaJY4FhqX25RAKgIkUG3A1mJ5V3iKLGO7LolAP_2evhqWlaXSVvigDJgpyZn3o1WEU1LH3cbMgrg3dEHaIvOTaxCb4M4EyU86UdppWyL4H0n4ELTby8MoKE1s6S4wRTkz6q-LFdQ1" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0F4F4B68" />
+		<!--for archiving purpose-->
+		<input name="ysnNotifyMe" type="hidden">
+		<input name="strPage" type="hidden">
+		<input name="intArchMainCatID" type="hidden">
+		<input name="intArchMainItemID" type="hidden">
+		 
+		<script type="text/javascript">
+			Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginRequest);
+			Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
+		</script>
+		
+		<div id="modulecontent" name="modulecontent.aspx" style="padding-top: 0px;">
+<a id="contentarea" name="contentarea" title="Content Area"></a>
+
+<!-- BEGIN FAQContent.aspx ***** -->
+	<link href="/-1554237153.css" rel="stylesheet" type="text/css" /><script src="/749163122.js" type="text/javascript"></script>
+
+<div id="FAQContent" class="newCP moduleContentNew pageStyles">
+	
+	
+	<div id="ctl00_ctl00_MainContent_ModuleContent_ctl00_contentUpdatePanel">
+	
+			<div class="sidebar">
+
+                
+
+
+				<div class="section search">
+					<label class="h3">Search</label>
+					   <ol>
+		<li>
+			<input type="text" id="searchTerms" title="Search terms" name="searchTerms" value="">
+		</li>
+		<li>
+			<select title="Category filter" name="TID">
+				<option value="0">All categories</option>
+<option value="70" >Air Quality </option>
+<option value="78" >Aspen 3-1-1 Connect</option>
+<option value="28" >Aspen 360°</option>
+<option value="23" >Aspen&#39s Bus Lanes</option>
+<option value="71" >Building IQ</option>
+<option value="24" >Building Permits</option>
+<option value="44" >Business Navigator - Building or Remodeling</option>
+<option value="41" >Business Navigator - Business Licenses</option>
+<option value="47" >Business Navigator - Hosting a Special Event</option>
+<option value="43" >Business Navigator - Moving / Changing / Enhancing Your Business </option>
+<option value="42" >Business Navigator - Sales & Lodging Tax</option>
+<option value="40" >Business Navigator - Transportation Impact Analysis</option>
+<option value="21" >Car To Go: Corporate Memberships</option>
+<option value="82" >City of Aspen Grants FAQ</option>
+<option value="85" >City of Aspen Grants FAQ - Grantee Portal</option>
+<option value="17" >Electric</option>
+<option value="57" >Engineering</option>
+<option value="77" >Engineering - New Castle Creek Bridge</option>
+<option value="76" >Engineering - New Castle Creek Bridge - Preferred Alternative</option>
+<option value="75" >Engineering - New Castle Creek Bridge - Project History</option>
+<option value="73" >Foodborne Illness</option>
+<option value="22" >High Occupancy Vehicle (HOV) Lanes</option>
+<option value="16" >Human Resources</option>
+<option value="20" >Kids First</option>
+<option value="67" >Kids First - Financial Aid</option>
+<option value="72" >Moratoria on residential building and vacation rental permits</option>
+<option value="27" >Municipal Court</option>
+<option value="45" >Outdoor Merchandising</option>
+<option value="49" >Parking</option>
+<option value="26" >Parking in Residential Area</option>
+<option value="50" >Parking: Paid Parking/Permits</option>
+<option value="30" >Parks & Open Space</option>
+<option value="53" >Parks and Recreation</option>
+<option value="68" >Police</option>
+<option value="83" >Public Charging FAQs- EV</option>
+<option value="74" >Short-Term Rentals</option>
+<option value="81" >Single Use Bag Fee</option>
+<option value="66" >Small Cell Facilities</option>
+<option value="59" >Special Events Permits</option>
+<option value="38" >Street Department</option>
+<option value="84" >Sustainable Transportation FAQs</option>
+<option value="19" >Utility Billing</option>
+<option value="18" >Water</option>
+<option value="15" >Wildfire Risk Assessments </option>
+			</select>
+		</li>
+		<li>
+		    <a href="#" class="searchButton" onkeypress="this.onclick();" onClick="FAQNavigateCategory(); return false;">
+               <img src="/common/images/SearchButton.png" alt="Search" title="Search">
+		    </a>
+		</li>
+   </ol>
+
+				</div>
+				
+				<div class="section categories">
+					<h3>Categories</h3>
+					<ol>
+								<li>
+			<a href="/faq.aspx">All Categories</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=70">Air Quality </a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=78">Aspen 3-1-1 Connect</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=28">Aspen 360°</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=23">Aspen&#39s Bus Lanes</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=71">Building IQ</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=24">Building Permits</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=44">Business Navigator - Building or Remodeling</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=41">Business Navigator - Business Licenses</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=47">Business Navigator - Hosting a Special Event</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=43">Business Navigator - Moving / Changing / Enhancing Your Business </a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=42">Business Navigator - Sales & Lodging Tax</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=40">Business Navigator - Transportation Impact Analysis</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=21">Car To Go: Corporate Memberships</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=82">City of Aspen Grants FAQ</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=85">City of Aspen Grants FAQ - Grantee Portal</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=17">Electric</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=57">Engineering</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=77">Engineering - New Castle Creek Bridge</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=76">Engineering - New Castle Creek Bridge - Preferred Alternative</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=75">Engineering - New Castle Creek Bridge - Project History</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=73">Foodborne Illness</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=22">High Occupancy Vehicle (HOV) Lanes</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=16">Human Resources</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=20">Kids First</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=67">Kids First - Financial Aid</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=72">Moratoria on residential building and vacation rental permits</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=27">Municipal Court</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=45">Outdoor Merchandising</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=49">Parking</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=26">Parking in Residential Area</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=50">Parking: Paid Parking/Permits</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=30">Parks & Open Space</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=53">Parks and Recreation</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=68">Police</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=83">Public Charging FAQs- EV</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=74">Short-Term Rentals</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=81">Single Use Bag Fee</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=66">Small Cell Facilities</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=59">Special Events Permits</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=38">Street Department</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=84">Sustainable Transportation FAQs</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=19">Utility Billing</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=18">Water</a>
+		</li>
+		<li>
+			<a href="/faq.aspx?TID=15">Wildfire Risk Assessments </a>
+		</li>
+
+					</ol>
+				</div>
+
+                
+
+
+
+			</div>
+			<div class="contentMain selfClear">
+				
+				
+				<div class="listing listingCollapse single">		<dl>
+		<dt>
+Where can I find more information on rebates, grants, and tax credits? 		</dt>
+		<dd class="fr-view">
+<ul><li id="isPasted">The Climate Action Office can help direct you to resources and rebates available to offset the costs of electric vehicles and chargers. We work with our partners at CORE, CLEER, and Holy Cross to find solutions that work for you. &nbsp;</li><li><span style="font-size: 14.4px;"><a href="https://cleanenergyeconomy.net/programs/" target="_blank" rel="noopener">Clean Energy Economy for the Region (CLEER)</a></span><span style="font-size: 14.4px;">&nbsp;has staff trained as ReCharge coaches in our region and can provide coaching services for EVs and charging infrastructure development.&nbsp;</span></li></ul><p><span style="font-size: 14.4px;"><strong>Incentives:&nbsp;</strong></span></p><ul><li><span style="font-size: 14.4px;">You may be eligible for</span><span style="font-size: 14.4px;"><a href="https://afdc.energy.gov/laws/10513." target="_blank" rel="noopener">&nbsp;Federal tax credits</a></span><span style="font-size: 14.4px;">&nbsp;for an electric vehicle purchase and installation of an electric vehicle charger.</span></li><li><span style="font-size: 14.4px;"><a href="https://energyoffice.colorado.gov/charge-ahead-colorado." target="_blank" rel="noopener">Colorado Energy Office ChargeAhead</a></span><span style="font-size: 14.4px;">&nbsp;grant provides grants of up to $5,750/charger for qualified applicants.&nbsp;</span></li><li><span style="font-size: 14.4px;">If you are an Aspen Electric customer, rebates are available for the purchase of Level 2 and Level 3 electric vehicle chargers at your home or business. Rebates are administered by our partners at the </span><span style="font-size: 14.4px;"><a href="https://www.aspencore.org/?locale=en" target="_blank" rel="noopener">Community Office for Resource Efficiency (CORE).</a></span><span style="font-size: 14.4px;"> Note that CORE rebates can be used in conjunction with state incentives. &nbsp;</span></li><li><span style="font-size: 14.4px;">If you are a&nbsp;</span><span style="font-size: 14.4px;"><a href="https://www.holycross.com/charge-at-home/." target="_blank" rel="noopener">Holy Cross Energy customer</a></span><span style="font-size: 14.4px;">, rebates are available for the purchase of a Level 2 electric vehicle charger.&nbsp;</span></li></ul>		</dd>
+	</dl>
+</div>
+<div class="listing listingCollapse">
+	<div id="cat84">
+		<a class='translatable' tabindex="0" title="Collapse this category" onkeypress="return this.onclick();" onclick="expandCollapseCategory(84); return false;">
+			<h2>
+				<div id="a_84" name="a_84">&#9660</div>
+Sustainable Transportation FAQs		</h2>
+		</a>
+	</div>
+	<div id="84">
+      <p class="showHide"><a id="p_84" onkeypress="this.onclick();" onclick="showAllAnswers(84); return false;" href="#">Show All Answers</a></p>
+		<dl>
+			<dt onkeypress="this.onclick();" onclick="toggleAnswer('dd_564'); return false;" id="dt_564">
+				<span class='questionCount'>1.</span>
+<a href="">Electric vehicles 101 </a></dt>
+			<dd class="fr-view" style="display:none;" name="dd__84" id="dd_564">
+<p id="isPasted">All-electric vehicles (commonly referred to as EVs or BEVs) don&apos;t use gasoline and instead have a large battery that powers one or more electric motors.&nbsp;</p><p><span style="font-size: 14.4px;"><strong>There are 4 different types of electric vehicles: &nbsp;</strong></span></p><ul><li><span style="font-size: 14.4px;">Battery electric vehicles (BEV)&nbsp;</span><ul><li><span style="font-size: 14.4px;">Powered by: Electric motor&nbsp;</span></li><li><span style="font-size: 14.4px;">Fuel source: Electricity&nbsp;</span></li></ul></li><li><span style="font-size: 14.4px;">Plug-in electric hybrid vehicle (PHEV)&nbsp;</span><ul><li><span style="font-size: 14.4px;">Powered by: Electric motor and gas engine&nbsp;</span></li><li><span style="font-size: 14.4px;">Fuel: Electricity and gas&nbsp;</span></li></ul></li><li><span style="font-size: 14.4px;">Hydrogen fuel cell vehicles&nbsp;</span><ul><li><span style="font-size: 14.4px;">Powered by: Electric motor&nbsp;</span></li><li><span style="font-size: 14.4px;">Fuel: Compressed hydrogen gas&nbsp;</span></li></ul></li><li><span style="font-size: 14.4px;">Hybrid vehicles&nbsp;</span><ul><li><span style="font-size: 14.4px;">Powered by: Gas engine and electric motor&nbsp;</span></li><li><span style="font-size: 14.4px;">Fuel: Gas&nbsp;</span></li></ul></li></ul><p><span style="font-size: 14.4px;">For more information on purchasing an electric vehicle visit&nbsp;</span><span style="font-size: 14.4px;"><a href="https://evco.colorado.gov/find-your-ev?utm_source=google&" target="_blank" rel="noopener">EV Coloado&rsquo;s website</a></span><span style="font-size: 14.4px;">.</span></p>			</dd>
+		</dl>
+		<dl>
+			<dt onkeypress="this.onclick();" onclick="toggleAnswer('dd_565'); return false;" id="dt_565">
+				<span class='questionCount'>2.</span>
+<a href="">Electric Vehicle Charging Station 101 </a></dt>
+			<dd class="fr-view" style="display:none;" name="dd__84" id="dd_565">
+<p id="isPasted"><strong>There are 3 different charging levels: </strong></p><ul><li><span style="font-size: 14.4px;">Level 1 Charging&nbsp;</span><ul><li><span style="font-size: 14.4px;">Level 1 charging is typically used at home&nbsp;</span></li><li><span style="font-size: 14.4px;">It looks like a cord that is plugged into a wall outlet or a standard 120V outlet&nbsp;</span></li><li><span style="font-size: 14.4px;">Approximately 5 miles/hour of charge &nbsp;</span></li></ul></li><li><span style="font-size: 14.4px;">Level 2 Charging&nbsp;</span><ul><li><span style="font-size: 14.4px;">Level 2 charging can be used at home or as a public/commercial charger&nbsp;</span></li><li><span style="font-size: 14.4px;">This typically requires a 240V outlet which is similar to an outlet used to power an electric clothes dryer&nbsp;</span></li><li><span style="font-size: 14.4px;">Approximately 20-60 miles/hour of charge (depending on the battery)&nbsp;</span></li></ul></li><li><span style="font-size: 14.4px;">Level 3 Charging or DCFC&nbsp;</span><ul><li><span style="font-size: 14.4px;">Level 3 charging is used as a public/commercial charger&nbsp;</span></li><li><span style="font-size: 14.4px;">Approximately 60-100 miles per 20 minutes of charge&nbsp;</span></li><li><span style="font-size: 14.4px;">Level 3 charging is only effective up to 80% after which the charging rate slows down to prevent battery degradation.&nbsp;</span></li></ul></li></ul>			</dd>
+		</dl>
+		<dl>
+			<dt onkeypress="this.onclick();" onclick="toggleAnswer('dd_566'); return false;" id="dt_566">
+				<span class='questionCount'>3.</span>
+<a href="">Where can I find more information on rebates, grants, and tax credits? </a></dt>
+			<dd class="fr-view" style="display:none;" name="dd__84" id="dd_566">
+<ul><li id="isPasted">The Climate Action Office can help direct you to resources and rebates available to offset the costs of electric vehicles and chargers. We work with our partners at CORE, CLEER, and Holy Cross to find solutions that work for you. &nbsp;</li><li><span style="font-size: 14.4px;"><a href="https://cleanenergyeconomy.net/programs/" target="_blank" rel="noopener">Clean Energy Economy for the Region (CLEER)</a></span><span style="font-size: 14.4px;">&nbsp;has staff trained as ReCharge coaches in our region and can provide coaching services for EVs and charging infrastructure development.&nbsp;</span></li></ul><p><span style="font-size: 14.4px;"><strong>Incentives:&nbsp;</strong></span></p><ul><li><span style="font-size: 14.4px;">You may be eligible for</span><span style="font-size: 14.4px;"><a href="https://afdc.energy.gov/laws/10513." target="_blank" rel="noopener">&nbsp;Federal tax credits</a></span><span style="font-size: 14.4px;">&nbsp;for an electric vehicle purchase and installation of an electric vehicle charger.</span></li><li><span style="font-size: 14.4px;"><a href="https://energyoffice.colorado.gov/charge-ahead-colorado." target="_blank" rel="noopener">Colorado Energy Office ChargeAhead</a></span><span style="font-size: 14.4px;">&nbsp;grant provides grants of up to $5,750/charger for qualified applicants.&nbsp;</span></li><li><span style="font-size: 14.4px;">If you are an Aspen Electric customer, rebates are available for the purchase of Level 2 and Level 3 electric vehicle chargers at your home or business. Rebates are administered by our partners at the </span><span style="font-size: 14.4px;"><a href="https://www.aspencore.org/?locale=en" target="_blank" rel="noopener">Community Office for Resource Efficiency (CORE).</a></span><span style="font-size: 14.4px;"> Note that CORE rebates can be used in conjunction with state incentives. &nbsp;</span></li><li><span style="font-size: 14.4px;">If you are a&nbsp;</span><span style="font-size: 14.4px;"><a href="https://www.holycross.com/charge-at-home/." target="_blank" rel="noopener">Holy Cross Energy customer</a></span><span style="font-size: 14.4px;">, rebates are available for the purchase of a Level 2 electric vehicle charger.&nbsp;</span></li></ul>			</dd>
+		</dl>
+		<dl>
+			<dt onkeypress="this.onclick();" onclick="toggleAnswer('dd_567'); return false;" id="dt_567">
+				<span class='questionCount'>4.</span>
+<a href="">Are electric vehicles more harmful to the environment than gasoline powered vehicles?  </a></dt>
+			<dd class="fr-view" style="display:none;" name="dd__84" id="dd_567">
+<p>Over the course of an electric vehicle&apos;s lifetime, the vehicle is less carbon intensive making it an essential tool to combat climate change. EV production generally emits more greenhouse gases per year than fossil fuel powered cars. However, the average EV makes up for this difference in less than two years due to zero tailpipe pollution.&nbsp;</p>			</dd>
+		</dl>
+		<dl>
+			<dt onkeypress="this.onclick();" onclick="toggleAnswer('dd_568'); return false;" id="dt_568">
+				<span class='questionCount'>5.</span>
+<a href="">Can I recycle my EV battery? </a></dt>
+			<dd class="fr-view" style="display:none;" name="dd__84" id="dd_568">
+<ul><li id="isPasted">When EV batteries reach the end of their working life, you should recycle them. When the typical 8- to 10-year battery warranty expires, most EV providers can reuse the batteries for a second or third time. Start by contacting your dealership.&nbsp;</li><li><span style="font-size: 14.4px;">The Climate Action Office recognizes that the EV battery recycling market is in its infancy. We can expect to see massive growth in recycling technologies in the next few years. Let&rsquo;s work together to keep EV batteries from being dumped in landfills! &nbsp;</span></li></ul>			</dd>
+		</dl>
+		</div>
+	</div>
+
+			</div>
+		
+</div>
+	
+</div>
+
+<script type="text/javascript" language="javascript"><!--
+	noDynamicResizing = 1; // For CO-GreenwoodVillage
+
+	function redrawContent(closeModal) {
+		raiseAsyncPostback('ctl00_ctl00_MainContent_ModuleContent_ctl00_contentUpdatePanel', '', closeModal);
+	}
+//--></script>
+
+<!-- END FAQContent.aspx ***** -->
+
+</div>
+<script type="text/javascript">order+='ModuleContent\n'</script>
+
+		<div id="ctl00_ctl00_MainContent_ctl00_liveEditPopupWindow" class="modalContainer modalContainerCP" style="display: none;">
+	<div id="ctl00_liveEditTitleBar" class="modalTitleLeft"><h3 id="ctl00_LiveEditModalTitle" class="modalTitle">Live Edit</h3><a id="ctl00_LiveEditCloseButton" class="modalClose" aria-label="Close this modal" href="/" title="Close this window"><svg viewBox='0 0 25 25' id='modalIconClose'><polygon style='fill:currentcolor' points='18.806,6.98 18.075,6.248 12.532,11.792 6.989,6.248 6.257,6.98 11.786,12.508 6.212,18.084 6.943,18.815 12.532,13.224 18.12,18.815 18.851,18.084 13.277,12.508'></polygon></svg></a></div><div id="ctl00_liveEditContentLeft" class="modalContentLeft"><div id="ctl00_liveEditContentRight" class="modalContentRight"><div id="ctl00_liveEditContent" class="modalContent"><iframe style="display: none; border: none;" src="about:blank" id="liveEditDialog" title="Live Edit Dialog" name="liveEditDialog"></iframe></div></div></div><div id="ctl00_liveEditFooter" class="modalBottomLeft"><div id="ctl00_liveEditfooterbar" class="modalBottomRight"><div id="ctl00_liveEditfooterbar1" class="modalBottom"></div></div></div>
+</div><input type="submit" name="ctl00$ctl00$MainContent$ctl00_liveEditSpawnWindow" value="" id="ctl00_ctl00_MainContent_ctl00_liveEditSpawnWindow" disabled="disabled" style="display: none;" />
+	
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"ctl00_LiveEditCloseButton","PopupControlID":"ctl00_ctl00_MainContent_ctl00_liveEditPopupWindow","PopupDragHandleControlID":"ctl00_liveEditTitleBar","dynamicServicePath":"/faq.aspx","id":"editItemBehavior"}, null, null, $get("ctl00_ctl00_MainContent_ctl00_liveEditSpawnWindow"));
+});
+//]]>
+</script>
+</form>
+	<form id="aspnetSearchForm" name="aspnetSearchForm" style="display:none;" action="/Search.aspx" method="get">
+		<input name="SearchString" type = "hidden" value ="" />
+	</form>
+	
+	<form name="frmFAQSearch" method="GET"><input type="hidden" name="searchTerms"><input type="hidden" name="TID"></form>
+
+	
+	</div>
+	 
+</div>	
+
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="ccf5fc6168-0bce-4d32-a522-499fbc43a49a" data-containerid="f5fc6168-0bce-4d32-a522-499fbc43a49a" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="siteSidebarTS" class="siteSidebar">
+<aside data-cpRole="contentContainer" id="sidebarContainer1TS">	<div id="cc9f434d4e-8a98-4ba6-bc0c-c537ea942edb" data-containerid="9f434d4e-8a98-4ba6-bc0c-c537ea942edb" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+	<ol role="menu" id="secondaryMenusecondaryNav" data-parent="4" class="rootNavMenu accordionNav arrowIndicator">
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem1026" data-pageid="1026">
+		<div class="accordionNavItem">
+			<a href="/27/Government" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Government</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem1027" data-pageid="1027">
+		<div class="accordionNavItem">
+			<a href="/9/I-Want-To" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">I Want To</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem1028" data-pageid="1028">
+		<div class="accordionNavItem">
+			<a href="/31/Things-to-Do-in-Aspen" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Things to Do in Aspen</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem1029" data-pageid="1029">
+		<div class="accordionNavItem">
+			<a href="/35/Doing-Business" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Doing Business</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem1030" data-pageid="1030">
+		<div class="accordionNavItem">
+			<a href="/148/Environment" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Environment</a>
+		</div>
+			</li>
+
+	</ol>
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = true;
+        });
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('*[id^="SideItem"]').each(function () {
+				var ids = $('[id="' + this.id + '"]');
+				if (ids.length > 1)
+					$.each(ids, function (index, value) {
+						value.id = value.id + '_' + index;
+					});
+			});
+
+			$('.hasAccordionChildren .openAccordionNav').click(function (e) {
+				e.preventDefault();
+				showHideAccordionMenuForSecondaryNav($(this));
+			});
+
+			$("#secondaryNav .grippy").each(function () {
+				menuManager.setupDraggableElement($(this), SIDE_MENU, '#secondaryNav');
+			});
+
+			$("#secondaryNav li").each(function () {
+				menuManager.setupDroppableAccordionElement($(this), SIDE_MENU);
+			});
+		});
+	</script>
+
+
+
+</nav><aside data-cpRole="contentContainer" id="sidebarContainer2TS">	<div id="cce11e7d1a-f070-400c-a7fc-e5dabdab7914" data-containerid="e11e7d1a-f070-400c-a7fc-e5dabdab7914" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div>
+</div></div>
+</div><!-- GBs --><div data-cpRole="structuralContainer" id="gbsContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="gbsTS">	<div id="cc57b6ef67-fc13-46f2-8c43-de6dd5d3ba42" data-containerid="57b6ef67-fc13-46f2-8c43-de6dd5d3ba42" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</div></div>
+</div><!-- Footer --><footer data-cpRole="structuralContainer" id="footerContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="footerTS">	<div id="cc89259700-01eb-464c-9901-0d112a5f1f3a" data-containerid="89259700-01eb-464c-9901-0d112a5f1f3a" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="60">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col4 first" style="" data-widgetcontainerid="518d2215-1645-4d4e-9f83-10d44ff8cacb">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id1f69a93c-f261-491e-bb26-7e937d82d9b9" style="" data-widgetcontainerid="1f69a93c-f261-491e-bb26-7e937d82d9b9">	
+    <div data-widget-id="7d97eb8d-0d2a-4105-b724-ca6528d46a66" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv7d97eb8d-0d2a-4105-b724-ca6528d46a66" class="widget widgetInfoAdvanced skin65 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header7d97eb8d-0d2a-4105-b724-ca6528d46a66">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><a href="/"><img src="/ImageRepository/Document?documentId=9438" class="fr-dib" alt="Home page"></a></p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv7d97eb8d-0d2a-4105-b724-ca6528d46a66 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col1" style="" data-widgetcontainerid="3c3e106e-afad-4d19-aa82-684439a3f691">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col1 first last id4614c8c3-d40a-4719-a61c-898599716464" style="" data-widgetcontainerid="4614c8c3-d40a-4719-a61c-898599716464">	
+
+<div class="widget widgetSpacer" id="d96a7a55-e6ae-43d8-a293-b163199ed1d9"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col4" style="" data-widgetcontainerid="63921118-0787-4c0b-b3c9-5fbfc1d70741">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id8b202de8-d106-46e2-8e3d-6809ad9b4192" style="" data-widgetcontainerid="8b202de8-d106-46e2-8e3d-6809ad9b4192">	
+    <div data-widget-id="357556be-27e7-4e23-9011-102a730eafda" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv357556be-27e7-4e23-9011-102a730eafda" class="widget widgetInfoAdvanced skin67 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="header357556be-27e7-4e23-9011-102a730eafda">
+			<header class="widgetHeader" id="header357556be-27e7-4e23-9011-102a730eafda">
+		<div class="">
+					<h3 >Contact Us</h3>
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p>Aspen City Hall<br>427 Rio Grande Place<br>Aspen, CO 81611</p><p>Phone: <a href="tel:970-920-5000">970-920-5000</a><br>Fax: 970-920-5197</p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv357556be-27e7-4e23-9011-102a730eafda .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col1" style="" data-widgetcontainerid="cdf001f5-b473-4f76-8b20-45c7163ee956">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col1 first last idc3361ec6-b8b9-4d01-95ea-e486470047b8" style="" data-widgetcontainerid="c3361ec6-b8b9-4d01-95ea-e486470047b8">	
+
+<div class="widget widgetSpacer" id="867eb22c-5157-43f6-83cb-22bdb9e99545"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col4" style="" data-widgetcontainerid="2286c32f-074a-43f1-9a8b-3a46970e9706">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id449be872-e051-4ed1-acef-79105a464607" style="" data-widgetcontainerid="449be872-e051-4ed1-acef-79105a464607">	
+<div data-widget-id="c27e0a7a-f02b-4840-848f-e8b573c1221b" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetc27e0a7a-f02b-4840-848f-e8b573c1221b" class="widget widgetGraphicLinks skin67 widgetOptionSet4 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+			<h3 >Follow Us</h3>
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid1 ">	
+			<div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/facebook" target="_self" class="fancyButton fancyButton351 " >
+		<span>
+			<span><span class="text">Facebook</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton351.fancyButton:link,.fancyButton351.fancyButton:visited, .fancyButton351div.fancyButton{
+	padding-left: 25px;
+	background-image: url('/ImageRepository/Document?documentID=9427');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 20px;
+width: 90px;
+margin: 0 auto;}
+.fancyButton351.fancyButton:hover,.fancyButton351.fancyButton:focus,.fancyButton351.fancyButton:active,.fancyButton351.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton351.fancyButton:link > span,.fancyButton351.fancyButton:visited > span, .fancyButton351div.fancyButton > span{
+}
+.fancyButton351.fancyButton:hover > span,.fancyButton351.fancyButton:focus > span,.fancyButton351.fancyButton:active > span,.fancyButton351.fancyButton.hover > span{
+}
+.fancyButton351.fancyButton .text{
+	text-align: left;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton351.fancyButton:hover .text,.fancyButton351.fancyButton:focus .text,.fancyButton351.fancyButton:active .text,.fancyButton351.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/twitter" target="_self" class="fancyButton fancyButton352 " >
+		<span>
+			<span><span class="text">Twitter</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton352.fancyButton:link,.fancyButton352.fancyButton:visited, .fancyButton352div.fancyButton{
+	padding-left: 25px;
+	background-image: url('/ImageRepository/Document?documentID=9435');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 20px;
+width: 70px;
+margin: 0 auto;}
+.fancyButton352.fancyButton:hover,.fancyButton352.fancyButton:focus,.fancyButton352.fancyButton:active,.fancyButton352.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton352.fancyButton:link > span,.fancyButton352.fancyButton:visited > span, .fancyButton352div.fancyButton > span{
+}
+.fancyButton352.fancyButton:hover > span,.fancyButton352.fancyButton:focus > span,.fancyButton352.fancyButton:active > span,.fancyButton352.fancyButton.hover > span{
+}
+.fancyButton352.fancyButton .text{
+	text-align: left;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton352.fancyButton:hover .text,.fancyButton352.fancyButton:focus .text,.fancyButton352.fancyButton:active .text,.fancyButton352.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/instagram" target="_self" class="fancyButton fancyButton353 " >
+		<span>
+			<span><span class="text">Instagram</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton353.fancyButton:link,.fancyButton353.fancyButton:visited, .fancyButton353div.fancyButton{
+	padding-left: 25px;
+	background-image: url('/ImageRepository/Document?documentID=9428');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 20px;
+width: 90px;
+margin: 0 auto;}
+.fancyButton353.fancyButton:hover,.fancyButton353.fancyButton:focus,.fancyButton353.fancyButton:active,.fancyButton353.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton353.fancyButton:link > span,.fancyButton353.fancyButton:visited > span, .fancyButton353div.fancyButton > span{
+}
+.fancyButton353.fancyButton:hover > span,.fancyButton353.fancyButton:focus > span,.fancyButton353.fancyButton:active > span,.fancyButton353.fancyButton.hover > span{
+}
+.fancyButton353.fancyButton .text{
+	text-align: left;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton353.fancyButton:hover .text,.fancyButton353.fancyButton:focus .text,.fancyButton353.fancyButton:active .text,.fancyButton353.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/linkedin" target="_self" class="fancyButton fancyButton354 " >
+		<span>
+			<span><span class="text">LinkedIn</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton354.fancyButton:link,.fancyButton354.fancyButton:visited, .fancyButton354div.fancyButton{
+	padding-left: 25px;
+	background-image: url('/ImageRepository/Document?documentID=9429');
+	background-repeat: no-repeat;
+	background-position: left center;
+height: 20px;
+width: 80px;
+margin: 0 auto;}
+.fancyButton354.fancyButton:hover,.fancyButton354.fancyButton:focus,.fancyButton354.fancyButton:active,.fancyButton354.fancyButton.hover{
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.fancyButton354.fancyButton:link > span,.fancyButton354.fancyButton:visited > span, .fancyButton354div.fancyButton > span{
+}
+.fancyButton354.fancyButton:hover > span,.fancyButton354.fancyButton:focus > span,.fancyButton354.fancyButton:active > span,.fancyButton354.fancyButton.hover > span{
+}
+.fancyButton354.fancyButton .text{
+	text-align: left;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton354.fancyButton:hover .text,.fancyButton354.fancyButton:focus .text,.fancyButton354.fancyButton:active .text,.fancyButton354.fancyButton.hover .text{
+	text-decoration: underline;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+</style>
+
+ </div><!--
+			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col1" style="" data-widgetcontainerid="d78bbc61-3178-47f5-8c48-7b673cc23ef5">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col1 first last id4b11e7af-609c-4290-b2f0-85085b730eb3" style="" data-widgetcontainerid="4b11e7af-609c-4290-b2f0-85085b730eb3">	
+
+<div class="widget widgetSpacer" id="0b77c299-ad48-44fe-b8a5-9c98f70f2818"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col4" style="" data-widgetcontainerid="c90cc1cf-335e-4d07-8194-c7c2f252730d">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id32abbc1a-7b9d-41a9-9517-f5058958e277" style="" data-widgetcontainerid="32abbc1a-7b9d-41a9-9517-f5058958e277">	
+	<div data-widget-id="2294b673-3df2-4901-8869-dc23e9f74e87" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklink2294b673-3df2-4901-8869-dc23e9f74e87" class="widget widgetQuickLinks skin67 widgetOptionSet25 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeader2294b673-3df2-4901-8869-dc23e9f74e87">
+			<header class="widgetHeader" id="quickLinksHeader2294b673-3df2-4901-8869-dc23e9f74e87">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=25" >Quick Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://member.everbridge.net/index/453003085612656#/login" target="_self" >Pitkin Alert</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="http://www.aspencommunityvoice.com/" target="_blank"  aria-label="Aspen Community Voice opens in new window">Aspen Community Voice</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col1" style="" data-widgetcontainerid="d4246428-4c24-41b3-b5c7-519934a7c1bf">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col1 first last idf9bcc3c6-7766-4fba-8d51-21a7e83bd1d1" style="" data-widgetcontainerid="f9bcc3c6-7766-4fba-8d51-21a7e83bd1d1">	
+
+<div class="widget widgetSpacer" id="817ace48-7976-4561-9ba7-49cb31541337"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col4 last" style="" data-widgetcontainerid="b2aadd08-694d-4d05-b4c7-acb63fe189b8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col4 first last id08e149d7-8ff4-497e-aac2-dc400afcc928" style="" data-widgetcontainerid="08e149d7-8ff4-497e-aac2-dc400afcc928">	
+	<div data-widget-id="811296ed-aa40-4057-bc79-d233786ddb02" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklink811296ed-aa40-4057-bc79-d233786ddb02" class="widget widgetQuickLinks skin67 widgetOptionSet25 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeader811296ed-aa40-4057-bc79-d233786ddb02">
+			<header class="widgetHeader" id="quickLinksHeader811296ed-aa40-4057-bc79-d233786ddb02">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=24" >Site Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/" target="_self" >Home</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/sitemap.aspx" target="_self" >Site Map</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/157/" target="_self" >Contact Us</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/accessibility" target="_self" >Accessibility</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/site/copyright" target="_self" >Copyright Notices</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/privacy" target="_self" >Privacy Policy</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</footer><!-- Powered By --><div data-cpRole="structuralContainer" id="poweredByContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="poweredByTS">	<div id="cc4356bbd0-2abd-44e9-9444-e1f31700a7c1" data-containerid="4356bbd0-2abd-44e9-9444-e1f31700a7c1" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="30e2c8fa-b140-46e5-a267-77eddec9d2d1">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id6eff5565-8ebf-4a3d-84ef-9fd640077c9d" style="" data-widgetcontainerid="6eff5565-8ebf-4a3d-84ef-9fd640077c9d">	
+ 
+	<div data-widget-id='e844b582-2386-4d61-ac1e-b91873eae919' data-moduleName="customHtml" id='widgetCustomHtmle844b582-2386-4d61-ac1e-b91873eae919' class="widget widgetCustomHtml skin69 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBodye844b582-2386-4d61-ac1e-b91873eae919">
+		<div id="customHtmle844b582-2386-4d61-ac1e-b91873eae919"><div><style>
+  /* CP icon */
+  .cpBylineIconTS {
+    color: #fff;
+  }
+  /* CP Text */
+  .cpBylineTextTS,
+  .cpBylineTextTS a:link {
+    color: #fff;
+  }
+
+  .cpBylineTS {
+    text-align: center;
+  }
+  
+  .cpBylineIconTS {
+    fill: currentColor;
+    width: 39px;
+    height: 26px;
+    display: inline;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="widgetItem cpBylineTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="cpBylineIconTS">
+    <path class="c" d="M73.4,23.2h-19v16.7h19c2.8,0,5,2.2,5,5c0,2.8-2.2,5-5,5h-19v28.4h5.5l11.3-11.7h2.2c11.9,0,21.6-9.7,21.6-21.6C95,33,85.3,23.2,73.4,23.2"></path>
+    <path class="p" d="M45.8,66.5H26.6C14.7,66.5,5,56.8,5,44.9C5,33,14.7,23.2,26.6,23.2h19.1v16.7H26.6c-2.8,0-5,2.2-5,5c0,2.8,2.2,5,5,5h19.1V66.5z"></path>
+  </svg>
+  <span class="cpBylineTextTS">Government Websites by <a href="https://connect.civicplus.com/referral">CivicPlus&reg;</a></span>
+</div>
+</div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+
+
+
+
+
+	<script src="/-840181428.js" type="text/javascript"></script>
+	<!----------Google Translate (Mobile Friendly)--------->
+
+ 
+
+<style>#google-translate-container {float: right;padding: 3px 5px 0px 0px;}.goog-te-combo,.goog-te-banner *,.goog-te-ftab *,.goog-te-menu *,.goog-te-menu2 *,.goog-te-balloon * {font-family: arial;font-size: 10pt;background-image: url("https://theme.zdassets.com/theme_assets/958586/bae8aa24db8d43595871692a9d259186f2db3fb4.png");background-position: 3px 4px;background-size: 22px;background-repeat: no-repeat;text-indent: 20px;background-color: #fff;color: #000 !important;}.goog-logo-link {display: none !important;}.goog-te-gadget {color: transparent !important;}.goog-te-gadget .goog-te-combo {margin: 2px 0 !important;border-radius: 15px !important;}.goog-te-combo{border: 1px solid !important;border-color: #bcc9d7 #96a3b1 #96a3b1 #bcc9d7 !important;border-radius: 0 !important;height:32px; !important;padding: 0 1px 0 .25rem !important;}
+
+#launcher-wrapper {bottom: 50px !important;}
+
+</style>
+
+<div id="google-translate-container">
+
+<div id="google_translate_element" style="position: fixed; top: 100px; right: 20px; z-index: 5;"></div>
+
+</div>
+
+<script>
+
+function googleTranslateElementInit() {
+
+new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+
+// begin accessibility compliance
+
+$('img.goog-te-gadget-icon').attr('alt','Google Translate');
+
+$('div#goog-gt-tt div.logo img').attr('alt','translate');
+
+$('div#goog-gt-tt .original-text').css('text-align','left');
+
+$('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+
+$('.goog-te-combo').attr('aria-label','google translate languages');
+
+$('svg.goog-te-spinner').attr('title','Google Translate Spinner');
+
+$('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+
+}
+
+$(function() {
+
+$.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+
+});
+
+</script>
+
+ 
+
+ 
+
+<!--------------End Google Translate----------------->
+
+<!-- AudioEye --> 
+<script type="text/javascript">!function(){var b=function(){window.__AudioEyeSiteHash = "ca2537d128ba90e65b76e5f66c1fe730"; var a=document.createElement("script");a.src="https://wsmcdn.audioeye.com/aem.js";a.type="text/javascript";a.setAttribute("async","");document.getElementsByTagName("body")[0].appendChild(a)};"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",b):window.attachEvent&&window.attachEvent("onload",b):b()}();</script>
+<!-- End AudioEye --> 
+
+
+
+<!-- Move banner to outer wrap --> 
+<script> 
+    function moveBannerToOuterWrap() { 
+        if ($(".fixedBannerTS").length) { 
+            if ($("#bannerDivbanner1").length) { 
+                $("#bannerDivbanner1").appendTo("#outer-wrap"); 
+            } else { 
+                setTimeout(function() { 
+                    moveBannerToOuterWrap(); 
+                }, 500); 
+            } 
+        }
+    } 
+    moveBannerToOuterWrap(); 
+    </script> 
+    <!-- end move banner to outer wrap -->
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Hind:300,500,600,700,regular|Jost:500,500italic,600,600italic,700,700italic,800,800italic,italic,regular|Open+Sans:300,300italic,600,600italic,700,700italic,800,800italic,italic,regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>

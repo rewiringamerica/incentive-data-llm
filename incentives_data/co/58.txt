@@ -1,0 +1,12 @@
+
+Electric Thermal Storage (ETS) Heating Rebates - RESIDENTIAL + COMMERCIAL
+LPEA offers rebates to our members for purchasing ETS heaters as follows: 
+
+$50/kW for ETS heater controlled by timers or master control system.
+$30/kW for Thermal Slab heating controlled by timers or a master control system.
+Timers are also eligible for a separate rebate.
+ETS rebates are available while funds last. 
+Must be a new or replacement installation.
+Minimum 1 kW (1,000 watts) capacity heater.
+A timing device is required for the use of off-peak hours.
+PLC Connect timing devices will require wifi access for proper programming.

@@ -1,0 +1,74 @@
+Colorado Tax Credits and Rebates: Heat Pump Incentives
+A new Colorado State tax credit and sales tax exemption for heat pumps and heat pump water heaters went into effect on January 1, 2023. The tax credit (10%) and sales tax exemption (2.9%) add up to an additional 12.9% discount on the price of the equipment, not including installation charges. The 10% tax credit and state sales tax exemption also extends to electrical panel upgrades (if needed for the heat pump or heat pump water heater installation) and energy storage systems.
+Passed by legislative bill SB22-051, this tax credit and sales tax exemption is only valid for purchases in 2023. Note that the tax credit applies as long as the homeowner pays enough state taxes.
+In general, a sales tax exemption is applied at the point of sale by the retailer. The sales and use tax applies to the person regarded as the final “consumer” of the heat pump. If the building owner buys and self-installs (in accordance with the applicable installation standards) the equipment, the building owner is the “consumer” of the equipment. Although they would normally pay sales or use tax when acquiring building materials, in this case, they will claim the heat-pump exemption when acquiring the property from a distributor.
+Consequently, it is up to the retailer to determine whether the item purchased meets the definitional requirements in section 39-26-732 (2), C.R.S., and is thus eligible for the exemption. In addition, the retailer must collect the certification described below.
+Contractors and Retailer-Contractors
+In the case of a contractor, the exempt transaction will generally depend upon whether the contractor bills on a lump-sum basis, or is a retailer-contractor billing on a time-and-materials basis. A lump-sum contractor is regarded as the “consumer” of building materials. Like a self-installing owner, the lump-sum contractor will claim the exemption when acquiring the property from a distributor. 
+A time-and-materials materials contractor, on the other hand, is considered to be a retail seller of building materials. As such, they would buy the equipment tax-free using their resale license, then apply the heat pump exemption to their sale to the building owner. The end result is that there is no tax imposed upon this equipment (the distributor, likewise, acquired it tax free using a resale license).  
+The specifics of these circumstances are described in FYI Sales 6: Contractors and Retailer-Contractors. Contractors may also refer to Special Regulation 10 which can be accessed in the sales and use tax special regulations. 
+
+Certification Requirement
+If a heat pump system or heat pump water heater is purchased for installation in a new or existing industrial, commercial, or multifamily residential building with 20,000 square feet or more of conditioned floor space, the bill requires the purchaser to certify that all necessary mechanical, plumbing, and electrical work performed in connection with the installation of the heat pump system or heat pump water heater will be performed by a contractor on a certified contractor list, or by employees of a utility, subject to state licensing requirements and all applicable state and local rules, codes, and standards. The contractor must make this certification. According to section 40-3.2-105.6 (3)(a), C.R.S., the certified contractor list can be obtained from the Colorado Department of Labor and Employment or a local utility.
+There is no certification requirement for the state sales tax exemption if a heat pump system or heat pump water heater is purchased for installation in a new or existing industrial, commercial, or multifamily residential building with less than 20,000 square feet of conditioned floor space.
+Income Tax Credit
+Senate Bill 22-051 also included an income tax credit equal to 10% of the purchase price of a heat pump system or heat pump water heater for any purchaser that installs a residential or commercial heat pump system or heat pump water heater into real property in Colorado. Eligible purchasers include a lessee who purchases a qualifying heat pump system or heat pump water heater and installs it into a building in Colorado with the lessor’s approval, or the building owner. The same system requirements and installation standards apply for the income tax credit as the sales tax credit. The income tax credit is available for two income tax years commencing on or after January 1, 2023, but before January 1, 2025. The purchaser is allowed to assign that income tax credit to the seller but assignment also requires certain certifications to be made.
+Because it is likely that the state sales tax exemption described above will be claimed at the same time that the purchaser considers whether to assign the income tax credit for the same purchase, the Department of Revenue is in the process (as of April 2023) of developing one certification form for both incentives and will release the form as soon as possible.
+
+Database of Colorado energy efficiency and renewable energy tax credits and rebates.
+
+Do I Qualify?
+See if your household qualifies for these federal programs. Use this calculator (thanks Rewiring America) to input your zip code, gross income and household size to determine federal tax credits and rebates that your household could qualify for.
+
+Calculator
+Please note, Energy Smart Colorado does not provide tax advice. Tax advisors are best to rely on for guidance on tax credits specific to your household. The following resources were referenced to provide the aforementioned guidance:
+	•	Energy.Gov: Making our Homes more Efficient: Clean Energy Tax Credits for Consumers
+	•	Electrek: Here’s how the new US tax credits and rebates will work for clean energy home upgrades
+	•	Building Performance Association: This guidance document from BPA provides more information about the Inflation Reduction Act and what it may mean to you.
+	•	Rewiring America’s Guide to the Inflation Reduction Act
+	•	FAQs on Home Energy Rebate Programs: This Department of Energy page provides answers to the commonly asked questions related to the programs funded by the Inflation Reduction Act.
+We know it may take some time for the rebate programs to launch. Canary Media offers some advice on steps households can take today to prepare homes for the electrification opportunities:
+	•	Rebates for home energy upgrades are coming soon. Here’s how to plan.
+And the Department of Energy provides additional resources on making clean energy choices today.
+
+Learn more about additional tax credit programs, rebates & incentives:
+States are now able to apply for their formula funds to launch the home energy rebate programs. The Department of Energy (DOE) released guidelines to the states in July 2023, and created this page to answer frequently asked questions. 
+As of early September 2023, Colorado has not yet applied for the funds. We expect it will be early 2024 before the rebate funds will be available to Colorado residents. They are unlikely to be retroactive. Colorado Energy Office will update their Inflation Reduction Tax Credit page as information becomes available.
+Visit this link from the Energy Circle to read more on the latest takeaways (as of June 2023) on the IRA rebate rollout.
+RMI has published a resource guide breaking down the IRA – program by program and incentive by incentive.
+Xcel Energy has also published an IRA Resource Guide, which will be updated regularly. 
+
+
+Home Efficiency Rebates Program
+The Home Efficiency Rebates Program, previously referred to as the Home Energy Performance-Based, Whole-House (HOMES) Rebate program, will allocate up to $4,000 for whole-house retrofits. For those households making less than 80% of the area median income, this amount doubles to $8,000. Homeowners are eligible for rebates on 50% of the cost of projects that cut their home energy use through insulation and air sealing improvements and HVAC installations; (rebates apply for up to 80% of cost for households under 80% of the area median income.)
+How do these HOMES Rebates apply? When a retrofit achieves energy system savings between 20 and 35 percent, the rebate equals either $2,000 or 50% of the project cost, whichever is lower. But when a retrofit achieves energy savings of 35% or more, the rebate doubles to the lesser of $4,000 or 50% of project cost.
+HOMES rebates are doubled for low-income (LI) households, those who make less than 80 percent of area median income. Contractors may also claim a $200 rebate for each LI home that achieves 20% or greater energy savings.
+How do I measure or identify the 20% or 35% savings? Our friends at Snugg Pro provide some guidance. You can find a detailed logic model of eligible measures and rebate amounts here.
+
+Home Electrification and Appliance Rebates (HEAR) Program
+￼
+Limited to households that do not exceed 150% of the area median income, the Home Electrification and Appliance Rebates Program (HEAR), previously referred to as High-Efficiency Electric Home Rebate (HEEHR) program, will provide point-of-sale rebates for electrification. Low- and moderate-income (LMI) households may combine electrification (and air sealing and insulation) projects to a maximum rebate of $14,000 – at 50% of the cost of the qualified electrification project. (Those at 80% AMI will qualify for 100% of their costs to be covered.)
+With guidance from the Department of Energy, this HEAR program – and the Home Efficiency Rebates Program – will be established by state energy programs, so Energy Smart Colorado awaits details from the Colorado Energy Office on how the point-of-sale rebates will be implemented. Know that it may be late 2023 or 2024 before we see these rebates established in Colorado. When the HEAR Program launches, the maximum rebates that may be available for LMI households include:
+	•	Heat pump HVAC systems: $8,000
+	•	Electrical panel upgrades: $4,000
+	•	Electric wiring: $2,500
+	•	Heat pump water heaters: $1,750
+	•	Insulation, air sealing, and ventilation: $1,600
+	•	Electric stoves, ovens and induction cooktops: $840
+	•	Heat pump clothes dryers: $840
+
+Can I Combine Home Efficiency Rebates & Tax Credits?
+	•	Home efficiency rebates may be combined with state/utility rebate programs
+	•	Home efficiency rebates may be combined with the 25C federal tax credit
+	•	Home efficiency rebates and HEAR rebates may NOT be combined  Households can make use of rebates from both programs, but may not use both to fund the same project
+Rebates for Multi-family Building Retrofits
+The IRA also aggressively incentivizes performance improvement for multi-family buildings. When a retrofit achieves 20 to 35% energy savings, the rebate will be $2,000 per dwelling unit, with a maximum of $200,000 per multifamily building. For a multifamily retrofit that achieves 35% or greater, the rebate is $4,000 per dwelling unit, with a maximum of $400,000 per multifamily building.
+Tax Credits on Solar and other Renewable Energy investments
+The Residential Clean Energy Credit (previously named “Residential Energy Efficient Property Credit”) also allows for a 30% credit (increased from 26%) for installing clean household energy such as solar, wind, geothermal or battery storage (with a capacity of at least 3 kWh). And this credit rolls back to 2022, qualifying any solar equipment placed in service after January 1, 2022 for the 30% credit.
+￼
+Energy Smart Colorado transforms the local energy efficiency market and stimulates home and business energy improvements through access to information, capital and a skilled workforce. 
+CALL US: 1.833.372.4372
+EMAIL: Info@EnergySmartColorado.org
+MAILING ADDRESS: PO Box 4842 Frisco, Colorado 80443
+Donate
+

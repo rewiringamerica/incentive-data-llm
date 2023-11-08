@@ -1,0 +1,24 @@
+[
+    {
+        "ID": "CO-27",
+        "Data Source URL(s)": "https://www.csu.org/Pages/Insulation.aspx",
+        "Authority Level*": "Utility",
+        "Authority (Name)*": "Colorado Springs Utilities",
+        "Program Title*": "Residential Efficiency Rebate Program",
+        "Program URL": "https://www.csu.org/Pages/Insulation.aspx",
+        "Technology*": "Weatherization \n(insulation and air sealing)",
+        "Program Description \n(guideline)": "Rebate up to $200 for insulation and air sealing",
+        "Program Status": "Active",
+        "Program Start": "1/1/2023",
+        "Program End": "12/31/2023",
+        "Rebate Type": "Rebate (post purchase)",
+        "Rebate Value*": "$200",
+        "Amount Type*": "dollar amount",
+        "Number*": "200",
+        "Amount Maximum": "$200",
+        "Equipment Standards Restrictions": "Insulation R-value must meet the U.S. Department of Energy recommended ratings: Attic – R49 – and exterior wall – R13. Attic insulation must include bypass air sealing. ",
+        "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.",
+        "Homeowner/ Renter": "Homeowner",
+        "Other Restrictions": "• This rebate is for retrofit applications only and does not apply to new construction.\n• This rebate applies to living quarters only. No garages."
+    }
+]

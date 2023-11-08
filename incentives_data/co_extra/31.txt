@@ -1,0 +1,150 @@
+2023 RESIDENTIAL & COMMERCIAL REBATES
+FOR ENERGY EFFICIENCY, SAFETY & ELECTRIFICATION PROJECTS
+
+Rebates are available to homes and buildings in Eagle County in Walking Mountains Science Center territory (excludes the Roaring Fork Valley). Details for qualifying projects start on Page 2.
+An energy visit is required prior to a rebate being provided (preferably prior to starting a project).
+
+Rebates
+Household/Building Type Residential Residential-LMI* Households Commercial & Multifamily Buildings
+
+Project Rebate Amount up to 25% of project costs up to 50% of project costs up to 25% of project costs
+
+Annual Maximum $3,000/year $5,000/year $7,500/year
+
+Energy Visits
+Household/Building Type
+Home Energy Assessment
+Home Energy Assessment-Homes in Vail/Avon/Eagle, Avon staff Home Energy Assessment-LMI* Households Home Energy Assessment-Deed Restricted Homes** Home Energy Assessment-Teachers/School Employees** Home Energy Assessment-Firefighters/Police/First Responders** Home Energy Assessment-Town of Vail Employees** Commercial & Multifamily Buildings
+
+Cost for Visit $100 - 1st 3,000 square feet
+$0.05/sf - each sq. ft. between 3,001-6,000 $0.10/sf - each sq. ft. over 6,000
+$50 (any size) free free free free free free
+
+*LMI = 150% AMI (area median income) or less for the household. Provide most recent filed tax return(s) or last 3 pay stubs. See page 6 for details. **All other free assessments qualify by providing a pay stub, letter from employer on letterhead, or copy of deed restriction for home.
+
+Program Rules & Requirements (in addition to above statements and project specific requirements): · Rebates are for existing buildings only. · Gas/Electric utility account(s) name and number is required prior to completing the home energy assessment. · Project must be complete, with all equipment installed and in working order. · Invoices must be within 90-days of applying for a rebate. · Required with rebates: Photo(s) of completed project, final invoice(s)/receipt(s), and any applicable spec sheets. · Project costs may include materials and labor costs; no tax, shipping, or permit expenses included. · Checks mailed 4-6 weeks after receiving completed rebate application & all required documentation. · Colorado state regulation requires proper disposal of mercury containing lamps. · Rebates may be assigned to the contractor completing the project, and this credit must be shown on the invoice. · Walking Mountains reserves the right to inspect the project after completion. · Walking Mountains is not liable for any act or omission of any party, consumer, or contractor whatsoever. · Walking Mountains is not liable for rebates promised to consumers by a contractor misrepresenting program. · Rebates are subject to change and/or discontinue without notice; funding is limited. · Walking Mountains reserves the right to refuse payment if the consumer/contractor violates program rules. · For information on tax incentives, see this page: https://energysmartcolorado.org/tax-credits-incentives. · To apply for rebates or enroll for an energy visit go to: https://www.walkingmountains.org/energy.
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 1
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+Balanced Ventilation (ERV/HRV) Energy Recovery Ventilation or Heat Recovery Ventilation
+· Home should be at or below 0.35 Natural Air Changes per Hour (NACH); if not, air sealing must be done before or in conjunction with ventilation project
+· Ventilation unit is required to deliver fresh (supply) air to main living/work space and each bedroom/office, at a minimum
+· Installation location allows for service and filter maintenance · All ductwork must be sealed and insulated, or located in a conditioned space · Equipment must meet all of the following:
+o SRE (Sensible Recovery Efficiency) at 70% or higher o Electrically commutated motors (ECMs) o Cold climate tested, demonstrated operation to -13°F
+Building Envelope: Air Sealing · Pre- and post-blower door assessment required · Air leakage must be reduced by 10% or more as measured in CFM50 by blower door test · If at/or below 0.35 NACH before or after improvement, you are required to meet with an Energy Coach at Walking Mountains to understand opportunities for fresh air ventilation, and identify existing ventilation present in the home
+Building Envelope: Insulation www.energy.gov/energysaver/insulation · Air sealing must be completed prior to adding insulation unless Natural Air Changes per Hour (NACH) is 0.35 or lower · Pre- and post-blower door assessment required · Must reach the following R-values/details: o Exterior Wall: Insulate exterior/foundation walls to minimum R-19 o Attic: Insulate floor of unfinished attic to minimum R-60 o Floor: Insulate floor of living space above garage/unconditioned crawl to min R-30
+Building Envelope: Residential Crawlspace Conversion This is for encapsulating a crawlspace, making it a conditioned space in your home
+· Condition/Seal entire crawl with minimum 10-mil vapor barrier, sealed to the foundation/footers, encapsulating the entire space
+· Air Seal and Insulate Rim Joists with spray foam · Insulate crawl walls to minimum R-19; no insulation required in crawl ceiling · Must seal vents · Pre- and post-blower door assessment required
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 2
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+Building Envelope: Multifamily (4 or more units) · Entire building must be air sealed and/or insulated · Pre- and post-blower door assessment required on one unit per building · Air leakage must be reduced by 10% or more as measured in CFM50 by blower door test · Minimum R-value requirements in locations that insulation is improved: o Exterior Wall: Insulate exterior/foundation walls to minimum R-19 o Attic: Insulate floor of unfinished attic to minimum R-60 o Floor: Insulate floor of living space above garage or unconditioned crawl to min R-30
+Cold Climate Air, Water, or Ground Source Heat Pump (heating and cooling) · Must be "cold climate" rated to -5°F or colder minimum (Eagle County=Climate Zone 6) · Minimum Coefficient of Performance (COP) @ 5°F of 1.75 · Air Source Heat Pumps Heating Seasonal Performance Factor minimums: o Ducted HSPF2 of 8.1 or HSPF of 9.6 o Ductless mini-split HSPF2 of 9.5 or HSPF of 11.0 · Outside unit must be elevated at least 12 inches off the ground to defrost properly · Recommended: o load calculation to right size heat pump system and derate for high elevation o heat pump provides majority of heating load (+/- 80%) · Learn more about heat pumps: o https://loveelectric.org/heating-cooling o www.holycross.com/wp-content/uploads/2022/10/HCE-HeatPumpTips-October2022.pdf o https://co.my.xcelenergy.com/s/residential/heating-cooling/heat-pumps o www.energy.gov/energysaver/ductless-mini-split-heat-pumps
+Duct Sealing www.energystar.gov/campaign/heating_cooling/duct_sealing · Repair any damaged and disconnected ducts and straighten out flexible ducts that are tangled or crushed · Seal all leaks and connections with mastic, metal tape, or an aerosol-based sealant · Seal all registers and grills tightly to the ducts · Before and after CFM measurements for ducts required · Insulate ducts to R-6 or higher in unconditioned areas (attics/crawlspaces/garages) · Recommend evaluating your system's supply & return air balance, to ensure air return ducts not too small · Recommend including a new filter as part of any duct system improvement · Recommend if you have combustion appliances that you ensure there is no back drafting by getting a CAZ (combustion appliance zone) safety test after ducts are sealed
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 3
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+Electric Fireplaces · Existing/previous fireplace must be propane, wood, or natural gas · Must be able to operate new electric fireplace with option of no heat (flame visual only)
+Electric Ready Upgrade · Must be related to current or future electrification project(s) o Wiring and receptacle for easy transition to electric appliance and/or electrical panel upgrade providing extra space, marked with "intent to electrify" · Invoice must include the purpose of the electrical upgrade
+Electronically Commutated Motor (ECM) or Variable Speed Motor · Replace any single speed motor with EC/variable speed motor · Applications include heating, cooling, ventilation, and refrigeration
+Energy Management System / Data Trackers / Smart Controls For the purchase and installation of automated building controls; or for the initial cost for setup of a benchmarking system/energy management software
+· Must be a new system/trackers/controls where none previously existed · Provide contractor's modeled potential energy savings
+Heat Pump Clothes Dryer · Energy-Star certified dryer with heat pump technology: www.energystar.gov/productfinder/product/certified-clothes-dryers/results · Learn more about heat pump dryers: www.energystar.gov/products/heat_pump_dryer
+Heat Pump (Hybrid) Water Heater · Energy-Star certified with heat pump technology: www.energystar.gov/productfinder/product/certified-water-heaters/results · Learn more about heat pump water heaters: https://loveelectric.org/hot-water
+Heat Tape Timer · Timer must be hardwired · Timer is the equipment that will be rebated; project cost may not include new or replacement heat tape · Recommended: run heat tape during daylight hours - www.holycross.com/wpcontent/uploads/2020/07/Heat-Tape-Basics-with-Rates-from-7-1-1911.2.2020.pdf
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 4
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+Home Radon Mitigation Systems · Pre and post radon tests required · Ask your installer to use the most Energy Efficient Fan available · System must be sized and installed correctly by a qualified radon mitigation contractor · For more information: https://cdphe.colorado.gov/testing-your-home-radon
+Induction Cooktop/Range · Induction cooktop or range · Learn more about induction cooking: https://loveelectric.org/cooking
+Insulated Cellular Shades (honeycomb) By trapping air in the cells of these shades they insulate your windows and minimize the loss of heated or cooled air from inside, which may improve the thermal performance of your home
+· Must be double cell or cell-within-a-cell design, and be sized and installed correctly · For more information: www.energy.gov/energysaver/energy-efficient-window-coverings (on
+website scroll down to insulated cellular shades section)
+LED Lighting - Commercial or Multifamily (Common Area) Only · Replace non-LED bulbs with qualifying LED fixtures or bulbs · Minimum of 30% wattage reduction required · Must be Energy Star rated or Design Lights Consortium (DLC) certified www.designlights.org/qpl www.energystar.gov/products/lighting_fans/light_fixtures/why_choose_energy_star_qualified_le d_lighting
+Lighting Controls - Commercial or Multifamily Only · Networked lighting controls (NLC) with wireless networked integrated sensors only · Control schedule submitted with rebate application
+Pool & Spa Pumps · Replace single speed pump with variable speed drive (VSD) · Recommend labeled ENERGY STAR® www.energystar.gov/products/pool_pumps
+Retrocommissioning, Recommissioning, Commercial ASHRAE Level II or III Audit · Report must be provided to Walking Mountains · Must provide contractor's modeling for potential energy savings · Must adjust controls as determined by contractor and provide proof · Rebate only available for an initial report, updated reports do not qualify
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 5
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+Smart (Wi-Fi Enabled) or Programmable Thermostats · Check compatibility on manufacturer's website before purchasing · Learn more about best options: www.energystar.gov/products/smart_thermostats www.energy.gov/energysaver/programmable-thermostats
+Storm Windows · Must be labeled ENERGY STAR® and be sized and installed correctly (INDOW Windows qualify) · Whole home is not required · For more information: www.energystar.gov/products/storm_windows_0
+Variable Frequency Drives (VFD) · Replace single speed motor/pump with VFD
+Variable Refrigerant Flow (VRF) - Commercial or Multifamily Only · Energy Efficiency Ratio (EER) of 10+ · Coefficient of Performance (COP) of 2+ · VRF must be used as primary heating and/or cooling source
+
+2023 Income Limits
+
+WM-LMI
+Walking Mountains' Low-to-Moderate Income
+Households Program
+150% Area Median Income (AMI)
+
+# in Household
+
+household income (before taxes; all income earners)
+
+Annual
+
+Monthly
+
+1 Person 2 Person 3 Person 4 Person 5 Person 6 Person 7 Person 8 Person
+
+$117,450 $134,250 $151,050 $167,700 $181,200 $194,550 $208,050 $221,400
+
+$9,788 $11,188 $12,588 $13,975 $15,100 $16,213 $17,338 $18,450
+
+Walking Mountains' Low-to-Moderate Income Households 2023
+Incentives:
+· FREE Home Energy Assessment
+· Rebates - up to 50% of the project costs; annual max of $5,000 (utility rebates are also available)
+To qualify, all income earners in household must provide: most recent filed tax return(s), or 90 days of employment income, or proof of active participation in another income-based program (like: SNAP, LEAP, TANF, SSI, AND)
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 6
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+2023 RESIDENTIAL & COMMERCIAL REBATES
+LOCATION SPECIFIC
+SOLAR PV REBATES: available for installation of renewable generation for net metering at a home or business new construction is OK
+· Must be approved for a Holy Cross Energy Renewables Rebate or Xcel Energy's Solar*Rewards Towns of Avon, Eagle, and Vail (including Town of Vail employees and Town of Avon employees)
+o $1,000 per property Unincorporated EAGLE COUNTY (not including Roaring Fork Valley, visit CORE for RFV rebates)
+o 0-6 kW - $250/kW o 6-25 kW - $100/kW
+ELECTRIC VEHICLES and EV CHARGING: Town of Vail (including Town of Vail employees; assessment requirement waived for employees only) available for purchasing an electric vehicle or installation of new EV charging infrastructure
+o $1,000 per property (not to exceed 50% of project costs) Electric Vehicles - Town of Vail
+· Must be used when driving in/around Vail · Must provide the following information: copy of vehicle registration, amount paid, make/model · Businesses and HOA's are encouraged to look into Charge Ahead Colorado grant funding for community-
+based Level 2 and DC fast-charging (DCFC) electric vehicle charging stations. https://energyoffice.colorado.gov/transportation/grants-incentives/charge-ahead-colorado EV Charging Infrastructure - Town of Vail · Homes are encouraged to look into Holy Cross Energy's Charge at Home program for a free Level 2 charger. www.holycross.com/charge-at-home
+BONUS REBATES: Towns of Avon, Eagle, and Vail (including Town of Vail employees and Town of Avon employees)
+o $500 per property Weatherization BONUS available for completing air-sealing and/or insulation on a home/building
+· Must already be approved for a regular rebate for air-sealing and/or insulation from the Energy Smart CO program at Walking Mountains (details on page 2 & 3)
+Heat Pump BONUS available for completing installation of a heat pump for space heating/cooling · Must already be approved for a regular rebate for a heat pump from the Energy Smart CO program at Walking Mountains (details on page 3)
+
+2023 Walking Mountains-Energy Smart Colorado Rebate Details
+
+Page 7
+
+Questions: Energy@WalkingMountains.org 970-328-8777 www.WalkingMountain.org/Energy
+
+

@@ -1,0 +1,40 @@
+Electric thermal storage and slab
+Minimum qualifying load for ETS is 1kW
+Incentive amount is the lower of stated rebate or 50% of equipment cost
+$16/kW for ETS units controlled by timers or master control system
+$12/kW for thermal slabs controlled by timers or master control system
+
+Energy Star air conditioner
+Must be Energy Star certified 
+Minimum 16 SEER or 15.2 SEER2 
+Minimum 1 ton 
+Window units don't qualify
+$100/unit
+
+
+
+Electric heat pump: Air-source
+Tier 1 (Standard ASHP) required HSPF > = 9.0 and SEER > = 15 or HSPF2 > = 7.8 & SEER2 > = 15.2
+Tier 2 (Cold-Climate ASHP) required HSPF > = 10.0 and SEER > = 16 or HSPF2 > = 8.1 & SEER2 > = 15.2
+Tier 1 $675 < = 2 tons and $1800 > 2 tons 
+Tier 2 $1000 < = 2 tons and $2400 > 2 tons 
+Air-to-water units will be taken on a case by case basis
+
+
+Electric heat pump: Ground-source
+New ground source heat pump systems and replacement heat pumps are eligible
+$500/ton for new installations 
+$250/ton for existing unit replacement
+
+
+
+Outdoor power equipment electrification
+Battery and corded electric equipment only
+Members limited to one rebate per product except e-bikes
+An aggregated maximum rebate of $300 per member account excludes riding lawn mowers
+25% of cost up to $1000 for riding mower
+25% of cost up to $250 for 2-stage snow blower
+25% of cost up to $150 for snow blowers, walk-behind mowers and e-bikes
+25% of cost up to $100 for chainsaws
+25% of cost up to $50 for trimmers, leaf blowers & power washers
+50% cost up to $25 for addt'l. batteries with original purchase/application (limit 1 addt'l. battery per product)
