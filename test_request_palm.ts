@@ -13,7 +13,7 @@ const clientOptions = {
 
 const project = 'fleet-toolbox-404319';
 const publisher = 'google';
-const model = 'chat-bison@001';
+const model = 'chat-bison-32k';
 
 const predictionServiceClient = new PredictionServiceClient(clientOptions);
 const endpoint = `projects/${project}/locations/us-central1/publishers/${publisher}/models/${model}`;
