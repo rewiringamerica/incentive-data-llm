@@ -5,7 +5,7 @@ import { program, Option } from 'commander';
 import fs = require('node:fs/promises');
 import path = require('node:path');
 
-import { INCENTIVES_FILE_BASE, OUTPUT_DIR, CSV_OPTS } from './constants.js';
+import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, CSV_OPTS } from './constants.js';
 import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE_2_USER } from "./prompt.js"
 
 
@@ -91,7 +91,7 @@ async function main() {
 
         const parser = new AsyncParser(CSV_OPTS);
         const csv = await parser.parse(output).promise();
-        fs.writeFile(path.join(OUTPUT_DIR, opts.output_file), csv);
+        fs.writeFile(path.join(OUTPUT_FILE_BASE, opts.output_file), csv);
     })
 }
 

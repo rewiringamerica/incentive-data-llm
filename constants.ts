@@ -1,5 +1,5 @@
 export const INCENTIVES_FILE_BASE = "incentives_data/";
-export const OUTPUT_DIR = "out/";
+export const OUTPUT_FILE_BASE = "out/";
 
 
 export const CSV_OPTS = {
