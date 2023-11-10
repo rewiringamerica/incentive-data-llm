@@ -1,129 +1,3 @@
-Skip to main content
-￼
-	•	Home
-	•	About Us
-	◦	About Mountain Parks Electric
-	◦	Articles of Incorporation
-	◦	Board of Directors
-	◦	Board Meetings
-	▪	Board Bulletin
-	◦	Bylaws
-	◦	Director Elections
-	◦	Employment Opportunities
-	◦	IRS Form 990
-	◦	Public Board Policies
-	◦	Rates & Tariffs
-	▪	Electric Rates
-	▪	Tariff
-	◦	General Info & Stats
-	•	Community
-	◦	Community Support
-	◦	Scholarships & Youth Programs
-	◦	Donation Request
-	◦	Operation Round Up
-	◦	Event Sponsorship
-	•	Information & Programs
-	◦	Colorado Country Life Magazine
-	◦	Electric Vehicles
-	◦	Local Weather Data
-	◦	New Construction
-	◦	Online Survey
-	◦	Pilot Programs
-	◦	Prepaid Metering (EZ PAY)
-	◦	Rates & Tariff
-	◦	Contests & Giveaways
-	◦	Events
-	◦	Interconnection Procedures
-	◦	Reserve MPE's Community Room
-	•	Account Services
-	◦	Billing & Energy Assistance
-	◦	Capital Credits
-	◦	EZ Pay (Prepaid Metering)
-	◦	FAQs
-	◦	Higher Than Expected Electric Bill?
-	◦	SmartHub
-	◦	New Construction
-	◦	One-Time Payment
-	◦	Online Survey
-	◦	Pay My Bill
-	◦	Understanding Your Bill
-	•	Rebates & Renewables
-	◦	Renewable Energy Portfolio
-	◦	Clean Power Program & Net Metering
-	▪	Clean Power Program Contribution Form
-	▪	Clean Power Program Rebate Application
-	▪	Clean Power Grant
-	▪	Clean Power Program History & Stats
-	◦	Rebates
-	•	Safety
-	•	Contact Us
-Mailing Address PO Box 170 Granby, CO 80446-0170
-970-887-3378 memberservices@mpei.com
-￼
-￼ My Account
-￼ Report an Outage
-￼ MPE Solar
-￼ Outage Map
-Search
-
-	•	Home
-	•	About Us
-	◦	About Mountain Parks Electric
-	◦	Articles of Incorporation
-	◦	Board of Directors
-	◦	Board Meetings
-	▪	Board Bulletin
-	◦	Bylaws
-	◦	Director Elections
-	◦	Employment Opportunities
-	◦	IRS Form 990
-	◦	Public Board Policies
-	◦	Rates & Tariffs
-	▪	Electric Rates
-	▪	Tariff
-	◦	General Info & Stats
-	•	Community
-	◦	Community Support
-	◦	Scholarships & Youth Programs
-	◦	Donation Request
-	◦	Operation Round Up
-	◦	Event Sponsorship
-	•	Information & Programs
-	◦	Colorado Country Life Magazine
-	◦	Electric Vehicles
-	◦	Local Weather Data
-	◦	New Construction
-	◦	Online Survey
-	◦	Pilot Programs
-	◦	Prepaid Metering (EZ PAY)
-	◦	Rates & Tariff
-	◦	Contests & Giveaways
-	◦	Events
-	◦	Interconnection Procedures
-	◦	Reserve MPE's Community Room
-	•	Account Services
-	◦	Billing & Energy Assistance
-	◦	Capital Credits
-	◦	EZ Pay (Prepaid Metering)
-	◦	FAQs
-	◦	Higher Than Expected Electric Bill?
-	◦	SmartHub
-	◦	New Construction
-	◦	One-Time Payment
-	◦	Online Survey
-	◦	Pay My Bill
-	◦	Understanding Your Bill
-	•	Rebates & Renewables
-	◦	Renewable Energy Portfolio
-	◦	Clean Power Program & Net Metering
-	▪	Clean Power Program Contribution Form
-	▪	Clean Power Program Rebate Application
-	▪	Clean Power Grant
-	▪	Clean Power Program History & Stats
-	◦	Rebates
-	•	Safety
-	•	Contact Us
-
 Rebates
 To qualify for rebates, you must be an MPE member, have installed the appliances/lighting in your MPE service residence, submit receipts with appliance/lighting model and brand name and efficiency data to MPE within 90 days of purchase or 90 days of delivery/installation date .  Receipts can be mailed to MPE's Granby office, delivered in person at either the Granby or Walden offices or emailed to cmichalowski@mpei.com.  Rebates are typically processed within 60 days and applied as a credit to your MPE account.
 RESIDENTIAL REBATES
@@ -154,8 +28,9 @@ Terms & Conditions
 	•	$50 minimum purchase price
 	•	Receipt or invoice required with submittal (within 90 days of purchase)
 	•	Maximum rebate: $300 per member
-Energy Audit Rebates
-Click here to access the rebate application.
+
+
+
 Electric Water Heaters
 FUEL SWITCHING ONLY
 	•	from natural gas or propane water heater to electric
@@ -165,6 +40,9 @@ FUEL SWITCHING ONLY
 HEAT-PUMP WATER HEATER
 	•	$350 per unit
 	•	must be Energy-Star rated
+
+
+
 Appliance Rebates
 NOTE: To qualify for an appliance rebate, you must be an MPE member, provide invoicing within 90 days of purchase and buy Energy Star appliances (except for induction cooktops/ranges).
 Electric Clothes Dryers
@@ -173,15 +51,10 @@ Electric Clothes Dryers
 Induction Cooktops/Ranges (30-inch or larger)
 	•	* $100 per unit for electric-to-induction replacement
 	•	* $350 per unit for gas-to-induction replacement or new construction (MPE verification required)
-Refrigerators & Freezers RECYCLING ONLY
-	•	$60 (recycle) - full-size only (7.75 cubic feet or larger, limit 2)
-Led Lights (Residential)
-Lumen Requirements, Rebate Amount & Limits
-	•	500 lumens or greater
-	•	50% of material cost
-	•	$8 / bulb (maximum)
-	•	Limit: 50 bulbs per account per year
-	•	Have your LED light bulb receipts and copies of bulb packaging (showing # of lumens and bulb type) to include with your rebate application
+
+
+
+
 Heat Pump Equipment (Commercial & Residential)
 *AIR-SOURCE HEAT PUMPS (CONSUMER REBATES)
  tier 1 air-source heat pumps (HSPF 9, SEER 15)
@@ -192,12 +65,14 @@ Heat Pump Equipment (Commercial & Residential)
 	•	$1,000/ton, up to 6 tons
 	•	not to exceed 50% of equipment cost
 	•	air-to-water unit rebates also available
- *GROUND-SOURCE HEAT PUMPS
+
+*GROUND-SOURCE HEAT PUMPS
 	•	$500/ton for new systems
 	•	$250/ton for replacement systems
-ASHP INSTALLER REBATE ($250/unit, terms & conditions apply): > You must: (1) Contact MPE and let us know you are interested in the Quality Install (QI) program (2) Attend a FREE a 3-hour training class (you will also get 1 year access to Wright Soft’s mobile Manual J) (3) Complete a QI Rebate Form on each install, then MPE will cut you a check for $250
 NOTE: Cold-climate, air-source heat pumps (10 HSPF or higher) are more commonly being installed locally. MPE's pilot tests show a potential annual energy cost savings of ~30 percent. The units also provide air conditioning.
-Learn More
+
+
+
 Electric Vehicle Chargers
 NEW Installations
 	•	The lower of $1,000 or 50% of the total project cost (equipment & installation) of a Level 2, Wi-Fi capable EV charger 
@@ -209,63 +84,11 @@ CONDITIONS
 	•	To receive this rebate, you MUST enroll in the whole house time-of-use rate 
 	•	Wiring invoices MUST include physical address of work performed
 	•	A photo of the installation MUST be included with your receipts
-About EVs
+
+
 Renewable Energy Rebates
-Through the Green Power Program, MPE provides rebates for its member-consumers installing net-metered projects. Since 2011, MPE has rebated more than $300,000 to local renewable installations. 
-Learn More
-Smart Thermostats
- 
+Smart Thermostats 
 	•	$25
 	•	240-volt line-voltage only (for electric heat)
 	•	limit 5 per account
-COMMERCIAL REBATES
-Lighting Retrofit
-	•	1 project per year/per meter
-	•	LED lights only
-	•	Up to 50% of fixture/lamp cost, 500 lumens or greater
-	•	Product must be Energy Star or DLC certified
-	•	$20,000 per project cap
-	•	You must contact MPE within 90 days of purchase
-	•	Invoice, number of lights/lamp, cut sheet for each light/lamp
-EV Chargers
-NEW Installations
-	•	$500 for Level 2, Wi-Fi capable EV charger 
-	•	$500 for wiring for a Level 2, Wi-Fi capable EV charger
-	•	Level 3, DC fast chargers (must be publicly accessible): $3,000 - $7,500 (based on capacity of charger)
-	•	Invoices must be provided to MPE within 90 days of purchase/installation 
-QUALIFYING INSTALLATIONS
-	•	Level 2 & 3 chargers only (L1 does not qualify)
-	•	MUST be Wi-Fi capable
-CONDITIONS
-	•	Wiring invoices MUST include physical address of work performed
-LED Outdoor Parking Lot Lighting
-	•	Based on lumen output (check with MPE before purchasing)
-	•	25% of head cost
-	•	$20,000 per project cap
-
-
-
-
-
-
-
-Quick Links
-	•	Contact Us
-	•	News
-	•	Capital Credits
-
-Mountain Parks Electric, Inc.
-Mailing Address PO Box 170 Granby, CO 80446-0170
-970-887-3378 memberservices@mpei.com
-
-Get in Touch
-	•	
-	•	
-	•	
-	•	
-	•	
-Translate
-Select LanguageEnglishAfrikaansAlbanianArabicArmenianAzerbaijaniBasqueBelarusianBengaliBosnianBulgarianCatalanCebuanoChinese (Simplified)Chinese (Traditional)CroatianCzechDanishDutchEsperantoEstonianFilipinoFinnishFrenchGalicianGeorgianGermanGreekGujaratiHaitian CreoleHausaHebrewHindiHmongHungarianIcelandicIgboIndonesianIrishItalianJapaneseJavaneseKannadaKhmerKoreanLaoLatinLatvianLithuanianMacedonianMalayMalteseMaoriMarathiMongolianNepaliNorwegianPersianPolishPortuguesePunjabiRomanianRussianSerbianSlovakSlovenianSomaliSpanishSwahiliSwedishTamilTeluguThaiTurkishUkrainianUrduVietnameseWelshYiddishYorubaZulu
-©2023 Mountain Parks Electric, Inc. Serving North-Central Colorado.
-Powered by Co-op Web Builder ￼
 

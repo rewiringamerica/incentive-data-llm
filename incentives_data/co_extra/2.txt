@@ -1,15 +1,90 @@
-6) Measure
 
-Requirements
+Rebates are available on a first-come, first-served basis until funds are exhausted.
 
-Rebate amount
+The City of Glenwood Springs, CLEER and their partners are not responsible for loss or damages that
+may be caused by the contractor selected by the applicant to complete the project.
 
-Measure
+Rebates may be combined with other incentive programs, but the total rebate amount cannot exceed 50% of project costs.
 
-Requirements
+The rebate application form can be completed online at GarfieldCleanEnergy.org/gwse-rebates. The application and paid invoices must be submitted within 90 days of the project completion date.
+Annual GWSE rebate limit: $4,000 + bundle bonus per member per year. Rebates over $600 will require a signed W-9 tax form.
+Rebates from MEAN (Municipal Energy Agency of Nebraska, Glenwood Springs’ wholesale power provider) are administered separately by MEAN.
 
 
+Home Energy Assessment
+Must be performed by a BPI Building Analyst
+Include blower door test and a CAZ (Combustion Appliance Zone) test
+$200
 
-Rebate amount
 
-
+Air Sealing
+Project must obtain at least 10% air leakage reduction unless <=. 35 NACH pre-blower door is met
+Home Energy Assessment recommended
+Pre- and post-blower door test is recommended
+Gas-heated homes: 50% up to $500
+All-electric homes: 50% up to $1,000
+
+
+insulation
+Insulation project must meet 2015 IECC requirements
+Ceiling/Attic: R-49
+Wood frame wall: R-20 cavity insulation and R-5 continuous or R-13 cavity insulation and R-10 continuous 
+Wall: R-19 
+Floor: R-30 to R-38 
+Basement and basement wall: R-15; R-19 if more than 1 the insulation is located on the interior surface of the basement wall
+Gas-heated homes: 50% up to $500
+All-electric homes: 50% up to $1,000; additional $300 rebate available from MEAN
+
+
+Air Source Heat Pump or Ductless Mini-Split
+Must be conversion from a fossil fuel heating system
+AHRI Certification required 
+Ducted: HSPF 9+;
+Ductless: HSPF 10+
+Must be rated for cold climate and provide heat down to 5°F or colder
+Load calculation required
+50% up to $2,000; Additional $400-$1,200 in rebates available from MEAN
+
+
+Heat Pump Water Heater
+Must be conversion from a fossil fuel heating system
+Energy Star-rated
+Hybrid/electric heat pump water heater models only
+50% up to $1,000
+
+
+Thermostat - $50/unit
+Programmable Limit 4 per account
+Must be anall-electric home
+
+
+E-Bike - $200 ($500 for income-qualified residents)
+Purchased within 81601 zip code
+Limit 2 per account
+
+
+EV Charging Station - $500
+Must be installed by a licensed electrician
+Must be plugged into a NEMA 14-50 outlet or charger must be hardwired to a 240V circuit
+Must be Energy Star certified and UL Listed
+
+
+Clothes Washer Appliance-Rebate $75
+Appliance rebates require a separate rebate form
+pee found here: https://Awww.cogs.us/345/
+
+
+Custom Rebate
+Must be able to prove electricity savings
+Examples of qualifying measures: electrical panel upgrade related to fuel switch projects, induction stove, heat pump clothes dryer
+Homeowner or contractor must provide detailed description of project
+50% up to $1,000 Bundle Rebate*
+
+Bundle Rebate
+Airsealing + insulation + cold-climate heat pump - $500 bonus
+Airsealing + insulation + cold-climate heat pump + heat pump water heater - $1,000 bonus 
+
+
+Airsealing + insulation + cold-climate heat pump + electrical panel upgrade - $750 bonus
+
+* To be eligible for the bundle rebate, all projects must be completed within the same 90-day timeframe.

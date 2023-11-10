@@ -1,90 +1,67 @@
-
-	•	Jobs News
-￼
-Search
-
-Go
-	•	Board Info Account Sign In 
-	•	Account Services Save Energy & Money Safety Community About
-
-￼
-
-Sangre de Cristo Electric Association, Inc. > Save Energy & Money > Rebates > Heat Pump Rebates
 Heat Pump Rebates
-		Font Size:   Share & Bookmark  Feedback ￼Print
 
 Apply for a Heat Pump Rebate
 Heat Pump Rebate Information
 Rebate amounts are applied to your bill as credit within 60-90 days of processing. Installation must be inspected prior to approval of rebate.
 Please submit your rebate via the online form below.
-Heat Pump Rebate Form
-		Today's Date:* MM slash DD slash YYYY 
-		Date of Installation:* MM slash DD slash YYYY 
-		Member/Owner Name:* First  Last  
-		SDCEA Account #:* 
-		Email Address:*  
-		Installation Address:* Street Address  Address Line 2  City  State  Alabama Alaska American Samoa Arizona Arkansas California Colorado Connecticut Delaware District of Columbia Florida Georgia Guam Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Northern Mariana Islands Ohio Oklahoma Oregon Pennsylvania Puerto Rico Rhode Island South Carolina South Dakota Tennessee Texas Utah U.S. Virgin Islands Vermont Virginia Washington West Virginia Wisconsin Wyoming Armed Forces Americas Armed Forces Europe Armed Forces Pacific ZIP Code   
-		Consumer Type:*
-	◦	Residential
-	◦	Commercial
-		
-		System Type:*Air Source Ground Source Terminal Unit 
-		Product Manufacturer:* 
-		Product Model Number:* 
-		Number of Units:* Please enter a number from 1 to 300. 
-		Size (Total Installed Tons)* 
-		Energy Star Rated?:*Please verify your appliance is ENERGY STAR rated by finding an ENERGY STAR logo on your sales information or verifying through the ENERGY STAR website. Yes No 
-		SEER:* 
-		HSPF:* 
-		System Type Replacing:*Replacement of Existing Heat Pump Replacement of Other Electric Heat Replacement of Natural Gas/Propane Heat New Construction 
-		Controlled ETS Backup Heat?:*Yes No 
-		Hidden Attachments:Upload any supporting documentation for your rebate request, including itemized receipt. Accepted file types: pdf, jpg, png, gif, Max. file size: 60 MB.
-		Attachments:*Upload any supporting documentation for your rebate request, including itemized receipt. Drop files here or  Select files   Accepted file types: pdf, jpg, png, gif, Max. file size: 60 MB.  
 
-	•	Save Energy & Money
-	•	Rebates
-	•	Carbon Reduction
-	•	Consumer-Owned Solar Installation
-	•	Energy Savings Guides
-	•	Energy & Efficiency Assistance
-	•	Consumer Energy Tax Incentives
-	•	Building Benchmarking
-
-￼
-￼
-Start or Stop Service
-￼
-￼
-New Construction or Service Upgrade
-￼
-￼
-Carbon Reduction
-￼
-￼
-Outage Center
-
-￼
-Have a question? Contact us
-ADDRESSES
-￼
-HEADQUARTERS 29780 US Highway 24 N. Buena Vista, CO 81211
-￼
-MAILING ADDRESS PO Box 2013 Buena Vista, CO 81211
-PHONE NUMBERS
-￼
-MAIN OFFICE 719-395-2412
-￼
-TOLL FREE 844-395-2412
-SOCIAL MEDIA
-￼
-FACEBOOK
-￼
-TWITTER
-	•	SDCEA Programs & Services Guide (PDF)
-	•	Accessibility Notice
-	•	Privacy Policy
-	•	Terms of Use
-	•	Statement of Nondiscrimination
-© 2023 Sangre de Cristo Electric Association, Inc. All Rights Reserved. ￼ A Powerful Creation
-
-
+TRI-STATE GENERATION AND TRANSMISSION ASSOCIATION, INC.
+ELECTRIFY AND SAVE PROGRAM GUIDE
+Electric Heat Pump – Air Source
+PLEASE NOTE- All air-source heat pump incentives are based on the total “size” of the heat pump
+system’s outdoor unit or (in some cases) units, specifically the outdoor unit coil capacity in tons; while
+the indoor unit(s) impact the system efficiency ratings, indoor exchange unit capacities are not to be
+included in the total system size on the rebate application. One ton is defined as 12,000 BTUs for this
+purpose.
+Incentive
+• Tier 1- Efficient Air Source Heat Pump
+Required HSPF >= 9.0 and SEER >= 15
+<= 2 tons = $675 (not to exceed 50% equipment cost)
+> 2 tons = $1800 (not to exceed 50% equipment cost)
+•Tier 2 - Cold-Climate Certified Air Source Heat Pump
+HSPF >= 10.0 and SEER >= 16; variable speed compressor or a minimum of 3 stages (settings for fan
+speed)
+<= 2 tons = $1000 (not to exceed 50% equipment cost)
+> 2 tons = $2400 (not to exceed 50% equipment cost)
+•Air-to-water heat pump units will be taken on a case-by-case basis. Please include manufacturer,
+product model number, the rated capacity/size (in tons) and any efficiency specifications available.
+Program staff will validate specifications and calculate rebate using the same tier structure as air source
+heat pumps.
+• $100/unit additional incentive for central air source with integrated controlled ETS backup in lieu of a
+separate ETS incentive
+Product Guidelines
+• Attachments- receipts (including breakout of equipment and labor); AHRI Certificate required.
+• SEER is an industry performance indicator of cooling performance for air conditioners and heat pumps
+based on the matched set of indoor and outdoor equipment
+• HSPF is an industry performance indicator of heating performance for heat pumps based on the
+matched set of indoor and outdoor equipment
+• EER is an industry standard ratio of the cooling capacity to the power input
+• COP is an industry standard ratio of useful heating or cooling provided to work required 
+Air Source Heat Pump Quality Install
+Incentive
+• Up to $250 per installation for certified installers
+Product Requirements
+• Installers must complete training and complete required application to qualify for incentives
+• Contact Tri-State staff to enroll interested contractors
+• Installer applications must be submitted with the application for the member-consumer heat pump
+rebate application
+Product Guidelines
+• Attachments – completed forms should be attached to the heat pump application form • Multiple
+units installed at one account are subject to a limit of one (1) installer incentive. Tri-State staff should be
+contacted for interpretation or approval prior to installation
+• Installer application spreadsheet is available on the MIC for member system
+Electric Heat Pump – Ground Source
+Incentive
+• $500 per ton for new systems
+• $250 per ton for replacement systems
+• $100 per unit for ground source heat pump powered hot water (a.k.a. desuperheater)
+Product Requirements
+• EnergyStar® rating not required
+• New or replacement ground source heat pumps with closed-loop or open-loop water source heat
+pumps qualify
+Product Guidelines
+• Attachments - receipts (including breakout of equipment and labor)
+• A desuperheater is an optional heat transfer device for domestic water-heating from a ground source
+heat pump
+• Back-up and/or hot water storage tanks associated with a desuperheater are not eligible for additional
+rebates 
