@@ -1,0 +1,23 @@
+[
+  {
+    "ID": "CO-31",
+    "Data Source URL(s)": "https://denverhomeenergy.powerappsportals.com/faqs/",
+    "Authority Level": "Local",
+    "Authority (Name)": "City and County of Denver",
+    "Program Title": "Denver Climate Action Rebate Program-Home Energy Rebates",
+    "Program URL": "https://denverhomeenergy.powerappsportals.com/faqs/",
+    "Technology": "HVAC - Air Source Heat Pump",
+    "Program Description": "Rebate up to 40% of the total cost of an air source heat pump and installation, up to $1,500. Efficiency minimums apply.",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "40% of total cost up to $1,500",
+    "Amount Type": "percent",
+    "Number": "0.40",
+    "Amount Maximum": "1,500",
+    "Equipment Standards Restrictions": "Efficiency Minimums as of September 1st, 2023 (15.2 SEER2, 11.7 EER2, 7.8 HSPF2). Efficiency Minimums Prior to September 1st 2023: (15.0 SEER, 11.5 EER, 9.0 HSPF)* OR equivalent SEER2/EER2/HSPF2 performance (14.3 SEER2, 11.0 EER2, 7.7 HSPF2)",
+    "Contractor Restrictions": "Quality Install Required. Eligible contractors must be an Xcel Registered Trade Partner. The list of Xcel Trade Partners can be found here. Please select the “Heating and Cooling” category and select the “Heat Pumps” or “Air Conditioners” drop down to view the entire list. Applications submitted by non-Xcel certified contractors will be rejected.",
+    "Homeowner/Renter": "Homeowner",
+    "Other Restrictions": "•Only registered contractors can submit applications to the CARe program on behalf of the Denver resident at the installation address.\n• We recommend that you submit product specifications and either the AHRI or NEEP Certificate, with the Pre-application contract. We will review those documents and let you know if the equipment doesn't meet the requirements listed above.\n• To receive an instant rebate through the Denver Climate Action Rebate Program (CARe), equipment must be installed at an address located within the City and County of Denver.\n• Resident at the installation address must be an Xcel Energy customer.\n• Resident at the installation address must provide contractor with a copy/photo of a recent Xcel Energy utility bill."
+  }
+]

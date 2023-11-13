@@ -12,6 +12,8 @@ If they have some overlap in details, but also differ significantly, the grade i
 If they seem to have almost no overlap, the grade is "D".
 
 An example value might be be {"explanation": "The student answer doesn't mention light bulbs, whereas the expert answer does, but they both mention a per-consumer limit", "grade": "C"}.
+
+Be sure to return valid JSON, escaping any quotations in the explanations if necessary.
 `
 
 export const EXAMPLE_1_USER: string = `

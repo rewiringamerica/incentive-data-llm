@@ -1,0 +1,21 @@
+[
+  {
+    "ID": "VT-28",
+    "Data Source URL(s)": "https://www.driveelectricvt.com/incentives/vermont-state-incentives#mileagesmart",
+    "Authority Level": "State",
+    "Authority (Name)": "State of Vermont",
+    "Program Title": "MileageSmart Used High Efficiency Vehicle Incentive Program",
+    "Program URL": "https://www.driveelectricvt.com/incentives/vermont-state-incentives#mileagesmart",
+    "Technology": "Used Electric Vehicle",
+    "Program Description": "The State of Vermont has partnered with Capstone to offer the MileageSmart program. This offers low and moderate income car buyers an incentive covering 25% of the upfront cost of a used high efficiency vehicle, up to $5,000.",
+    "Program Status": "Active",
+    "Rebate Type": "Point of Sale rebate",
+    "Rebate Value": "25% of the upfront cost, up to $5,000",
+    "Amount Type": "percent",
+    "Amount Maximum": "$5,000",
+    "Number": "0.25",
+    "Equipment Standards Restrictions": "Vehicles must have an efficiency of 40 miles per gallon or higher. This includes many hybrid, plug-in hybrid and all-electric vehicles. The car needs to be pre-owned, rated at least 40 combined MPG or MPGe, and located at a Vermont Dealership.",
+    "Income Restrictions": "Must be at or below 80%  State Median Income (based on AGI). You must meet income eligibility requirements and be pre-approved prior to a purchase.",
+    "Homeowner/Renter": "Homeowner, Renter"
+  }
+]

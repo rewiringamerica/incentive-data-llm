@@ -1,0 +1,21 @@
+[
+  {
+    "ID": "VT-65",
+    "Data Source URL(s)": "https://www.efficiencyvermont.com/Media/Default/docs/rebates/forms/efficiency-vermont-smart-therm-rebate-form.pdf, https://www.efficiencyvermont.com/Media/Default/docs/rebates/forms/efficiency-vermont-smart-therm-rebate-form.pdf",
+    "Authority Level": "State",
+    "Authority (Name)": "Efficiency Vermont",
+    "Program Title": "Efficiency Vermont - Smart Thermostats",
+    "Program URL": "https://www.efficiencyvermont.com/rebates/list/smart-thermostats",
+    "Technology": "Smart Thermostat",
+    "Program Description": "Get up to $100 cash back on qualifying ENERGY STAR® smart thermostats if wholesale discount has not already been received on the purchase.",
+    "Program Status": "Paused",
+    "Program Start": "1/1/2019",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "Up to $100",
+    "Amount Type": "dollar amount",
+    "Number": "100",
+    "Equipment Standards Restrictions": "Must be Energy Star rated.",
+    "Homeowner/Renter": "Homeowner",
+    "Other Restrictions": "- Must be new, installed in Vermont, and listed on the Qualifying Products List at the time of purchase. Used, rebuilt, or refurbished equipment is not eligible.\n- Customer contribution of $50 to the pre-tax purchase price of each product is required.\n- Rebate is not valid if wholesale discount has already been received on the purchase of the unit. (Rebate cannot be combined with any other Efficiency Vermont offer (including point of purchase discounts)\n- After thermostat is installed and connected to wi-fi, it must be registered as a connected device with the manufacturer.\n- Lifetime limit of two smart thermostat rebates per Vermont residence and six per Vermont business location."
+  }
+]

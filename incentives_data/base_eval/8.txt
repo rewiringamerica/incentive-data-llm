@@ -1,0 +1,23 @@
+Incentives
+Residential customers can apply to receive rebates up to $1,000 for a solar PV installation. Rebate amounts are calculated based on the schedule of $/Watt of DC system generation capacity shown below and include a 20-year Renewable Energy Credit (REC) assignment to Fort Collins Utilities. See Eligibility Requirements below for more details.
+
+To ensure access to incentive funding to all eligible customers, we manage the solar rebate program incentive cap and earnings rate based on available funding. The table below shows the maximum incentive amount and incentive rate paid per kW of DC generating capacity installed.
+
+Incentive Table
+Maximum Incentive	$1,000
+Incentive Rate	$200/kW
+
+
+The actual incentive amount is calculated based on installed design and may be reduced due to modeled performance against optimal array orientation. 
+
+Solar PV system owner must be a residential Fort Collins Utilities electric customer.
+Solar PV Systems must be sold, designed and installed by a Participating Solar Contractor (no subcontracting outside the Participating Solar Contractor Network).
+PV system must be sized greater than 500 watts. 
+Systems must meet Utilities Interconnection Standards.
+Equipment must be new and UL listed and named on the eligible equipment list This link opens in a new browser tab.
+If the system is shaded between 9 a.m.-3 p.m., the applicant must submit a shading analysis (check with your solar contractor). 
+Customer agrees to manage trees and other potential shading sources to mitigate excess array shading from 9 a.m. to 3 p.m.
+Incentive rate may be reduced for systems generating less than 90% of optimal production.
+The system must be installed within six months of the rebate reservation letter.
+
+On-bill financing is available through the Epic Loan, subject to the project eligibility requirements listed above. Elevations Credit Union also offers Energy Loans.

@@ -3,49 +3,51 @@ export const SYSTEM: string = `You are a helpful assistant. I'm going to give yo
 An incentive is typically for a specific appliance or tool, like a heat pump, a battery, or a smaller tool like a snowblower. There are also free incentives like a home inspection for weatherization.
 
 Data fields:
-technology: required field. This is a enum. It should be one of the following values: Heat Pump Heating and Cooling(HVAC), HVAC - Air Source Heat Pump, Ground Source Heat Pump(GSHP) / Geothermal HP, HVAC - Air to Water Heat Pump, HVAC - Ducted Heat Pump, HVAC - Ductless Heat Pump, Heat Pump Water Heater(HPWH), New Electric Vehicle, Used Electric Vehicle, Electric Vehicle Charger, Rooftop Solar, Battery Storage, Heat Pump Dryers / Clothes Dryer, Electric Stove, Weatherization(insulation and air sealing), Electric wiring, Electric panel, Electric outdoor equipment, Smart Thermostat, E - Bike, Other
+Technology: required field. This is a enum. It should be one of the following values (ignoring quotes if they appear): Heat Pump Heating and Cooling (HVAC), HVAC - Air Source Heat Pump, Ground Source Heat Pump (GSHP) / Geothermal HP, HVAC - Air to Water Heat Pump, HVAC - Ducted Heat Pump, HVAC - Ductless Heat Pump, Heat Pump Water Heater (HPWH), New Electric Vehicle, Used Electric Vehicle, Electric Vehicle Charger, Rooftop Solar, Battery Storage, Heat Pump Dryers / Clothes Dryer, Electric Stove, Weatherization (insulation and air sealing), Electric wiring, Electric panel, "Electric lawn equipment (mower, edger, leaf blower, weedwhacker)", Smart Thermostat, E - Bike, Induction Cooktop, Other
 
-program_description: required field. a brief summary of the incentive, including the price, technology, and the most important restrictions, if any. No more than 150 characters.
+Program Description: required field. a brief summary of the incentive, including the price, Technology, and the most important restrictions, if any. No more than 150 characters.
 
-program_status: required field. This is an enum. It should be one of the following values: Active, Expired, Paused, Unknown
+Program Status: required field. This is an enum. It should be one of the following values: Active, Expired, Paused, Unknown
 
-program_start: a date the program started, if any
+Program Start: a date the program started, if any
 
-program_end: a date the program ended, if any
+Program End: a date the program ended, if any
 
-rebate_type: required field. This field should be one or more of Point of Sale rebate, After purchase rebate, account credit, tax credit, or assistant program(free service).If the passage instructs the user to mail in or submit an application, it is "After purchase rebate".If it says it will apply it as a credit on the utility bill, it is "account credit".
+Rebate Type: required field. This field should be one or more of Point of Sale rebate, Rebate (post purchase), Account Credit, Tax Credit, or assistance program (free service). If the passage instructs the user to mail in or submit an application, it is "Rebate (post purchase)". If it says it will apply it as a credit on the utility bill, it is "Account Credit".
 
-rebate_value: required field. A free-text version of the value of the rebate (e.g. $2, $500 per ton)
+Rebate Value: required field. A free-text version of the value of the rebate (e.g. $2, $500 per ton)
 
-number: required field. Only the number of the rebate value.If the rebate_value is "$2,500", it would be 2500, and if the rebate_value is "$100 / ton", it would be 100.
+Number: required field. Only the number of the Rebate Value. If the Rebate Value is "$2,500", it would be 2500, and if the Rebate Value is "$100 / ton", it would be 100. Give percentages as a decimal; e.g. 25% is 0.25. Do not include commas or units like $ or % in your answer.
 
-amount_type: required field. This is an enum. Possible values are: "dollar amount", "percent", or "amount per unit", depending on how the rebate_value is expressed.
+Amount Type: required field. This is an enum. Possible values are: "dollar amount", "percent", or "amount per unit", depending on how the Rebate Value is expressed.
 
-unit: if the Amount type is amount per unit, then this will be the corresponding unit, such as ton, sq ft, or kilowatt
+Unit: if the Amount type is amount per unit, then this will be the corresponding unit, such as ton, sq ft, or kilowatt
 
-amount_minimum: minimum amount associated with the incentive, if any
+Amount Minimum: minimum amount associated with the incentive, if any
 
-amount_maximum: the maximum amount mentioned by an incentive, if any. For example, if the incentive reads "up to $50", then this would be 50.
+Amount Maximum: the maximum amount mentioned by an incentive, if any. For example, if the incentive reads "up to $50", then this would be 50.
 
-bonus_description: description of the bonus mentioned in the incentive, if any
+Bonus Description: description of the bonus mentioned in the incentive, if any
 
-equipment_standards_restrictions: specifications for the efficiency of the appliance, if any
+Equipment Standards Restrictions: specifications for the efficiency of the appliance, if any
 
-equipment_capacity_restrictions: requirements for the size or capacity of the unit
+Equipment Capacity Restrictions: requirements for the size or capacity of the unit
 
-contractor_restrictions: requirements for how the unit is installed, such as whether a licensed contractor is required
+Contractor Restrictions: requirements for how the unit is installed, such as whether a licensed contractor is required
 
-income_restrictions: if the customer has any restrictions on their income in order to claim the rebate
+Income Restrictions: if the customer has any restrictions on their income in order to claim the rebate
 
-homeowner_renter: if the incentive is restricted to either homeowners or renters, mention it here
+Tax-Filing Status Restrictions: if there are any restrictions on the customer's tax-filing status (e.g. single, joint filing), list them here
 
-other_restrictions: for other important restrictions not covered by the above
+Homeowner/Renter: if the incentive is restricted to either homeowners or renters, mention it here
 
-stacking_details: for any restrictions on how rebates can be combined
+Other Restrictions: for other important restrictions not covered by the above
 
-financing: if information is given related to how to finance the project, include it here
+Stacking Details: for any restrictions on how rebates can be combined
 
-The following are required fields and you must create an answer for them: technology, program_description, program_start, rebate_type, rebate_value, number, and amount_type.`
+Financing Details: if information is given related to how to finance the project, include it here
+
+The following are required fields and you must create an answer for them: Technology, Program Description, Program Start, Rebate Type, Rebate Value, number, and Amount Type.`
 
 export const EXAMPLE_1_USER: string = `Air Source Heat Pump Water Heater Rebate
 These incentives are valid for purchases made between January 1, 2023, and December 31, 2023.
@@ -89,82 +91,82 @@ Rebate Amounts
 Single Stage Snow Blower - 25% of Price up to $150
 Riding Lawn Mower - 50% of price up to $1000`
 
-export const EXAMPLE_1_RESPONSE = `[
+export const EXAMPLE_1_RESPONSE: string = `[
     {
-      "technology": "HVAC - Air Source Heat Pump",
-      "program_description": "$350 per heating ton rebate for qualifying Air Source Heat Pump Water Heater (30 Gallon Minimum)",
-      "program_status": "Active",
-      "program_start": "1/1/2023",
-      "program_end": "12/31/2023",
-      "rebate_type": "Account Credit",
-      "rebate_value": "$350 per heating ton",
-      "number": 350,
-      "amount_type": "dollar per unit",
-      "unit": "heating ton",
-      "equipment_standards_restrictions": "Must be Energy Star® rated.",
-      "equipment_capacity_restrictions": "30 Gallon Minimum",
-      "other_restrictions": "Backup units, electric resistance water heaters, and tankless water heaters are not eligible."
+      "Technology": "HVAC - Air Source Heat Pump",
+      "Program Description": "$350 per heating ton rebate for qualifying Air Source Heat Pump Water Heater (30 Gallon Minimum)",
+      "Program Status": "Active",
+      "Program Start": "1/1/2023",
+      "Program End": "12/31/2023",
+      "Rebate Type": "Account Credit",
+      "Rebate Value": "$350 per heating ton",
+      "Number": 350,
+      "Amount Type": "dollar per unit",
+      "Unit": "heating ton",
+      "Equipment Standards Restrictions": "Must be Energy Star® rated.",
+      "Equipment Capacity Restrictions": "30 Gallon Minimum",
+      "Other Restrictions": "Backup units, electric resistance water heaters, and tankless water heaters are not eligible."
     },
     {
-      "technology": "Heat Pump Dryers / Clothes Dryer",
-      "program_description": "$60 rebate for Electric Clothes Dryer",
-      "program_status": "Active",
-      "program_start": "1/1/2023",
-      "program_end": "12/31/2023",
-      "rebate_type": "Account Credit",
-      "rebate_value": $60,
-      "number": 60,
-      "amount_type": "dollar amount",
-      "contractor_restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
+      "Technology": "Heat Pump Dryers / Clothes Dryer",
+      "Program Description": "$60 rebate for Electric Clothes Dryer",
+      "Program Status": "Active",
+      "Program Start": "1/1/2023",
+      "Program End": "12/31/2023",
+      "Rebate Type": "Account Credit",
+      "Rebate Value": $60,
+      "Number": 60,
+      "Amount Type": "dollar amount",
+      "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
     },
     {
-      "technology": "Heat Pump Dryers / Clothes Dryer",
-      "program_description": "$120 rebate for Heat Pump Ventless Electric Clothes Dryer",
-      "program_status": "Active",
-      "program_start": "1/1/2023",
-      "program_end": "12/31/2023",
-      "rebate_type": "Account Credit",
-      "rebate_value": "$120",
-      "number": 120,
-      "amount_type": "dollar amount",
-      "contractor_restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
+      "Technology": "Heat Pump Dryers / Clothes Dryer",
+      "Program Description": "$120 rebate for Heat Pump Ventless Electric Clothes Dryer",
+      "Program Status": "Active",
+      "Program Start": "1/1/2023",
+      "Program End": "12/31/2023",
+      "Rebate Type": "Account Credit",
+      "Rebate Value": "$120",
+      "Number": 120,
+      "Amount Type": "dollar amount",
+      "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
     },
     {
-      "technology": "Induction Cooktop",
-      "program_description": "$350 rebate for Induction Cooktops (30\" or Larger) after converting from natural gas or propane",
-      "program_status": "Active",
-      "program_start": "1/1/2023",
-      "program_end": "12/31/2023",
-      "rebate_type": "Account Credit",
-      "rebate_value": "$350",
-      "number": 350,
-      "amount_type": "dollar amount",
-      "equipment_standards_restrictions": "Must be an Induction Cooktop (30\" or Larger).",
-      "contractor_restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
+      "Technology": "Induction Cooktop",
+      "Program Description": "$350 rebate for Induction Cooktops (30" or Larger) after converting from natural gas or propane",
+      "Program Status": "Active",
+      "Program Start": "1/1/2023",
+      "Program End": "12/31/2023",
+      "Rebate Type": "Account Credit",
+      "Rebate Value": "$350",
+      "Number": 350,
+      "Amount Type": "dollar amount",
+      "Equipment Standards Restrictions": "Must be an Induction Cooktop (30" or Larger).",
+      "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
     },
     {
-      "technology": "Electric outdoor equipment",
-      "program_description": "25% of price up to $150 for Single Stage Snow Blower",
-      "program_status": "Active",
-      "program_start": "1/1/2023",
-      "program_end": "12/31/2023",
-      "rebate_type": "Account Credit",
-      "rebate_value": "25% of price up to $150",
-      "number": 25,
-      "amount_type": "percent",
-      "amount_maximum": 150
+      "Technology": "Electric outdoor equipment",
+      "Program Description": "25% of price up to $150 for Single Stage Snow Blower",
+      "Program Status": "Active",
+      "Program Start": "1/1/2023",
+      "Program End": "12/31/2023",
+      "Rebate Type": "Account Credit",
+      "Rebate Value": "25% of price up to $150",
+      "Number": 0.25,
+      "Amount Type": "percent",
+      "Amount Maximum": 150
     },
     {
-      "technology": "Electric outdoor equipment",
-      "program_description": "50% of price up to $1000 for Riding Lawn Mower",
-      "program_status": "Active",
-      "program_start": "1/1/2023",
-      "program_end": "12/31/2023",
-      "rebate_type": "Account Credit",
-      "rebate_value": "50% of price up to $1000",
-      "number": 0.5,
-      "amount_type": "percent",
-      "amount_maximum": 1000
+      "Technology": "Electric outdoor equipment",
+      "Program Description": "50% of price up to $1000 for Riding Lawn Mower",
+      "Program Status": "Active",
+      "Program Start": "1/1/2023",
+      "Program End": "12/31/2023",
+      "Rebate Type": "Account Credit",
+      "Rebate Value": "50% of price up to $1000",
+      "Number": 0.5,
+      "Amount Type": "percent",
+      "Amount Maximum": 1000
     }
 ]`
 
@@ -174,7 +176,7 @@ This incentive is currently paused due to lack of funds.
 Rebate may apply to the purchase of a new vehicle and will be automatically at the time of sale.
 In no case will the rebate exceed 50% of the purchase price.
 Limit 1 rebate of each type per member per year.
-Financing is available via Empower Loans. For more details, see www.empower.com.
+Financing Details is available via Empower Loans. For more details, see www.empower.com.
 The SMPA member applying for the rebate must register the vehicle in the same county as the their SMPA account. Proof of registration must be uploaded to the application.
 To be eligible for the rebate, the vehicle must not have been previously registered in any county served by SMPA.
 
@@ -198,48 +200,48 @@ Has a maximum speed of 25 mph`
 
 export const EXAMPLE_2_RESPONSE = `[
   {
-    "technology": "New Electric Vehicle",
-    "program_description": "$750 rebate for new All Electric Plug-In Vehicle (EV), capped at 50% of purchase price",
-    "program_status": "Paused",
-    "rebate_type": "Point of sale rebate",
-    "rebate_value": "$750 capped at 50% of price",
-    "number": 0.5,
-    "amount_type": "percent",
-    "amount_maximum": "$750",
-    "equipment_standards_restrictions": "Has a maximum speed of at least 65 mph",
-    "equipment_capacity_restrictions": "Has a gross vehicle weight rating of 8,500 pounds or less",
-    "other_restrictions": "Proof of registration in the same county as the SMPA account required.",
-    "stacking_details": "Limit 1 rebate of each type per member per year.",
-    "financing": "Financing is available via Empower Loans. For more details, see www.empower.com."
+    "Technology": "New Electric Vehicle",
+    "Program Description": "$750 rebate for new All Electric Plug-In Vehicle (EV), capped at 50% of purchase price",
+    "Program Status": "Paused",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "$750 capped at 50% of price",
+    "Number": 0.5,
+    "Amount Type": "percent",
+    "Amount Maximum": "750",
+    "Equipment Standards Restrictions": "Has a maximum speed of at least 65 mph",
+    "Equipment Capacity Restrictions": "Has a gross vehicle weight rating of 8,500 pounds or less",
+    "Other Restrictions": "Proof of registration in the same county as the SMPA account required.",
+    "Stacking Details": "Limit 1 rebate of each type per member per year.",
+    "Financing Details": "Financing Details is available via Empower Loans. For more details, see www.empower.com."
   },
   {
-    "technology": "New Electric Vehicle",
-    "program_description": "$250 rebate for new Plug-In Hybrid Electric Vehicle (PHEV), capped at 50% of purchase price",
-    "program_status": "Paused",
-    "rebate_type": "Point of sale rebate",
-    "rebate_value": "$250 capped at 50% of price",
-    "number": 0.5,
-    "amount_type": "percent",
-    "amount_maximum": "$250",
-    "equipment_standards_restrictions": "Has a maximum speed of at least 65 mph",
-    "equipment_capacity_restrictions": "Has a gross vehicle weight rating of 8,500 pounds or less",
-    "other_restrictions": "Proof of registration in the same county as the SMPA account required.",
-    "stacking_details": "Limit 1 rebate of each type per member per year.",
-    "financing": "Financing is available via Empower Loans. For more details, see www.empower.com."
+    "Technology": "New Electric Vehicle",
+    "Program Description": "$250 rebate for new Plug-In Hybrid Electric Vehicle (PHEV), capped at 50% of purchase price",
+    "Program Status": "Paused",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "$250 capped at 50% of price",
+    "Number": 0.5,
+    "Amount Type": "percent",
+    "Amount Maximum": "250",
+    "Equipment Standards Restrictions": "Has a maximum speed of at least 65 mph",
+    "Equipment Capacity Restrictions": "Has a gross vehicle weight rating of 8,500 pounds or less",
+    "Other Restrictions": "Proof of registration in the same county as the SMPA account required.",
+    "Stacking Details": "Limit 1 rebate of each type per member per year.",
+    "Financing Details": "Financing Details is available via Empower Loans. For more details, see www.empower.com."
   },
   {
-    "technology": "New Electric Vehicle",
-    "program_description": "$250 rebate for new Neighborhood Electric Vehicle (NEV), capped at 50% of purchase price",
-    "program_status": "Paused",
-    "rebate_type": "Point of sale rebate",
-    "rebate_value": "$250 capped at 50% of price",
-    "number": 0.5,
-    "amount_type": "percent",
-    "amount_maximum": "$250",
-    "equipment_standards_restrictions": "Has a maximum speed of 25 mph",
-    "equipment_capacity_restrictions": "Has a gross vehicle weight rating of 3,000 pounds or less",
-    "other_restrictions": "Proof of registration in the same county as the SMPA account required.",
-    "stacking_details": "Limit 1 rebate of each type per member per year.",
-    "financing": "Financing is available via Empower Loans. For more details, see www.empower.com."
+    "Technology": "New Electric Vehicle",
+    "Program Description": "$250 rebate for new Neighborhood Electric Vehicle (NEV), capped at 50% of purchase price",
+    "Program Status": "Paused",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "$250 capped at 50% of price",
+    "Number": 0.5,
+    "Amount Type": "percent",
+    "Amount Maximum": "250",
+    "Equipment Standards Restrictions": "Has a maximum speed of 25 mph",
+    "Equipment Capacity Restrictions": "Has a gross vehicle weight rating of 3,000 pounds or less",
+    "Other Restrictions": "Proof of registration in the same county as the SMPA account required.",
+    "Stacking Details": "Limit 1 rebate of each type per member per year.",
+    "Financing Details": "Financing Details is available via Empower Loans. For more details, see www.empower.com."
   }
 ]`

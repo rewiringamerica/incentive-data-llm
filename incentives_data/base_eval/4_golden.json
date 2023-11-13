@@ -1,0 +1,22 @@
+[
+  {
+    "ID": "CT-8",
+    "Data Source URL(s)": "https://norwichpublicutilities.com/residential/efficiency-programs-rebates/#nav-anchor-to-2, http://norwichpublicutilities.com/wp-content/uploads/2023/06/2023-Heat-Pump-Dryer-Rebate-Form.pdf",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Norwich Public Utilities",
+    "Program Title": "Energy Efficiency Program",
+    "Program URL": "https://norwichpublicutilities.com/residential/efficiency-programs-rebates/",
+    "Technology": "Heat Pump Dryers / Clothes Dryer",
+    "Program Description": "Rebate for the full cost up to $500 off an eligible high-efficiency heat pump clothes dryer.",
+    "Program Status": "Expired",
+    "Program Start": "7/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Account credit, rebate (post purchase)",
+    "Rebate Value": "Up to $500",
+    "Amount Type": "dollar amount",
+    "Number": "500",
+    "Equipment Standards Restrictions": "Must be Energy Star rated.",
+    "Homeowner/Renter": "Homeowner",
+    "Stacking Details": "Limit one rebate application per NPU electric utility account."
+  }
+]

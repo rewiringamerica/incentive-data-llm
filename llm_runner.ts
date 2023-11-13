@@ -39,7 +39,14 @@ async function main() {
   const promises: Promise<void>[] = [];
   const output: object[] = [];
   const metadata_fields: Set<string> = new Set<string>();
+
+
   for (const folder of opts.folders) {
+    await fs.mkdir(path.join(OUTPUT_FILE_BASE, folder)).catch(err => {
+      if (err.code !== 'EEXIST') {
+        console.log(err);
+      }
+    });
     const files = await fs.readdir(path.join(INCENTIVES_FILE_BASE, folder));
     for (const file of files) {
       if (!file.endsWith(".txt")) continue;
@@ -59,20 +66,25 @@ async function main() {
 
       console.log(`Querying ${opts.model_family} with ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
       const queryFunc = opts.model_family == 'palm' ? queryPalm : queryGpt;
-      const promise = queryFunc(txt, SYSTEM, [[EXAMPLE_1_USER, EXAMPLE_1_RESPONSE], [EXAMPLE_2_USER, EXAMPLE_2_RESPONSE]]).then(msg => {
+      const promise = queryFunc(txt, SYSTEM, [[EXAMPLE_1_USER, EXAMPLE_1_RESPONSE], [EXAMPLE_2_USER, EXAMPLE_2_RESPONSE]]).then(async msg => {
         if (msg == "") return;
         console.log(`Got response from ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
         try {
           const records = JSON.parse(msg);
           let incentive_order_key = 0;
+          let combined: object = {};
           for (const record of records) {
             record['state'] = folder;
             record['file'] = file; // For debugging.
             record['order'] = incentive_order_key;
-            const combined = { ...record, ...metadata_json };
+            combined = { ...record, ...metadata_json };
             output.push(combined);
             incentive_order_key += 1;
           }
+          await fs.writeFile(path.join(OUTPUT_FILE_BASE, folder, file.replace(".txt", "_output.json")), JSON.stringify([combined]), {
+            encoding: "utf-8",
+            flag: "w"
+          })
         } catch (error) {
           console.error(`Error parsing json: ${error}, ${msg}`);
         }

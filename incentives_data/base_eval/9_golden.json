@@ -1,0 +1,25 @@
+[
+  {
+    "ID": "CO-342",
+    "Data Source URL(s)": "https://energysmartyes.com/rebates-financing/boco-rebates/, https://assets-partners.bouldercounty.gov/wp-content/uploads/sites/2/2023/01/EnergySmart-2023-Rebate-Eligible-Measures-List-1.pdf",
+    "Authority Level": "Local",
+    "Authority (Name)": "Boulder County",
+    "Program Title": "EnergySmart",
+    "Program URL": "https://energysmartyes.com/rebates-financing/boco-rebates/",
+    "Technology": "HVAC - Ductless Heat Pump",
+    "Program Description": "Rebate for 50% of project costs up to $400 for a Cold Climate Ductless (Mini-Split) Air Source Heat Pump",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "50% of project cost up to $400",
+    "Amount Type": "percent",
+    "Number": "0.50",
+    "Amount Maximum": "$400",
+    "Bonus Description": "*Additional $100 rebate if replacing a gas furnace or boiler with an air or ground source heat pump. Requires proof of removal",
+    "Equipment Standards Restrictions": "*HSPF ≥10.0/SEER≥15.0/COP ≥ 1.75@5◦F or capacity @ 5◦F of at least 70% of BTU @ 47◦F .\n*Must be NEEP.org certified.\n*For air source heat pump (ASHPs) a thermostatic expansion valve within the appliance is required.",
+    "Homeowner/Renter": "Homeowner",
+    "Other Restrictions": "*Rebates are available to EnergySmart participants residing in Boulder County (sign up here). \n*In order to receive a rebate residents must work with an EnergySmart advisor and pre-qualify before making a purchase or beginning a project.\n*To get started, contact an EnergySmart advisor at 303-544-1000 or email info@EnergySmartYes.com. \n*Rebates cannot exceed the cost of the measure after all other rebates are applied\n*All work must be completed and invoiced between January 1, 2023 and December 31, 2023 to qualify for these rebates",
+    "Stacking Details": "*Total lifetime maximum of all heat pump, weatherization, water heater, and stove rebates cannot exceed $1,800/home and $6,000/owner of multiple properties (including past EnergySmart rebates)."
+  }
+]

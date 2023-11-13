@@ -1,0 +1,19 @@
+[
+  {
+    "ID": "VT-62",
+    "Data Source URL(s)": "https://www.efficiencyvermont.com/rebates/list/lawn-care, https://www.stoweelectric.com/rebates/electric-yard-equipment, https://ca828986-8444-4703-97c4-7a3e19d49c8a.usrfiles.com/ugd/ca8289_2bcdec6f41994a8f8b7d92186d6662f4.pdf",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Stowe Electric Department",
+    "Program URL": "https://www.stoweelectric.com/rebates/electric-yard-equipment",
+    "Technology": "Electric lawn equipment (mower, edger, leaf blower, weedwhacker)",
+    "Program Description": "$25 for residential electric trimmers and blowers purchases in 2023",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "$25",
+    "Amount Type": "dollar amount",
+    "Number": "25",
+    "Homeowner/Renter": "Homeowner, Renter"
+  }
+]

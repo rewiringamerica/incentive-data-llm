@@ -1,0 +1,25 @@
+[
+  {
+    "ID": "CT-16",
+    "Data Source URL(s)": "https://energizect.com/rebates-incentives/heating-cooling/heat-pumps/ground-source-residential, https://energizect.com/sites/default/files/2023-06/0523_ECT_3746341_Rebate%20Form%20Updates_GROUND%20SOURCE%20HP_FILL.pdf",
+    "Authority Level": "Utility",
+    "Authority (Name)": "The United Illuminating Company",
+    "Program Title": "Residential Ground Source Heat Pump Incentive",
+    "Program URL": "https://energizect.com/rebates-incentives/heating-cooling/heat-pumps/ground-source-residential",
+    "Technology": "Ground Source Heat Pump (GSHP) / Geothermal HP",
+    "Program Description": "$2,000 per ton after-purchase rebate for qualifying ground source heat pumps, up to $15,000",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "$2,000 per ton, up to $15,000",
+    "Amount Type": "dollar per unit",
+    "Unit": "ton",
+    "Number": "2000",
+    "Amount Maximum": "15000",
+    "Equipment Standards Restrictions": "Minimum efficiency depends on type. GLHP - Closed Loop Water to Air: EER 17.1, COP 3.6. DX - Direct Expansion Refrigerant: EER 16, COP 3.6. W to W - Water to Water: EER 16.1, COP 3.1",
+    "Contractor Restrictions": "Equipment must be installed by a contractor participating in the Energize CT Heat Pump Installer Network.",
+    "Homeowner/Renter": "Homeowner",
+    "Other Restrictions": "Equipment must replace oil, propane, natural gas, or electric baseboard as the primary heating system."
+  }
+]

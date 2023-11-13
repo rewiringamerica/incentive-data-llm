@@ -7,6 +7,7 @@ import { SYSTEM, EXAMPLE_1_USER, EXAMPLE_1_RESPONSE } from './prompt_eval.js'
 // 0 is an exact match; 1 is a terrible match.
 const FUZZY_MATCH_THRESHOLD = 0.5
 const KEY_NAME = 'Column'
+const ROW_TOTAL = 'Row Total'
 
 enum Grade {
   Unspecified = 'Unspecified',
@@ -38,29 +39,29 @@ const MODEL_GRADES = new Map<string, Grade>([
 // These fields will be compared by a fuzzy match algorithm to basically test
 // that we got that answer or extremely close.
 const FUZZY_MATCH_FIELDS: string[] = [
-  'Technology*',
+  'Technology',
   'Program Status',
   'Program Start',
   'Program End',
   'Rebate Type',
-  'Amount Type*',
-  'Number*',
+  'Amount Type',
+  'Number',
   'Unit',
   'Amount Minimum',
   'Amount Maximum',
   'Amount Representative',
-  'Homeowner/ Renter',
+  'Homeowner/Renter',
 ]
 
 const MODEL_GRADED_FIELDS: string[] = [
-  'Rebate Value*',
-  'Program Description (guideline)',
+  'Rebate Value',
+  'Program Description',
   'Bonus Description',
   'Equipment Standards Restrictions',
   'Equipment Capacity Restrictions',
   'Contractor Restrictions',
   'Income Restrictions',
-  'Tax-filing Status Restrictions',
+  'Tax-Filing Status Restrictions',
   'Other Restrictions',
   'Financing Details',
   'Stacking Details'
@@ -114,7 +115,7 @@ export class Differ {
         }
       }
     } catch (err) {
-      console.log(err)
+      console.log(`Error while parsing ${resp}: ${err}`)
     }
     return diff
   }
@@ -201,17 +202,26 @@ export class Differ {
         const freq = keyFrequencies.get(key)!
         const grade = diff.diffs[key].grade!
         freq.set(grade, 1 + (freq.get(grade) ?? 0))
+        freq.set(ROW_TOTAL, 1 + (freq.get(ROW_TOTAL) ?? 0))
       }
     }
     const report: Report = []
+    const totals: Map<string, number> = new Map();
     keyFrequencies.forEach((val, key) => {
       const row: Record<string, unknown> = {}
       val.forEach((count, grade) => {
         row[grade] = count
+        totals.set(grade, count + (totals.get(grade) ?? 0))
       })
       row[KEY_NAME] = key
       report.push(row)
     })
+    const row: Record<string, unknown> = {}
+    row[KEY_NAME] = "Column Totals"
+    totals.forEach((val, grade) => {
+      row[grade] = val
+    })
+    report.push(row)
     return report
   }
 
@@ -221,6 +231,7 @@ export class Differ {
     for (const key of keys) {
       fields.push(Grade[key])
     }
+    fields.push(ROW_TOTAL)
     const parser = new AsyncParser({ fields: fields })
 
     const csv = await parser.parse(report).promise()
