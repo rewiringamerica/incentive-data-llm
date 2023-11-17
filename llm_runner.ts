@@ -1,24 +1,26 @@
 
 import { AsyncParser } from '@json2csv/node';
-import { program, Option } from 'commander';
+import { program, Option, OptionValues } from 'commander';
 
 import fs = require('node:fs/promises');
 import path = require('node:path');
 
-import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, CSV_OPTS } from './constants.js';
+import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, OUTPUT_SUBDIR, CSV_OPTS } from './constants.js';
 import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE_2_USER } from "./prompt.js"
 
 import { queryPalm } from "./palm_wrapper.js";
-import { queryGpt } from "./gpt_wrapper.js";
+import { GptWrapper } from "./gpt_wrapper.js";
 
 
 program
   .requiredOption("-f, --folders <folders...>", "Name of folder(s) under incentives_data/ where text data is located.")
-  .option("-r, --restrict <restrict_files...>", 'Will process only the files supplied. Useful for re-dos.')
+  .option("-r, --restrict <restrict_files...>", 'Will process only the files supplied. Useful for re-dos. Give the full path including INCENTIVES_FILE_BASE')
   .option("-o, --output_file <file>", 'Name of output file. Saved in the out/ directory.', "output.csv")
-  .addOption(new Option("-m, --model_family <model_family>", 'Name of model family to use – either gpt or palm, which controls which model will be queried').choices(['gpt', 'palm']).default('palm'));
+  .option("-w, --wait <duration_ms>", "How long to wait in ms between requests to avoid rate limiting")
+  .addOption(new Option("-m, --model_family <model_family>", 'Name of model family to use for queries').choices(['gpt4', 'gpt', 'palm']).default('palm'));
 
 program.parse();
+
 
 async function retrieveMetadata(folder: string, file: string): Promise<object> {
   const metadata_file = path.parse(file).name + "_metadata.json"
@@ -33,6 +35,14 @@ async function retrieveMetadata(folder: string, file: string): Promise<object> {
   }
 }
 
+function getParamsForLogging(opts: OptionValues) {
+  return {
+    model: opts.model_family,
+    system: SYSTEM,
+    examples: [[EXAMPLE_1_USER, EXAMPLE_1_RESPONSE], [EXAMPLE_2_USER, EXAMPLE_2_RESPONSE]]
+  }
+}
+
 async function main() {
   const opts = program.opts();
 
@@ -40,9 +50,18 @@ async function main() {
   const output: object[] = [];
   const metadata_fields: Set<string> = new Set<string>();
 
+  const runId = Date.now().toString()
 
+  await fs.mkdir(path.join(OUTPUT_FILE_BASE, runId));
+  await fs.writeFile(path.join(OUTPUT_FILE_BASE, runId, "parameters.json"), JSON.stringify(getParamsForLogging(opts)), {
+    encoding: "utf-8",
+    flag: "w"
+  });
+
+  await fs.mkdir(path.join(OUTPUT_FILE_BASE, runId, OUTPUT_SUBDIR));
+  const droppedFiles: string[] = [];
   for (const folder of opts.folders) {
-    await fs.mkdir(path.join(OUTPUT_FILE_BASE, folder)).catch(err => {
+    await fs.mkdir(path.join(OUTPUT_FILE_BASE, runId, OUTPUT_SUBDIR, folder)).catch(err => {
       if (err.code !== 'EEXIST') {
         console.log(err);
       }
@@ -50,12 +69,12 @@ async function main() {
     const files = await fs.readdir(path.join(INCENTIVES_FILE_BASE, folder));
     for (const file of files) {
       if (!file.endsWith(".txt")) continue;
-      if (opts.restrict && !(opts.restrict.includes(file))) {
+      if (opts.restrict && !(opts.restrict.includes(path.join(INCENTIVES_FILE_BASE, folder, file)))) {
         continue;
       }
-      const txt = await fs.readFile(path.join(INCENTIVES_FILE_BASE, folder, file), { encoding: 'utf8' });
+      const txt = (await fs.readFile(path.join(INCENTIVES_FILE_BASE, folder, file), { encoding: 'utf8' })).trim();
       if (txt.length == 0) {
-        console.log(`Skipping ${file} because it is empty`)
+        console.log(`Skipping ${path.join(folder, file)} because it is empty`)
         continue;
       }
 
@@ -63,30 +82,45 @@ async function main() {
       for (const field in metadata_json) {
         metadata_fields.add(field);
       }
+      if ("tags" in metadata_json && metadata_json['tags'] == "index") {
+        console.log(`Skipping ${path.join(folder, file)} because we detected an index tag`)
+        continue;
+      }
+
+      if (opts.wait) {
+        await new Promise(f => setTimeout(f, +opts.wait))
+      }
 
       console.log(`Querying ${opts.model_family} with ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
-      const queryFunc = opts.model_family == 'palm' ? queryPalm : queryGpt;
+      const gpt_wrapper = new GptWrapper(opts.model_family)
+      const queryFunc = opts.model_family == 'palm' ? queryPalm : gpt_wrapper.queryGpt.bind(gpt_wrapper)
       const promise = queryFunc(txt, SYSTEM, [[EXAMPLE_1_USER, EXAMPLE_1_RESPONSE], [EXAMPLE_2_USER, EXAMPLE_2_RESPONSE]]).then(async msg => {
         if (msg == "") return;
         console.log(`Got response from ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
         try {
-          const records = JSON.parse(msg);
+          let records = JSON.parse(msg);
           let incentive_order_key = 0;
+          const file_records: object[] = []
           let combined: object = {};
+          if (!(Symbol.iterator in Object(records))) {
+            records = [records]
+          }
           for (const record of records) {
             record['state'] = folder;
             record['file'] = file; // For debugging.
             record['order'] = incentive_order_key;
             combined = { ...record, ...metadata_json };
             output.push(combined);
+            file_records.push(combined)
             incentive_order_key += 1;
           }
-          await fs.writeFile(path.join(OUTPUT_FILE_BASE, folder, file.replace(".txt", "_output.json")), JSON.stringify([combined]), {
+          await fs.writeFile(path.join(OUTPUT_FILE_BASE, runId, OUTPUT_SUBDIR, folder, file.replace(".txt", "_output.json")), JSON.stringify(file_records), {
             encoding: "utf-8",
             flag: "w"
           })
         } catch (error) {
           console.error(`Error parsing json: ${error}, ${msg}`);
+          droppedFiles.push(path.join(INCENTIVES_FILE_BASE, folder, file))
         }
       });
       promises.push(promise);
@@ -101,7 +135,12 @@ async function main() {
 
     const parser = new AsyncParser(CSV_OPTS);
     const csv = await parser.parse(output).promise();
-    fs.writeFile(path.join(OUTPUT_FILE_BASE, opts.output_file), csv);
+    await fs.writeFile(path.join(OUTPUT_FILE_BASE, runId, opts.output_file), csv);
+    if (droppedFiles.length > 0) {
+      await fs.writeFile(path.join(OUTPUT_FILE_BASE, runId, "dropped_files.json"), JSON.stringify(droppedFiles));
+    }
+    console.log(`Find your results with run ID ${runId} at ${path.join(OUTPUT_FILE_BASE, runId)}`)
+
   })
 }
 

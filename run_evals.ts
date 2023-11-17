@@ -4,53 +4,63 @@ import fs = require('node:fs/promises');
 import path = require('node:path');
 
 import { queryPalm } from "./palm_wrapper.js";
-import { queryGpt } from "./gpt_wrapper.js";
+import { GptWrapper } from "./gpt_wrapper.js";
 import { Differ, Diff, Report } from "./differ.js";
-import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE } from './constants.js';
+import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, OUTPUT_SUBDIR } from './constants.js';
 
 program
-  .requiredOption("-d, --diff_file <diff>", 'Path to save output diff file. Report will have the same name but with a _report.csv suffix')
-  .requiredOption("-g, --golden_folder <folder>", 'Path to the folder where golden files live with suffix _golden.json for each relevant file')
-  .requiredOption("-o, --output_folder <folder>", 'Path to the output folder where output files live with suffix _output.json.')
-  .addOption(new Option("-m, --model_family <model_family>", 'Name of model family to use – either gpt or palm, which controls which model will be queried').choices(['gpt', 'palm']).default('palm'));
+  .requiredOption("-r, --run_id <run_id>", 'runId where your previous run was saved.')
+  .addOption(new Option("-m, --model_family <model_family>", 'Name of model family to use for model-grading').choices(['gpt4', 'gpt', 'palm']).default('palm'));
 
 
 program.parse();
 
+async function getFilesRecursive(dir: string): Promise<string[]> {
+  const dirents = await fs.readdir(dir, { withFileTypes: true });
+  const files: (string | string[])[] = await Promise.all(dirents.map((dirent) => {
+    const res = path.join(dir, dirent.name);
+    return dirent.isDirectory() ? getFilesRecursive(res) : res;
+  }));
+  return files.flat();
+}
+
 async function main() {
   const opts = program.opts();
 
-  const golden_files = await fs.readdir(path.join(INCENTIVES_FILE_BASE, opts.golden_folder));
-  const output_files = await fs.readdir(path.join(OUTPUT_FILE_BASE, opts.output_folder));
+  const output_files = await getFilesRecursive(path.join(OUTPUT_FILE_BASE, opts.run_id, OUTPUT_SUBDIR));
 
   const unmatched_golden_files: string[] = [];
   const unmatched_output_files: string[] = [];
-  const seenOutputFiles = new Set<string>();
+  const seen_golden_dirs = new Set<string>();
+  const seen_predicted_files = new Set<string>();
 
   const promises: Promise<void>[] = [];
   const diffs: Diff[] = [];
-  const queryFunc = opts.model_family == 'palm' ? queryPalm : queryGpt;
+  const queryFunc = opts.model_family == 'palm' ? queryPalm : new GptWrapper(opts.model_family).queryGpt;
   const differ: Differ = new Differ(queryFunc);
 
-  for (const golden_file of golden_files) {
-    if (!golden_file.endsWith("_golden.json")) continue;
+  for (const output_file of output_files) {
+    if (!output_file.endsWith("_output.json")) continue;
+    const shortName = output_file.replace(path.join(OUTPUT_FILE_BASE, opts.run_id, OUTPUT_SUBDIR, "/"), "")
+    seen_golden_dirs.add(path.dirname(shortName))
 
-    const matching_output = golden_file.replace("_golden", "_output")
-    let output_data: string;
+    const matching_golden = shortName.replace("_output.json", "_golden.json")
+    let golden_data: string;
     try {
-      output_data = await fs.readFile(path.join(OUTPUT_FILE_BASE, opts.output_folder, matching_output), { encoding: 'utf8' })
+      golden_data = await fs.readFile(path.join(INCENTIVES_FILE_BASE, matching_golden), { encoding: 'utf8' })
     } catch (err) {
-      unmatched_golden_files.push(golden_file)
+      unmatched_output_files.push(output_file)
       continue;
     }
-    if (output_data == "") {
+    if (golden_data == "") {
+      unmatched_output_files.push(output_file)
       continue;
     }
 
-    seenOutputFiles.add(matching_output)
-    const golden_data = JSON.parse(await fs.readFile(path.join(INCENTIVES_FILE_BASE, opts.golden_folder, golden_file), { encoding: 'utf8' }))
+    seen_predicted_files.add(shortName)
+    const predicted_data = JSON.parse(await fs.readFile(path.join(output_file), { encoding: 'utf8' }))
 
-    const promise = differ.compareData(golden_file, golden_data, JSON.parse(output_data)).then((diff) => {
+    const promise = differ.compareData(shortName, JSON.parse(golden_data), predicted_data).then((diff) => {
       diffs.push(...diff);
     }).catch((err) => {
       console.log(`error: ${err}`);
@@ -59,9 +69,14 @@ async function main() {
 
   }
 
-  for (const output_file of output_files) {
-    if (!(seenOutputFiles.has(output_file))) {
-      unmatched_output_files.push(output_file);
+  for (const golden_dir of seen_golden_dirs) {
+    const files = await fs.readdir(path.join(INCENTIVES_FILE_BASE, golden_dir))
+    for (const file of files) {
+      if (!(file.endsWith("_golden.json"))) continue
+      const matching_output = path.join(golden_dir, file.replace("_golden.json", "_output.json"))
+      if (!(seen_predicted_files.has(matching_output))) {
+        unmatched_golden_files.push(path.join(INCENTIVES_FILE_BASE, golden_dir, file))
+      }
     }
   }
   console.log("Unmatched goldens:");
@@ -70,14 +85,14 @@ async function main() {
   console.log(unmatched_output_files);
 
   await Promise.allSettled(promises).then(async () => {
-    console.log(`Final diffs written to ${path.join(OUTPUT_FILE_BASE, opts.diff_file)}`);
-    await fs.writeFile(path.join(OUTPUT_FILE_BASE, opts.diff_file), JSON.stringify(diffs), {
+    console.log(`Final diffs and report written to ${path.join(OUTPUT_FILE_BASE, opts.run_id)}`);
+    await fs.writeFile(path.join(OUTPUT_FILE_BASE, opts.run_id, "diff.json"), JSON.stringify(diffs), {
       encoding: "utf-8",
       flag: "w"
     })
 
     const report: Report = differ.createReport(diffs);
-    differ.writeReport(report, path.join(OUTPUT_FILE_BASE, `${opts.diff_file}_report.csv`))
+    differ.writeReport(report, path.join(OUTPUT_FILE_BASE, opts.run_id, "report.csv"))
   })
 }
 

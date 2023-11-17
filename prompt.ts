@@ -114,7 +114,7 @@ export const EXAMPLE_1_RESPONSE: string = `[
       "Program Start": "1/1/2023",
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
-      "Rebate Value": $60,
+      "Rebate Value": "$60",
       "Number": 60,
       "Amount Type": "dollar amount",
       "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
