@@ -64,7 +64,11 @@ We have a basic eval framework set up to evaluate how a model did. This requires
 
 2. Then execute a model run as described above, retaining the RunID. Run `node build/run_evals.js -r <run_id>` to run your eval. You'll see a `diffs.json` and `report.csv` in the `out/<run_id>` folder now, containing the "raw" diffs and then a summary report.
 
-A few caveats for evals:
+3. Interpreting the output: we grade every key (field) that the model is requested to produce. For all keys, we first investigate whether it is missing in both the golden and predicted (model-produced) output, missing in only one, or populated in both. If populated in both, we compare the two. For all fields, we start by looking for an case-insensitive match. If we don't find it, for shorter fields, we'll use a fuzzy matching algorithm, and for longer ones, we actually send it back to the model to grade its own response! The fuzzy match is binary (FuzzyMatch or FuzzyNoMatch), but the model grading has four levels to give a bit more nuance in the answer.
+
+The `diffs.json` files have a field-by-field comparison including an explanation of why the field was given the grade that it was (for model-graded fields). The `report.csv` rolls this up so you just see the totals by key and grade.
+
+### Eval Caveats
 1. We only have the ability to compare two JSON files with the same number of incentives in the same order right now, so in practice, it's typically best to use an artificial test set specifically constructed for this purpose.
 
 2. LLMs are not deterministic. In practice, this isn't a major issue for GPT3.5 and PaLM 2 – they are deterministic enough so that the metrics don't vary much between runs. For GPT4, I recommend you run at least 3 trials and inspect how similar the numbers are before being confident you're seeing a meaningful change.

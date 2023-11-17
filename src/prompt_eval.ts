@@ -27,7 +27,7 @@ Expert:
     "Amount Type*": "dollars",
     "Equipment Standards Restrictions": "• Uniform energy factor of 2.20 for 120V/15A.\n• Must be ENERGY STAR certified.\n",
     "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.\n",
-    "Other Restrictions": "Homes must be heated by electric rather than gas to qualify.",
+    "Other Restrictions": "Homes must be heated by electric rather than gas to qualify."
 }
 
 Student:
@@ -40,7 +40,7 @@ Student:
     "Amount Type*": "dollar amount",
     "Equipment Standards Restrictions": "Must be ENERGY STAR-certified. UEF of 2.20 for 120V/15A.",
     "Contractor Restrictions": "Limit 1 per customer per account type. Global amount of $5,000 across all rebates. DIY work is not permitted.\n",
-    "Other Restrictions": "You will need to file a rebate with 90 days of appliance purchase.",
+    "Other Restrictions": "You will need to file a rebate with 90 days of appliance purchase."
 }`
 
 export const EXAMPLE_1_RESPONSE = `{
@@ -52,6 +52,6 @@ export const EXAMPLE_1_RESPONSE = `{
     "Amount Type*": {"explanation": "The Amount Type has the same concept with slightly different wording", "grade": "A"},
     "Equipment Standards Restrictions": {"explanation": "Both answers mention Energy Star certification and have the same technical details", "grade": "B"},
     "Contractor Restrictions": {"explanation": "The expert answer mentions contractor restrictions. The student answer mentions a global amount and per customer limit. Both answers contain some details on DIY work.", "grade": "C"},
-    "Other Restrictions": {"explanation": "The given answers have no significant overlap.", "grade": "D"},
+    "Other Restrictions": {"explanation": "The given answers have no significant overlap.", "grade": "D"}
 }
 `

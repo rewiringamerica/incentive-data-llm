@@ -36,7 +36,8 @@ async function main() {
 
   const promises: Promise<void>[] = [];
   const diffs: Diff[] = [];
-  const queryFunc = opts.model_family == 'palm' ? queryPalm : new GptWrapper(opts.model_family).queryGpt;
+  const gpt_wrapper = new GptWrapper(opts.model_family)
+  const queryFunc = opts.model_family == 'palm' ? queryPalm : gpt_wrapper.queryGpt.bind(gpt_wrapper)
   const differ: Differ = new Differ(queryFunc);
 
   for (const output_file of output_files) {
