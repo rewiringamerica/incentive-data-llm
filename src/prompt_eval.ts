@@ -13,7 +13,7 @@ If they seem to have almost no overlap, the grade is "D".
 
 An example value might be be {"explanation": "The student answer doesn't mention light bulbs, whereas the expert answer does, but they both mention a per-consumer limit", "grade": "C"}.
 
-Be sure to return valid JSON, escaping any quotations in the explanations if necessary.
+Be sure to return valid JSON. You can mention either the student or expert answers, but don't quote them directly to avoid producing malformed JSON.
 `
 
 export const EXAMPLE_1_USER: string = `
@@ -25,8 +25,8 @@ Expert:
     "Rebate Type": "Rebate (post purchase)",
     "Rebate Value*": "$200",
     "Amount Type*": "dollars",
-    "Equipment Standards Restrictions": "• Uniform energy factor of 2.20 for 120V/15A.\n• Must be ENERGY STAR certified.\n",
-    "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.\n",
+    "Equipment Standards Restrictions": "• Uniform energy factor of 2.20 for 120V/15A.\n• Must be ENERGY STAR certified.",
+    "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.",
     "Other Restrictions": "Homes must be heated by electric rather than gas to qualify."
 }
 
@@ -39,7 +39,7 @@ Student:
     "Rebate Value*": "200",
     "Amount Type*": "dollar amount",
     "Equipment Standards Restrictions": "Must be ENERGY STAR-certified. UEF of 2.20 for 120V/15A.",
-    "Contractor Restrictions": "Limit 1 per customer per account type. Global amount of $5,000 across all rebates. DIY work is not permitted.\n",
+    "Contractor Restrictions": "Limit 1 per customer per account type. Global amount of $5,000 across all rebates. DIY work is not permitted.",
     "Other Restrictions": "You will need to file a rebate with 90 days of appliance purchase."
 }`
 

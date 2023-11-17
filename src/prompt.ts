@@ -5,45 +5,45 @@ An incentive is typically for a specific appliance or tool, like a heat pump, a 
 Data fields:
 Technology: required field. This is a enum. It should be one of the following values (ignoring quotes if they appear): Heat Pump Heating and Cooling (HVAC), HVAC - Air Source Heat Pump, Ground Source Heat Pump (GSHP) / Geothermal HP, HVAC - Air to Water Heat Pump, HVAC - Ducted Heat Pump, HVAC - Ductless Heat Pump, Heat Pump Water Heater (HPWH), New Electric Vehicle, Used Electric Vehicle, Electric Vehicle Charger, Rooftop Solar, Battery Storage, Heat Pump Dryers / Clothes Dryer, Electric Stove, Weatherization (insulation and air sealing), Electric wiring, Electric panel, "Electric lawn equipment (mower, edger, leaf blower, weedwhacker)", Smart Thermostat, E - Bike, Induction Cooktop, Other
 
-Program Description: required field. a brief summary of the incentive, including the price, Technology, and the most important restrictions, if any. No more than 150 characters.
+Program Description: required field. a brief summary of the incentive, including the amount (such as dollar value or percentage), Technology, and the most important restrictions, if any. No more than 150 characters.
 
 Program Status: required field. This is an enum. It should be one of the following values: Active, Expired, Paused, Unknown
 
-Program Start: a date the program started, if any
+Program Start: if the text mentions a start date for which the program is valid or for which customers must purchase equipment, it goes here (if any)
 
-Program End: a date the program ended, if any
+Program End: if the text mentions an end date for which the program is valid or for which customers must purchase equipment, it goes here (if any)
 
-Rebate Type: required field. This field should be one or more of Point of Sale rebate, Rebate (post purchase), Account Credit, Tax Credit, or assistance program (free service). If the passage instructs the user to mail in or submit an application, it is "Rebate (post purchase)". If it says it will apply it as a credit on the utility bill, it is "Account Credit".
+Rebate Type: required field. This field should be one or more of Point of Sale rebate, Rebate (post purchase), Account Credit, Tax Credit, or assistance program (free service). If the passage indicates the rebate is an instant rebate or applied at time of purchase, it is Point of Sale rebate. If it mentions receiving a check or mailing in an application after purchase, it is Rebate (post purchase). If it says it will apply it as a credit on the utility bill, it is Account Credit. And if it mentions tax credits, it is a Tax Credit.
 
-Rebate Value: required field. A free-text version of the value of the rebate (e.g. $2, $500 per ton)
+Rebate Value: required field. A free-text version of the value of the rebate (e.g. $2, $500 per ton). If the rebate has both a percentage cap (e.g. 25% of costs) and a dollar maximum (up to $3,000), include both.
 
-Number: required field. Only the number of the Rebate Value. If the Rebate Value is "$2,500", it would be 2500, and if the Rebate Value is "$100 / ton", it would be 100. Give percentages as a decimal; e.g. 25% is 0.25. Do not include commas or units like $ or % in your answer.
+Number: required field. Only the number of the Rebate Value. If the Rebate Value is "$2,500", it would be 2500, and if the Rebate Value is "$100 / ton", it would be 100. Give percentages as a decimal; e.g. 25% is 0.25. If the incentive has both a percentage and a dollar maximum, give the percentage.
 
-Amount Type: required field. This is an enum. Possible values are: "dollar amount", "percent", or "amount per unit", depending on how the Rebate Value is expressed.
+Amount Type: required field. This is an enum. Possible values are: "dollar amount", "percent", or "dollar per unit", depending on how the Rebate Value is expressed.
 
 Unit: if the Amount type is amount per unit, then this will be the corresponding unit, such as ton, sq ft, or kilowatt
 
-Amount Minimum: minimum amount associated with the incentive, if any
+Amount Minimum: minimum amount associated with the incentive, if any. Do not include commas or units like $ or % in your answer.
 
-Amount Maximum: the maximum amount mentioned by an incentive, if any. For example, if the incentive reads "up to $50", then this would be 50.
+Amount Maximum: the maximum amount mentioned by an incentive, if any. For example, if the incentive reads "50% up to $50", then this would be 50. Do not include commas or units like $ or % in your answer.
 
-Bonus Description: description of the bonus mentioned in the incentive, if any
+Bonus Description: description of the bonus mentioned in the incentive, if any. Bonuses are additional offers directly tied to a different incentive and will likely mention the word "bonus" or "additional".
 
 Equipment Standards Restrictions: specifications for the efficiency of the appliance, if any
 
 Equipment Capacity Restrictions: requirements for the size or capacity of the unit
 
-Contractor Restrictions: requirements for how the unit is installed, such as whether a licensed contractor is required
+Contractor Restrictions: requirements for who the unit is installed by, such as whether a licensed contractor is required
 
 Income Restrictions: if the customer has any restrictions on their income in order to claim the rebate
 
-Tax-Filing Status Restrictions: if there are any restrictions on the customer's tax-filing status (e.g. single, joint filing), list them here
+Tax-Filing Status Restrictions: if there are any restrictions on the customer's tax-filing status (e.g. single or joint filing), list them here
 
-Homeowner/Renter: if the incentive is restricted to either homeowners or renters, mention it here
+Homeowner/Renter: if the incentive specifically mentions being available for a particular customer type, fill it here. Valid options are Homeowner, Renter, or Both. Leave blank if it's not specifically mentioned.
 
 Other Restrictions: for other important restrictions not covered by the above
 
-Stacking Details: for any restrictions on how rebates can be combined
+Stacking Details: for any restrictions on how rebates can be combined. For example, if there is a dollar limit across multiple incentives, that would go here. Note that limits for a single incentive should be listed in Other Restrictions.
 
 Financing Details: if information is given related to how to finance the project, include it here
 

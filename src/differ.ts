@@ -180,7 +180,7 @@ export class Differ {
     const diffs: Diff[] = []
 
     if (golden_data.length != predicted_data.length) {
-      console.log('Golden and predicted data are different lengths; comparison not supported')
+      console.log(`In file ${key}, golden and predicted data are different lengths; comparison not supported`)
     } else {
       for (let i = 0; i < golden_data.length; i++) {
         const diff = await this.compareIncentives(golden_data[i], predicted_data[i])

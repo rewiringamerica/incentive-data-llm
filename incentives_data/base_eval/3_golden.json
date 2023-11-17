@@ -14,7 +14,7 @@
     "Rebate Value": "40% of total cost up to $1,500",
     "Amount Type": "percent",
     "Number": "0.40",
-    "Amount Maximum": "1,500",
+    "Amount Maximum": "1500",
     "Equipment Standards Restrictions": "Efficiency Minimums as of September 1st, 2023 (15.2 SEER2, 11.7 EER2, 7.8 HSPF2). Efficiency Minimums Prior to September 1st 2023: (15.0 SEER, 11.5 EER, 9.0 HSPF)* OR equivalent SEER2/EER2/HSPF2 performance (14.3 SEER2, 11.0 EER2, 7.7 HSPF2)",
     "Contractor Restrictions": "Quality Install Required. Eligible contractors must be an Xcel Registered Trade Partner. The list of Xcel Trade Partners can be found here. Please select the “Heating and Cooling” category and select the “Heat Pumps” or “Air Conditioners” drop down to view the entire list. Applications submitted by non-Xcel certified contractors will be rejected.",
     "Homeowner/Renter": "Homeowner",

@@ -12,10 +12,10 @@
     "Rebate Type": "Point of Sale rebate",
     "Rebate Value": "25% of the upfront cost, up to $5,000",
     "Amount Type": "percent",
-    "Amount Maximum": "$5,000",
+    "Amount Maximum": "5000",
     "Number": "0.25",
     "Equipment Standards Restrictions": "Vehicles must have an efficiency of 40 miles per gallon or higher. This includes many hybrid, plug-in hybrid and all-electric vehicles. The car needs to be pre-owned, rated at least 40 combined MPG or MPGe, and located at a Vermont Dealership.",
-    "Income Restrictions": "Must be at or below 80%  State Median Income (based on AGI). You must meet income eligibility requirements and be pre-approved prior to a purchase.",
+    "Income Restrictions": "Must be at or below 80% State Median Income (based on AGI). You must meet income eligibility requirements and be pre-approved prior to a purchase.",
     "Homeowner/Renter": "Homeowner, Renter"
   }
 ]
