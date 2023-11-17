@@ -1,0 +1,369 @@
+Hudson Light & Power Department Photovoltaic Incentive Program
+
+Incentive type: Utility Rebate Program
+Eligible Technologies: Photovoltaic (PV)
+Applicable Sector: Residential/Commercial/Industrial/Municipal
+System Maximum capacity: 25 kWdc (limit applies per customer and/or per location); for example, customers who own multiple properties will be limited to a total of 25 kWdc as the sum of all PV systems on all properties; the maximum size on any one property shall be 25 kWdc.
+Incentive Amounts: $1.20 per installed watt dc.
+Maximum Incentive: Maximum incentive rebate shall be fifty percent (50%) of installed project cost up to a maximum of $7,500.
+Program Budget: Limited and capped, to be expended at a "first come, first served basis".
+Excess Solar Generation: Excess production from the PV system will be purchased by HLPD from the PV system owner at the Power Adjustment Charge - Note: HLPD does NOT provide NET METERING. The maximum amount of energy HLPD will purchase from any one customer in a calendar year is 30,000 kWh in accordance with the HLPD Distributed Generation Policy.
+Restrictions: Only HLPD customers in good standing qualify for rebate; subject to applicable restrictions in the HLPD Rate Schedules and prior agreements. Good standing will be determined at the time of application and is defined as having no more than one unpaid balance at the end of the billing period and before the next bill is issued for the prior 24 consecutive months. PV systems may not be installed before the good standing is made.
+Ownership of Renewable: Grid connected HLPD account holder only; leased systems are not permitted and shall not be interconnected with HLPD.
+Summary: HLPD offers rebates to HLPD customers who install photovoltaic systems on their property. Project eligibility for a rebate is dependent on the angle/orientation of the panels, the lack of shading, and status as a customer in good standing.
+Customers will be required to have an inverter that automatically disconnects the PV system from the grid in the event of a power failure and must install a separate safety disconnect switch adjacent to the utility meter.
+Contact: HLPD Engineer, 49 Forest Avenue, Hudson, MA 01749; Phone: (978) 568-8736; Web: www.hudsonlight.com
+
+Two websites where further information on local products and contractors can be found are www.sebane.org and www.nesea.org
+
+HLPD reserves the right to modify or terminate this program without prior notice. Check with HLPD on the program status and availability of funds.
+
+Page 1 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+Photovoltaic Incentive Program Overview
+Thank you for your interest in the HLPD Photovoltaic (PV) Incentive Program. The information you need to apply for PV rebate is attached. Additionally, you may also want to reference www.sebane.org and www.nesea.org to find renewable products and services. Installing a PV electric system requires an advanced understanding of proper electricity and building practices. HLPD and your local building officials (where necessary) will need to approve the installation before you can receive the rebate.
+Here are the basic steps to help you determine if a PV system is right for you and to apply for rebate:
+1. HLPD recommends having an energy audit prior to installing a solar electric system. Energy efficiency and conservation are the first steps in any successful energy improvement plan. The less energy you use, the further your solar generation will go. Installing a PV system is a comprehensive endeavor. To make best use of the energy you produce it is wise to first find ways to reduce your consumption. Customers may contact Energy Hotline (888-772-4242) to request an energy audit. Energy audits are free for HLPD's residential customers and are partially reimbursable for commercial/industrial customers (call HLPD for details or visit www.hudsonlight.com).
+2. Complete a site assessment. The best way to find out whether you have a good location for a PV system is to have a professional site assessment. A site assessment will provide information about the suitability of your site for solar, and the best place to locate and orient your system. This is a critical step for anyone considering solar electricity, solar water heating or other system. Please note that it is customary for solar contractors to charge a fee to perform a site assessment. You should only need one, even if soliciting two bids. Once the site has been evaluated please plan to contact HLPD to discuss the details of interconnecting, etc.
+3. Choose an installer. Choosing an installer who provides comprehensive design, equipment, and installation services is an important step. It is best to obtain two or three estimates before hiring an installer. An estimate should include the cost of hardware, shipping, installation, connection to the utility grid, and travel. It is customary for installers to offer bids that are good for a period of two weeks due to volatility in solar panel availability and pricing. A good contractor will acquire permits, assist with rebate forms, and obtain an approved utility interconnection agreement for you. Be sure to verify that the installer you choose is eligible to participate in this program.
+4. Apply for a rebate. Make sure your installer is working with HLPD on the interconnection agreement and with local officials on any applicable building and installation codes and permits. The interconnection agreement can be obtained at HLPD. To apply for a rebate fill out and submit a Request for Rebate Confirmation form to:
+HLPD Engineer, 49 Forest Avenue, Hudson, MA 01749
+You have 12 months from the date of Rebate Confirmation to complete the installation of the system. When the installation is done and you have completed HLPD's interconnection requirements and forms, you may request a rebate. Please refer to page 4 for a checklist of all required documents.
+5. Follow up. HLPD will perform a routine follow up inspection and field test of the facility to see that all construction went as planned. If the customer has any questions at anytime they can always feel free to contact us.
+
+Page 2 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+Photovoltaic Incentive Program Details
+HLPD administers an incentive program for grid-connected PV electric installations. The program offers a rebate of $1.20 per installed watt. The maximum rebate amount is 50% of the project cost up to $7,500.
+Eligible Participants Any grid connected HLPD customer in good standing, subject to applicable restrictions in the HLPD Rate Schedules and prior agreements, are eligible for the rebate.
+All rebates are subject to HLPD approval, whether it is a new installation or an addition to an existing PV installation. Existing PV installations do not qualify for a rebate. One-for-one replacements do not qualify for a rebate.
+HLPD reserves the right to modify or terminate this program without prior notice. Check with HLPD on the program status and availability of funds.
+Projects that have received a statement of qualification under the Solar Carve-out or Solar Carve-out II programs under 225 CMR 14.00 are not eligible to receive a rebate.
+Eligible Equipment 1. All electrical equipment funded under this program must be new.
+2. Photovoltaic modules must come with a 20-year or greater manufacturer's warranty and must be certified as meeting the most current edition of Underwriters Laboratory standard 1703 (UL1703).
+3. All grid-tied, sine-wave inverters must be certified as meeting the current edition of Underwriters Laboratory Standard 1741 (UL1741) and IEEE 1547.
+Installation Requirements 1. Installations are subject to the requirements and provisions of Massachusetts's building codes, the National Electrical Code, and HLPD's Distributed Generation Installation requirements.
+2. Participants are responsible for ensuring an accurate representation of the site.
+3. Installers must work directly with the HLPD for new metering application, installations, and locations.
+4. Fixed and manual-tilt installations should have an azimuth range (direction the solar panels are facing) between 90° and 270°.
+5. Installations should limit the amount of shade cast on the panels. To be eligible for the rebate, the installer must demonstrate that any shade on the panels reduces the annual output of each solar array by no more than 20% when compared to a similar installation with no shade at all. HLPD requires that a shading analysis written report be provided from the installer. For shading analysis purposes all sections of proposed array must be included.
+6. Installations must include a Locus meter as per the "Locus Meter Requirements".
+7. Installations must be performed by professional installers in order to qualify for a rebate. A licensed electrician must perform all electrical work.
+8. All pertinent permits and inspections must be obtained, and copies kept on file as may be required by local codes and/or state law.
+9. The installer must provide information to the owner about operation and performance considerations relating to shading, snow cover, and maintenance of the system.
+10. Provide to HLPD a site diagram. A site diagram is a drawing of your PV installation's location and nearby objects that might shade the system.
+11. An AC safety disconnect switch must be installed at a location approved by HLPD between the inverter and the electrical panel.
+12. PV system owner will be responsible for all grid interconnection costs incurred by HLPD.
+
+Page 3 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+Document Checklist Required for HLPD Solar Rebate
+All documents to be filled out can be found at http://www.hudsonlight.com/Libraries/HLPD-solar-rebate/ Account Number on Bill : Meter Number on Bill : HLPD Reference Number:
+
+Reservation Request: Engineering will begin the review and approval process when all of the following are received.
+
+ Request for Photovoltaic Rebate Confirmation
+
+Received date:
+
+ Interconnection Application & Service Agreement
+
+Received date:
+
+ Participant's Agreement (includes Renewable Energy Certificate Assignment) Received date:
+
+ Copy of signed Contractor/Homeowner Agreement Received date:
+
+ Shading Analysis
+
+Received date:
+
+ Design Documents (One line diagram, site drawing, etc...) Received date:
+
+Validation Request:  Certificate of Completion
+
+Received date:
+
+ Pictures of installed equipment
+
+Received date:
+
+ Evidence Locus production meter has been installed and is communicating Received date:
+
+ Locus Meter Connection Form
+
+Received date:
+
+ Invoice from installer
+
+Received date:
+
+Page 4 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department Request for Photovoltaic Rebate Confirmation
+
+1. I have read and understand HLPD's PV Rebate Program documents.
+
+2. I understand if I proceed with a PV installation, I am responsible to contact HLPD prior to final commitment to project to be eligible for rebate.
+
+3. I agree to provide HLPD access to the proposed installation site.
+
+4. I have read, understand, and agree to HLPD's Terms & Conditions.
+
+To obtain an estimated PV rebate amount, which may be granted if all requirements are met, please provide:
+
+PV System kW DC rating:
+
+Installer:
+
+A licensed electrician must perform all electrical work.
+
+Electrician:
+
+Electrician's License #:
+
+The undersigned warrants, certifies and represents that:
+
+(1) I have spoken with HLPD's Engineer; (2) The information provided in this form is true and correct to the best of my knowledge; (3) The installation will meet all HLPD PV Rebate Program requirements.
+
+Applicant's Name (print):
+
+Title (if applicable):
+
+Company Name (if applicable):
+
+Address:
+
+Site Address (if different):
+
+Phone #:
+
+_ Fax #:
+
+Email:
+
+HLPD Account #:
+
+Signature:
+
+Date:
+
+(For HLPD use only)
+
+Date Application Received:
+
+Date of Approval:
+
+Taxable
+
+Non-Taxable
+
+Application Ref. #: Estimated Rebate Amount $ _
+
+Page 5 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+Interconnection Application & Service Agreement (For PV system with Inverter Capacity of 25 kW and under)
+
+Contact Information: (Name and address of interconnecting customer applicant)
+
+HLPD Customer (print): Company Name: Address of Interconnection Facility: City: Telephone (daytime): Fax Number: Account Number on Bill (required): Meter Number on Bill (required):
+
+State (evening):
+E-Mail Address:
+
+Zip Code:
+
+Additional Contact Information (e.g., system installation contractor or coordinating company):
+
+Name: Company Name: Mailing Address: City: Telephone (daytime): Fax Number:
+
+State: (evening):
+E-Mail Address:
+
+Zip Code:
+
+PV System Information:
+
+Inverter Manufacturer:
+
+Nameplate DC Rating:
+
+(kW)
+
+Single Phase:
+
+; or Three Phase:
+
+Model Name & #:
+
+(kVA)
+
+(Volts).
+
+Number of Inverters Used:
+
+Total System DC Design Capacity:
+
+(kW)
+
+(kVA)
+
+Electrical Contractor (contact name, company name, address, phone #):
+
+PV System UL1741 Listed: Yes
+
+No
+
+Estimated Installation Date:
+
+Estimated In-Service Date:
+
+Customer Signature:
+I hereby certify that, to the best of my knowledge, all of the information provided in this application is true and I agree to HLPD's Terms & Conditions for Interconnections:
+
+Interconnecting Customer Signature
+
+Date
+
+Please provide manufacturer's document showing UL1741 listing and this document to:
+
+HLPD Engineer at 49 Forest Avenue, Hudson, MA 01749 (call HLPD office at 978-568-8736 to get engineers email.
+
+Approval to Install PV System (for HLPD use only)
+
+Installation of the PV System is approved contingent upon the terms and conditions of this Agreement and agreement to any
+
+system modifications, if required. System modifications required: Yes
+
+No
+
+TBD
+
+HLPD Ref. Number:
+
+HLPD Signature:
+
+Title:
+
+Page 6 of 9
+
+Date:
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+HLPD Terms & Conditions for Interconnections
+1. Construction of the PV system. The interconnecting Customer may proceed to construct the PV system once the initial review by the HLPD Engineer has been completed.
+2. Interconnection and Operation. The interconnecting Customer may operate the PV system and interconnect with HLPD's system once the following has occurred:
+2.1. Municipal Inspection. Upon completing construction, the Interconnecting Customer will cause the system to be inspected or otherwise certified by the local electrical wiring inspector having jurisdiction.
+2.2. Certificate of Completion. The Interconnecting Customer returns the Certificate of Completion to HLPD. 2.3. HLPD has completed or waived the right to inspection and field test.
+3. HLPD's Right to Inspection. Within ten (10) business days after receipt of the Certificate of Completion, HLPD may, upon reasonable notice, and at a mutually convenient time, conduct an inspection of the system to ensure that all equipment has been appropriately installed, and that all electric connections have been made in accordance with HLPD's requirements. HLPD has the right to disconnect the system in the event of improper installation or failure to return Certificate of Completion.
+4. Safe Operations and Maintenance. The interconnecting Customer shall be fully responsible for operation, maintenance, and repair the system.
+5. Access. HLPD shall have access to the disconnect switch (if required) of the system at all times.
+6. Disconnection. HLPD may temporarily disconnect the system to facilitate planned or emergency HLPD work.
+7. Metering and Billing. The following is necessary to implement the metering provisions. 7.1. Interconnecting Customer Provides Meter Sockets. The Interconnecting Customer shall furnish and have installed, if not already in place, the necessary meter socket and wiring in accordance with accepted electrical standards. The Interconnecting Customer shall have installed a second (check) meter socket and the necessary wiring between the output of the system and the customer's main electrical service. This meter socket shall be located outside in an approved location. 7.2. Solar Contractor installs Locus Production Meter after submitting necessary documentation and HLPD approval. 7.3. HLPD Installs Bi-directional Meter. HLPD shall furnish and install a meter within ten (10) business days after receipt of the Certificate of Completion, or within 10 business days after the inspection if completed, if such meter is not already in place.
+8. Indemnification. The Town of Hudson Light & Power Department (HLPD) and all of their respective agents and employees shall be afforded the maximum exemption of limitations of liability available under applicable laws and regulations arising on account of their actions or omissions relating directly or indirectly to any provision of electrical service. Without limiting the generality of the foregoing, and except to the extent otherwise expressly provided in M.G.L. Chapter 258: Neither the Town of Hudson, nor the HLPD, nor any of their respective agents or employees shall be liable to any person or agent: all liabilities, damages, losses, penalties, claims, demands, suits and proceedings of any nature whatsoever for personal injury (including death) or property damages to unaffiliated third parties that arise out of, or are in any manner connected with, the performance of this Agreement by that party, except to the extent that such injury or damages to unaffiliated third parties may be attributable to the negligence of willful misconduct of the party seeking indemnification.
+9. Limitation of Liability. Each party's liability to the other party for any loss, cost, claim, injury, liability, or expense, including reasonable attorney's fees, relating to or arising from any act or omissions in its performance of this Agreement, shall be limited to the amount of direct damage actually incurred. In no event shall either party be liable to the other party for any indirect, incidental, special, consequential, or punitive damages of any kind whatsoever.
+10. Termination. This Agreement may be terminated under the following conditions. 10.1. By Interconnecting Customer. The Interconnecting Customer may terminate this Agreement by providing written notice to HLPD. 10.2. By HLPD. The HLPD may terminate this Agreement: (1) if the PV system fails to operate for any consecutive 12month period, or (2) in the event that the PV system impairs the operation of the electric distribution system or service to other customers or material impairs the local circuit and the Interconnecting Customer does not cure the impairment in a timely manner.
+11. Assignment/Transfer of Ownership of the PV system. This Agreement shall survive the transfer of ownership of the system to a new residential owner when the new owner agrees in writing to comply with the terms of this Agreement and so notifies the HLPD.
+
+Page 7 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+HLPD Terms & Conditions for Interconnections (cont'd)
+12. Interconnection Rate. These Terms and Conditions are pursuant to HLPD's Standard Terms and Conditions for electric service and Schedules of Rates, as approved by the Hudson Municipal Light Board and as the same may be amended from time to time. All defined Terms and Rates are available at the HLPD office or online at www.hudsonlight.com. Definitions:
+AC - alternating electrical current (grid electricity).
+Anti-islanding test - a utility technician will test your completed system for safety before your interconnection contract is processed.
+Azimuth - the direction in degrees your solar panels will face (due south is 180 degrees).
+Building code - must meet local building codes (see your local Wiring Inspector for details). DC - direct electrical current (solar panel or battery electricity).
+DC rating - solar panel capacity, measured in watts.
+Evidence of Intent - evidence that you are serious about participating in the solar rebate program; signed Interconnection Agreement.
+Grid connected - connection to the HLPD electrical system.
+Interconnection guidelines - safety and technical requirements for your solar installation
+Inverter - converts DC electricity from the solar panels into AC electricity that is compatible with the electric grid.
+Kilowatt (kW) - 1000 watts (ten 100 watt solar panels = 1 kilowatt).
+National Electrical Code Article 690 - national electrical safety standards for photovoltaic systems established by the National Fire Protection Association (www.nfpa.org).
+Solar panel warranty - solar panels in the rebate program must have a 20-year or greater warranty.
+Photovoltaic (PV) - technical term for solar electricity.
+Rebate Confirmation Form - the form you receive once you are approved for a rebate; work must not begin until you receive this form.
+Rebate queue - the order in which approved rebates are reserved and distributed on a first-come, first-served basis if funds become limited.
+Site diagram - diagram sent with the Rebate Application Form that shows objects that might cast a shadow on your solar panels; diagram should include distances.
+Site pictures - pictures of the place you intend to install the solar panels AND panoramic images from East to West.
+Solar electric system - the complete PV system capable of producing grid compatible electricity.
+Solar panel rating - see DC rating.
+Shading Analysis Tool - a device used to accurately chart the total shading at a specific location for all seasons; (Pathfinder, Suneye, ASSET or other comparable brands are acceptable.)
+System rating - the sum of all of the solar panels to be used in the system (# of solar panels x DC rating of solar panels) usually expressed in kilowatts (kW).
+Tilt angle - the angle from horizontal at which the solar panels are positioned if they do not have tracking capabilities.
+Tracking - an additional solar system component that actively moves the solar panels to face the sun as it moves across the sky during the day and/or season.
+
+Page 8 of 9
+
+rev 07/29/2021
+
+Hudson Light & Power Department
+
+PV System Certificate of Completion
+
+Installation Information:
+Interconnecting Customer (print): Company Name: Mailing Address: Location of Facility (if different from above): Town: Telephone (daytime): Fax Number: Account # (on bill) Meter # (on bill)
+
+State: (evening):
+E-Mail Address:
+
+Zip Code:
+
+Electrician or Electrical Installation Contractor:
+
+Company Name: Contact Name (print) Mailing Address: City: Telephone (daytime): Fax Number: License number:
+
+State:
+
+Zip Code:
+
+(evening):
+
+E-Mail Address:
+
+HLPD Date of Installation Approval:
+
+Signature:
+
+Date:
+
+HLPD Ref. Number:
+
+Wiring Inspector:
+
+The system has been installed and inspected in compliance with the local Building/Electrical Code of
+
+(Town)
+Signed (local Electrical Wiring Inspector):
+Name (print):
+Date:
+As a condition of interconnection you are required to provide this form along with a copy of the signed electrical permit to: HLPD Engineer 49 Forest Avenue Hudson, MA 01749
+
+Received by HLPD:
+
+Date & Initial
+
+Page 9 of 9
+
+rev 07/29/2021
+
+

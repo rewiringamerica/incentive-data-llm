@@ -1,0 +1,126 @@
+Translation: Select LanguageChinese (Simplified)Chinese (Traditional)EnglishHmongSpanishSomaliVietnamese
+	•	MyAccount  
+	•	Outage
+	•	Pay Bill
+	•	Moving
+	•	Dual Fuel
+	•	Contact Us
+Mobile Site Navigation
+Minnesota Power, an ALLETE Company
+	•	MyAccount  
+	•	Outage
+	•	Pay Bill
+	•	Moving
+	•	Dual Fuel
+	•	Contact Us
+	•	
+	•	Programs & Rebates
+	•	Outage & Public Safety
+	•	Customer Service
+	•	Environment
+	•	Company
+￼Site Search
+Minnesota Power Site Search:
+ 
+Home / Environment / Renewable Energy / Solar / Customer Solar / SolarSense
+SolarSense
+Minnesota Power’s SolarSense program provides rebates to reduce the upfront costs of installing solar, helping make solar energy a more viable option for customers. SolarSense is available to customers installing a solar electric photovoltaic (PV) system.
+The program funds are awarded to customers on a lottery basis for 2023 and 2024. Customers applying for the SolarSense program must submit a SolarSense application to be considered for funding. The program opens for applications on March 1 of each program year. Applications will be accepted for three calendar days. If more applications are received than funds available, projects will be placed on a wait list. Annual budgets for the SolarSense program are approved through 2024. Please refer to the table below for current year funding availability.
+2023 SolarSense Funding
+The total budget for 2023 is $87,675 plus any dollars rolled over from previous program years. As rebate dollars are allocated for projects they are moved to the reserved box. Once the project is complete and the rebates are processed the dollars move to the paid box. It is possible that reserved dollars are forfeited and sent back into the pool for reallocation.
+Program Details
+SolarSense is an incentive based on how much energy a customer’s PV system is expected to produce. Calculating the rebate depends on the design of the solar system—including tilt, orientation and shading profile—and an estimate of annual energy production from PV Watts. PV Watts is a publicly available tool developed by the National Renewable Energy Laboratories (NREL) to estimate energy output from PV systems. To calculate the SolarSense rebate, a PV system’s estimated energy output is multiplied by $0.29/kWh.
+Here’s an example: An 8 kW system is installed on a rooftop in Duluth, Minnesota. The roof has a slope of 20 degrees and the modules face southwest at an azimuth of 220 degrees. The shade analysis performed by the installation company determined the site has a yearly shading profile of 88 percent. According to PV Watts, the average annual production estimate is 8,874 kWh. This estimate is multiplied by $0.29/kWh, resulting in a total rebate of $2,573.
+If this PV system had different parameters, the rebate amount would be different. For example, if the shading profile were 95 percent, the estimate from PV Watts would be 9,590 kWh. That would make the rebate $2,781.
+The total combined rebate and incentives cannot exceed $5,000, or 60% of installed costs, whichever is less.
+Please note that SolarSense program dollars are not reserved until an application is approved and a rebate reservation number is issued. Customers approved for SolarSense rebates will have six months from receiving both a complete interconnection application and rebate reservation number to complete the installation of the system. If the project is not completed within six months, customers will be required to reapply to the program, forfeit their reserved position in the rebate queue and return the rebate amount to SolarSense.
+The Program is funded with the following budgets through 2024: 2023-2024 - $87,675
+Who Qualifies?
+In order to qualify for Minnesota Power’s SolarSense solar electric rebate, you must meet the following criteria:
+	•	Be a Minnesota Power retail customer installing a grid-tied solar system. All conservation program-eligible customer classes can apply—residential, commercial and industrial. Customers exempt from the Solar Energy Standard are not eligible to apply.
+	•	Rebates are generally limited to one per customer, per year based on market activity and dollar availability. Customers may not apply for a SolarSense rebate if they have installed a solar PV system within the past 12 months.
+	•	Be in good standing with Minnesota Power
+	•	Get pre-approval of the project prior to purchase and installation of equipment.
+	•	Install new components, including all major system components.
+	•	Own the PV system and the property/building where the system will be installed.
+	•	Complete the installation within six months of receiving rebate approval and a signed uniform statewide contract.
+	•	You must have completed an energy analysis within the immediately preceding 24 months.
+	•	You may not install a system with kWh generation capacity of more than 120 percent of the premise's 12 months energy consumption.
+	•	You must install a system with a nameplate capacity of 40 kW (ac) or less.
+	•	The installer must submit system design specifications to Minnesota Power in order to calculate the incentive estimate.
+	•	PV modules must come with a 20-year or more manufacturer’s performance warranty. All inverters must come with a minimum 10-year manufacturer’s performance warranty. Installers must offer a two-year workmanship warranty.
+	•	You must submit the final installation costs to Minnesota Power.
+	•	SolarSense Renewable Energy Credit (REC) and MRETs Schedule A contracts must be completed and submitted once the installation is complete.
+	•	You must use a certified installer (NABCEP or UL).
+	•	All energy production must be measured by the production meter before going through any other device.
+If you are unsure whether you are eligible to participate in the SolarSense program, please contact Minnesota Power’s Renewable Programs at 218-355-3720.
+Application Process
+Customers participating in the SolarSense program must follow Minnesota Power’s interconnection process. This process allows Minnesota Power to identify site-specific conditions that may affect the installation and notify the customer before the installation begins, saving time and money. The steps listed below are a brief outline of the complete interconnection process. Please review the interconnection process for more information and specific timelines.
+	1	Select a contractor Selecting a contractor that meets your needs is an important step in the process. While Minnesota Power does not require that you choose a specific installer to participate in the SolarSense program, an installer certified with the North American Board of Certified Energy Practitioners (NABCEP) or Underwriters Laboratory (UL) is required. Click here to find a NABCEP certified installer in your area.
+	2	Submit an interconnection application Work with your installer to submit a complete interconnection application. If you are planning to add a battery backup system in conjunction with a solar system, you also must complete the battery backup system addendum form. The interconnection application may be submitted for approvals at any time. If you are applying for a rebate from Minnesota Power, please submit the additional SolarSense Rebate form. Application period for rebates starts on March 1. Applications shall be accepted March 1-3, 2023.
+	3	Preliminary review and interconnection approval Upon receiving a complete interconnection application, Minnesota Power will conduct a preliminary review within 20 business days. During this review, a Minnesota Power representative will identify any site-specific conditions that may affect the installation. A preliminary review must be completed and approved by Minnesota Power prior to beginning the installation. Customers participating in the SolarSense program will receive a rebate reservation number once the application is approved.   Occasionally a system upgrade or modification is required to meet current standards or to safely operate the system. Customers will be informed of any upgrades with their approval documents.
+	4	Install the system Once you have received an approval letter and rebate reservation number, the system installation may begin. Contact Minnesota Power when the installation is complete and approved by an electrical inspector to schedule a commissioning test. A certificate of completion must be submitted to Minnesota Power as proof of the inspection. Systems receiving a rebate must not be installed prior to the approval of the rebate.
+	5	Connect to Minnesota Power During the commissioning test, your existing meter will be exchanged for a net meter and the production meter will be installed. The system design parameters will also be verified for the rebate calculation. Discrepancies in system design and as-built verifications may result in adjustments to the rebate. Minnesota Power also will provide the SolarSense Renewable Energy Credit (REC) Contract and the MRETs Schedule A form. Both must be signed and returned to Minnesota Power. You will receive your SolarSense rebate check from Minnesota Power within 3-6 weeks after your meter has been exchanged and the solar system is connected.
+If you have any questions about the SolarSense application or interconnection process, please contact Minnesota Power’s Renewable Programs at (218)355-3720.
+Additional Incentives
+Tax Credit Customers who choose to install a solar system on their home or business may be eligible for a federal investment tax credit (ITC), which helps to reduce the installed cost of the system. Eligible equipment includes solar panels, solar water heaters, small wind systems, and fuel cells. The ITC is available through 2032. We encourage you to contact your tax professional to determine if you qualify for this credit or any other credits that might be available.
+Resources and Information
+	•	Minnesota Power’s 2023 Solar Guide
+	•	Interconnection application 20 kW and under
+	•	Interconnection application above 20 kW
+	•	SolarSense Renewable Energy Credit (REC) Contract
+	•	M-RETs Schedule A
+	•	Minnesota Power Distributed Generation
+	•	SolarSense Rebate Application
+Company
+	•	Careers
+	•	Media Room
+	•	About Us
+	•	History
+	•	Coverage Map
+	•	Investor Relations
+Energy Portfolio
+	•	EnergyForward
+	•	Renewable Energy
+	•	Solar Projects
+	•	Transmission
+	•	2022 Safety, Reliability and Service Quality Report
+Community
+	•	Positively Powerful
+	•	MP Foundation Grants
+	•	MP Foundation Scholarships
+	•	Education
+	•	Economic Development
+Environment
+	•	Land and Recreation
+	•	Rajala Woods
+	•	FalconCam
+	•	Superior Lake Cam
+Customer Service
+	•	Contact Us
+	•	Project Center
+	•	New Customer Resources
+	•	Safety
+Electric Vehicles
+Supplier Information
+Minnesota Power is an ALLETE Company
+	•	Home
+	•	Privacy Policy
+	•	Contact Us
+	•	Customer Service
+	•	Careers
+	•	Sitemap
+	•	Scam Alerts
+© 2023 ALLETE, Inc., All Rights Reserved
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+	•	￼
+Go all the way up

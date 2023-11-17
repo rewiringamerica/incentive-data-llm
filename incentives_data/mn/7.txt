@@ -1,0 +1,184 @@
+CHARGEWISE Electric Vehicle (EV) Programs
+
+OFF-PEAK STORAGE RATE
+EVERY DAY
+
+Noon
+
+Charging not available
+
+7 A.M.
+
+6 P.M.
+
+4.87¢/kWh
+
+11 P.M.
+
+PROS: Best rate possible
+CONS: Least flexible, somewhat more complex
+installation
+
+TIME-OF-USE RATE
+
+MONDAY-FRIDAY
+
+Noon
+
+12.38¢-13.77¢/kWh
+
+8 A.M.
+
+4 P.M.
+
+44.2¢/kWh
+7.55¢/kWh 9 P.M.
+Midnight
+
+WEEKENDS & HOLIDAYS***
+
+Noon
+
+7.55¢/kWh
+
+6 A.M.
+
+6 P.M.
+
+Midnight
+PROS: Most flexible CONS: Must program your EV to NOT charge weeknights from 4-9 p.m.
+
+Dakota Electric® offers two voluntary options for charging your EV at home as well as a rebate of $500 to assist with the cost of installing a charging circuit on either program.
+FIVE STEPS TO RECEIVING A REBATE 1. Pick a charging program Members choose the best option for their charging needs, either the off-peak storage rate or time-of-use rate.* These programs have different wiring requirements, making it challenging to switch them in the future, so keep that in mind when choosing.
+2. Order the submeter socket Call Dakota Electric at 651-463-6243 to order the submetering equipment for your program. The equipment is billed to accounts with good standing and can be picked up at our office in Farmington or delivered at no cost typically within two business days. · Equipment for time-of-use rate: $85 plus tax · Equipment for storage rate: Multi-load setup $145 plus tax, single-load setup $75
+plus tax.** · For storage installations, please inform your electrician that you will need an
+external relay for a charger larger than 23 amps (30 amp breaker) unless you have a charger with built in low voltage control.
+3. Get estimates Request two-to-three estimates from electricians to install a dedicated EV circuit and submeter socket.
+4. Schedule installation of submeter After the circuit and submeter socket are installed and a state electrical inspection is complete, you or your electrician should call Dakota Electric at 651-463-6243 to schedule installation of the submeter. You are not enrolled in a charging program until the meter is installed.
+5. Submit rebate application After the submeter is installed, submit your rebate form with a copy of the electrician's invoice for your rebate of $500.
+PLEASE MAKE SURE YOU HAVE THE FOLLOWING BEFORE SUBMITTING
+Called Dakota Electric after electrical inspection passes to get the program submeter installed.
+Electrician's invoice Completed EV rebate form
+We are UNABLE to process your rebate until the above has been completed.
+
+07/23
+
+* Rate information and program details can be found at www.dakotaelectric.com > Programs & Rebates > For Your Home > Electric Vehicle Charging.
+**To determine which storage setup will deliver you the most savings, call our Energy Experts® at 651-463-6243.
+***Holidays include New Years Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day & Christmas Day.
+
+ELECTRIC VEHICLE CHARGER INSTALLATION
+2023 Rebate Form
+A $500 rebate is available to offset the installation cost of a 240v electric vehicle circuit on either the Storage or Time of Use program. Submit completed rebate form and the electrician's invoice for wiring within one year of the invoice date. Invoices for chargers and vehicles will not be accepted.
+PLEASE MAKE SURE YOU HAVE THE FOLLOWING BEFORE SUBMITTING
+Called Dakota Electric after electrical inspection passes to request program submeter to be installed.
+Electrician's invoice Completed EV rebate form
+We are UNABLE to process your rebate until the above has been completed. Please fill out this form to completion, incomplete forms will not be processed. Rebate will be issued as a check. Please allow 8-12 weeks for processing. Submissions can be mailed to: Rebates, Dakota Electric Association, 4300 220th Street West, Farmington, MN 55024 Or emailed to: rebates@dakotaelectric.com
+MEMBER INFORMATION Name ____________________________________________________________________ Account # ________________________________________ Service address where EV charger is installed ________________________________________________________________________________ City ______________________________________ State _____________ ZIP ________________ Phone ___________________________________ Email ____________________________________________________________
+
+ELECTRIC VEHICLE INFORMATION EV make/model _________________________________________________ Maximum electric range (miles/charge) ___________________ VIN # _______________________________________
+
+ELECTRIC VEHICLE SERVICE EQUIPMENT INFORMATION
+
+Manufacturer _____________________________________________________________________ Amperage of charger ___________________
+
+Charger is on rate: Storage
+
+Time-of-use
+
+CONTRACTOR INFORMATION Name _________________________________________________________________ City _______________________________ State ____________
+SIGNATURE I certify that my EV charger has been installed on a Dakota Electric EV charging program at the address listed above and that this address represents a valid cooperative account.
+Member signature ___________________________________________________ Today's date __________________________________
+
+QUESTIONS? Call the Energy Experts at 651-463-6243 or 1-800-874-3409.
+Rebate is available for the installation of an EV charger (1 or 2) installed on or after Jan. 1, 2023. Rebate program is subject to change or cancellation without notice. Limit of one $500 rebate per EV charging circuit. No additional rebate funding is available for future modifications to the charging circuit of replacement charging hardware.
+
+ELECTRIC VEHICLE (EV) PROGRAM DETAILS
+Off-peak storage (schedule 51) and time-of-use (schedule EV-1) participants
+METERING · Electric service for EVs under either schedule must be supplied through a submetered circuit (installed at the member's
+expense) and approved charging equipment. · Installations must conform to Dakota Electric's specifications within this guide and within the Electric Service Handbook. · Submeter must be located outside and preferably outside of fenced areas for readings and maintenance. The member
+will supply, at no expense to Dakota Electric, a suitable location for meters and associated equipment used for billing. AVAILABILITY · EV rate participation is on a voluntary basis for members taking service under Schedule 31, our residential rate. · Service is limited to electric vehicles that are SAE J1772 compliant and registered and operable on public highways in
+the state of Minnesota. · Low-speed EVs, including golf carts, are ineligible to take service under this tariff even if licensed to operate on public
+streets. · The member may be required to provide Dakota Electric with proof of registration of the EV prior to taking service
+under either tariff. TERMS AND CONDITIONS · Some technologies and equipment may not be compatible with our rate and service combinations. Please contact the
+Energy Experts® at Dakota Electric at 651-463-6243 if you have questions. · Internal wiring and equipment failures on member-owned equipment are the responsibility and liability of the member
+(e.g., external relay failures, tripped GFCI breakers). · By participating in our off-peak or time-of-use programs, you understand that installing a 240v circuit for EV charging
+without enrolling it on either program will disqualify you from all EV rates and rebates. EV CHARGING WITH ON-SITE SOLAR (PV) GENERATION · Accounts with on-site solar are eligible to participate in either EV rate. However, time-of-use EV consumption is metered
+separately from solar production, and vehicles will be charged peak pricing for energy used within the peak time frame even if the energy is being sourced from the on-site solar system. We recommend solar generating members only charge their vehicles during overnight hours when participating in time-of use. STORAGE PARTICIPANTS · If your vehicle or charger requires a software update or manufacturer's technical support during daytime control, please call energy services at 651-463-6243 for assistance. CHARGING FOR TWO+ VEHICLES · Current transformer (CT) setups for multiple EV-1 time-of-use vehicle chargers or multiple storage chargers are allowed with post-install inspection. All EV loads through a CT setup must participate in the same program. · Subpanels exclusively used for EV-1 time-of-use rates are allowed upon pre-approval by Dakota Electric. Inspection post-install is required. Whole subpanels cannot be enrolled in storage programs.
+QUESTIONS? Call the Energy Experts at 651-463-6243 or 1-800-874-3409. Rebate program is subject to change or cancellation without notice.
+
+REVOLT FOR PLUG-IN ELECTRIC VEHICLES
+
+CHARGWISE PROGRAM
+While EVs in the Revolt program will be completely powered by wind energy, standard off-peak rates still apply for the electricity used to fuel them.
+Ask about Dakota Electric's ChargeWise program to save money every time you plug in your EV. Two options let you choose what time to charge your car and how much to pay.
+Call the Energy Experts today to at 651-463-6243.
+
+Dakota Electric, along with our power supplier Great River Energy are offering members an opportunity to power their EVs with 100% wind energy, for the lifetime of that vehicle, at no extra cost.
+HOW IT WORKS Energy comes from a variety of sources; wind, natural gas, coal, etc. Once it hits the power grid, there's no way of telling where it came from. However, when renewable energy is added to the mix, a renewable energy credit (REC) is created that embodies all of the environmental benefits of that energy. When you claim your Revolt upgrade, we'll dedicate wind energy RECs on your behalf, completely offsetting the energy used to power your vehicle.
+WHAT EVS ARE ELIGIBLE FOR REVOLT? Two categories of EVs are eligible for enrollment in Revolt: 1. Plug-in electric vehicles (PEV): All electric, all the time and have no internal
+combustion engine or gas tank. 2. Plug-in hybrid electric vehicles (PHEV): Run on both gas and electricity.
+Hybrid electric vehicles that have a gas tank and no plug are not eligible since they charge through regenerative braking and by drawing power from the engine.
+HOW TO ENROLL IN REVOLT Step 1: Buy or lease an EV. If you already have one, skip to step two. Step 2: Fill out the Revolt enrollment form. Step 3: Submit the completed enrollment form.
+
+REVOLT FOR PLUG-IN ELECTRIC VEHICLES
+2023 Enrollment Form
+
+Thank you for signing up for the Revolt® wind energy program and upgrading to wind energy for the electricity used to fuel your vehicle at no additional cost above your normal electricity rates. Your proof of wind energy designation will arrive in the mail within 30 days.
+Submit completed enrollment form and a copy of the dealer invoice or vehicle title to:
+Revolt Renewable Energy Program Processing, Dakota Electric Association, 4300 220th Street West, Farmington, MN 55024
+Or email to: energyservices@dakotaelectric.com
+
+MEMBER INFORMATION Name ____________________________________________________________________ Account # ________________________________________ Primary vehicle address ______________________________________________________________________________________________________ City ______________________________________ State _____________ ZIP ________________ Phone ___________________________________ Email ____________________________________________________________
+
+PLUG-IN ELECTRIC VEHICLE INFORMATION
+
+Make _________________________________________________ Model ________________________________________ Year _________________
+
+Is the EV owned or leased? Check one: Owned
+
+Leased
+
+Dealership where EV was purchased/leased ______________________________________ Purchase/lease date ____________________
+
+When do you primarily plan to park your PEV or PHEV? Check all that apply:
+
+Overnight (off-peak)
+
+Morning
+
+Afternoon
+
+Whenever the EV needs a charge
+
+Are you aware of off-peak rate electricity available at a discounted rate from 11 p.m. - 7 a.m.? Check one:
+
+Yes
+
+No
+
+Please contact me with more information about this program
+
+How do you plan on charging your vehicle? Check all that apply:
+
+At home on a 120V outlet
+
+At home on an upgraded 240V outlet
+
+At work
+
+At a public charging station
+
+Do you currently participate in one of our charging programs? Check one:
+
+Off-peak storage rate
+
+Time-of-use rate
+
+SIGNATURE By signing this application, I certify the electric vehicle I am enrolling in the Revolt program is installed at the address listed above, and that I am a member of Dakota Electric Association.
+Member signature ___________________________________________________ Today's date __________________________________
+
+QUESTIONS? Call the Energy Experts at 651-463-6243 or 1-800-874-3409.
+Revolt program is eligible for plug-in vehicles or plug-in hybrid vehicles only hybrid EVs (i.e. Toyota Prius) do not qualify. Vehicle must be purchased before December 31, 2023. Vehicle must be owned by current cooperative member and have primary residence within cooperative service area. Program and rebate is subject to change or cancellation.
+
+

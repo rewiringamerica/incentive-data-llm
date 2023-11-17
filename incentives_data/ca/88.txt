@@ -1,0 +1,56 @@
+TDPUD Residential Home Upgrades
+Electric Vehicle Charging Station Rebate Application
+
+Participant Information First Name: TDPUD Account Number: Phone Number:
+
+Last Name: Service Address: Email Address:
+
+Property Information Primary Heat Fuel Source: (Circle one below) Natural Gas, Electric, Propane, Wood, other
+
+Water Heating Fuel Source (Circle one below) Natural Gas, Electric, Propane, Wood, other
+
+Product Information
+
+Measure Name
+
+Manufacturer
+
+Model Number
+
+Rebate
+
+Residential Energy Star Listed EV Charger
+
+$600
+
+Residential EV Charger: SMART Charger
+
++ $350
+
+Product & Service Eligibility
+
+ Applicant must be a current electric customer with an active TDPUD account to be eligible for electric rebates.  Electric vehicle must be registered with CA DMV in Truckee, at the address of an active TDPUD electric account.  Charging station must be installed in compliance with applicable permitting requirements and electrical standards.  Charger must be level 2 (240V) and utilize SAE J1772 charging plug or Tesla's High Power Wall Connector.  Charger must be an ENERGY STAR certified and listed charger to be eligible for the program.  Charger must be new purchase with installation hardwired to the property's electrical service, plug-in chargers
+are not eligible.  Chargers are not eligible if: Portable, refurbished, received from warranty insurance claims, won as a prize, or
+purchased used.  The electric vehicle must be DOT approved for highway application. Golf carts, neighborhood carts, electric
+scooters or bicycles, and other low-speed vehicles are not eligible.  Customer must agree to install charger at service location for the useful life of equipment.
+o SMART charger must be capable of delivering electricity to a plug-in electric vehicle at a minimum current of 40 amperes at 208/240 volts and be capable of tracking charging time(s), energy use, and electric demands data which can be made available to TDPUD. Chargers would also:
+o Be capable of managing charging based on electricity rates, greenhouse gas signals, and/or other dynamic grid signals; and
+o Support Open Charge Point Protocol or OpenADR; and o Support ISO 15118 communication with the plug-in electric vehicle
+
+Program Terms & Conditions
+
+ Application must include a sales receipt, which clearly identified the purchase date, brand & model number and purchase price of the EV charger.
+ Application must include contractor's invoice for electric circuit installation, which clearly identifies the contractor's name, address & license number, date of installation, amperage of circuit installed, price paid for installation.
+ Application must include a photo of the charger hardwired the TDPUD customer of record associated with the residential service address where charger is installed.
+
+January 2023
+
+TDPUD Residential Home Upgrades
+Electric Vehicle Charging Station Rebate Application
+ Application must be submitted no later than 90 days from the date of charger purchase and are accepted on a first come, first serve basis while funds are available. A rebate check will be mailed within 6-8 weeks of TDPUD's receipt of the application.
+ Application must be signed, dated and contain all supporting documentation before it will be processed.  Rebates are limited to (1) rebate per residential electric account.  If applicant is not the property owner, written approval from property owner, property manager on behalf of
+property owner, or homeowners' association must be received by TDPUD prior to installation of EV charger to be considered as eligible for a charger rebate.  Rebate not to exceed the cost of equipment and contractor's installation invoice.  Customer agrees to allow verification of make/model, efficiency & installation by an authorized District representative if requested.  TDPUD disclaims all liability from taxes incurred or any property damage or loss that may arise as a result of the applicant's participation in this program. The rebate offer may be discontinued or modified at any time by TDPUD. If requested, I will provide a TDPUD representative access to my property to verify installation and to my charger utilization data, and will assign all Low Carbon Fuel Standard (LCFS) or successor program credits to Truckee Donner Public Utility District. I understand that a rebate will not be paid if I refuse any of the above requests. By signing this form, I certify that I have purchased and installed the EV Charger for use at the address noted. I have read and understand the terms and conditions of the EV Charger Rebate program. In addition, the installation of the charger complies with applicable permitting requirements, electric equipment load requirements, and the contractor used to perform the work holds the appropriate license.
+Account Holder's Signature: _____________________________________________________________ Date: _____________________________
+January 2023
+
+

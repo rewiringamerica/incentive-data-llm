@@ -1,0 +1,617 @@
+<!DOCTYPE html><html id="ctl00_html" xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head id="ctl00_Head1"><title>
+	All-Electric Home Program - City of Roseville
+</title>
+	<style>
+		.cssIESearch {
+			border:dashed !important;
+			border-width:thin !important;
+		}
+	</style>
+	<script>
+		function focusInInput(id) {
+			var ua = window.navigator.userAgent;
+	
+				// IE 10 or older
+				var msie = ua.indexOf('MSIE ');
+				if (msie > 0) {
+						if (parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10) <= 10 )
+							$(id).toggleClass('cssIESearch');
+					}
+
+				// IE 11
+				var trident = ua.indexOf('Trident/');
+				if (trident > 0) {
+					var rv = ua.indexOf('rv:');
+					if (parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10) === 11)
+						$(id).toggleClass('cssIESearch');
+				}
+		};
+
+		function focusOutInput(id) {
+			$(id).removeClass('cssIESearch');
+		}; 
+	</script>
+    <script id="ctl00_00f77616769f0d4f891b41dfda94e8b04f53f1c11d0172b581e651aeac6863a9" src="https://cdnsm1-hosted.civiclive.com/bundle/js/vendor.cfcd208495d565ef66e7dff9f98764da.js" type="text/javascript"></script><link id="ctl00_c8f4c6c953812b601a957ffb85881e061f80eb01e5e8c670167b133b4d5e4bbf" href="https://cdnsm1-hosted.civiclive.com/bundle/css/vendor.cfcd208495d565ef66e7dff9f98764da.css" rel="stylesheet" type="text/css" media="all" /><script src="https://cdnsm4-hosted.civiclive.com/common/resources/DesignPortfolio/SiteThemes/CommonLib/scripts/url-script-v4.js" type="text/javascript"></script><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0" /><link type="text/css" rel="stylesheet" media="screen" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/slick.css" /><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/slick.js" type="text/javascript"></script><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/jquery.keyboard-focus.min.js" type="text/javascript"></script><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/spectrum.js" type="text/javascript"></script><link type="text/css" rel="stylesheet" media="screen" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/spectrum.css" /><!-- Favicon --><link rel="apple-touch-icon" sizes="180x180" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/Favicon/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/Favicon/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/Favicon/favicon-16x16.png" /><link rel="manifest" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/Favicon/site.webmanifest" /><link rel="mask-icon" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/Favicon/safari-pinned-tab.svg" color="#5bbad5" /><meta name="msapplication-TileColor" content="#ffffff" /><meta name="theme-color" content="#ffffff" /><!-- End of Favicon --><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><script id="ctl00_d811866f2347c45bd3a0fe77a237af6a60765b254d2e04324bf23e6319644c76" src="https://cdnsm2-hosted.civiclive.com/common/JavaScript/resourcelibrary/ReactPortlets/reactPortletLoader.js" type="text/javascript"></script><script id="ctl00_007e1919cd42cdd5583cdcdfaf4437f725a9db464eba46f47def4954760764c0" src="https://cdnsm2-hosted.civiclive.com/common/JavaScript/resourcelibrary/ReactPortletsInit.js" type="text/javascript"></script><link href="https://cdnsm2-hosted.civiclive.com/App_Themes/default/merged.css" type="text/css" rel="stylesheet" /><link id="ctl00_d222b35e4b0351a8090a82ef8257162cbb5f36bf49beb10b72c40b6d0bccb8c6" href="https://cdnsm5-hosted.civiclive.com/UserFiles/TemplateStyles/Server_7964838/2397.css" rel="stylesheet" type="text/css" media="all" /><meta property="og:title" content="All-Electric Home Program" /><meta property="og:url" content="https://www.roseville.ca.us/government/departments/electric_utility/new_service/residential_and_commercial_electric_home_program" /><link href="https://www.roseville.ca.us/government/departments/electric_utility/new_service/residential_and_commercial_electric_home_program/" rel="canonical" /><script async src="https://www.googletagmanager.com/gtag/js?id=G-GK506XC3FG"></script><script type="text/javascript">
+window.dataLayer = window.dataLayer || []
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-GK506XC3FG');
+gtag('config', 'G-0FJZJD9X4V');
+</script>
+<link id="ctl00_c11ee3292ac9e5a4417635135583c4bbfdb8ea29573b674250c4d49a2a0ace54" href="https://cdnsm2-hosted.civiclive.com/App_Themes/jquery.mmenu.all.css" rel="stylesheet" type="text/css" media="all" /><script id="ctl00_c322b83bd68baadb3b50174e9bb777a6e2a207f953b71156195b3059ebbbf2a1" src="https://cdnsm1-hosted.civiclive.com/javascript/jquery.mmenu.min.all.js" type="text/javascript"></script><link id="ctl00_ecaa77bc459a465ccbf05b1230a7fda7d326ac12b2a6ed8ea34f9b8e8a640bda" href="https://cdnsm2-hosted.civiclive.com/App_Themes/mobilemenu.css" rel="stylesheet" type="text/css" media="all" /><script id="ctl00_6954abdda40ad30188b10655e8e3c079ee30c506b42fc79e052476db304c6aed" src="https://cdnsm1-hosted.civiclive.com/javascript/mobilemenu2019.v2.js" type="text/javascript"></script><link id="ctl00_ad0ce6cf08b6d05dd3790532ac1e42402e11b97e58793475c07a1774d9c38496" href="https://cdnsm5-hosted.civiclive.com/UserFiles/TemplateStyles/Server_7964838/6735.css" rel="stylesheet" type="text/css" media="all" /><link id="ctl00_62d5b5acfac205ee192873312c44badb262caa3410605faf69de8c378b5dc098" href="/Common/controls/ContentItemModern/css/common.css" rel="stylesheet" type="text/css" media="all" /><link id="ctl00_d6cc13c1e76dc189fd9d9a68f3c990be46cac0f6d418ee4d20768c0357f69e1d" href="https://cdnsm5-hosted.civiclive.com/UserFiles/TemplateStyles/Server_7964838/6811.css" rel="stylesheet" type="text/css" media="all" /><link id="ctl00_198dfeca7f0797f34342238541399c29ca8baa8eedbc1611c63c653e26b4dbc8" href="https://cdnsm5-hosted.civiclive.com/UserFiles/TemplateStyles/Server_7964838/2441.css" rel="stylesheet" type="text/css" media="all" /><link rel="stylesheet" type="text/css" href="/common/RichTextConfig/CustomFCKWebStyle.aspx?portalId=7964922" /><link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nPnmLmO0BrM2PYzxkd0onrXbUpetimu5wKgzw7EGIxmOOVDwEK6CbI01fyEW3Y62LEDBs-5cgre4MBpJPijaMfuobTlR0&amp;t=638271030788758315&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c+Version%3d2022.3.1109.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a7cbc26f6-ca02-483b-84bf-df04c025957c%3a92753c09%3a91f742eb" type="text/css" rel="stylesheet" /></head>
+<body id="ctl00_PageBody" style="margin: 0px">
+    
+
+<div id="mobile_banner"></div>
+
+    <form method="post" action="./One.aspx?portalId=7964922&amp;pageId=19015893" id="aspnetForm">
+<input type="hidden" name="ctl00_RadStyleSheetManager1_TSSM" id="ctl00_RadStyleSheetManager1_TSSM" value="" />
+<input type="hidden" name="ctl00_ScriptManager1_TSM" id="ctl00_ScriptManager1_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="https://cdnsm2-hosted.civiclive.com/common/JavaScript/Json2.js" type="text/javascript"></script>
+<script src="https://cdnsm2-hosted.civiclive.com/common/JavaScript/JQuery/jquery-cookie.js" type="text/javascript"></script><script type="text/javascript">
+            
+                function OpenNewWindow(url, arguments)
+                {  
+                    return window.open(url, "",arguments);
+                }
+
+                function OpenNewWindowJS(url, ignore, arguments){  
+                    return OpenNewWindow(url, arguments);  
+                }
+
+
+                function OpenNewWindowNoReturn(url, arguments){  
+                    OpenNewWindow(url, arguments);  
+                }
+
+              </script> 
+<script type="text/javascript">
+//<![CDATA[
+function _search(){var frm=document.forms['aspnetForm'];if(!frm)frm=document.aspnetForm;window.location='/workspaces/Search.aspx?contextId='+frm.ctl00_SearchPlace.value+'&place='+frm.ctl00_SearchOne.value+'&searchTerm='+escape(frm.ctl00_SearchTerm.value).replace(/\+/g, '%2C').replace(/\"/g,'%22').replace(/'/g, '%27');}
+            function clickButton(e, buttonid)
+            { 
+              var bt = document.getElementById(buttonid); 
+              if (typeof bt == 'object')
+		        { 
+
+                    if (navigator.appName.indexOf('Microsoft Internet Explorer')>(-1)){ 
+                          if (event.keyCode == 13){ 
+                                bt.click(); 
+                                return false; 
+                          } 
+                    } 
+	    	        else
+			        {
+	                  if (e.keyCode == 13)
+	          	        { 
+                                bt.click(); 
+                                return false; 
+                          } 
+                    } 
+              } 
+            } //]]>
+</script>
+
+<script src="https://cdnsm2-hosted.civiclive.com/Common/JavaScript/Common_Control.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+function InputConstraint_OnLoad(textBoxControlId, oRegExp)            
+{
+    oTextBoxControl = document.getElementById(textBoxControlId);
+	if (oTextBoxControl)
+	{
+		if (oRegExp.test(oTextBoxControl.value))
+			oTextBoxControl.OldValue = oTextBoxControl.value;
+		else 
+			oTextBoxControl.value = oTextBoxControl.OldValue = '';
+	}
+}
+function InputConstraint_OnChange(oTextBoxControl, oRegExp)         
+{
+    if (oRegExp.test(oTextBoxControl.value))
+        oTextBoxControl.OldValue = oTextBoxControl.value;
+    else {
+        if (typeof(oTextBoxControl.OldValue) == 'undefined' || oTextBoxControl.value == '') 
+            oTextBoxControl.OldValue = '';
+        oTextBoxControl.value = oTextBoxControl.OldValue;
+    } 
+}
+
+;$(function() { $('nav#responsiveNav').mmenu({"slidingSubmenus":false,"position":"left","zposition":"back"}, {"pageNodetype":"form"});});//]]>
+</script>
+
+<script language=JavaScript>
+<!--
+function autoGenerateFieldName()
+{
+var temp = document.getElementById('ctl00_ContentPlaceHolder1_ctl20_txtDisplayText').value.toLowerCase();
+temp = (temp.replace(eval('/ /g'),'_')); 
+ document.getElementById('ctl00_ContentPlaceHolder1_ctl20_txtNewName').value = temp;
+ document.getElementById('ctl00_ContentPlaceHolder1_ctl20_txtNewName').focus; 
+}
+// -->
+</script>
+<script type='text/javascript'>
+            function OnClientCommandExecuted(editor,commandName,tool)
+            {
+                if(commandName=='ToggleScreenMode' || commandName._commandName == 'ToggleScreenMode' )
+                {
+            
+TogglePageControlsBar();
+}
+            }
+
+            function TogglePageControlsBar( menuIDList )
+            {
+                if(typeof menuIDList != 'undefined' || menuIDList != null)
+                {
+                    var menuList = menuIDList.split(',');
+                    for( var i=0; i<menuList.length; i++ )
+                    {
+                        var el = document.getElementByID(menuList[i]);
+
+                        if( el != undefined )
+                        {
+                            if( el.style.visibility!='hidden' )
+                                el.style.visibility ='hidden';
+                            else 
+                                el.style.visibility = 'visible';
+                        }
+                    }
+                }
+            }
+</script>
+
+<script language=JavaScript>
+<!--
+function autoGenerateFieldName()
+{
+var temp = document.getElementById('ctl00_ContentPlaceHolder1_ctl24_txtDisplayText').value.toLowerCase();
+temp = (temp.replace(eval('/ /g'),'_')); 
+ document.getElementById('ctl00_ContentPlaceHolder1_ctl24_txtNewName').value = temp;
+ document.getElementById('ctl00_ContentPlaceHolder1_ctl24_txtNewName').focus; 
+}
+// -->
+</script>
+
+<script src="https://cdnsm1-hosted.civiclive.com/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTc6sslt3VBxKsKaOsMkgDhBUIK4VeSNrR567Oujh-9r3p-v83OZlKXS3oddHkUoa3BeagcZ1DHb7zL1wTa7ulWzZJz8E0&amp;t=f2cd5c5" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/Core.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/Helpers/IETouchActionManager.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/jQuery.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/jQueryPlugins.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/Widgets/Draggable.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/Widgets/Resizable.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/MaterialRipple/MaterialRippleScripts.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/AnimationFramework/AnimationFramework.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/Animation/AnimationScripts.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/Popup/PopupScripts.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/TouchScrollExtender.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Common/ShortCutManager/ShortCutManagerScripts.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Window/RadWindowScripts.js" type="text/javascript"></script>
+<script src="https://cdnsm1-clradscript.civiclive.com/ajax/2022.3.1109/Window/RadWindowManager.js" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F495CFC0" />
+    
+    
+		
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            
+            
+    
+    
+            
+    
+    
+    
+    
+    
+    
+    
+            
+    
+            
+    
+    
+    
+    
+    
+    
+            
+    
+    
+    
+    
+    
+
+    
+    <!--[if lt IE 9]>
+	<script src="/common/resources/DesignPortfolio/SiteThemes/CommonLib/scripts/responsiveTemplate.js" type="text/javascript"></script>
+<![endif]--><div class="responsiveTemplate" id="printContent"><div id="skip"><a href="#page">Skip navigation</a></div><!-- ====== PUB WRAPPER ====== --><link href="https://cdnsm4-hosted.civiclive.com/common/resources/DesignPortfolio/SiteThemes/CommonLib/pub-wrapper/pubWrapper2015.css" type="text/css" rel="stylesheet" media="screen" /><link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><div id="header"><div class="inside-padding"><div id="header-left"><a href="/"><div id="logo"><img title='City of Roseville' alt='City of Roseville' src='https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/Roseville-230.png' /></div><!-- end #logo --><div id="school-name" class="offScreen"><h1>City of Roseville<div id="motto"></div></h1></div><!--end #school-name --></a></div><!-- end #header-left --><div id="header-right"><div class="sb-r noPrint"><ul><li><a href="#" onclick="OpenPrintPage(); return false;" class="print"><span class="fa fa-print"></span></a></li></ul><ul class="fontSize"><li><a href="/" id="fs-minus" class="decrease icon" onclick="downfont('printContent', .1, .85);return false;" title="Decrease Text Size"><span>A-</span></a></li><li><a href="/" id="fs-plus" class="increase icon" onclick="upfont('printContent', .1, 1.25);return false;" title="Increase Text Size"><span>A+</span></a></li></ul><div id="pubWrapper" class="headerLanguage"><div class="container clear"><ul class="pubList"><li id="selectLang" class="pubDropdown-wrapper"><a class="pubDropdown-btn" href="#" aria-haspopup="true" aria-expanded="false"><em class="fa fa-globe"></em> Translate</a><ul class="languageDropdown pubDropdown" aria-hidden="true" style=""><li id="gtl_original" style="display: none;"><a href="javascript:TranslateTo('original');">View Original</a></li><li><a href="javascript:TranslateTo('es');">Spanish</a></li><li><a href="javascript:TranslateTo('zh-CN');">Cantonese</a></li><li><a href="javascript:TranslateTo('fr');">French</a></li><li><a href="javascript:TranslateTo('de');">German</a></li><li><a href="javascript:TranslateTo('it');">Italian</a></li><li><a href="javascript:TranslateTo('tl');">Tagalog</a></li><li><a href="javascript:TranslateTo('vi');">Vietnamese</a></li><li><a href="javascript:TranslateTo('ko');">Korean</a></li><li><a href="javascript:TranslateTo('ru');">Russian</a></li><li class="last"><a href="javascript:TranslateTo('hi');">Hindi</a></li></ul></li><!-- end #selectLang --></ul></div></div><div class="divSearchBox">
+	<input name="ctl00$SearchTerm" type="text" id="ctl00_SearchTerm" class="SearchTerm" aria-label="Search" onkeypress="return clickButton(event,&#39;ctl00_btnSearch&#39;)" onfocus="focusInInput(&#39;#ctl00_SearchTerm&#39;)" onfocusout="focusOutInput(&#39;#ctl00_SearchTerm&#39;)" /><input type="hidden" name="ctl00$SearchOne" id="ctl00_SearchOne" value="workspaces" /><a id="ctl00_btnSearch" title="Search" title="Search" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"><img src="https://cdnsm3-hosted.civiclive.com/common/resources/en_US/default/images/templates/default/header_search_button.gif" id="ctl00_searchImage" alt="Search" class="SearchButton" /></a>
+</div></div></div><!-- end #header-right --><div class="clear"></div></div></div><!-- end #header --><div id="content-wrapper">
+
+    <style>
+		/* disable CKEditor orignal image & flash manager */
+		.cke_button__image {
+			display:none !important;
+		}
+
+		.cke_button__flash {
+			display:none !important;
+		}
+
+	</style>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#divOverlay').css('width', $(document).width());
+        $('#divOverlay').css('height', $(document).height());
+    });
+    </script>
+
+    <!-- richeditor full screen mode overlay element -->
+    <div id="divOverlay" unselectable="on" class="TelerikModalOverlayFullScreen" style="position: absolute; left: 0px; top: 0px; z-index: 100001; background-color: rgb(170, 170, 170); opacity: 0.5; display: none;"></div>
+    
+        <script type="text/javascript">
+            function setPreventHttpRedirectParam(url) {
+                url = (url || '').trim();
+                if (url === '') return url;
+                var parser = document.createElement('a');
+                parser.href = url;
+                var search = '?preventHttpRedirect=1';
+                if (parser.search.length > 0)
+                    search += '&' + parser.search.substr(1);
+                parser.search = search;
+                return parser.href;
+            }
+
+            function openRadWindowLoadingContentTree(url) {
+                var wnd = $find("ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree");
+                showModal(url, wnd, 750, 630);
+                return false;
+            }
+
+            function openPermissionControlWindow(url) {
+                var wnd = $find("ctl00_ContentPlaceHolder1_RadWindowPermissionControl");
+                showModal(url, wnd, 150, 61);
+                return false;
+            }
+
+            function showModal(url, wnd, width, height) {
+                var scheme = window.location.href.split('/')[0] || 'http:';
+                radopen(scheme === 'https:' || $('.secureform').length > 0
+                    ? setPreventHttpRedirectParam(url) : url, wnd, width + 'px', height + 'px').center();
+            }
+
+            function RadWindowLoadFunction(url) {
+                window.location = url;
+            }
+        </script>
+
+        <style type="text/css">
+            /* force to set z-index as max value */
+            .WindowLoadingContentTreeRadWindow {
+                z-index: 53001 !important;
+            }
+        </style>
+        <div id="ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree" class="WindowLoadingContentTreeRadWindow" style="display:none;">
+	<!-- 2022.3.1109.40 --><div id="ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree_alerttemplate" style="display:none;">
+        <div class="rwDialogPopup radalert">
+            <div class="rwDialogText">
+            {1}
+            </div>
+
+            <div>
+                <a  onclick="$find('{0}').close(true);"
+                class="rwPopupButton" href="javascript:void(0);">
+                    <span class="rwOuterSpan">
+                        <span class="rwInnerSpan">##LOC[OK]##</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        </div><div id="ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree_prompttemplate" style="display:none;">&nbsp;</div><div id="ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree_confirmtemplate" style="display:none;">&nbsp;</div><input id="ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree_ClientState" name="ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree_ClientState" type="hidden" />
+</div><div id="ctl00_ContentPlaceHolder1_RadWindowLoadingContentTree" style="display:none;">
+	<div id="ctl00_ContentPlaceHolder1_RadWindowLoadingContentTree_C" style="display:none;">
+
+	</div><input id="ctl00_ContentPlaceHolder1_RadWindowLoadingContentTree_ClientState" name="ctl00_ContentPlaceHolder1_RadWindowLoadingContentTree_ClientState" type="hidden" />
+</div><div id="ctl00_ContentPlaceHolder1_RadWindowPermissionControl" style="display:none;">
+	<div id="ctl00_ContentPlaceHolder1_RadWindowPermissionControl_C" style="display:none;">
+
+	</div><input id="ctl00_ContentPlaceHolder1_RadWindowPermissionControl_ClientState" name="ctl00_ContentPlaceHolder1_RadWindowPermissionControl_ClientState" type="hidden" />
+</div>
+    
+<div id="theme" class="electricDept not-homepage not-Sdept subpage"><div id="menubar"><div class="inner-bar"><a href="#responsiveNav" id="mobile-bar" title="Mobile Menu"><span></span>MENU</a><?xml version="1.0" encoding="utf-16"?><div class="container"><nav class="offset-by-four eleven columns alpha omega megamenu&#xA;          mega_menu"><ul class="nav-menu"><li class="nav-item level1 mega_government"><a href="/government" title="Government"><span class="menuTitle">Government</span></a><div class="sub-nav"><div class="sub-navBackground container"><div class="five columns omega"><div class="menuImage"><img class="lazyload" data-src="/UserFiles/Servers/Server_7964838/Image/government-img1.jpg" alt="government Thumbnail" /></div><div class="menuSummary"><span>Working for you</span><p>Our council-manager form of government combines the civic leadership of elected officials with the managerial experience of an appointed city manager. Beyond all else, we are a service organization, and we are here to serve our community.</p><a href="/cms/One.aspx?portalId=7964922&pageId=8541354">Government Overview</a></div><!----></div><div class="second-level-list eleven columns alpha"><ul class="second-level-list"><li class="level2 mega_&#xA;            agendas_minutes"><a href="/government/agendas_minutes" title="Agendas &amp; Minutes">Agendas &amp; Minutes</a><ul class="third-level-list"><li class="level3"><a href="/government/agendas_minutes/all_agendas___minutes" title="All Agendas &amp; Minutes"><span>All Agendas &amp; Minutes</span></a></li></ul></li><li class="level2 mega_&#xA;            boards_commissions" data-cat="Apply…"><a href="/government/boards_commissions" title="Boards &amp; Commissions">Boards &amp; Commissions</a><ul class="third-level-list"><li class="level3"><a href="/government/boards_commissions/board_of_appeals" title="Board of Appeals"><span>Board of Appeals</span></a></li><li class="level3"><a href="/government/boards_commissions/charter_review_commission" title="Charter Review Commission"><span>Charter Review Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/design_committee" title="Design Committee"><span>Design Committee</span></a></li><li class="level3"><a href="/government/boards_commissions/economic_development_advisory_committee" title="Economic Development Advisory Committee"><span>Economic Development Advisory Committee</span></a></li><li class="level3"><a href="/government/boards_commissions/library_board" title="Library Board"><span>Library Board</span></a></li><li class="level3"><a href="/government/boards_commissions/local_sales_tax_citizens__oversight_committee" title="Local Sales Tax Citizens' Oversight Committee"><span>Local Sales Tax Citizens' Oversight Committee</span></a></li><li class="level3"><a href="/government/boards_commissions/parks_recreation_commission" title="Parks &amp; Recreation Commission"><span>Parks &amp; Recreation Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/personnel_board" title="Personnel Board"><span>Personnel Board</span></a></li><li class="level3"><a href="/government/boards_commissions/placer_mosquito_vector_control_district" title="Placer Mosquito &amp; Vector Control District"><span>Placer Mosquito &amp; Vector Control District</span></a></li><li class="level3"><a href="/government/boards_commissions/planning_commission" title="Planning Commission"><span>Planning Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/public_utilities_commission" title="Public Utilities Commission"><span>Public Utilities Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/grants_advisory_commission" title="Grants Advisory Commission"><span>Grants Advisory Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/senior_commission" title="Senior Commission"><span>Senior Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/transportation_commission" title="Transportation Commission"><span>Transportation Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/youth_sports_coalition" title="Youth Sports Coalition"><span>Youth Sports Coalition</span></a></li><li class="level3"><a href="/government/boards_commissions/independent_redistricting_commission" title="Independent Redistricting Commission"><span>Independent Redistricting Commission</span></a></li><li class="level3"><a href="/government/boards_commissions/law___regulation_committee" title="Law &amp; Regulation Committee"><span>Law &amp; Regulation Committee</span></a></li></ul></li><li class="level2 mega_&#xA;            city_council"><a href="/government/city_council" title="City Council">City Council</a><ul class="third-level-list"><li class="level3"><a href="/government/city_council/meet_council" title="Meet Council"><span>Meet Council</span></a></li><li class="level3"><a href="/government/city_council/agendas_minutes" title="Agendas &amp; Minutes"><span>Agendas &amp; Minutes</span></a></li><li class="level3"><a href="/government/city_council/strategic_plan_2021-2024" title="Strategic Plan 2021-2024"><span>Strategic Plan 2021-2024</span></a></li><li class="level3"><a href="/government/city_council/council_goals" title="Council Goals"><span>Council Goals</span></a></li><li class="level3"><a href="/government/city_council/council_discretionary_funds" title="Council Discretionary Funds "><span>Council Discretionary Funds </span></a></li><li class="level3"><a href="/government/city_council/community_coffee_with_city_council" title="Community Coffee with City Council"><span>Community Coffee with City Council</span></a></li><li class="level3"><a href="/government/city_council/engageroseville" title="EngageRoseville"><span>EngageRoseville</span></a></li><li class="level3"><a href="/government/city_council/placer_county_grand_jury" title="Placer County Grand Jury"><span>Placer County Grand Jury</span></a></li><li class="level3"><a href="/government/city_council/contact_city_council" title="Contact City Council"><span>Contact City Council</span></a></li><li class="level3"><a href="/government/city_council/hotel_and_lodging_tax_measure" title="Hotel and Lodging Tax Measure"><span>Hotel and Lodging Tax Measure</span></a></li><li class="level3"><a href="/government/city_council/agency_report_of_public_official_appointments_2023" title="Agency Report of Public Official Appointments 2023"><span>Agency Report of Public Official Appointments 2023</span></a></li><li class="level3"><a href="/government/city_council/state_of_the_city_2023" title="State of the City 2023"><span>State of the City 2023</span></a></li></ul></li><li class="level2 mega_&#xA;            city_charter"><a href="/government/city_charter" title="City Charter">City Charter</a></li><li class="level2 mega_&#xA;            city_manager"><a href="/government/city_manager" title="City Manager">City Manager</a><ul class="third-level-list"><li class="level3"><a href="/government/city_manager/city_manager_budget_message" title="City Manager Budget Message"><span>City Manager Budget Message</span></a></li><li class="level3"><a href="/government/city_manager/summary_of_budget_cuts_2007-2018" title="Summary of Budget Cuts 2007-2018 "><span>Summary of Budget Cuts 2007-2018 </span></a></li><li class="level3"><a href="/government/city_manager/grants" title="Grants"><span>Grants</span></a></li><li class="level3"><a href="/government/city_manager/rosevilles_vision" title="Roseville's Vision"><span>Roseville's Vision</span></a></li><li class="level3"><a href="/government/city_manager/national_community_survey" title="National Community Survey"><span>National Community Survey</span></a></li><li class="level3"><a href="/government/city_manager/roseville_accolades" title="Roseville Accolades"><span>Roseville Accolades</span></a></li><li class="level3"><a href="/government/city_manager/diversity_and_inclusion" title="Diversity and Inclusion "><span>Diversity and Inclusion </span></a></li><li class="level3"><a href="/government/city_manager/city_manager_s_quarterly_reports" title="City Manager's Quarterly Reports"><span>City Manager's Quarterly Reports</span></a></li></ul></li><li class="level2 mega_&#xA;            departments"><a href="/government/departments" title="Departments &amp; Divisions">Departments &amp; Divisions</a><ul class="third-level-list"><li class="level3"><a href="/government/departments/city_attorney" title="City Attorney"><span>City Attorney</span></a></li><li class="level3"><a href="/government/departments/city_clerk" title="City Clerk"><span>City Clerk</span></a></li><li class="level3"><a href="/government/departments/development_services" title="Development Services"><span>Development Services</span></a></li><li class="level3"><a href="/government/departments/economic_development" title="Economic Development"><span>Economic Development</span></a></li><li class="level3"><a href="/government/departments/electric_utility" title="Electric Utility"><span>Electric Utility</span></a></li><li class="level3"><a href="/government/departments/environmental_utilities" title="Environmental Utilities"><span>Environmental Utilities</span></a></li><li class="level3"><a href="/government/departments/finance" title="Finance"><span>Finance</span></a></li><li class="level3"><a href="/government/departments/fire_department" title="Fire Department"><span>Fire Department</span></a></li><li class="level3"><a href="/government/departments/human_resources" title="Human Resources"><span>Human Resources</span></a></li><li class="level3"><a href="/government/departments/information_technology" title="Information Technology"><span>Information Technology</span></a></li><li class="level3"><a href="/government/departments/library" title="Library"><span>Library</span></a></li><li class="level3"><a href="/government/departments/parks" title="Parks &amp; Recreation"><span>Parks &amp; Recreation</span></a></li><li class="level3"><a href="/government/departments/police_department" title="Police Department"><span>Police Department</span></a></li><li class="level3"><a href="/government/departments/public_affairs_communications" title="Public Affairs &amp; Communications"><span>Public Affairs &amp; Communications</span></a></li><li class="level3"><a href="/government/departments/public_works" title="Public Works"><span>Public Works</span></a></li></ul></li><li class="level2 mega_&#xA;            jobs"><a href="/government/jobs" title="Jobs">Jobs</a></li><li class="level2 mega_&#xA;            municipal_code"><a href="/government/municipal_code" title="Municipal Code">Municipal Code</a></li><li class="level2 mega_&#xA;            contact_us"><a href="/government/contact_us" title="Contact Us">Contact Us</a></li><li class="level2 mega_&#xA;            COVID-19_information"><a href="/government/COVID-19_information" title="COVID-19 information">COVID-19 information</a></li><li class="level2 mega_&#xA;            emergency_information"><a href="/government/emergency_information" title="Emergency Information">Emergency Information</a><ul class="third-level-list"><li class="level3"><a href="/government/emergency_information/winter_storm_information" title="Winter Storm Information"><span>Winter Storm Information</span></a></li></ul></li></ul></div></div></div></li><li class="nav-item level1 mega_residents"><a href="/residents" title="Residents"><span class="menuTitle">Residents</span></a><div class="sub-nav"><div class="sub-navBackground container"><div class="five columns omega"><div class="menuImage"><img class="lazyload" data-src="/UserFiles/Servers/Server_7964838/Image/government-img1.jpg" alt="residents Thumbnail" /></div><div class="menuSummary"><span>Welcome home</span><p>Roseville is the largest city in Placer County and called home by 150,000 people. Find the resources you need here.</p><a href="/cms/One.aspx?portalId=7964922&pageId=8541357">Residents Overview</a></div><!----></div><div class="second-level-list eleven columns alpha"><ul class="second-level-list"><li class="level2 mega_&#xA;            affordable_housing"><a href="/residents/affordable_housing" title="Affordable Housing">Affordable Housing</a><ul class="third-level-list"><li class="level3"><a href="/residents/affordable_housing/affordable_housing_policy" title="Affordable Housing Policy"><span>Affordable Housing Policy</span></a></li><li class="level3"><a href="/residents/affordable_housing/community_development_block_grant_cdbg" title="Community Development Block Grant (CDBG)"><span>Community Development Block Grant (CDBG)</span></a></li><li class="level3"><a href="/residents/affordable_housing/fair_housing" title="Fair Housing"><span>Fair Housing</span></a></li><li class="level3"><a href="/residents/affordable_housing/Information_and_referrals" title="Information and Referrals"><span>Information and Referrals</span></a></li><li class="level3"><a href="/residents/affordable_housing/ownership_programs" title="Ownership Programs"><span>Ownership Programs</span></a></li><li class="level3"><a href="/residents/affordable_housing/rental_programs" title="Rental Programs"><span>Rental Programs</span></a></li><li class="level3"><a href="/residents/affordable_housing/landlords" title="Landlords"><span>Landlords</span></a></li><li class="level3"><a href="/residents/affordable_housing/contact_us" title="Contact us"><span>Contact us</span></a></li><li class="level3"><a href="/residents/affordable_housing/permanent_local_housing_allocation_application" title="Permanent Local Housing Allocation Application "><span>Permanent Local Housing Allocation Application </span></a></li></ul></li><li class="level2 mega_&#xA;            city_events"><a href="/residents/city_events" title="City Events">City Events</a><ul class="third-level-list"><li class="level3"><a href="/residents/city_events/be_well_roseville" title="Be Well Roseville"><span>Be Well Roseville</span></a></li><li class="level3"><a href="/residents/city_events/breakfast_with_santa" title="Breakfast With Santa"><span>Breakfast With Santa</span></a></li><li class="level3"><a href="/residents/city_events/campfires" title="Campfires"><span>Campfires</span></a></li><li class="level3"><a href="/residents/city_events/comedy_night" title="Comedy Night"><span>Comedy Night</span></a></li><li class="level3"><a href="/residents/city_events/craft_fairs" title="Craft Fairs"><span>Craft Fairs</span></a></li><li class="level3"><a href="/residents/city_events/downtown_area_street_closures" title="Downtown Area Street Closures"><span>Downtown Area Street Closures</span></a></li><li class="level3"><a href="/residents/city_events/downtown_holiday_celebration" title="Downtown Holiday Celebration"><span>Downtown Holiday Celebration</span></a></li><li class="level3"><a href="/residents/city_events/egg-tober" title="Egg-tober"><span>Egg-tober</span></a></li><li class="level3"><a href="/residents/city_events/family_fest" title="Family Fest"><span>Family Fest</span></a></li><li class="level3"><a href="/residents/city_events/floating_pumpkin_patch" title="Floating Pumpkin Patch"><span>Floating Pumpkin Patch</span></a></li><li class="level3"><a href="/residents/city_events/friday_flicks" title="Friday Flicks"><span>Friday Flicks</span></a></li><li class="level3"><a href="/residents/city_events/gingerbread_house_factory" title="Gingerbread House Factory"><span>Gingerbread House Factory</span></a></li><li class="level3"><a href="/residents/city_events/grinchmas_stroll" title="Grinchmas Stroll"><span>Grinchmas Stroll</span></a></li><li class="level3"><a href="/residents/city_events/honoring_veterans" title="Honoring Veterans"><span>Honoring Veterans</span></a></li><li class="level3"><a href="/residents/city_events/job_fair" title="Job Fair"><span>Job Fair</span></a></li><li class="level3"><a href="/residents/city_events/milk___cookies_with_santa" title="Milk &amp; Cookies With Santa"><span>Milk &amp; Cookies With Santa</span></a></li><li class="level3"><a href="/residents/city_events/neighborhood_santa" title="Neighborhood Santa"><span>Neighborhood Santa</span></a></li><li class="level3"><a href="/residents/city_events/sensory_family_fun" title="Sensory Family Fun"><span>Sensory Family Fun</span></a></li><li class="level3"><a href="/residents/city_events/turkey_trot" title="Turkey Trot"><span>Turkey Trot</span></a></li></ul></li><li class="level2 mega_&#xA;            emergency_preparedness"><a href="/residents/emergency_preparedness" title="Emergency Preparedness">Emergency Preparedness</a></li><li class="level2 mega_&#xA;            find_my_district"><a href="/residents/find_my_district" title="Find my City Council District">Find my City Council District</a></li><li class="level2 mega_&#xA;            fire_department"><a href="/residents/fire_department" title="Fire Department ">Fire Department </a></li><li class="level2 mega_&#xA;            homelessness"><a href="/residents/homelessness" title="Homelessness">Homelessness</a><ul class="third-level-list"><li class="level3"><a href="/residents/homelessness/roseville_s_approach_to_homelessness" title="Roseville's approach to homelessness"><span>Roseville's approach to homelessness</span></a></li></ul></li><li class="level2 mega_&#xA;            library"><a href="/residents/library" title="Library">Library</a></li><li class="level2 mega_&#xA;            licensing"><a href="/residents/licensing" title="Licensing">Licensing</a></li><li class="level2 mega_&#xA;            maidu_museum_historic_site"><a href="/residents/maidu_museum_historic_site" title="Maidu Museum &amp; Historic Site">Maidu Museum &amp; Historic Site</a></li><li class="level2 mega_&#xA;            my_r_s_v_l"><a href="/residents/my_r_s_v_l" title="myRSVL">myRSVL</a><ul class="third-level-list"><li class="level3"><a href="/residents/my_r_s_v_l/nearby_requests" title="Nearby Requests"><span>Nearby Requests</span></a></li><li class="level3"><a href="/residents/my_r_s_v_l/information" title="Information"><span>Information</span></a></li></ul></li><li class="level2 mega_&#xA;            parks___trails"><a href="/residents/parks___trails" title="Parks &amp; Trails">Parks &amp; Trails</a></li><li class="level2 mega_&#xA;            police_department"><a href="/residents/police_department" title="Police Department ">Police Department </a></li><li class="level2 mega_&#xA;            recreation"><a href="/residents/recreation" title="Recreation">Recreation</a></li><li class="level2 mega_&#xA;            roseville_coalition_of_neighborhood_associations"><a href="/residents/roseville_coalition_of_neighborhood_associations" title="Roseville Coalition of Neighborhood Associations">Roseville Coalition of Neighborhood Associations</a></li><li class="level2 mega_&#xA;            roseville_transit"><a href="/residents/roseville_transit" title="Roseville Transit">Roseville Transit</a></li><li class="level2 mega_&#xA;            trash___greenwaste"><a href="/residents/trash___greenwaste" title="Trash &amp; Green Waste">Trash &amp; Green Waste</a></li><li class="level2 mega_&#xA;            utility_billing"><a href="/residents/utility_billing" title="Utility Billing">Utility Billing</a></li><li class="level2 mega_&#xA;            utility_exploration_center"><a href="/residents/utility_exploration_center" title="Utility Exploration Center">Utility Exploration Center</a><ul class="third-level-list"><li class="level3"><a href="/residents/utility_exploration_center/community_events" title="Community Events"><span>Community Events</span></a></li><li class="level3"><a href="/residents/utility_exploration_center/inspiration_garden" title="Inspiration Garden"><span>Inspiration Garden</span></a></li><li class="level3"><a href="/residents/utility_exploration_center/league_of_explorers__new_" title="League of Explorers"><span>League of Explorers</span></a></li><li class="level3"><a href="/residents/utility_exploration_center/school_programs" title="School Programs"><span>School Programs</span></a></li><li class="level3"><a href="/residents/utility_exploration_center/tours_and_workshops" title="Tours and Workshops"><span>Tours and Workshops</span></a></li><li class="level3"><a href="/residents/utility_exploration_center/volunteers_-_n_e_w" title="Volunteers"><span>Volunteers</span></a></li></ul></li><li class="level2 mega_&#xA;            utility_rebates"><a href="/residents/utility_rebates" title="Utility Rebates">Utility Rebates</a></li><li class="level2 mega_&#xA;            we_are_roseville"><a href="/residents/we_are_roseville" title="We Are Roseville">We Are Roseville</a></li><li class="level2 mega_&#xA;            tots"><a href="/residents/tots" title="Tots">Tots</a><ul class="third-level-list"><li class="level3"><a href="/residents/tots/news" title="News"><span>News</span></a></li><li class="level3"><a href="/residents/tots/calendar" title="Calendar"><span>Calendar</span></a></li></ul></li><li class="level2 mega_&#xA;            kids"><a href="/residents/kids" title="Kids">Kids</a><ul class="third-level-list"><li class="level3"><a href="/residents/kids/news" title="News"><span>News</span></a></li><li class="level3"><a href="/residents/kids/calendar" title="Calendar"><span>Calendar</span></a></li></ul></li><li class="level2 mega_&#xA;            teens"><a href="/residents/teens" title="Teens">Teens</a><ul class="third-level-list"><li class="level3"><a href="/residents/teens/news" title="News"><span>News</span></a></li><li class="level3"><a href="/residents/teens/calendar" title="Calendar"><span>Calendar</span></a></li></ul></li><li class="level2 mega_&#xA;            adults"><a href="/residents/adults" title="Adults">Adults</a><ul class="third-level-list"><li class="level3"><a href="/residents/adults/news" title="News"><span>News</span></a></li><li class="level3"><a href="/residents/adults/calendar" title="Calendar"><span>Calendar</span></a></li></ul></li><li class="level2 mega_&#xA;            seniors"><a href="/residents/seniors" title="Seniors">Seniors</a><ul class="third-level-list"><li class="level3"><a href="/residents/seniors/news" title="News"><span>News</span></a></li></ul></li><li class="level2 mega_&#xA;            family"><a href="/residents/family" title="Family">Family</a><ul class="third-level-list"><li class="level3"><a href="/residents/family/news" title="News"><span>News</span></a></li><li class="level3"><a href="/residents/family/calendar" title="Calendar"><span>Calendar</span></a></li></ul></li></ul></div></div></div></li><li class="nav-item level1 mega_business"><a href="/business" title="Business"><span class="menuTitle">Business</span></a><div class="sub-nav"><div class="sub-navBackground container"><div class="five columns omega"><div class="menuImage"><img class="lazyload" data-src="/UserFiles/Servers/Server_7964838/Image/Government/Departments/Economic Development/Office building.jpg" alt="business Thumbnail" /></div><div class="menuSummary"><span>Where opportunity lives</span><p>We are a place where businesses small and large find success. Ideally located, Roseville provides first-rate services, competitive costs, solid long-range planning and an educated, growing population.</p><a href="/cms/One.aspx?portalId=7964922&pageId=8541364">Business Overview</a></div><!----></div><div class="second-level-list eleven columns alpha"><ul class="second-level-list"><li class="level2 mega_&#xA;            development_fees"><a href="/business/development_fees" title="Development Fees">Development Fees</a></li><li class="level2 mega_&#xA;            economic_development"><a href="/business/economic_development" title="Economic Development">Economic Development</a></li><li class="level2 mega_&#xA;            permits_licenses"><a href="/business/permits_licenses" title="Permits &amp; Licenses">Permits &amp; Licenses</a></li><li class="level2 mega_&#xA;            procurement_services"><a href="/business/procurement_services" title="Procurement Services">Procurement Services</a><ul class="third-level-list"><li class="level3"><a href="/business/procurement_services/bids_rfps" title="Bids &amp; RFP's"><span>Bids &amp; RFP's</span></a></li><li class="level3"><a href="/business/procurement_services/municipal_code" title="Municipal Code"><span>Municipal Code</span></a></li><li class="level3"><a href="/business/procurement_services/methods_of_procurement" title="Methods of Procurement"><span>Methods of Procurement</span></a></li><li class="level3"><a href="/business/procurement_services/standard_agreement_information" title="Standard Agreement Information"><span>Standard Agreement Information</span></a></li><li class="level3"><a href="/business/procurement_services/invoicing" title="Invoicing"><span>Invoicing</span></a></li><li class="level3"><a href="/business/procurement_services/faq" title="FAQ"><span>FAQ</span></a></li><li class="level3"><a href="/business/procurement_services/erp_supplier_portal_info" title="ERP Supplier Portal Information and Instructions"><span>ERP Supplier Portal Information and Instructions</span></a></li><li class="level3"><a href="/business/procurement_services/contact_us" title="Contact Us"><span>Contact Us</span></a></li></ul></li><li class="level2 mega_&#xA;            utility_billing"><a href="/business/utility_billing" title="Utility Billing">Utility Billing</a></li><li class="level2 mega_&#xA;            utility_rebates"><a href="/business/utility_rebates" title="Utility Rebates">Utility Rebates</a></li><li class="level2 mega_&#xA;            trash__recycling___organics"><a href="/business/trash__recycling___organics" title="Trash, Recycling &amp; Organics">Trash, Recycling &amp; Organics</a></li></ul></div></div></div></li><li class="nav-item level1 mega_online_services"><a href="/online_services" title="Online Services"><span class="menuTitle">Online Services</span></a><div class="sub-nav"><div class="sub-navBackground container"><div class="second-level-list eleven columns alpha"><ul class="second-level-list"><li class="level2 mega_&#xA;            permit_center"><a href="/online_services/permit_center" title="Permit Center">Permit Center</a></li><li class="level2 mega_&#xA;            business_license"><a href="/online_services/business_license" title="Business License">Business License</a></li><li class="level2 mega_&#xA;            parcel_viewer"><a href="/online_services/parcel_viewer" title="Parcel Viewer">Parcel Viewer</a></li><li class="level2 mega_&#xA;            code_enforcement"><a href="/online_services/code_enforcement" title="Code Enforcement">Code Enforcement</a></li><li class="level2 mega_&#xA;            open_data_portal"><a href="/online_services/open_data_portal" title="Open Data Portal">Open Data Portal</a></li><li class="level2 mega_&#xA;            bids___r_f_ps"><a href="/online_services/bids___r_f_ps" title="Bids &amp; RFPs">Bids &amp; RFPs</a></li><li class="level2 mega_&#xA;            city_municipal_code"><a href="/online_services/city_municipal_code" title="City Municipal Code">City Municipal Code</a></li><li class="level2 mega_&#xA;            city_charter"><a href="/online_services/city_charter" title="City Charter">City Charter</a></li><li class="level2 mega_&#xA;            find_my_district"><a href="/online_services/find_my_district" title="Find My Council District">Find My Council District</a></li><li class="level2 mega_&#xA;            watch_city_council___commission_meetings"><a href="/online_services/watch_city_council___commission_meetings" title="Watch Council &amp; Commission Meetings">Watch Council &amp; Commission Meetings</a></li><li class="level2 mega_&#xA;            submit_a_crime_report"><a href="/online_services/submit_a_crime_report" title="Submit a Crime Report">Submit a Crime Report</a></li><li class="level2 mega_&#xA;            submit_a_crime_tip"><a href="/online_services/submit_a_crime_tip" title="Submit a Crime Tip">Submit a Crime Tip</a></li><li class="level2 mega_&#xA;            crime_mapping"><a href="/online_services/crime_mapping" title="Crime Mapping">Crime Mapping</a></li><li class="level2 mega_&#xA;            pay_parking_citation"><a href="/online_services/pay_parking_citation" title="Pay Parking Citation">Pay Parking Citation</a></li><li class="level2 mega_&#xA;            center_for_g_i_s_maps"><a href="/online_services/center_for_g_i_s_maps" title="Center for GIS Maps">Center for GIS Maps</a></li><li class="level2 mega_&#xA;            view_or_pay_utility_bill"><a href="/online_services/view_or_pay_utility_bill" title="View or Pay Utility Bill">View or Pay Utility Bill</a></li><li class="level2 mega_&#xA;            infrastructure_project_map"><a href="/online_services/infrastructure_project_map" title="Infrastructure Project Map">Infrastructure Project Map</a></li><li class="level2 mega_&#xA;            public_access"><a href="/online_services/public_access" title="Public Access">Public Access</a></li><li class="level2 mega_&#xA;            my_r_s_v_l"><a href="/online_services/my_r_s_v_l" title="myRSVL">myRSVL</a></li></ul></div></div></div></li><li class="nav-item level1 mega_how_do_i___"><a href="/how_do_i___" title="How Do I..."><span class="menuTitle">How Do I...</span></a><div class="sub-nav"><div class="sub-navBackground container"><div class="second-level-list eleven columns alpha"><ul class="second-level-list"><li class="level2 mega_&#xA;            apply"><a href="/how_do_i___/apply" title="Apply…">Apply…</a><ul class="third-level-list"><li class="level3"><a href="/how_do_i___/apply/boards_commissions" title="Boards &amp; Commissions"><span>Boards &amp; Commissions</span></a></li><li class="level3"><a href="/how_do_i___/apply/business_license" title="Business License"><span>Business License</span></a></li><li class="level3"><a href="/how_do_i___/apply/job_openings" title="Job Openings"><span>Job Openings</span></a></li><li class="level3"><a href="/how_do_i___/apply/passport" title="Passport"><span>Passport</span></a></li><li class="level3"><a href="/how_do_i___/apply/volunteer_opportunities" title="Volunteer Opportunities"><span>Volunteer Opportunities</span></a></li><li class="level3"><a href="/how_do_i___/apply/building_permit" title="Building Permit"><span>Building Permit</span></a></li><li class="level3"><a href="/how_do_i___/apply/building_inspection" title="Building Inspection "><span>Building Inspection </span></a></li><li class="level3"><a href="/how_do_i___/apply/engineering_permit" title="Engineering Permit"><span>Engineering Permit</span></a></li><li class="level3"><a href="/how_do_i___/apply/planning_permit_or_entitlement" title="Planning Permit or Entitlement"><span>Planning Permit or Entitlement</span></a></li><li class="level3"><a href="/how_do_i___/apply/administrative_citation_appeal" title="Administrative Citation Appeal"><span>Administrative Citation Appeal</span></a></li></ul></li><li class="level2 mega_&#xA;            get_information_about"><a href="/how_do_i___/get_information_about" title="Get Information About…">Get Information About…</a><ul class="third-level-list"><li class="level3"><a href="/how_do_i___/get_information_about/AlarmPermits" title="Alarm Permits"><span>Alarm Permits</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/animal_control_services" title="Animal Control Services"><span>Animal Control Services</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/b_i_ds___r_f_ps" title="BIDs &amp; RFPs"><span>BIDs &amp; RFPs</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/chamber_of_commerce" title="Chamber of Commerce"><span>Chamber of Commerce</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/city_charter" title="City Charter"><span>City Charter</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/city_events" title="City Events"><span>City Events</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/city_finances" title="City Finances"><span>City Finances</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/city_grants_program" title="City Grants Program"><span>City Grants Program</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/council_districts" title="Council Districts"><span>Council Districts</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/crime_prevention" title="Crime Prevention"><span>Crime Prevention</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/emergency_preparedness" title="Emergency Preparedness"><span>Emergency Preparedness</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/floodplain_management" title="Floodplain Management"><span>Floodplain Management</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/history_of_roseville" title="History of Roseville"><span>History of Roseville</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/library_services" title="Library Services"><span>Library Services</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/municipal_code" title="Municipal Code"><span>Municipal Code</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/public_records" title="Public Records"><span>Public Records</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/parks_facilities" title="Parks &amp; Facilities"><span>Parks &amp; Facilities</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/placer_county_grand_jury" title="Placer County Grand Jury"><span>Placer County Grand Jury</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/public_transportation" title="Public Transportation"><span>Public Transportation</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/road_work" title="Road Work"><span>Road Work</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/winter_storm_information" title="Winter Storm Information"><span>Winter Storm Information</span></a></li><li class="level3"><a href="/how_do_i___/get_information_about/zoning_and_building" title="Zoning and Building "><span>Zoning and Building </span></a></li></ul></li><li class="level2 mega_&#xA;            report"><a href="/how_do_i___/report" title="Report…">Report…</a><ul class="third-level-list"><li class="level3"><a href="/how_do_i___/report/abandoned_vehicles" title="Abandoned Vehicles"><span>Abandoned Vehicles</span></a></li><li class="level3"><a href="/how_do_i___/report/animal_control" title="Animal Control"><span>Animal Control</span></a></li><li class="level3"><a href="/how_do_i___/report/crime_report" title="Crime Report"><span>Crime Report</span></a></li><li class="level3"><a href="/how_do_i___/report/crime_tip" title="Crime Tip"><span>Crime Tip</span></a></li><li class="level3"><a href="/how_do_i___/report/Graffiti" title="Graffiti"><span>Graffiti</span></a></li><li class="level3"><a href="/how_do_i___/report/power_outage" title="Power Outage"><span>Power Outage</span></a></li><li class="level3"><a href="/how_do_i___/report/public_nuisance" title="Public Nuisance"><span>Public Nuisance</span></a></li><li class="level3"><a href="/how_do_i___/report/broken_street_light" title="Broken Street Light"><span>Broken Street Light</span></a></li><li class="level3"><a href="/how_do_i___/report/standing_water" title="Standing Water"><span>Standing Water</span></a></li><li class="level3"><a href="/how_do_i___/report/noise_complaints___other_non-_emergencies" title="Noise Complaints &amp; Other Non-Emergencies"><span>Noise Complaints &amp; Other Non-Emergencies</span></a></li></ul></li><li class="level2 mega_&#xA;            sign_up"><a href="/how_do_i___/sign_up" title="Sign Up…">Sign Up…</a><ul class="third-level-list"><li class="level3"><a href="/how_do_i___/sign_up/emergency_alerts" title="Emergency Alerts"><span>Emergency Alerts</span></a></li><li class="level3"><a href="/how_do_i___/sign_up/electronic_newsletters" title="Electronic Newsletters"><span>Electronic Newsletters</span></a></li><li class="level3"><a href="/how_do_i___/sign_up/recreation_programs" title="Recreation Programs"><span>Recreation Programs</span></a></li><li class="level3"><a href="/how_do_i___/sign_up/volunteer" title="Volunteer"><span>Volunteer</span></a></li></ul></li></ul></div></div></div></li><li class="nav-item level1 mega_current_council_agenda"><a href="/current_council_agenda" title="Current Council Agenda"><span class="menuTitle">Current Council Agenda</span></a></li></ul></nav></div><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/jquery-accessibleMegaMenu.js" type="text/javascript">//</script><script type="text/javascript">
+        $("nav:first").accessibleMegaMenu({
+          /* prefix for generated unique id attributes, which are required 
+          to indicate aria-owns, aria-controls and aria-labelledby */
+          uuidPrefix: "accessible-megamenu",
+          
+          /* css class used to define the megamenu styling */
+          menuClass: "nav-menu",
+          
+          /* css class for a top-level navigation item in the megamenu */
+          topNavItemClass: "nav-item",
+          
+          /* css class for a megamenu panel */
+          panelClass: "sub-nav",
+          
+          /* css class for a group of items within a megamenu panel */
+          panelGroupClass: "sub-nav-group",
+          
+          /* css class for the hover state */
+          hoverClass: "hover",
+          
+          /* css class for the focus state */
+          focusClass: "focus",
+          
+          /* css class for the open state */
+          openClass: "open"
+          });
+      </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('a.mm-subopen').each(function (i, item) {
+            setExpandCollapse();
+
+            $(item).click(function () {
+                setExpandCollapse();
+            });
+
+            function setExpandCollapse() {
+                var parent = $(item).parent();
+                var expandCollapse = 'Expand menu item';
+                if (parent !== undefined && parent.length > 0) {
+                    var selected = parent[0].classList.contains("mm-opened");
+                    if (selected !== undefined && selected === true) {
+                        expandCollapse = 'Collapse menu item';;
+                    }
+                    else {
+                        expandCollapse = 'Expand menu item';
+                    }
+                }
+
+                $(item).html("<span class=\"offScreen\">" + expandCollapse + " " + $(item).next().text() + "</span>");
+            }
+        });
+    });
+</script>
+<nav id="responsiveNav" class="mm-menu, cms-responsive-menu"><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8541354">Government</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8541894">Agendas &amp; Minutes</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=16870417">All Agendas &amp; Minutes</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8541922">Boards &amp; Commissions</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8542011">Board of Appeals</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8542137">Charter Review Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8542148">Design Committee</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8648390">Economic Development Advisory Committee</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8648565">Library Board</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=15334837">Local Sales Tax Citizens&#39; Oversight Committee</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8649324">Parks &amp; Recreation Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8649425">Personnel Board</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8649779">Placer Mosquito &amp; Vector Control District</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8649789">Planning Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8650520">Public Utilities Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8650528">Grants Advisory Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8650537">Senior Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8650544">Transportation Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8650553">Youth Sports Coalition</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18070628">Independent Redistricting Commission</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19562327">Law &amp; Regulation Committee</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8651240">City Council</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8712752">Meet Council</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8712755">Agendas &amp; Minutes</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16414911">Strategic Plan 2021-2024</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8712759">Council Goals</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11291164">Council Discretionary Funds </a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8712767">Community Coffee with City Council</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=9692786">EngageRoseville</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8712773">Placer County Grand Jury</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10041139">Contact City Council</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18658235">Hotel and Lodging Tax Measure</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19284425">Agency Report of Public Official Appointments 2023</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19653611">State of the City 2023</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18370698" target="_blank">City Charter</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8651243">City Manager</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=12479134" target="_blank">City Manager Budget Message</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=13376036" target="_blank">Summary of Budget Cuts 2007-2018 </a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8651252">Grants</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8716669">Roseville&#39;s Vision</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=17696821">National Community Survey</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18085228">Roseville Accolades</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18088952">Diversity and Inclusion </a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19641087">City Manager&#39;s Quarterly Reports</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717397">Departments &amp; Divisions</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717401">City Attorney</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717406">City Clerk</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717413">Development Services</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717416">Economic Development</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8663021">Electric Utility</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717422">Environmental Utilities</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717425">Finance</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8662225">Fire Department</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717431">Human Resources</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717434">Information Technology</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8717440">Library</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8738483">Parks &amp; Recreation</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8644548">Police Department</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8738491">Public Affairs &amp; Communications</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8738495">Public Works</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8738511">Jobs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8738514" target="_blank">Municipal Code</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8738516">Contact Us</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16551357">COVID-19 information</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18346274">Emergency Information</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=18346349">Winter Storm Information</a></li></ul></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8541357">Residents</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8904319">Affordable Housing</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8921458">Affordable Housing Policy</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8921509">Community Development Block Grant (CDBG)</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8922342">Fair Housing</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8922391">Information and Referrals</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8904336">Ownership Programs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8924854">Rental Programs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19872509">Landlords</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10477021">Contact us</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16862145">Permanent Local Housing Allocation Application </a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8889915">City Events</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=15838736">Be Well Roseville</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=17863004">Breakfast With Santa</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11461066">Campfires</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8889976">Comedy Night</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8889987">Craft Fairs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8889996">Downtown Area Street Closures</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8889991">Downtown Holiday Celebration</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18684470">Egg-tober</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8890020">Family Fest</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8890032">Floating Pumpkin Patch</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8890037">Friday Flicks</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18684475">Gingerbread House Factory</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14624911">Grinchmas Stroll</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18684480">Honoring Veterans</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19159407">Job Fair</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19692099">Milk &amp; Cookies With Santa</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8890064">Neighborhood Santa</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19751191">Sensory Family Fun</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8890571">Turkey Trot</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=12611410">Emergency Preparedness</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16519924">Find my City Council District</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10875591">Fire Department </a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16161595">Homelessness</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=18959573">Roseville&#39;s approach to homelessness</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935661">Library</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=17373503">Licensing</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935702">Maidu Museum &amp; Historic Site</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19725388">myRSVL</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=19860637">Nearby Requests</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19860794">Information</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10947786">Parks &amp; Trails</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10875610">Police Department </a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935698">Recreation</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935691" target="_blank">Roseville Coalition of Neighborhood Associations</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8920632">Roseville Transit</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10961859">Trash &amp; Green Waste</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935699">Utility Billing</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8715907">Utility Exploration Center</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=19384522">Community Events</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19425801">Inspiration Garden</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19417753">League of Explorers</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19402906">School Programs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19385885">Tours and Workshops</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16829872">Volunteers</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935671">Utility Rebates</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16628517">We Are Roseville</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942751">Tots</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942752">News</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942754">Calendar</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8935727">Kids</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942637">News</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942640">Calendar</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942758">Teens</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942759">News</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942761">Calendar</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942769">Adults</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942770">News</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942772">Calendar</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942774">Seniors</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942775">News</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942779">Family</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942780">News</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10942782">Calendar</a></li></ul></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8541364">Business</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8969193">Development Fees</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8969203">Economic Development</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8969198">Permits &amp; Licenses</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8944074">Procurement Services</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8944077">Bids &amp; RFP&#39;s</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8969240" target="_blank">Municipal Code</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8969242">Methods of Procurement</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979438">Standard Agreement Information</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979502">Invoicing</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8944484">FAQ</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14975676">ERP Supplier Portal Information and Instructions</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979510">Contact Us</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979566">Utility Billing</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8904588">Utility Rebates</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18319064">Trash, Recycling &amp; Organics</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14047625">Online Services</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=14047647">Permit Center</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059041" target="_blank">Business License</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059053" target="_blank">Parcel Viewer</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059207">Code Enforcement</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059208" target="_blank">Open Data Portal</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059211">Bids &amp; RFPs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059217" target="_blank">City Municipal Code</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18370729">City Charter</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16519948">Find My Council District</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059219">Watch Council &amp; Commission Meetings</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=15275563">Submit a Crime Report</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14059238" target="_blank">Submit a Crime Tip</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14060147" target="_blank">Crime Mapping</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14060149" target="_blank">Pay Parking Citation</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14060158">Center for GIS Maps</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=14060184">View or Pay Utility Bill</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=17863228">Infrastructure Project Map</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18525916" target="_blank">Public Access</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19840840">myRSVL</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8541371">How Do I...</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981842">Apply…</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979576">Boards &amp; Commissions</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979579">Business License</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979581">Job Openings</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979586">Passport</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979590">Volunteer Opportunities</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11042541">Building Permit</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11042548">Building Inspection </a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=13320708">Engineering Permit</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=13320749">Planning Permit or Entitlement</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18328238">Administrative Citation Appeal</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981848">Get Information About…</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=15687772">Alarm Permits</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979615">Animal Control Services</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11092439">BIDs &amp; RFPs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980153" target="_blank">Chamber of Commerce</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18370740">City Charter</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8979617">City Events</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980112">City Finances</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19323593">City Grants Program</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16519935">Council Districts</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980125">Crime Prevention</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=12611478">Emergency Preparedness</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19122638">Floodplain Management</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11247017">History of Roseville</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980141">Library Services</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=18745768">Municipal Code</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980142">Public Records</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980150">Parks &amp; Facilities</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980158">Placer County Grand Jury</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980161">Public Transportation</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=13469858">Road Work</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=19158958">Winter Storm Information</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=12274872">Zoning and Building </a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981873">Report…</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=12159835" target="_blank">Abandoned Vehicles</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980166">Animal Control</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=15275574">Crime Report</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980180" target="_blank">Crime Tip</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980230">Graffiti</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=10875634">Power Outage</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8980170">Public Nuisance</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=11697353">Broken Street Light</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=12275606">Standing Water</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=12275616">Noise Complaints &amp; Other Non-Emergencies</a></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981877">Sign Up…</a><ul><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981263" target="_blank">Emergency Alerts</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981267" target="_blank">Electronic Newsletters</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981268">Recreation Programs</a></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=8981269">Volunteer</a></li></ul></li></ul></li><li><a href="/cms/One.aspx?portalId=7964922&pageId=16873277">Current Council Agenda</a></li></ul></nav><div class="clear"></div></div></div><div class="featured-image"></div><div id="page"><div id="sub-content-full"><div id="main-content"><div class="inside-padding"><div id="breadcrumbs"><nav aria-label="Breadcrumb" class="portal-breadcrumb"><div><a href="/cms/One.aspx?portalId=7964922">City of Roseville</a>&nbsp;&raquo;&nbsp;<a href="/cms/One.aspx?portalId=7964922&pageId=8541354">Government</a>&nbsp;&raquo;&nbsp;<a href="/cms/One.aspx?portalId=7964922&pageId=8717397">Departments &amp; Divisions</a>&nbsp;&raquo;&nbsp;<a href="/cms/One.aspx?portalId=7964922&pageId=8663021">Electric Utility</a>&nbsp;&raquo;&nbsp;<a href="/cms/One.aspx?portalId=7964922&pageId=19058216">New Service </a>&nbsp;&raquo;&nbsp;<span aria-label="Current Page" id="spanBreadcrumbPageId">All-Electric Home Program</span></div></nav></div><div id="nav_sec-header"><span class="panel-title"></span><div id="sidebar" class="panel-content"><div class="inside-padding"><div class="ptl_col_1"><div class="ptl_portlet_vertical"><div id="ctl00_ContentPlaceHolder1_ctl04_divView">
+	<div class="skip-nav"><a href="#ctl00_ContentPlaceHolder1_ctl04_linkLastNav">Skip Sidebar Navigation</a></div>
+	<style>
+		.skip-nav a {
+			position: absolute;
+			left: -10000px;
+			top: auto;
+			overflow: hidden;
+		}
+
+		.skip-nav a:focus {
+			padding: 0.5em 0.5em 0.4em;
+			font-size: 14px;
+			margin: 0.6em 0;
+			border-radius: 5px;
+			font-weight: 600;
+			color: #654106;
+			background: #ffe1b1;
+			position: fixed;
+			z-index: 9000;
+			left: 10px;
+			top: auto;
+			position:relative;
+		}
+
+		.skip-last-nav {
+			visibility:hidden;
+		}
+	</style>
+	<?xml version="1.0" encoding="utf-16"?><div id="inside-nav"><div class="current-head"><!--//--><div class="nav-toggle clear"><a class="topPage" HREF="/cms/One.aspx?portalId=7964922&amp;pageId=19015893" title="All-Electric Home Program">All-Electric Home Program</a><div class="clear fix"><!----></div></div></div><div class="sidenav-slide"><!--//--><div class="sitenavl0 navWrp&#xA;        "><a class="navLink" HREF="/cms/One.aspx?portalId=7964922&amp;pageId=7964930" title="Home">Home</a></div><div class="sitenavl1 currentpage navWrp&#xA;        "><a class="navLink" HREF="/cms/One.aspx?portalId=7964922&amp;pageId=19015893" title="All-Electric Home Program">All-Electric Home Program</a></div><div class="sitenavl2 navWrp&#xA;        "><a class="navLink" HREF="/cms/One.aspx?portalId=7964922&amp;pageId=19015896" title="Electrification Resources">Electrification Resources</a></div></div></div>
+	<a href="portlets/#" id="ctl00_ContentPlaceHolder1_ctl04_linkLastNav" class="skip-last-nav">Last item for navigation</a>
+	<table id="ctl00_ContentPlaceHolder1_ctl04_tblNav" bordercolor="ffffff" border="0" cellspacing="3" cellpadding="0" width="100%">
+</table>
+
+</div>
+    
+
+
+</div></div></div></div><div class="sec-header"><h2>All-Electric Home Program</h2></div></div>
+
+<div class="reactComponent unifiedPublishingAlertComponent" data-portlet-instance-id="0"></div>
+<div class="ptl_page"><div class="ptl_col_1"><div class="ptl_portlet_horizontal" style="width:33%;"><div class="ptl_top_portlet" style="display:none;"></div><div id="ctl00_ContentPlaceHolder1_ctl10_divContent"><br>
+<br>
+<img src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Image/Electric/Electrification/RE_WebHeader_Electrification.png" alt="Plug in" title="Plug in" style="width: 100%;"></div>
+</div><div class="ptl_portlet_horizontal" style="width:33%;"><div class="ptl_top_portlet" style="display:none;"></div><div id="ctl00_ContentPlaceHolder1_ctl13_divContent"><h4 style="margin-left: 40px;">
+</h4>
+<p style="margin-left: 40px; text-align: left;">In Roseville, the benefits really add up with an all-electric home. According to research, California&rsquo;s buildings represent about 25% of the state&rsquo;s total greenhouse gas emissions. One way to reduce GHGs is building electrification. This includes switching from fossil fuels to electricity use for space heating, water heating, cooking and clothes drying. <br>
+<br>
+Check out our <strong><a href="/UserFiles/Servers/Server_7964838/File/Government/Departments/Roseville Electric Utility/Electric-1/ResidentialElectrification7.26.2023.pdf" target="_blank" title="Residential Electrification Presentation">Residential Electrification Presentation</a></strong> to learn more about the benefits of switching to electric appliances.&nbsp;<br>
+<br>
+We have incentives available for homebuilders who participate in our Electrification pilot program. Eligible homebuilders can receive incentives for all-electric single family and multi-family homes.<br>
+<br>
+</p></div>
+</div><div class="ptl_portlet_horizontal" style="width:33%;"><div class="ptl_top_portlet" style="display:none;"></div><div id="ctl00_ContentPlaceHolder1_ctl16_divContent"><p style="text-align: center;"><img src="https://www.roseville.ca.us/UserFiles/Servers/Server_7964838/Image/Electric/Electrification/RE_Electrification_WebIcons-01.png" alt="Graph" title="Graph" style="width: 641.194px;"></p></div>
+</div></div><div class="ptl_col_1_2"><div class="ptl_portlet_vertical"><div class="ptl_top_portlet" style="display:none;"></div>
+
+<script type="text/javascript">
+
+    function UpdateUserControl(elem) {
+        if (elem) {
+            var userCtrl = document.getElementById(elem.getAttribute("userctrlid"));
+            if (userCtrl) {
+                userCtrl.style.display = elem.checked ? "" : "none";
+            }
+        }
+    }
+</script>
+
+
+<div id="ctl00_ContentPlaceHolder1_ctl20_divView">
+    <div class="advanced-data-display" id="advanced-data-display-760232">
+        <?xml version="1.0" encoding="utf-16"?><span class="btnWrapper w-100"><a class="imageButton" href="https://www.roseville.ca.us/cms/One.aspx?portalId=7964922&amp;pageId=19015894" title="New Construction" style="background-image: url('/UserFiles/Servers/Server_7964838/Image/button-images/Electric/Construct.jpg');"><div class="buttonText"><span style="background-color: #203468;">New Construction</span></div></a></span>
+        
+    </div>
+</div>
+
+
+
+ <script type="text/javascript">
+          //<![CDATA[
+     function OpenFileExplorerDialog(txbClientId) {
+         var wnd = $find("ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow");
+         wnd.SetUrl("/cms/FileAdministration/RadWindowFileExplorer.aspx?clientId=" + txbClientId + '&AddELockerPaths=true');
+         wnd.show();
+     }
+
+     //This function is called from a code declared on the Explorer.aspx page
+     function OnFileSelected(fileSelected, clientId) {
+         var textbox = document.getElementById(clientId);
+         textbox.value = fileSelected;
+     }
+          //]]>
+     </script>
+
+<div id="ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow" style="display:none;">
+	<div id="ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow_C" style="display:none;">
+
+	</div><input id="ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow_ClientState" name="ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow_ClientState" type="hidden" />
+</div>
+</div></div><div class="ptl_col_1_2"><div class="ptl_portlet_vertical"><div class="ptl_top_portlet" style="display:none;"></div>
+
+<script type="text/javascript">
+
+    function UpdateUserControl(elem) {
+        if (elem) {
+            var userCtrl = document.getElementById(elem.getAttribute("userctrlid"));
+            if (userCtrl) {
+                userCtrl.style.display = elem.checked ? "" : "none";
+            }
+        }
+    }
+</script>
+
+
+<div id="ctl00_ContentPlaceHolder1_ctl24_divView">
+    <div class="advanced-data-display" id="advanced-data-display-760233">
+        <?xml version="1.0" encoding="utf-16"?><span class="btnWrapper w-100"><a class="imageButton" href="https://www.roseville.ca.us/cms/One.aspx?portalId=7964922&amp;pageId=19015895" title="Residential Electric Home Program" style="background-image: url('/UserFiles/Servers/Server_7964838/Image/button-images/Electric/Retro.jpg');"><div class="buttonText"><span style="background-color: #203468;">Residential Electric Home Program</span></div></a></span>
+        
+    </div>
+</div>
+
+
+
+ <script type="text/javascript">
+          //<![CDATA[
+     function OpenFileExplorerDialog(txbClientId) {
+         var wnd = $find("ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow");
+         wnd.SetUrl("/cms/FileAdministration/RadWindowFileExplorer.aspx?clientId=" + txbClientId + '&AddELockerPaths=true');
+         wnd.show();
+     }
+
+     //This function is called from a code declared on the Explorer.aspx page
+     function OnFileSelected(fileSelected, clientId) {
+         var textbox = document.getElementById(clientId);
+         textbox.value = fileSelected;
+     }
+          //]]>
+     </script>
+
+<div id="ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow" style="display:none;">
+	<div id="ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow_C" style="display:none;">
+
+	</div><input id="ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow_ClientState" name="ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow_ClientState" type="hidden" />
+</div>
+</div></div></div><div class="clear"></div></div></div><div class="clear"></div></div><div class="clear"></div></div><div class="clear"></div><style>
+	.featured-image {
+	   background-image: url("");
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         .hasfi {height: 350px;}
+  </style></div></div><div id="footer-wrapper"><div id="footer-social"><ul id="social"><li class="icn email"><a title="Mail" href="/cdn-cgi/l/email-protection#3644594553405f5a5a53535a535542445f557644594553405f5a5a53185557184345" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Email</span><em class="fa fa-envelope"></em></a></li><li class="icn facebook"><a title="Like Us on Facebook" href="/cms/One.aspx?portalId=7964922&pageId=8944102" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Facebook Page</span><em class="fa fa-facebook"></em></a></li><li class="icn twitter"><a title="Follow Us on Twitter" href="/cms/One.aspx?portalId=7964922&pageId=8944102" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Twitter Feed</span><em class="fa fa-twitter"></em></a></li><li class="icn nextdoor"><a title="Join Us on Nextdoor" href="https://nextdoor.com/" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Nextdoor</span><img title="Nextdoor" alt="Nextdoor" src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/Nextdoor-25.png"></img></a></li><li class="icn youtube"><a title="Watch Us on Youtube" href="https://www.youtube.com/user/CityofRosevilleCa?feature=watch" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Youtube Channel</span><em class="fa fa-youtube-play"></em></a></li><li class="icn instagram"><a title="Folllw Us on Instagram" href="https://www.instagram.com/cityofroseville/" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Instagram Page</span><em class="fa fa-instagram"></em></a></li><li class="icn everbridge"><a title="Join Us on Everbridge" href="https://member.everbridge.net/index/453003085611271#/login" target="_blank" class="hvr-sweep-to-right"><span class="offScreen">Everbridge</span><img title="Everbridge" alt="Everbridge" src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/everbridge-22.png"></img></a></li></ul></div><!-- end #footer-social --><div id="footer" class="bg-gradient"><div class="inside-padding"><div id="footer-left"><h3>City of Roseville</h3><div class="footer-address">311 Vernon St.</div><div class="footer-address">Roseville, California  95678</div><a class="footer-links" href="/">Contact Us</a></div><!-- end #footer-left --><div id="footer-right"><a class="footer-links" href="/cms/One.aspx?portalId=7964922&pageId=8541894">Agendas & Minutes</a><a class="footer-links" href="https://data.roseville.ca.us/" target="_blank">Open Data</a><a class="footer-links" href="/cms/One.aspx?portalId=7964922&pageId=8916788">Fiscally Sound</a><a class="footer-links" href="https://public.govdelivery.com/accounts/CAROSEVILLE/subscriber/new" target="_blank">Stay Informed</a></div><!-- end #footer-right --><div class="clear"></div></div></div><!-- end #footer --><div class="credits"><span id="ctl00_lblCompany" class="label_skin_corporation">City of Roseville | All Rights Reserved | <a href="/cms/One.aspx?portalId=7964922&pageId=10722460">Privacy Policy</a> | Powered by <a href="https://www.civiclive.com" />CivicLive</a> | &copy; 2023 Civiclive. </span></div></div><!-- #footer-wrapper --></div><link type="text/css" rel="stylesheet" media="screen" href="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/roseville-skeleton.css?v=2" /><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnsm4-hosted.civiclive.com/common/resources/DesignPortfolio/SiteThemes/CommonLib/scripts/breadcrumb-slash.js" type="text/javascript"></script><!--Print and Resize --><script type="text/javascript" src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/jquery.fontSizer.js"></script><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/external_files/fontsizer.js" language="javascript"></script><script type="text/javascript"> 
+  function OpenPrintPage() {
+
+  var OriginalContent = document.getElementById('printContent').innerHTML;
+  var PrintWindow = window.open("","PrinterFriendlyPage","scrollbars=yes,status=yes,toolbar=yes,menubar=yes,resizable=yes,height=510,width=750"); 
+PrintWindow.document.write('<html><head><title>' + document.title +'</title><style>.subHero, .sidebar, .subpage-bottom {display:none;} h3.page-title { font-size: 35px; } .printbtn { padding: 5px; background: #2d2d2d; margin: 3px; margin-top: -4px; Margin-bottom: 11px; display: inline-block; position: relative; margin-right: 4px; color: #fff; text-decoration: none;} .quick-links>ul {height:auto !important;} #gc-news .slick-track, #upcomingEvents .slick-track {width: 100% !important; transform: translate3d(0px, 0px, 0px) !important;} .clear, .noPrint, .slick-slide.slick-cloned{display: none;}</style></head><body id="print-page" style="font-family: arial;"><a class="printbtn" href="javascript:window.print()">Print This Page</a><div id="' + 'content' + '">' + 
+'</div></body></html>'); 
+
+  PrintWindow.document.close(); 
+  PrintWindow.document.getElementById('content').innerHTML += OriginalContent; 
+
+  }
+</script><script type="text/javascript">
+    $(document).ready(function() {          
+        $('.fontSize li a').fontSizer({
+              controls: false
+        });
+    });
+</script><!-- Print and Resize --><link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" /><link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" /><!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+<script src="/UserFiles/Servers/Server_7964838/Templates/external_files/sharebtn.js?v=1" type="text/javascript"></script>
+
+
+<script src="/UserFiles/Servers/Server_7964838/Templates/external_files/roseville-custom.js?v=2" type="text/javascript"></script>
+
+<script src="/common/resources/DesignPortfolio/SiteThemes/CommonLib/scripts/breadcrumb-slash.js" type="text/javascript"></script>
+<script src="/UserFiles/Servers/Server_7964838/Templates/js/multi-boolean-select.js"></script> --><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/js/dependecies.min.js" type="text/javascript"></script><script src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_7964838/Templates/js/global.min.js" type="text/javascript"></script><script>
+$(document).ready(function() {
+
+  $('.Sdept #ql-sec').prependTo('.Sdept #page');
+
+  if($('.Sdept').hasClass('electricDept')){
+    $('#footer-wrapper').addClass('electricDept')
+  }
+
+});
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl00_ScriptManager1_TSM');InputConstraint_OnLoad('ctl00_ContentPlaceHolder1_ctl00_addNewPageModal_txtFriendlyUrl', /^[\w-]*$/);;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl00_RadStyleSheetManager1_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2022.3.1109.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:7cbc26f6-ca02-483b-84bf-df04c025957c:92753c09:91f742eb';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"behaviors":4,"clientStateFieldID":"ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree_ClientState","formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"RadWindowManagerLoadingContentTree","skin":"Default","windowControls":"[]"}, null, null, $get("ctl00_ContentPlaceHolder1_RadWindowManagerLoadingContentTree"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"behaviors":4,"clientStateFieldID":"ctl00_ContentPlaceHolder1_RadWindowLoadingContentTree_ClientState","formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"RadWindowLoadingContentTree","showContentDuringLoad":false,"skin":"Default","title":"Content Properties"}, null, null, $get("ctl00_ContentPlaceHolder1_RadWindowLoadingContentTree"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"behaviors":4,"clientStateFieldID":"ctl00_ContentPlaceHolder1_RadWindowPermissionControl_ClientState","formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"RadWindowPermissionControl","showContentDuringLoad":false,"skin":"Default","title":"Permission Control"}, null, null, $get("ctl00_ContentPlaceHolder1_RadWindowPermissionControl"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"behaviors":36,"clientStateFieldID":"ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow_ClientState","formID":"aspnetForm","height":"685px","iconUrl":"","minimizeIconUrl":"","modal":true,"name":"ExplorerWindow","showContentDuringLoad":false,"skin":"Default","visibleStatusbar":false,"width":"820px"}, null, null, $get("ctl00_ContentPlaceHolder1_ctl20_ExplorerWindow"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"behaviors":36,"clientStateFieldID":"ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow_ClientState","formID":"aspnetForm","height":"685px","iconUrl":"","minimizeIconUrl":"","modal":true,"name":"ExplorerWindow","showContentDuringLoad":false,"skin":"Default","visibleStatusbar":false,"width":"820px"}, null, null, $get("ctl00_ContentPlaceHolder1_ctl24_ExplorerWindow"));
+});
+//]]>
+</script>
+</form>
+    <script type="text/javascript">
+        window.isMobile = 0 == 1;
+    </script>
+</body>
+</html>
+

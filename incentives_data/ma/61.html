@@ -1,0 +1,1964 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<!-- Google Tag Manager -->
+				<script>(function(w,d,s,l,i){w.GATrackingId='UA-204775866-107';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayer','GTM-TBRKMPJ');</script>
+				<!-- End Google Tag Manager --><!-- Google Tag Manager for GA4 -->
+				<script>(function(w,d,s,l,i){w.GAMeasurementID='G-L5GZG6QPPM';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayerGA4','GTM-K73C5PS');</script>
+				<!-- End Google Tag Manager for GA4 -->
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+	<script>
+		function populateAntiForgery(token) {
+			var input = document.createElement("input");
+			input.name = "__RequestVerificationToken";
+			input.type = "hidden";
+			input.value = token;
+			var absPat = /^https?:\/\/|^\/\//i;
+			var forms = document.getElementsByTagName("form");
+			for (var i = 0; i < forms.length; i++) {
+				if (forms[i].method == "post" &&
+					!forms[i].querySelector('[name="__RequestVerificationToken"]') &&
+					!absPat.test(forms[i].getAttribute("action"))) {
+					forms[i].appendChild(input.cloneNode());
+				}
+			}
+		}
+
+		function getAntiForgeryToken(callback, error) {
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "/antiforgery");
+			xhr.addEventListener("load", function() {
+				try {
+					if (this.status !== 200) {
+						throw Error("Invalid status. Could not retrieve antiforgery token.");
+		}
+					var obj = JSON.parse(this.responseText);
+					callback(obj.token);
+				} catch (e) {
+					typeof error === "function" && error(e);
+				}
+			});
+			xhr.send();
+		}
+
+		getAntiForgeryToken(function(token) {
+			if (document.readyState === "complete"
+				|| document.readyState === "loaded" 
+				|| document.readyState === "interactive") {
+				populateAntiForgery(token);
+				return;
+			}
+			document.addEventListener("DOMContentLoaded", function() {
+				populateAntiForgery(token);
+			}, false);
+		}, console.error);
+			</script>
+			
+	
+<script type="text/javascript">
+		window.departmentHeader = {};
+		window.pageSectionTracker = {};
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = true;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="category0" content="Home" />
+<meta name="category1" content="Energy Savings, Rebates, and Ways to Save" />
+<meta name="category2" content="Home Energy Saving Rebates" />
+<meta name="category3" content="MGED Weatherization &amp; Insulation Rebates Details and Terms" />
+
+	
+	<meta name="theme-color" content="#10366a">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>MGED Weatherization &amp; Insulation Rebates Details and Terms | Middleborough Gas &amp; Electric, MA</title>
+	
+		<meta name="description" content="Middleborough Gas &amp; Electric Department is pleased to assist customers making energy efficiency improvements to their home.">
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+	<link href="/-512585956.css" rel="stylesheet" type="text/css" />	<link href="/-164993300.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	<!--CPHeadContent-->
+	<script src="/-1439830268.js" type="text/javascript"></script>
+	
+	
+	
+	
+
+
+
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	<script>jQuery(document).click(function (event) {
+	var target = jQuery(event.target);
+	if (target.attr('src') && target.parents('.image').length && target.parents('.widget').length) {
+		var text = target.attr('title');
+		
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Image',
+				eventAction: 'Image - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.is('button') || target.hasClass('button') || target.parents().hasClass('button')) {
+		var text = "";
+		if (target.parents('.button')[0]) {
+			text = target.parents('.button')[0].text;
+		} else if (target.text().length) {
+			text = target.text();
+		} else if (target.attr('title').length) {
+			text = target.attr('title');
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Button',
+				eventAction: 'Button - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetCustomHtml').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Custom Html',
+				eventAction: 'Custom Html Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.editor').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Editor',
+				eventAction: 'Editor Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.GraphicLinks').length) {
+		var text = "";
+		var targetGraphicLink = target;
+		if (target.hasClass('widgetGraphicLinksLink')) {
+			targetGraphicLink = jQuery(target.children()[0]);
+		}
+		if (targetGraphicLink.hasClass('text')) {
+			text = targetGraphicLink.text();
+		} else if (targetGraphicLink.attr('src').length) {
+			if (targetGraphicLink.attr('alt').length) {
+				text = targetGraphicLink.attr('alt');
+			} else {
+				text = targetGraphicLink.attr('src');
+			}
+		} else {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Graphic Links',
+				eventAction: 'Graphic Link - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.InfoAdvanced').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Info Advanced',
+				eventAction: 'Info Advanced Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.list').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'List',
+				eventAction: 'List Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.megaMenuItem').length || target.parents('.topMenuItem').length) {
+		var megaMenuText = jQuery('.topMenuItem.mouseover').find('span').text();
+		var breadCrumbs = [];
+		jQuery('.breadCrumbs > li').each(function () {
+			 breadCrumbs.push(this.textContent);
+		});
+		var pageTitle = breadCrumbs.join('>');
+		var subTitleText = target.parents('.megaMenuItem').children('.widgetTitle').children().text();
+		var text = "";
+		if (pageTitle) {
+			text += pageTitle + " | ";
+		} else {
+			text += document.title + ' - ';
+		}
+		if (target.text() == "" && megaMenuText == "") {
+			text += "N/A";
+		} else if (target.text().length && megaMenuText.length) {
+			if (megaMenuText == target.text()) {
+				text += megaMenuText;
+			} else {
+				text += megaMenuText + " - " + subTitleText + " - " + target.text();
+			}
+		} else if (target.text() == "") {
+			text += megaMenuText;
+		} else {
+			text += target.text();
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Mega Menu',
+				eventAction: 'Mega Menu : ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetNewsFlash').length && target.parents('.widgetItem').length) {
+		var text = jQuery(target.parents('.widgetItem')[0]).find('.widgetTitle').children().text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'News Flash',
+				eventAction: 'News Flash - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.hasClass('widgetQuickLinksLink') || target.find('.widgetQuickLinksLink').length) {
+		var text = target.text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Quick Links',
+				eventAction: 'Quick Links - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.attr('src') && target.parents('.cpSlideshow').length) {
+		var text = target.attr('title');
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Slideshow',
+				eventAction: 'Slideshow - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetText').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Text',
+				eventAction: 'Text Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+});</script>
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#cc5f8c90dc-b4cb-431b-90ee-10648f8df655" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+	
+
+<link href="/745732998.css" rel="stylesheet" type="text/css" />
+
+<div tabindex="0"></div>
+<div id="SplashMessageWrapper" class="cp-Splash-wrapper">
+    <div role="dialog" aria-labelledby="cp-Splash-title" aria-describedby="editorContentDesc" aria-modal="true" tabindex="-1" id="SplashMessage" class="hidden cp-Splash cp-Splash--modal is-open">
+        <div class="cp-Splash-header">
+            <h3 class="cp-Splash-title" id="cp-Splash-title">Loading</h3>
+            <button class="cp-Splash-Btn cp-Splash-close" aria-label="Close this modal" title="Close this window">
+                <svg id="iconClose" viewBox="0 0 25 25">
+                    <polygon style="fill:currentcolor"
+                             points="18.806,6.98 18.075,6.248 12.532,11.792 6.989,6.248 6.257,6.98 11.786,12.508 6.212,18.084 6.943,18.815 12.532,13.224 18.12,18.815 18.851,18.084 13.277,12.508"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="cp-Splash-body">
+            <div class="cp-Splash-Prose editorContent fr-view fr-element" id="editorContentDesc">
+                <!-- Content from the Froala Editor will go here. -->
+                Loading
+            </div>
+        </div>
+        <div class="cp-Splash-footer">
+            <button class="cp-Splash-Btn cp-Splash-Btn--NoShow">Do Not Show Again</button>
+            <button class="cp-Splash-Btn cp-Splash-Btn--Close">Close</button>
+        </div>
+    </div>
+</div>
+<div tabindex="0"></div>
+
+<script src="/Assets/Scripts/APIClient.js"></script>
+<script src="/Assets/Scripts/MomentJs/2.29.1/moment.min.js"></script>
+<script src="/Assets/Scripts/SplashModal/SplashModalRender.js"></script>
+<script>
+
+		$(document).ready(function () {
+			var filter = {
+				targetId: '259',
+				targetType: 1
+			}
+
+            new SplashModalRender().triggerRender(filter);
+		});
+</script>
+	
+	
+<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="1" />
+	<input type="hidden" id="hdnContentCollectionID" value="7ad969dd-e964-4d48-bb46-25f7a36c9a37" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="1" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" />
+	<input type="hidden" id="pagePageID" value="259" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+		<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP mui-fixed" style="">
+					
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create a Website Account</a> <span class="welcomeMessage">- Manage notification subscriptions, save form progress and more. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+	        <li><a href="/MyAccount" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Website Sign In</span></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
+        });
+
+			
+				$('#loggedOutToolbarSignInButton').click(function (event) {
+					event.preventDefault();
+					window.location.href = '/MyAccount/?from=url&url=' + encodeURIComponent(window.location.href.replace(window.location.origin, '')) + '&dn=' + window.location.host;
+				});
+			
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
+    })
+</script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="bodyContainerTS">
+<!-- Header Container --><header data-cpRole="structuralContainer" id="headerContainerTS">
+<div class="siteWrap3"><div data-cpRole="structuralContainer" id="logoWraperContainerTS">
+<div data-cpRole="banner" id="bannerLogoTS" class="bannerLogoTS empty">
+
+
+
+
+				<a style="			display: block; text-align: center;
+" class="bannerObject" href="/" target="_self"><img alt="Homepage" class="bannerObject" height="387" src="/ImageRepository/Document?documentID=63" width="736" /></a>
+
+</div>
+</div><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavResidents" class="navMainItem mainNavItem mainNavItem1" href="/27/Residents" target="_self">Residents</a><!--
+			--><!--
+			--></li><!----><li id="MainItem101" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="101" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavBusinesses" class="navMainItem mainNavItem mainNavItem2" href="/101/Businesses" target="_self">Businesses</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavEnergySavingsRebatesandWaystoSave" class="navMainItem mainNavItem mainNavItem3" href="/31/Energy-Savings-Rebates-and-Ways-to-Save" target="_self">Energy Savings, Rebates, and Ways to Save</a><!--
+			--><!--
+			--></li><!----><li id="MainItem35" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="35" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavSafetyResources" class="navMainItem mainNavItem mainNavItem4" href="/35/Safety-Resources" target="_self">Safety Resources</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavAboutMGED" class="navMainItem mainNavItem mainNavItem5" href="/9/About-MGED" target="_self">About MGED</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=&themeID=1&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = false;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="0"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="ccd8bbf62e-221b-4191-85c9-00411da41d61" data-containerid="d8bbf62e-221b-4191-85c9-00411da41d61" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu101" class="contentTop mainNavMegaMenu megaMenuContainer pageID_101 hidden" data-orientation="horizontal">	<div id="ccb051f6ff-5cec-4321-b4da-05653e04cbca" data-containerid="b051f6ff-5cec-4321-b4da-05653e04cbca" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="ccedff3ce1-3192-4285-8e6d-2740cbc9259e" data-containerid="edff3ce1-3192-4285-8e6d-2740cbc9259e" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu35" class="contentTop mainNavMegaMenu megaMenuContainer pageID_35 hidden" data-orientation="horizontal">	<div id="ccf23ee1a4-548e-4020-a5bd-bff540c2b0dd" data-containerid="f23ee1a4-548e-4020-a5bd-bff540c2b0dd" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="ccc17d5f6a-8b79-4d11-95cd-f0b5429330a0" data-containerid="c17d5f6a-8b79-4d11-95cd-f0b5429330a0" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</header><div data-cpRole="structuralContainer" id="searchContentTS">
+<div class="siteWrap3"><div data-cpRole="contentContainer" id="searchTS">	<div id="cc6fb07888-c3cb-422b-8b77-c1df40dfbd4c" data-containerid="6fb07888-c3cb-422b-8b77-c1df40dfbd4c" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="30">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col7 first" style="" data-widgetcontainerid="aeff961b-281f-4727-8b3e-8933e5d986e8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col7 first last id7344b6b6-40d4-432a-9d20-37911b6b714e" style="" data-widgetcontainerid="7344b6b6-40d4-432a-9d20-37911b6b714e">	
+<div data-widget-id="77c8b6f6-f02d-4c4c-972f-d0b7c7fc3c21" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget77c8b6f6-f02d-4c4c-972f-d0b7c7fc3c21" class="widget widgetGraphicLinks skin55 widgetOptionSet27 wide" data-elementqueryclasses='{"wide-narrow":"min-width:2em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid4 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/facebook" target="_self"  aria-label=" Facebook graphic"><img src="/ImageRepository/Document?documentID=48" 
+     class="graphicButtonLink" alt=" Facebook" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=48'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=48'"
+     onfocus="this.src='/ImageRepository/Document?documentID=48'" 
+	onblur="this.src='/ImageRepository/Document?documentID=48'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/twitter" target="_self"  aria-label=" Twitter graphic"><img src="/ImageRepository/Document?documentID=50" 
+     class="graphicButtonLink" alt=" Twitter" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=50'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=50'"
+     onfocus="this.src='/ImageRepository/Document?documentID=50'" 
+	onblur="this.src='/ImageRepository/Document?documentID=50'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/instagram" target="_self"  aria-label=" Instagram graphic"><img src="/ImageRepository/Document?documentID=49" 
+     class="graphicButtonLink" alt=" Instagram" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=49'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=49'"
+     onfocus="this.src='/ImageRepository/Document?documentID=49'" 
+	onblur="this.src='/ImageRepository/Document?documentID=49'"> </a></div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/youtube" target="_self"  aria-label=" YouTube graphic"><img src="/ImageRepository/Document?documentID=51" 
+     class="graphicButtonLink" alt=" YouTube" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=51'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=51'"
+     onfocus="this.src='/ImageRepository/Document?documentID=51'" 
+	onblur="this.src='/ImageRepository/Document?documentID=51'"> </a></div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col8" style="" data-widgetcontainerid="42bee40c-db5c-4f5f-b54d-f13697854898">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col8 first last id28160cc4-c631-4a9a-81be-4225ac554d7b" style="" data-widgetcontainerid="28160cc4-c631-4a9a-81be-4225ac554d7b">	
+<div data-widget-id="b8869474-7f58-418e-a9a1-a8ecd2f7c376" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetb8869474-7f58-418e-a9a1-a8ecd2f7c376" class="widget widgetGraphicLinks skin39 widgetOptionSet4 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid1 ">	
+			<div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/203/Outage-Center" target="_self" class="fancyButton fancyButton46 " >
+		<span>
+			<span><span class="text">Outage Center</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton46.fancyButton:link,.fancyButton46.fancyButton:visited, .fancyButton46div.fancyButton{
+	background-color: #f6fa03;
+	height: 65px;
+	padding-top: .29em;
+	padding-bottom: 1.25em;
+	padding-left: 10px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	-khtml-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	-khtml-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
+	-khtml-border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	-khtml-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left top;
+box-shadow: -3.346px 3.716px 9px 0px rgba(0, 0, 0, 0.31);
+transition: all .3s ease-in-out;
+margin: 0 .5em 0 .5em;}
+.fancyButton46.fancyButton:hover,.fancyButton46.fancyButton:focus,.fancyButton46.fancyButton:active,.fancyButton46.fancyButton.hover{
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-position: left top;
+box-shadow: 0px 1px 1.1px 0px rgba(0, 59, 77,0.16), 0px 3.3px 3.7px -0.8px rgba(0, 59, 77,0.06), 0px 8.2px 9.2px -1.7px rgba(0, 59, 77,0.06), 0px 20px 22.5px -2.5px rgba(0, 59, 77,0.26);
+transition: all .3s ease-in-out;}
+.fancyButton46.fancyButton:link > span,.fancyButton46.fancyButton:visited > span, .fancyButton46div.fancyButton > span{
+}
+.fancyButton46.fancyButton:hover > span,.fancyButton46.fancyButton:focus > span,.fancyButton46.fancyButton:active > span,.fancyButton46.fancyButton.hover > span{
+}
+.fancyButton46.fancyButton .text{
+	color: #454545;
+	font-size: 1.1em;
+	font-family: "Source Sans Pro";
+	text-align: left;
+	padding-top: 1em;
+	padding-bottom: .5em;
+	padding-left: 70px;
+	font-style: normal;
+	text-decoration: none;
+	padding-top: 1em;
+	padding-bottom: .5em;
+	padding-left: 70px;
+	background-image: url('/ImageRepository/Document?documentID=374');
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton46.fancyButton:hover .text,.fancyButton46.fancyButton:focus .text,.fancyButton46.fancyButton:active .text,.fancyButton46.fancyButton.hover .text{
+	color: #ffffff;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=375');
+	background-repeat: no-repeat;
+	background-position: left top;
+
+
+}
+.fancyButton46.fancyButton .textStyle1{
+	color: #000000;
+	font-size: 1.8em;
+	font-family: Arial;
+	font-style: normal;
+	text-decoration: none;
+
+}
+.fancyButton46.fancyButton:hover .textStyle1, .fancyButton46.fancyButton.hover .textStyle1{
+	color: #ffffff;
+	text-decoration: underline;
+
+}
+.fancyButton46.fancyButton .textStyle2{
+	color: #000000;
+	font-size: 25em;
+	font-weight: 700;
+	text-decoration: none;
+
+}
+.fancyButton46.fancyButton:hover .textStyle2, .fancyButton46.fancyButton.hover .textStyle2{
+	color: #000000;
+	font-size: 25em;
+	font-family: Arial;
+	font-weight: 700;
+	text-decoration: underline;
+
+}
+</style>
+
+ </div><!--
+			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col9 last" style="" data-widgetcontainerid="7ecb3959-a81f-419a-bb14-843a2722279d">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col9 first last idf2e463ed-8bd6-495a-b844-058fb785c25c" style="" data-widgetcontainerid="f2e463ed-8bd6-495a-b844-058fb785c25c">	
+<div data-widget-id="37c35126-d9cd-423c-9d39-cbd9a34d98e2" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButton37c35126-d9cd-423c-9d39-cbd9a34d98e2").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDept37c35126-d9cd-423c-9d39-cbd9a34d98e2").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDept37c35126-d9cd-423c-9d39-cbd9a34d98e2").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDept37c35126-d9cd-423c-9d39-cbd9a34d98e2").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin39 widgetOptionSet15" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBox37c35126-d9cd-423c-9d39-cbd9a34d98e2" cp5ph="true" id="searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search..." title="Search..." type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButton37c35126-d9cd-423c-9d39-cbd9a34d98e2" role="button"><img alt="Search" class="imageHover" data-hover="/ImageRepository/Document?documentID=67" data-image="/ImageRepository/Document?documentID=66" src="/ImageRepository/Document?documentID=66" /></a>
+
+			<label class="searchLabel" for="searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #373330;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #373330;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #373330;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #373330;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBox37c35126-d9cd-423c-9d39-cbd9a34d98e2
+	{
+        color: #373330;
+		font-family: Source Sans Pro;
+height: 65px;
+border-radius: 8px;
+border: 1px solid rgba(255,255,255,1);
+background: rgba(255,255,255,1);
+padding: 0 80px 0 20px;
+box-shadow: -3.346px 3.716px 9px 0px rgba(0, 0, 0, 0.31);
+	}
+	.widgetSearch .widgetBody .widgetSearchButton37c35126-d9cd-423c-9d39-cbd9a34d98e2
+	{
+		margin: 5px; padding-top: .50em; 
+padding-right: .75em;
+	}
+	.widgetSearch .widgetSearch-onlyDept37c35126-d9cd-423c-9d39-cbd9a34d98e2
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDept37c35126-d9cd-423c-9d39-cbd9a34d98e2
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchField37c35126-d9cd-423c-9d39-cbd9a34d98e2").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Banner --><div data-cpRole="structuralContainer" id="bannerContainerTS" class="noOverflowTS">
+<div data-cpRole="banner" id="banner1"><div data-cpRole="structuralContainer" id="bannerSizingTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="welcomeTS">	<div id="cc8aa3f7da-b6d3-41ed-9400-37411558ce42" data-containerid="8aa3f7da-b6d3-41ed-9400-37411558ce42" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</div></div>
+</div>
+
+
+
+
+			<div id="bannerImagesJSON2" class="hidden"></div>
+				<div id="bannerSlideshowControls_banner1" class="bannerSlideshowControlsNew none " style="display:none">
+					<button id="arrowPrev_banner1" class="arrowNew prev cp-Btn--nonStyled" aria-label="Banner Arrow Previous"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowLeft"></use></svg></button>
+					<button id="arrowNext_banner1" class="arrowNew next cp-Btn--nonStyled" aria-label="Banner Arrow Next"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowRight"></use></svg></button>
+				</div>
+			<script type="text/javascript">
+				onOrLive($(window), function () {
+					$.when(window.Pages.rwdSetupComplete)
+						.done(function () {
+							renderExternalBannerSlideshow('banner1',
+									{"BannerOptionID":2,"ThemeID":1,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":null,"SlideshowTransition":0,"SlideShowTransitionTiming":null,"ImageScale":true,"ImageAlignment":1,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":73,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=64","Height":450,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135578800000)\/","AltText":""}],"BannerVideos":[],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135578800000)\/"},
+								'/App_Themes/Interior/Images/',
+								'Rotating',
+								'0');
+						});
+				}, "load");				
+			</script>
+
+
+</div>
+</div><!-- Content container --><div data-cpRole="structuralContainer" id="mainContainerTS">
+<div class="siteWrap2"><div data-cpRole="structuralContainer" id="mainWrapTS" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="outerContentWrapTS" class="outerContentWrap">
+<div data-cpRole="structuralContainer" id="contentWrapTS" class="contentWrap">
+<div data-cpRole="breadCrumbs" id="breadCrumbs" class="breadCrumbContainer">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/">Home</a></li><li><a class="breadCrumb" href="/31/Energy-Savings-Rebates-and-Ways-to-Save">Energy Savings, Rebates, and Ways to Save</a></li><li><a class="breadCrumb" href="/256/Home-Energy-Saving-Rebates">Home Energy Saving Rebates</a></li><li id="currentBCPage" data-pageid="259">MGED Weatherization & Insulation Rebates Details and Terms</li>
+		</ol>
+
+	   
+    
+</div><div data-cpRole="mainContentContainer" id="moduleContent">
+	
+	<div id="page" class="moduleContentNew">
+		
+
+	<input id="hdnPageID" name="hdnPageID" type="hidden" value="259" />
+	<input id="hdnParentID" name="hdnParentID" type="hidden" value="256" />
+	<input id="hdnVersionID" name="hdnVersionID" type="hidden" value="1835" />
+	<input id="pageMenuTitle" name="pageMenuTitle" type="hidden" value="MGED Weatherization &amp; Insulation Rebates Details and Terms" />
+	<input id="pageShowFeatureColumn" name="pageShowFeatureColumn" type="hidden" value="False" />
+	<input id="hdnIsLayoutPage" name="hdnIsLayoutPage" type="hidden" value="False" />
+	<input id="hdnPageStatus" name="hdnPageStatus" type="hidden" value="Published" />
+
+				<h1 id="versionHeadLine" class="headline">
+
+MGED Weatherization &amp; Insulation Rebates Details and Terms		</h1>
+	
+		<div id="cc5f8c90dc-b4cb-431b-90ee-10648f8df655" data-containerid="5f8c90dc-b4cb-431b-90ee-10648f8df655" class="pageContent cpGrid cpGrid24"  data-contentcontainerbreakpoint="30" >
+			
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="2e39ec4f-219e-4d89-8e31-822ba9d21f87">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id16f66db1-38d5-43b7-a094-748b60aa9f76" style="" data-widgetcontainerid="16f66db1-38d5-43b7-a094-748b60aa9f76">	
+<div class="widget editor pageStyles narrow" id="divEditor14d4523f-04ca-441d-946e-abc6dc468f94" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted">What you&apos;ll need to know before you install or apply</p><p><img src="/ImageRepository/Document?documentId=353" class="fr-dii fr-fir" alt="Air Sealing Spots">Air Sealing Rebates are available. The Middleborough Gas &amp; Electric Department is pleased to assist customers in making energy efficiency improvements to their home. Learn what measures make sense for your home by calling our Home Energy Hotline at 888-772-4242. Schedule a free Energy Audit and you&apos;ll be provided with a list of energy-saving recommendations. <strong>Complete any of the qualifying recommendations and receive a rebate for half of the cost, up to $500 for most measures, and up to $1,000 for insulation - not to exceed 50% of the project cost. Rebates for Low Income Rate customers are up to $750 for most measures and up to $1,500 for insulation - not to exceed the project cost.</strong></p><h2 class="subhead1">To be eligible for the MGED Home Energy Improvement Rebate incentive:</h2><ul><li>All qualifying measures must be recommended by a recent MGED/Energy New England Energy audit <strong>before installation</strong>.</li><li>No added room or space (renovation or new construction) that adds to the home&apos;s heating load will be eligible unless new load is neutralized by increased insulation/air sealing in the other areas. This will be reviewed on a case-by-case basis.</li><li>Work must be started and completed from January 1st to December 31st, for this rebate cycle. Work completed in the following year will be eligible for that year&apos;s rebate offering, if available.</li><li><strong>Qualifying measures</strong> must be listed on the audit report and include;</li><li>Insulation, including Attic (&amp; ventilation), Wall, Basement, and Rim Joist (<strong>up to $1,000 or $1,500 for Low Income Rate customers</strong>)</li><li>Air sealing measures such as caulking, weather stripping, and gaskets (<strong>up to $500 or $750 for Low Income Rate customers</strong>)</li><li>Heating system pipe and duct insulation <strong>(up to $500 or $750 for Low Income rate customers)</strong></li><li>The rebate will be sent to the customer. Please allow 6 to 8 weeks for processing. <strong>Limit one home-efficiency rebate per customer per calendar year.</strong> Multi-family homeowners may apply per unit, <strong>up to 4 units</strong>;</li><li>Each application must include the original sales receipt and product information (and the final invoice from any contracted work with detailed specifications of work performed, if applicable). Proof of payment is also required.</li><li><span id="isPasted" style="color: rgb(20, 20, 12); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">In order to qualify for the weatherization rebate from MGED, installed weatherization improvements must pass a quality assurance inspection provided by Abode Energy Management. In order to pass inspection, the home must not have any health or safety issues that are created by the installed weatherization improvements or that are pre-existing in the home and exacerbated by the installed weatherization improvements. These health and safety issues include but are not limited to:</span><ul type="disc"><li>Issues with a heating system or other combustion appliance that will result in the accumulation of harmful combustion byproducts in the home</li><li>Insulation in contact with electrical and/or heat sources that pose a fire hazard</li><li>Inadequate ventilation in the home that poses a moisture accumulation and air quality risk.&nbsp;</li></ul></li><li><p>These health and safety factors are consistent with building code and energy efficiency program requirements across Massachusetts. Installing weatherization measures in accordance with these requirements is the responsibility of the weatherization contractor or a subcontractor, if applicable. If health and safety issues exist in the home following the weatherization install, they will need to be resolved before a weatherization rebate can be provided by MGED.&nbsp;</p></li><li><p>Customers are strongly encouraged to work with one of the program&apos;s participating contractors included on the <a aria-label="contractor list maintained by Abode Opens in new window" href="https://abodeem.com/homeowners/participating-contractor-list/?provider=Middleborough%20Gas%20and%20Electric%20Department&offerings1=Weatherization&offerings2" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" id="isPasted" target="_blank">contractor list maintained by Abode</a>.</p></li></ul><p>To apply, follow these steps:</p><ol><li>Read the Terms and Conditions above to ensure you qualify for the rebate.</li><li>Call the Energy New England toll-free hotline at 888-772-4242 to <strong>schedule your free Energy Audit</strong>. THEN complete recommended improvements.</li><li>Prepare an electronic scan or copy of your itemized receipt(s) to upload online and include any contractor information including name, address, and phone number.</li><li>Return to the main MGED Rebates web page and click on Ready to Apply beside the insulation rebate notice and follow the instructions on the Energy New England rebate page to apply online. Call the Energy New England toll-free hotline if you are having difficulty applying online.</li><li>All applications and itemized receipts must be completed for current rebate availability.</li><li>Customers are strongly encouraged to work with one of the program&apos;s participating contractors included on the <a aria-label="contractor list maintained by Abode Opens in new window" href="https://abodeem.com/homeowners/participating-contractor-list/?provider=Middleborough%20Gas%20and%20Electric%20Department&offerings1=Weatherization&offerings2" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" id="isPasted" target="_blank">contractor list maintained by Abode</a>.</li></ol><p>Read this handy section of the Energy Savers guide to learn more about Air Sealing and Insulating your home:</p><p><br></p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '14d4523f-04ca-441d-946e-abc6dc468f94'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="e8c866b1-b705-4de8-95c3-49d41d592904">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id1ff5d063-2c77-4f1a-be15-ae8479a90166" style="" data-widgetcontainerid="1ff5d063-2c77-4f1a-be15-ae8479a90166">	
+
+
+
+	<section class="widget widgetRelatedDocuments skin43 narrow" id="widgetRelDoccc0cf95d-d8c1-4f95-a8bb-e11c23419046" data-widgetid="cc0cf95d-d8c1-4f95-a8bb-e11c23419046" data-sections="[{&quot;Title&quot;:&quot;&quot;,&quot;DocumentIDs&quot;:&quot;354,&quot;,&quot;FolderIds&quot;:&quot;,&quot;,&quot;SortedDocumentIds&quot;:&quot;&quot;}]" data-columncount="1" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Related Documents">
+			<div id="divRelatedDocuments_cc0cf95d-d8c1-4f95-a8bb-e11c23419046" class="relatedDocuments">
+		<div class="widgetBody cpGrid cpGrid1">
+			
+<div class="row narrow sortableWidgetTitle">
+        <div class="relatedDocumentsSection selfClear" data-documentids="354," data-folderids="," data-sorteddocumentids="">
+        
+	<div class=" first last">
+		<ol class="semanticList bullets" style="min-height:8px;">
+					<li class="widgetItem" data-documentid="354"><a target="_blank" href="/DocumentCenter/View/354/Energy-Saver-Home-Weatherization-Guide-PDF" class="fileType pdf" aria-label="Energy Saver Home Weatherization Guide (PDF) pdf file">Energy Saver Home Weatherization Guide (PDF)</a>
+					</li>
+
+		</ol>
+	</div>
+                    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Remove section heading when it is empty and live edit is off.
+        if ('false' === 'false') {
+            var jqh4Selector = $('#widgetRelDoc' + 'cc0cf95d-d8c1-4f95-a8bb-e11c23419046').find('div.widgetBody div.row div.relatedDocumentsSection h4.widgetTitle');
+    		if (jqh4Selector.val() == "") {
+    			jqh4Selector
+                    .filter(function () {
+                        return $.trim($(this).text()) === ''
+                    })
+                    .remove();
+            }
+        }
+    });
+</script>
+		</div>
+
+</div>
+
+	</section>
+
+
+<script type="text/javascript">
+    var documentsToInsert = [];
+    var foldersToInsert = [];
+
+    $(document).ready(function () {
+        var hasEditRights = false;        
+        if (window.File && window.FileList && window.FileReader && hasEditRights) {
+            var RelatedDocumentsWidget = 5;
+            makeWidgetAreaDroppable('cc0cf95d-d8c1-4f95-a8bb-e11c23419046', $('#widgetRelDoc' + 'cc0cf95d-d8c1-4f95-a8bb-e11c23419046'), RelatedDocumentsWidget, true, RelatedDocumentsCallback);
+        }
+
+		if(hasEditRights)
+    		browserVersionNotCompatibleWithDragDropTextUpdate($('#addFile' + 'cc0cf95d-d8c1-4f95-a8bb-e11c23419046'), 'Add a new file');
+    });
+
+    function RelatedDocumentsCallback(widgetID, response)
+    {
+        if (window.ContentCollectionInstance.IsWorkingCopy) {
+        	$('#widgetRelDoc' + widgetID).replaceWith(response);            
+            contentUpdated();
+            attachRelatedDocumentsHandlers();            
+        }
+        else {
+            ContentCollectionInstance.reloadContent();
+        }      
+    }
+</script>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+		</div>
+
+	</div>
+
+	
+	<div class="newCP">
+
+	</div>
+</div>
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="ccd6923f64-2522-4bce-8783-61ad1b416b69" data-containerid="d6923f64-2522-4bce-8783-61ad1b416b69" class="pageContent cpGrid cpGrid24 showInMobile" data-contentcontainerbreakpoint="40">
+				                
+
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="siteSidebarTS" class="siteSidebar">
+<aside data-cpRole="contentContainer" id="sidebarContainer1TS">	<div id="ccffb4652c-22c5-4ca0-bad1-ea7257436966" data-containerid="ffb4652c-22c5-4ca0-bad1-ea7257436966" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+	<ol role="menu" id="secondaryMenusecondaryNav" data-parent="256" class="rootNavMenu accordionNav">
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem292" data-pageid="292">
+		<div class="accordionNavItem">
+			<a href="/292/Cordless-Electric-Yard-Equipment-Rebates" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Cordless Electric Yard Equipment Rebates</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem257" data-pageid="257">
+		<div class="accordionNavItem">
+			<a href="/257/Heat-Pump-Rebates-Resources" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Heat Pump Rebates &amp; Resources</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem258" data-pageid="258">
+		<div class="accordionNavItem">
+			<a href="/258/MGED-Energy-Star-Appliance-Rebates-Detai" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">MGED Energy Star Appliance Rebates Details &amp; Terms</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem259" data-pageid="259">
+		<div class="accordionNavItem">
+			<a href="/259/MGED-Weatherization-Insulation-Rebates-D" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">MGED Weatherization &amp; Insulation Rebates Details and Terms</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem264" data-pageid="264">
+		<div class="accordionNavItem">
+			<a href="/264/Peak-Alerts-Lets-You-Know-When-to-Beat-t" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Peak Alerts Let&#39;s You Know When to Beat the Peak</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem350" data-pageid="350">
+		<div class="accordionNavItem">
+			<a href="/350/Lakeville-Residents-Only---Mass-Save-Eli" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Lakeville Residents Only - Mass Save Eligibility</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem352" data-pageid="352">
+		<div class="accordionNavItem">
+			<a href="/352/Additional-Tax-Incentives---Inflation-Re" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Additional Tax Incentives - Inflation Reduction Act (IRA)</a>
+		</div>
+			</li>
+
+	</ol>
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = false;
+        });
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('*[id^="SideItem"]').each(function () {
+				var ids = $('[id="' + this.id + '"]');
+				if (ids.length > 1)
+					$.each(ids, function (index, value) {
+						value.id = value.id + '_' + index;
+					});
+			});
+
+			$('.hasAccordionChildren .openAccordionNav').click(function (e) {
+				e.preventDefault();
+				showHideAccordionMenuForSecondaryNav($(this));
+			});
+
+			$("#secondaryNav .grippy").each(function () {
+				menuManager.setupDraggableElement($(this), SIDE_MENU, '#secondaryNav');
+			});
+
+			$("#secondaryNav li").each(function () {
+				menuManager.setupDroppableAccordionElement($(this), SIDE_MENU);
+			});
+		});
+	</script>
+
+
+
+</nav><aside data-cpRole="contentContainer" id="sidebarContainer2TS">	<div id="ccb368d788-a418-423f-b43b-1af4a3efebb6" data-containerid="b368d788-a418-423f-b43b-1af4a3efebb6" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div>
+</div></div>
+</div><!-- GBs --><div data-cpRole="structuralContainer" id="gbsContainerTS">
+<div class="siteWrap2"><div data-cpRole="contentContainer" id="gbsTS">	<div id="cc3faca9bc-2877-4990-bbaa-5cbd02080809" data-containerid="3faca9bc-2877-4990-bbaa-5cbd02080809" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col12 first" style="" data-widgetcontainerid="1609d18c-13e1-42b6-8269-c59104d8ba10">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last iddb321856-7b3a-4562-a7f9-6189f9e9b13b" style="" data-widgetcontainerid="db321856-7b3a-4562-a7f9-6189f9e9b13b">	
+<div data-widget-id="fb865067-3a29-4918-8290-56e45a46a2e4" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetfb865067-3a29-4918-8290-56e45a46a2e4" class="widget widgetGraphicLinks skin45 widgetOptionSet44 wide" data-elementqueryclasses='{"wide-narrow":"min-width:33em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid3 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="https://www.invoicecloud.com/middleboroge" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self" class="fancyButton fancyButton49 " >
+		<span>
+			<span><span class="text">View Pay Bill</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton49.fancyButton:link,.fancyButton49.fancyButton:visited, .fancyButton49div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=80');
+	background-repeat: no-repeat;
+	background-position: center .5em ;
+transition: all .2s ease-in-out;}
+.fancyButton49.fancyButton:hover,.fancyButton49.fancyButton:focus,.fancyButton49.fancyButton:active,.fancyButton49.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=77');
+	background-repeat: no-repeat;
+	background-position: center 0em ;
+transition: all .2s ease-in-out;}
+.fancyButton49.fancyButton:link > span,.fancyButton49.fancyButton:visited > span, .fancyButton49div.fancyButton > span{
+}
+.fancyButton49.fancyButton:hover > span,.fancyButton49.fancyButton:focus > span,.fancyButton49.fancyButton:active > span,.fancyButton49.fancyButton.hover > span{
+}
+.fancyButton49.fancyButton .text{
+	color: #0f3261;
+	font-family: "Source Sans Pro";
+	padding-top: 10em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 10em;
+	background-image: url('/ImageRepository/Document?documentID=83');
+	background-repeat: no-repeat;
+	background-position: center 3.6em ;
+transition: all .2s ease-in-out;
+}
+.fancyButton49.fancyButton:hover .text,.fancyButton49.fancyButton:focus .text,.fancyButton49.fancyButton:active .text,.fancyButton49.fancyButton.hover .text{
+	color: #0f3261;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=84');
+	background-repeat: no-repeat;
+	background-position: center 3em ;
+transition: all .2s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/256/Home-Energy-Saving-Rebates" target="_self" class="fancyButton fancyButton50 " >
+		<span>
+			<span><span class="text">Energy Rebates</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton50.fancyButton:link,.fancyButton50.fancyButton:visited, .fancyButton50div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=80');
+	background-repeat: no-repeat;
+	background-position: center .5em ;
+transition: all .2s ease-in-out;}
+.fancyButton50.fancyButton:hover,.fancyButton50.fancyButton:focus,.fancyButton50.fancyButton:active,.fancyButton50.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=77');
+	background-repeat: no-repeat;
+	background-position: center 0em ;
+transition: all .2s ease-in-out;}
+.fancyButton50.fancyButton:link > span,.fancyButton50.fancyButton:visited > span, .fancyButton50div.fancyButton > span{
+}
+.fancyButton50.fancyButton:hover > span,.fancyButton50.fancyButton:focus > span,.fancyButton50.fancyButton:active > span,.fancyButton50.fancyButton.hover > span{
+}
+.fancyButton50.fancyButton .text{
+	color: #0f3261;
+	font-family: "Source Sans Pro";
+	padding-top: 10em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 10em;
+	background-image: url('/ImageRepository/Document?documentID=73');
+	background-repeat: no-repeat;
+	background-position: center 3.6em ;
+transition: all .2s ease-in-out;
+}
+.fancyButton50.fancyButton:hover .text,.fancyButton50.fancyButton:focus .text,.fancyButton50.fancyButton:active .text,.fancyButton50.fancyButton.hover .text{
+	color: #0f3261;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=74');
+	background-repeat: no-repeat;
+	background-position: center 3em ;
+transition: all .2s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/174/Forms" target="_self" class="fancyButton fancyButton51 " >
+		<span>
+			<span><span class="text">Forms</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton51.fancyButton:link,.fancyButton51.fancyButton:visited, .fancyButton51div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=80');
+	background-repeat: no-repeat;
+	background-position: center .5em ;
+transition: all .2s ease-in-out;}
+.fancyButton51.fancyButton:hover,.fancyButton51.fancyButton:focus,.fancyButton51.fancyButton:active,.fancyButton51.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=77');
+	background-repeat: no-repeat;
+	background-position: center 0em ;
+transition: all .2s ease-in-out;}
+.fancyButton51.fancyButton:link > span,.fancyButton51.fancyButton:visited > span, .fancyButton51div.fancyButton > span{
+}
+.fancyButton51.fancyButton:hover > span,.fancyButton51.fancyButton:focus > span,.fancyButton51.fancyButton:active > span,.fancyButton51.fancyButton.hover > span{
+}
+.fancyButton51.fancyButton .text{
+	color: #0f3261;
+	font-family: "Source Sans Pro";
+	padding-top: 10em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 10em;
+	background-image: url('/ImageRepository/Document?documentID=75');
+	background-repeat: no-repeat;
+	background-position: center 3.6em ;
+transition: all .2s ease-in-out;
+}
+.fancyButton51.fancyButton:hover .text,.fancyButton51.fancyButton:focus .text,.fancyButton51.fancyButton:active .text,.fancyButton51.fancyButton.hover .text{
+	color: #0f3261;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=76');
+	background-repeat: no-repeat;
+	background-position: center 3em ;
+transition: all .2s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col12 last" style="" data-widgetcontainerid="1d6d190d-2bba-4ecb-9df3-0b17e8db8348">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last id8f2cf06f-1320-4f70-b651-4dca1d7b23c9" style="" data-widgetcontainerid="8f2cf06f-1320-4f70-b651-4dca1d7b23c9">	
+<div data-widget-id="d734937f-b49a-4642-9137-fd8f4e5b6c16" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetd734937f-b49a-4642-9137-fd8f4e5b6c16" class="widget widgetGraphicLinks skin45 widgetOptionSet44 wide" data-elementqueryclasses='{"wide-narrow":"min-width:33em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid3 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/163/Open-Close-an-Account" target="_self" class="fancyButton fancyButton84 " >
+		<span>
+			<span><span class="text">Moving In/Out</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton84.fancyButton:link,.fancyButton84.fancyButton:visited, .fancyButton84div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=80');
+	background-repeat: no-repeat;
+	background-position: center .5em ;
+transition: all .2s ease-in-out;}
+.fancyButton84.fancyButton:hover,.fancyButton84.fancyButton:focus,.fancyButton84.fancyButton:active,.fancyButton84.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=77');
+	background-repeat: no-repeat;
+	background-position: center 0em ;
+transition: all .2s ease-in-out;}
+.fancyButton84.fancyButton:link > span,.fancyButton84.fancyButton:visited > span, .fancyButton84div.fancyButton > span{
+}
+.fancyButton84.fancyButton:hover > span,.fancyButton84.fancyButton:focus > span,.fancyButton84.fancyButton:active > span,.fancyButton84.fancyButton.hover > span{
+}
+.fancyButton84.fancyButton .text{
+	color: #0f3261;
+	font-family: "Source Sans Pro";
+	padding-top: 10em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 10em;
+	background-image: url('/ImageRepository/Document?documentID=78');
+	background-repeat: no-repeat;
+	background-position: center 3.6em ;
+transition: all .2s ease-in-out;
+}
+.fancyButton84.fancyButton:hover .text,.fancyButton84.fancyButton:focus .text,.fancyButton84.fancyButton:active .text,.fancyButton84.fancyButton.hover .text{
+	color: #0f3261;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=79');
+	background-repeat: no-repeat;
+	background-position: center 3em ;
+transition: all .2s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/194/Payment-Assistance" target="_self" class="fancyButton fancyButton85 " >
+		<span>
+			<span><span class="text">Payment Assistance</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton85.fancyButton:link,.fancyButton85.fancyButton:visited, .fancyButton85div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=80');
+	background-repeat: no-repeat;
+	background-position: center .5em ;
+transition: all .2s ease-in-out;}
+.fancyButton85.fancyButton:hover,.fancyButton85.fancyButton:focus,.fancyButton85.fancyButton:active,.fancyButton85.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=77');
+	background-repeat: no-repeat;
+	background-position: center 0em ;
+transition: all .2s ease-in-out;}
+.fancyButton85.fancyButton:link > span,.fancyButton85.fancyButton:visited > span, .fancyButton85div.fancyButton > span{
+}
+.fancyButton85.fancyButton:hover > span,.fancyButton85.fancyButton:focus > span,.fancyButton85.fancyButton:active > span,.fancyButton85.fancyButton.hover > span{
+}
+.fancyButton85.fancyButton .text{
+	color: #0f3261;
+	font-family: "Source Sans Pro";
+	padding-top: 10em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 10em;
+	background-image: url('/ImageRepository/Document?documentID=81');
+	background-repeat: no-repeat;
+	background-position: center 3.6em ;
+transition: all .2s ease-in-out;
+}
+.fancyButton85.fancyButton:hover .text,.fancyButton85.fancyButton:focus .text,.fancyButton85.fancyButton:active .text,.fancyButton85.fancyButton.hover .text{
+	color: #0f3261;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=82');
+	background-repeat: no-repeat;
+	background-position: center 3em ;
+transition: all .2s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/196/Service-Requests" target="_self" class="fancyButton fancyButton86 " >
+		<span>
+			<span><span class="text">Where Do I Go For</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton86.fancyButton:link,.fancyButton86.fancyButton:visited, .fancyButton86div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=80');
+	background-repeat: no-repeat;
+	background-position: center .5em ;
+transition: all .2s ease-in-out;}
+.fancyButton86.fancyButton:hover,.fancyButton86.fancyButton:focus,.fancyButton86.fancyButton:active,.fancyButton86.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=77');
+	background-repeat: no-repeat;
+	background-position: center 0em ;
+transition: all .2s ease-in-out;}
+.fancyButton86.fancyButton:link > span,.fancyButton86.fancyButton:visited > span, .fancyButton86div.fancyButton > span{
+}
+.fancyButton86.fancyButton:hover > span,.fancyButton86.fancyButton:focus > span,.fancyButton86.fancyButton:active > span,.fancyButton86.fancyButton.hover > span{
+}
+.fancyButton86.fancyButton .text{
+	color: #0f3261;
+	font-family: "Source Sans Pro";
+	padding-top: 10em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 10em;
+	background-image: url('/ImageRepository/Document?documentID=85');
+	background-repeat: no-repeat;
+	background-position: center 3.6em ;
+transition: all .2s ease-in-out;
+}
+.fancyButton86.fancyButton:hover .text,.fancyButton86.fancyButton:focus .text,.fancyButton86.fancyButton:active .text,.fancyButton86.fancyButton.hover .text{
+	color: #0f3261;
+	text-decoration: underline;
+	background-image: url('/ImageRepository/Document?documentID=86');
+	background-repeat: no-repeat;
+	background-position: center 3em ;
+transition: all .2s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Footer --><footer data-cpRole="structuralContainer" id="footerContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="footerTS">	<div id="cce2e8d504-f740-4dbb-a7d8-e0691c5070aa" data-containerid="e2e8d504-f740-4dbb-a7d8-e0691c5070aa" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="45">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col6 first" style="" data-widgetcontainerid="fb4a8001-050c-4f7d-a8d8-a7dd44de58f0">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id79aaab1a-e0e5-428c-8c56-1a73a9163870" style="" data-widgetcontainerid="79aaab1a-e0e5-428c-8c56-1a73a9163870">	
+    <div data-widget-id="355983c6-9421-4a1c-a14c-4575e82d38be" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv355983c6-9421-4a1c-a14c-4575e82d38be" class="widget widgetInfoAdvanced skin39 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header355983c6-9421-4a1c-a14c-4575e82d38be">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><img src="/ImageRepository/Document?documentId=68" class="fr-dib" alt="MGED Middleborough Gas and Electric Department"></p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv355983c6-9421-4a1c-a14c-4575e82d38be .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col1" style="" data-widgetcontainerid="defff424-6673-438b-9424-e3726c7cb58d">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col1 first last idd006f40f-4b3b-4095-8cf3-86710628481e" style="" data-widgetcontainerid="d006f40f-4b3b-4095-8cf3-86710628481e">	
+
+<div class="widget widgetSpacer" id="6300a34f-d9cf-44b5-bb20-15e68072db97"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6" style="" data-widgetcontainerid="861a01c5-c3f9-41f1-8000-cfcf5c1a0dd8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last ided48f573-6fd8-40ff-a06c-b2798d1592c4" style="" data-widgetcontainerid="ed48f573-6fd8-40ff-a06c-b2798d1592c4">	
+    <div data-widget-id="42d3b385-d877-4a42-9682-de4b21d37ea3" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv42d3b385-d877-4a42-9682-de4b21d37ea3" class="widget widgetInfoAdvanced skin37 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="header42d3b385-d877-4a42-9682-de4b21d37ea3">
+			<header class="widgetHeader" id="header42d3b385-d877-4a42-9682-de4b21d37ea3">
+		<div class="">
+					<h3 >Contact Us</h3>
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><strong>Middleborough Gas and Electric</strong><br>32 South Main Street,&nbsp;<br>Middleborough, MA 02346&nbsp;</p><p><strong>Phone:</strong> <a href="tel:508-947-1371">508-947-1371&nbsp;</a><br><strong>Hours:&nbsp;</strong><br>8:00 am &ndash; 4:00 pm</p><p>Monday - Friday</p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv42d3b385-d877-4a42-9682-de4b21d37ea3 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6" style="" data-widgetcontainerid="88259c1d-4f47-42f0-abed-dc88000ae0fa">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id47c50111-6c39-4e48-86d7-e2b68e386280" style="" data-widgetcontainerid="47c50111-6c39-4e48-86d7-e2b68e386280">	
+	<div data-widget-id="c2235f24-5132-4a3c-9dd5-71e7bf4596d9" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklinkc2235f24-5132-4a3c-9dd5-71e7bf4596d9" class="widget widgetQuickLinks skin37 widgetOptionSet40 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeaderc2235f24-5132-4a3c-9dd5-71e7bf4596d9">
+			<header class="widgetHeader" id="quickLinksHeaderc2235f24-5132-4a3c-9dd5-71e7bf4596d9">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=15" >Quick Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://www.mged.com/FormCenter/General-5/Contact-Form-48" target="_self" >Contact Us</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://www.invoicecloud.com/middleboroge" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self" >Pay My Bill</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/faq" target="_self" >FAQs</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/196/Service-Request" target="_self" >Service Requests</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/186/Our-Rates" target="_self" >Utility Rates</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://www.mged.com/229/Employment-Opportunities" target="_self" >Employment Opportunities</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col5 last" style="" data-widgetcontainerid="439954a5-bb71-43a9-bab6-54f5d7d103e6">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col5 first last id0fa5fbe6-297d-4fe7-ac8b-c2d80a0deef0" style="" data-widgetcontainerid="0fa5fbe6-297d-4fe7-ac8b-c2d80a0deef0">	
+	<div data-widget-id="f37c63f1-894a-498d-8b62-3dcafbefbc6b" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklinkf37c63f1-894a-498d-8b62-3dcafbefbc6b" class="widget widgetQuickLinks skin37 widgetOptionSet40 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeaderf37c63f1-894a-498d-8b62-3dcafbefbc6b">
+			<header class="widgetHeader" id="quickLinksHeaderf37c63f1-894a-498d-8b62-3dcafbefbc6b">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=16" >Helpful Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/https://www.irs.gov/credits-and-deductions-under-the-inflation-reduction-act-of-2022" target="_self" >Available Credits and Deductions</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/https://www.rewiringamerica.org/app/ira-calculator" target="_self" >IRA Savings Calculator</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/directory.aspx" target="_self" >Contact Us</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/accessibility" target="_self" >Accessibility</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/copyright" target="_self" >Copyright Notices</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/privacy" target="_self" >Privacy Policy</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</footer><!-- Powered By --><div data-cpRole="structuralContainer" id="poweredByContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="poweredByTS">	<div id="ccb456d0d1-a217-4fc6-b826-c66c902a5f00" data-containerid="b456d0d1-a217-4fc6-b826-c66c902a5f00" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="2420be1e-4824-4adb-9d8c-50b48edb99e0">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id4978ed36-0188-42dd-a532-b73cdf0fcc9d" style="" data-widgetcontainerid="4978ed36-0188-42dd-a532-b73cdf0fcc9d">	
+ 
+	<div data-widget-id='7de92fbf-d771-477d-af13-657ab80882ac' data-moduleName="customHtml" id='widgetCustomHtml7de92fbf-d771-477d-af13-657ab80882ac' class="widget widgetCustomHtml skin39 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBody7de92fbf-d771-477d-af13-657ab80882ac">
+		<div id="customHtml7de92fbf-d771-477d-af13-657ab80882ac"><div><style>
+  /* CP icon */
+  .cpBylineIconTS {
+    color: #fff;
+  }
+  /* CP Text */
+  .cpBylineTextTS,
+  .cpBylineTextTS a:link {
+    color: #fff;
+  }
+
+  .cpBylineTS {
+    text-align: center;
+  }
+  
+  .cpBylineIconTS {
+    fill: currentColor;
+    width: 39px;
+    height: 26px;
+    display: inline;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="widgetItem cpBylineTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="cpBylineIconTS">
+    <path class="c" d="M73.4,23.2h-19v16.7h19c2.8,0,5,2.2,5,5c0,2.8-2.2,5-5,5h-19v28.4h5.5l11.3-11.7h2.2c11.9,0,21.6-9.7,21.6-21.6C95,33,85.3,23.2,73.4,23.2"></path>
+    <path class="p" d="M45.8,66.5H26.6C14.7,66.5,5,56.8,5,44.9C5,33,14.7,23.2,26.6,23.2h19.1v16.7H26.6c-2.8,0-5,2.2-5,5c0,2.8,2.2,5,5,5h19.1V66.5z"></path>
+  </svg>
+  <span class="cpBylineTextTS">Government Websites by <a href="https://connect.civicplus.com/referral" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">CivicPlus&reg;</a></span>
+</div>
+</div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<script src="/420355727.js" type="text/javascript"></script>
+	
+	
+
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Playfair+Display:500,500italic,600,600italic,700,700italic,italic,regular|Source+Sans+Pro:600,600italic,700,700italic,italic,regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>

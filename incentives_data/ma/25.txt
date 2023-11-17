@@ -1,0 +1,114 @@
+CALL 1-833-44-EV-ENE (1-833-443-8363) | EMAIL ev@ene.org | En Español
+￼
+	•	Why Drive Electric
+	◦	Benefits to HG&E Customers
+	◦	Benefits to All
+	◦	FAQS
+	•	Buying Guide
+	◦	Electric Vehicle Basics
+	◦	Compare Vehicles
+	◦	Federal and State Vehicle Rebates & Incentives
+	•	Partner Dealerships
+	•	Charging Guide
+	◦	Vehicle Charging Basics
+	◦	Charging Equipment
+	◦	Home Installation Help
+	◦	HG&EV Charging Rebates & Incentives
+	◦	Find Local Charging
+	•	Commercial Incentives
+	•	Blog
+	•	Contact Us
+	•	
+
+Menu
+
+Charging Guide
+
+Vehicle Charging Basics
+Charging Equipment
+Home Installation Help
+Charging Rebates & Incentives
+
+
+
+Rebates and Incentives (Charging)
+HG&E’s Electric Vehicle Charger Programs 
+Customers who enroll a Level 2 electric vehicle charger in one of HG&E’s EV charger programs receive an incentive in return for charging in off-peak hours. The goal of this program is to avoid charging during certain hours when demand for electricity is highest which not only helps keep electric rates sustainable for all HG&E customers, but also helps save on carbon emissions! 
+Electric Vehicle Charger Program Incentive Options: 
+Incentive: 
+Available for: 
+Requirements: 
+	•	$10/month bill credit, and
+	•	Charger Incentive (choose one)
+	◦	Free JuiceBox Level 2 charger*
+	◦	Up to $600 rebate for a ChargePoint Home Flex or Emporia EV charger (purchased separately by customer
+	◦	Up to $450 rebate for any other Level 2 charger
+• Fully Electric Vehicles
+ • PHEVs that meet requirements listed to the right 
+• On-board charging speed must be capable of charging at 6 kW or greater** (typical for newer EVs) 
+• Charger must be connected to 40 amp breaker or greater*** 
+• Battery greater than 18 kWh**
+• Must enroll in HG&E’s Connected Homes Program if enrolling a ChargePoint Home Flex, Emporia or JuiceBox charger
+	•	$5/month bill credit, and
+	•	Charger Incentive:
+	◦	A rebate of $300 towards the purchase of a Level 2 Enel X JuiceBox charger*
+	◦	Up to $300 rebate for a ChargePoint Home Flex or Emporia EV Charger
+• Plug-in Hybrid Electric Vehicles  • Fully Electric Vehicles with on-board charging speeds less than 6 kW** 
+• Fully Electric Vehicles with Level 2 chargers connected to < 40 amp breaker*** 
+• Must have qualifying Level 2 ChargePoint, Emporia or Enel X JuiceBox charger
+• Must enroll in HG&E’s Connected Homes Program
+*A coupon code will be provided towards a direct rebate for the purchase of a JuiceBox charger via the Enel X NextZero webstore.  The customer would first submit an application to the light plant, and if approved, would receive a coupon code that covers $600 or $300 of the cost.  The customer is responsible for all taxes and delivery charges. 
+**If you need help determining your vehicle’s maximum on-board charging
+speed or battery size, visit this ChargeHub webpage for a list of various EVs that includes this information. 
+***HG&E reserves the right to audit via meter data 
+ 
+Additional HG&E Incentives Available: 
+	•	Residential Energy Conservation Program (Financial assistance at 0% interest): Service upgrades, equipment costs and installation costs associated with charging infrastructure may be eligible for financial assistance at 0% interest through HG&E’s Residential Energy Conservation Program. Please note, if you are interested in receiving assistance through this program to help cover these costs, you will need to submit your application for that program separately. 
+ 
+How does it work? 
+Enrollment details and program requirements vary based on the type of charger you enroll: 
+	•	If you have or will be installing a Level 2 ChargePoint, Enel X JuiceBox or Emporia Charger:
+	◦	Customers who would like to enroll with a qualifying ChargePoint, Enel X JuiceBox or Emporia charger will need to sign up for HG&E’s ‘Connected Homes’ program administered by our energy services partner, NextZero. Through the Connected Homes program, your EV charger will be remotely adjusted a few times each month during which the charger will be incapable of charging. These adjustments will typically be made 2-3 times per month, though as many as five could occur. The hours vary depending on the season, but typically occur between 4 and 8 p.m. You will be notified of upcoming adjustments via email and/or text. The notification will include the event’s start and end times, and you will be given the opportunity to opt out if needed. Customers who choose to opt out of an adjustment will not be issued an incentive for that month. To successfully enroll in Connected Homes, your charger will need to be connected to your home Wi-Fi network and you will need to provide access to the device through a Wi-Fi connection. You will also need to agree to the Connected Homes program terms and conditions, (please review these before applying).
+	▪	Incentive Details: Customers who opt to receive the free Level 2 JuiceBox charger through HG&E must have the charger installed by a licensed electrician (responsibility of the customer) and enroll the charger in the Connected Homes program within 30 days of receipt of the charger. Customers who opt to enroll an existing ChargePoint, JuiceBox or Emporia charger must first submit an application to HG&E. The rebate will be applied as an on-bill credit once HG&E confirms you have enrolled in Connected Homes.
+	•	If enrolling a Level 2 charger other than ChargePoint, Enel X JuiceBox or Emporia:
+	◦	To be eligible, you will need to own a Level 2 fast charger as well as an all-electric vehicle, and will need to agree to schedule Level 2 charging to occur only between the hours of 9:00 p.m. and 7:00 a.m. Monday-Friday, and anytime on weekends. HG&E will have the ability to monitor and verify that Level 2 charging is occurring outside of the above windows through HG&E’s Advanced Metering Infrastructure (AMI).
+	▪	Note: Additional terms and conditions apply. Please review the full list of terms and conditions before applying, located at: https://www.hged.com/residential/ee-home/ev-charger-program-terms-and-conditions.aspx  
+ 
+How to Apply:  
+	•	If you already have an existing Level 2 ChargePoint, Enel X JuiceBox or Emporia Charger:
+	◦	Step 1: Apply for your charger rebate (Click here to apply)  
+	◦	Step 2: Once approved, enroll your charger in Connected Homes (Click here to enroll) 
+	▪	Note: HG&E cannot process a rebate and credit unless an initial application has been submitted and approved first.
+	•	If you would like to request a free or discounted Level 2 JuiceBox Charger: 
+	◦	Step 1: Click here to apply 
+	◦	Step 2: If approved, HG&E will provide you with a one-time use coupon code to the Enel X NextZero store.
+	◦	Step 3: Once you’ve received and installed your charger, enroll your charger in Connected Homes (Click here to enroll) 
+	◦	Step 4: Send HG&E verification of enrollment in Connected Homes to efficiency@hged.com 
+	•	If enrolling a Level 2 charger other than ChargePoint, Enel X Juicebox or Emporia: 
+	◦	Click here to apply 
+ 
+HG&E’s electric vehicle charger programs allow customers to participate in HG&E’s grid transformation efforts with their own equipment and receive credits for doing so, while also helping to drive down costs for all HG&E customers. 
+
+
+EV PURCHASE REBATES
+Looking to purchase an EV? Find out how you could take up to $10,000 off the MSRP through federal, state and local EV Purchase Rebates.
+Learn More
+
+Holyoke Gas & Electric
+	•	99 Suffolk Street Holyoke, MA 01040
+	•	413-536-9300
+	•	413-552-0392
+	•	customer_accounts@hged.com
+	•	www.hged.com
+Website
+	•	Home
+	•	Why Drive Electric
+	•	Buying Guide
+	•	Charging Guide
+	•	Blog
+	•	Contact
+
+
+Copyright 2023 - Energy New England, LLC
+Close Menu
+

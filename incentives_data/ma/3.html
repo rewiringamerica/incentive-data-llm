@@ -1,0 +1,2426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<!-- Google Tag Manager -->
+				<script>(function(w,d,s,l,i){w.GATrackingId='UA-204807479-77';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayer','GTM-TBRKMPJ');</script>
+				<!-- End Google Tag Manager --><!-- Google Tag Manager for GA4 -->
+				<script>(function(w,d,s,l,i){w.GAMeasurementID='G-NBTPCXJ7VJ';w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','cpDataLayerGA4','GTM-K73C5PS');</script>
+				<!-- End Google Tag Manager for GA4 -->
+				<script type='text/javascript'>
+					var enableTelemetry = 'false'
+					var aiConfig = {
+					instrumentationKey: '1cde048e-3185-4906-aa46-c92a7312b60f'						
+					}
+					var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement('script'); b.src = a.url || 'https://az416426.vo.msecnd.net/scripts/a/ai.0.js', d.getElementsByTagName('script')[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Dependency']; f.length;)b('track' + f.pop()); if (b('setAuthenticatedUserContext'), b('clearAuthenticatedUserContext'), b('startTrackEvent'), b('stopTrackEvent'), b('startTrackPage'), b('stopTrackPage'), b('flush'), !a.disableExceptionTracking) { f = 'onerror', b('_' + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c['_' + f](a, b, d, e, h), i } } return c }(aiConfig);
+					window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
+					// Add telemetry initializer
+					appInsights.queue.push(function() {
+						appInsights.context.addTelemetryInitializer(function(envelope) {
+							var telemetryItem = envelope.data.baseData;
+							// To check the telemetry item’s type:
+							if (!false)
+							{
+								//If the telemetry is not enabled, we still want to capture Google map custom event, so only allow that
+								if (envelope.name.indexOf('.Event') == -1)
+									return false;
+							}
+						});
+					});						
+					appInsights.trackPageView();
+				</script>
+	<script>
+		function populateAntiForgery(token) {
+			var input = document.createElement("input");
+			input.name = "__RequestVerificationToken";
+			input.type = "hidden";
+			input.value = token;
+			var absPat = /^https?:\/\/|^\/\//i;
+			var forms = document.getElementsByTagName("form");
+			for (var i = 0; i < forms.length; i++) {
+				if (forms[i].method == "post" &&
+					!forms[i].querySelector('[name="__RequestVerificationToken"]') &&
+					!absPat.test(forms[i].getAttribute("action"))) {
+					forms[i].appendChild(input.cloneNode());
+				}
+			}
+		}
+
+		function getAntiForgeryToken(callback, error) {
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "/antiforgery");
+			xhr.addEventListener("load", function() {
+				try {
+					if (this.status !== 200) {
+						throw Error("Invalid status. Could not retrieve antiforgery token.");
+		}
+					var obj = JSON.parse(this.responseText);
+					callback(obj.token);
+				} catch (e) {
+					typeof error === "function" && error(e);
+				}
+			});
+			xhr.send();
+		}
+
+		getAntiForgeryToken(function(token) {
+			if (document.readyState === "complete"
+				|| document.readyState === "loaded" 
+				|| document.readyState === "interactive") {
+				populateAntiForgery(token);
+				return;
+			}
+			document.addEventListener("DOMContentLoaded", function() {
+				populateAntiForgery(token);
+			}, false);
+		}, console.error);
+			</script>
+			
+	
+<script type="text/javascript">
+		window.departmentHeader = {};
+		window.pageSectionTracker = {};
+        window.isResponsiveEnabled = true;
+		window.isRemoveSetHeights= false;
+		if (window.isRemoveSetHeights) {
+			document.documentElement.className += ' removeSetHeights';
+		}
+		window.mainMenuMediaQuery = 'screen and (max-width: 40em)';
+		window.isMobileBrowserIncludingTablets = false;
+		window.fixedResponsiveMenu = false;
+		window.fullWidthResponsiveMenu = true;
+		window.responsiveMenuHeight = '';
+		window.responsiveMenuFontSize = '';
+		(function () {
+			window.setSizeCookie = function () {
+				document.cookie = "dpi=" + window.devicePixelRatio + "; path=/";
+				document.cookie = "viewportWidth=" + window.innerWidth + "; path=/";
+				document.cookie = "viewportHeight=" + window.innerHeight + "; path=/";
+				if (screen && screen.width && screen.height) {
+					document.cookie = "screenWidth=" + screen.width + "; path=/";
+					document.cookie = "screenHeight=" + screen.height + "; path=/";
+				}
+				document.cookie = "responsiveGhost=1; path=/";
+			};
+
+			setSizeCookie();
+		}());
+</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="category0" content="Home" />
+<meta name="category1" content="Your Government" />
+<meta name="category2" content="Departments" />
+<meta name="category3" content="Electric" />
+<meta name="category4" content="Customers (Residential)" />
+<meta name="category5" content="Energy Conservation and Rebates " />
+
+	
+	<meta name="theme-color" content="#092f52">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<title>Energy Conservation and Rebates&#160; | Danvers, MA</title>
+	
+		<meta name="description" content="Danvers Electric is offering a demand management program to residential and small business customers. ">
+				
+	<!--[if IE 6]><script language="JavaScript" type="text/javascript"> var isie6 = true; </script><![endif]-->
+	<!--[if IE 7]><script language="JavaScript" type="text/javascript"> var isie7 = true; </script><![endif]-->
+	<!--[if IE 8]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<!--[if IE 9]><script language="JavaScript" type="text/javascript"> var isie8 = true; </script><![endif]-->
+	<script type="text/javascript"><!--
+	var intCountryCode = 840;
+	var externalSiteDialogHeight = '390px';
+	var order = '';
+//--></script>
+	
+	<link href="/-1537463660.css" rel="stylesheet" type="text/css" />	<link href="/1591187844.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="/Assets/Styles/Print.css" media="print">
+<script type="text/javascript" src="/Scripts/2011.3.1115/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript">
+		window.Pages = window.Pages || {};
+		// FrontEnd RWD initialization
+		window.Pages.rwdReady = $.Deferred();
+		window.Pages.toolBarDeferred = $.Deferred();
+		window.Pages.rwdSetupComplete = $.Deferred();
+		window.Pages.megaMenuLoaded = $.Deferred();
+		window.Pages.angularToolbarComplete = $.Deferred();
+		window.Pages.frontEndToolbarComplete = $.Deferred();
+	</script>
+	<!--CPHeadContent-->
+	<script src="/248816995.js" type="text/javascript"></script>
+	
+	
+	
+	
+
+
+
+
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/App_Themes/ie8.css"><![endif]-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/ie7.css"><![endif]-->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/App_Themes/ie6.css"><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="/Scripts/html5.js"></script><![endif]-->
+
+	<script type="text/javascript">
+		setEditorVariables(false, 840);
+		function getPrintPreviewType() { return 0; } function printPreview() {pPreview(getPrintPreviewType()); }
+	</script>
+	
+</head>
+<body class="wide " >
+
+	<script>jQuery(document).click(function (event) {
+	var target = jQuery(event.target);
+	if (target.attr('src') && target.parents('.image').length && target.parents('.widget').length) {
+		var text = target.attr('title');
+		
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Image',
+				eventAction: 'Image - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.is('button') || target.hasClass('button') || target.parents().hasClass('button')) {
+		var text = "";
+		if (target.parents('.button')[0]) {
+			text = target.parents('.button')[0].text;
+		} else if (target.text().length) {
+			text = target.text();
+		} else if (target.attr('title').length) {
+			text = target.attr('title');
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Button',
+				eventAction: 'Button - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetCustomHtml').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Custom Html',
+				eventAction: 'Custom Html Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.editor').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Editor',
+				eventAction: 'Editor Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.GraphicLinks').length) {
+		var text = "";
+		var targetGraphicLink = target;
+		if (target.hasClass('widgetGraphicLinksLink')) {
+			targetGraphicLink = jQuery(target.children()[0]);
+		}
+		if (targetGraphicLink.hasClass('text')) {
+			text = targetGraphicLink.text();
+		} else if (targetGraphicLink.attr('src').length) {
+			if (targetGraphicLink.attr('alt').length) {
+				text = targetGraphicLink.attr('alt');
+			} else {
+				text = targetGraphicLink.attr('src');
+			}
+		} else {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Graphic Links',
+				eventAction: 'Graphic Link - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.InfoAdvanced').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Info Advanced',
+				eventAction: 'Info Advanced Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.list').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'List',
+				eventAction: 'List Clicked',
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.megaMenuItem').length || target.parents('.topMenuItem').length) {
+		var megaMenuText = jQuery('.topMenuItem.mouseover').find('span').text();
+		var breadCrumbs = [];
+		jQuery('.breadCrumbs > li').each(function () {
+			 breadCrumbs.push(this.textContent);
+		});
+		var pageTitle = breadCrumbs.join('>');
+		var subTitleText = target.parents('.megaMenuItem').children('.widgetTitle').children().text();
+		var text = "";
+		if (pageTitle) {
+			text += pageTitle + " | ";
+		} else {
+			text += document.title + ' - ';
+		}
+		if (target.text() == "" && megaMenuText == "") {
+			text += "N/A";
+		} else if (target.text().length && megaMenuText.length) {
+			if (megaMenuText == target.text()) {
+				text += megaMenuText;
+			} else {
+				text += megaMenuText + " - " + subTitleText + " - " + target.text();
+			}
+		} else if (target.text() == "") {
+			text += megaMenuText;
+		} else {
+			text += target.text();
+		}
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Mega Menu',
+				eventAction: 'Mega Menu : ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetNewsFlash').length && target.parents('.widgetItem').length) {
+		var text = jQuery(target.parents('.widgetItem')[0]).find('.widgetTitle').children().text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'News Flash',
+				eventAction: 'News Flash - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.hasClass('widgetQuickLinksLink') || target.find('.widgetQuickLinksLink').length) {
+		var text = target.text();
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Quick Links',
+				eventAction: 'Quick Links - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.attr('src') && target.parents('.cpSlideshow').length) {
+		var text = target.attr('title');
+		if (!text.length) {
+			text = "N/A";
+		}
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Slideshow',
+				eventAction: 'Slideshow - ' + text,
+				eventLabel: window.location.href
+			});
+	}
+	if (target.parents('.widgetText').length) {
+		ga('send',
+			{
+				hitType: 'event',
+				eventCategory: 'Text',
+				eventAction: 'Text Link Clicked',
+				eventLabel: window.location.href
+			});
+	}
+});</script>
+
+	<div id="fb-root"></div>
+<div id=skipToContentLinks>
+<a href="#cc5f8c90dc-b4cb-431b-90ee-10648f8df655" target="_self" class="skipToContentLink">Skip to Main Content</a>
+</div>
+	<form id="frmReferenceFormForTelerikEditorDialogs"></form>
+
+		<input type="hidden" id="GoogleMapsKey" value="AIzaSyDWUuE-ifkbhxblF920N8MjpBdTg1Wt784" />
+	
+
+<link href="/745732998.css" rel="stylesheet" type="text/css" />
+
+<div tabindex="0"></div>
+<div id="SplashMessageWrapper" class="cp-Splash-wrapper">
+    <div role="dialog" aria-labelledby="cp-Splash-title" aria-describedby="editorContentDesc" aria-modal="true" tabindex="-1" id="SplashMessage" class="hidden cp-Splash cp-Splash--modal is-open">
+        <div class="cp-Splash-header">
+            <h3 class="cp-Splash-title" id="cp-Splash-title">Loading</h3>
+            <button class="cp-Splash-Btn cp-Splash-close" aria-label="Close this modal" title="Close this window">
+                <svg id="iconClose" viewBox="0 0 25 25">
+                    <polygon style="fill:currentcolor"
+                             points="18.806,6.98 18.075,6.248 12.532,11.792 6.989,6.248 6.257,6.98 11.786,12.508 6.212,18.084 6.943,18.815 12.532,13.224 18.12,18.815 18.851,18.084 13.277,12.508"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="cp-Splash-body">
+            <div class="cp-Splash-Prose editorContent fr-view fr-element" id="editorContentDesc">
+                <!-- Content from the Froala Editor will go here. -->
+                Loading
+            </div>
+        </div>
+        <div class="cp-Splash-footer">
+            <button class="cp-Splash-Btn cp-Splash-Btn--NoShow">Do Not Show Again</button>
+            <button class="cp-Splash-Btn cp-Splash-Btn--Close">Close</button>
+        </div>
+    </div>
+</div>
+<div tabindex="0"></div>
+
+<script src="/Assets/Scripts/APIClient.js"></script>
+<script src="/Assets/Scripts/MomentJs/2.29.1/moment.min.js"></script>
+<script src="/Assets/Scripts/SplashModal/SplashModalRender.js"></script>
+<script>
+
+		$(document).ready(function () {
+			var filter = {
+				targetId: '272',
+				targetType: 1
+			}
+
+            new SplashModalRender().triggerRender(filter);
+		});
+</script>
+	
+	
+<input type="hidden" id="cpcDomain" value="https://cp-civicplusuniversity2.civicplus.com">
+	<input type="hidden" id="hdnStructureID" value="1" />
+	<input type="hidden" id="hdnContentCollectionID" value="abf844e6-8771-4dfc-9f45-2bfab6920ac7" />
+	<input type="hidden" id="hdnWorkingCopyID" value="00000000-0000-0000-0000-000000000000" />
+	<input type="hidden" id="hdnThemeID" value="1" />
+	<input type="hidden" id="pageIsFrontEnd" value="true" />
+	<input type="hidden" id="pageModuleID" />
+	<input type="hidden" id="pagePageID" value="272" />
+	<input type="hidden" id="hdnModuleEligibleForJquery224Upgrade" value="true" />
+
+			<img id="imgLogoPrintPreview" src="/ImageRepository/Document?documentID=27" alt="Danvers, MA" />
+	<div id="stickyPlaceholder"></div>
+	<div id="outer-wrap" class="outer-wrap">
+		<div id="inner-wrap" class="inner-wrap">
+				<div id="divToolbars" class="cpToolbars newCP mui-fixed" style="">
+					
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/App_Themes/CP/ie7.css"><![endif]-->
+<!-- Allow Dashboard, Favorites Enabled -->
+
+<!-- Begin Signed Out Bar -->
+<div class="cpToolbar user public">
+    <div class="inner selfClear">
+        <p class="dropdown"><a href="/MyAccount/ProfileCreate" role="button" class="myConnections" id="signedOutToolbarCreateProfileButton">Create a Website Account</a> <span class="welcomeMessage">- Manage notification subscriptions, save form progress and more. &nbsp;&nbsp;</span></p>
+        <ul class="nav secondary">
+	        <li><a href="/MyAccount" role="button" class="button" id="loggedOutToolbarSignInButton"><span>Website Sign In</span></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#signedOutToolbarCreateProfileButton').keypress(function (e) { if (e.which === 0) return; $(this).click(); });
+        $('#signedOutToolbarCreateProfileButton').click(function (event) {
+        	event.preventDefault();
+        	window.location.href = '/MyAccount/ProfileCreate?from=url&url=/&dn=' + window.location.origin;
+        });
+
+			
+				$('#loggedOutToolbarSignInButton').click(function (event) {
+					event.preventDefault();
+					window.location.href = '/MyAccount/?from=url&url=' + encodeURIComponent(window.location.href.replace(window.location.origin, '')) + '&dn=' + window.location.host;
+				});
+			
+
+		if ('False' == 'True') {
+            $('#loggedOutToolbarSignInButton').hide();
+		}
+    })
+</script>
+<!-- End Signed Out Bar -->
+
+				</div>
+			<div id="bodyWrapper">
+				<div id="mainNavHolderMobile" class="mainNavHolderMobile"></div>
+				
+<div data-cpRole="structuralContainer" id="bodyContainerTS">
+<!-- Banner --><div data-cpRole="structuralContainer" id="bannerContainerTS" class="noOverflowTS">
+<div data-cpRole="banner" id="banner1"><!-- Header Container --><header data-cpRole="structuralContainer" id="headerContainerTS">
+<div data-cpRole="structuralContainer" id="logoSearchTS">
+<div class="siteWrap3"><div data-cpRole="banner" id="bannerLogoTS" class="bannerLogoTS empty">
+
+
+
+
+				<a style="			display: block; text-align: center;
+" class="bannerObject" href="/" target="_self"><img alt="Home Page" class="bannerObject" height="245" src="/ImageRepository/Document?documentID=112" width="970" /></a>
+
+</div><div data-cpRole="contentContainer" id="searchTS">	<div id="cc1cf4bef3-4cec-4aef-b11d-c638de238a2b" data-containerid="1cf4bef3-4cec-4aef-b11d-c638de238a2b" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="30">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col10 first" style="" data-widgetcontainerid="6375620b-3ed3-42e9-a88f-2c183e018748">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col10 first last id7a983d86-53c4-448a-869b-bdf898be8ed5" style="" data-widgetcontainerid="7a983d86-53c4-448a-869b-bdf898be8ed5">	
+<div data-widget-id="f69b150a-7d76-447e-bfe3-5d8877ae80d9" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidgetf69b150a-7d76-447e-bfe3-5d8877ae80d9" class="widget widgetGraphicLinks skin55 widgetOptionSet27 wide" data-elementqueryclasses='{"wide-narrow":"min-width:2em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid4 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="https://www.facebook.com/townofdanvers" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self"  aria-label=" Facebook graphic"><img src="/ImageRepository/Document?documentID=48" 
+     class="graphicButtonLink" alt=" Facebook" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=48'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=48'"
+     onfocus="this.src='/ImageRepository/Document?documentID=48'" 
+	onblur="this.src='/ImageRepository/Document?documentID=48'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="https://www.instagram.com/townofdanvers/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self"  aria-label=" Instagram graphic"><img src="/ImageRepository/Document?documentID=49" 
+     class="graphicButtonLink" alt=" Instagram" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=49'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=49'"
+     onfocus="this.src='/ImageRepository/Document?documentID=49'" 
+	onblur="this.src='/ImageRepository/Document?documentID=49'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="https://twitter.com/TownofDanvers" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self"  aria-label=" Twitter graphic"><img src="/ImageRepository/Document?documentID=50" 
+     class="graphicButtonLink" alt=" Twitter" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=50'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=50'"
+     onfocus="this.src='/ImageRepository/Document?documentID=50'" 
+	onblur="this.src='/ImageRepository/Document?documentID=50'"> </a></div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/youtube" target="_self"  aria-label=" YouTube graphic"><img src="/ImageRepository/Document?documentID=51" 
+     class="graphicButtonLink" alt=" YouTube" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=51'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=51'"
+     onfocus="this.src='/ImageRepository/Document?documentID=51'" 
+	onblur="this.src='/ImageRepository/Document?documentID=51'"> </a></div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col14 last" style="" data-widgetcontainerid="ee23ff37-d842-4c35-a2a7-718fee50c20a">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col14 first last idec9e2096-9c45-4ff9-b9e7-7ceec5985236" style="" data-widgetcontainerid="ec9e2096-9c45-4ff9-b9e7-7ceec5985236">	
+<div data-widget-id="855e0fd1-9495-455f-b2f2-9b72e8e26d6d" data-widget-controller-path="/Layout/WidgetSearch">
+	
+		<script defer type="text/javascript" src="/Common/Controls/jquery-ui/js/jquery.ui.autocomplete.min.js"></script>
+	<script defer src="/Areas/Layout/Assets/Scripts/Search.js" type="text/javascript"></script>
+	<script defer type="text/javascript">
+
+		$(document).ready(function () {
+			try {
+				$(".widgetSearchButton.widgetSearchButton855e0fd1-9495-455f-b2f2-9b72e8e26d6d").click(function (e) {
+				e.preventDefault();
+					if ($("#ysnSearchOnlyDept855e0fd1-9495-455f-b2f2-9b72e8e26d6d").is(':checked')) {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), Number(0));
+					} else {
+						doWidgetSearch($(this).siblings(".widgetSearchBox").val(), 0);
+					}
+			});
+			$("#searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d").keypress(function (e) {
+				if (window.clipboardData) {
+					if (e.keyCode == 13) {
+							if ($("#ysnSearchOnlyDept855e0fd1-9495-455f-b2f2-9b72e8e26d6d").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				} else {
+					if (e.which == 13) {
+							if ($("#ysnSearchOnlyDept855e0fd1-9495-455f-b2f2-9b72e8e26d6d").is(':checked')) {
+								doWidgetSearch($(this).val(), Number(0));
+							} else {
+								doWidgetSearch($(this).val(), 0);
+							}
+						return false;
+					}
+				}
+				return true;
+			});
+
+				if (true) {
+					var currentRequest = null;
+
+					var $searchField = $("#searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d").autocomplete({
+						source: function (request, response) {
+							currentRequest = $.ajax({
+								url: '/Search/AutoComplete',
+								dataType: "json",
+								timeout: 10000,
+								beforeSend: function () {
+									if (currentRequest != null) {
+										currentRequest.abort();
+									}
+								},
+								data:
+								{
+									term: request.term,
+								},
+								success: function (data) {
+									response(data);
+									$('.autoCompleteError').remove();
+								},
+								error: function (xmlhttprequest, textstatus, message) {
+									if (textstatus === "timeout") {
+										if ($("#searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d").siblings('.autoCompleteError').length == 0)
+											$('<span class="autoCompleteError"><p class="alert error">Search autocomplete is currently not responding. Please try again later.</p></span>').insertAfter($("#searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d"));
+									}
+								}
+							});
+						},
+						html: true,
+						delay: 500,
+						select: function (event, ui) {
+							$(this).val(ui.item.value);
+							$(this).next().click();
+						}
+					});
+
+					if (false && true) {
+						$searchField.data("ui-autocomplete")._renderItem = function (ul, item) {
+							return $("<li class=\"itemList\"></li>")
+								.data("ui-autocomplete-item", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+					else {
+						$searchField.data("autocomplete")._renderItem = function (ul, item) {
+							return $("<li></li>")
+								.data("item.autocomplete", item)
+								.append("<a>" + item.label + "</a>")
+								.appendTo(ul);
+						};
+					}
+}
+}
+			catch(e) {} //we're going to eat this error. Autocomplete won't work but we dont wan't to break anything else on the page.
+		});
+	</script>
+
+	<section id="widgetPreviewSearch" class="widget widgetSearch skin39 widgetOptionSet15" style="display: block;" aria-label="Search">
+				<!-- For the button right and inside -->
+		<div class="widgetBody buttonRightInside">
+			<input class="widgetSearchBox widgetSearchBox855e0fd1-9495-455f-b2f2-9b72e8e26d6d" cp5ph="true" id="searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d" name="searchField" onchange="searchBtnApplyQuery();" placeholder="Search..." title="Search..." type="text" value="" />
+							<a href="/Search/Results" id="btnSearchIcon" class="widgetSearchButton widgetSearchButton855e0fd1-9495-455f-b2f2-9b72e8e26d6d" role="button"><img alt="Search" class="imageHover" data-hover="/ImageRepository/Document?documentID=82" data-image="/ImageRepository/Document?documentID=83" src="/ImageRepository/Document?documentID=83" /></a>
+
+			<label class="searchLabel" for="searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d">Search</label>
+		</div>
+
+	</section>
+
+
+<style scoped>
+    
+        .widgetSearch ::-webkit-input-placeholder {
+        color: #fff;
+      }
+        .widgetSearch :-moz-placeholder { /* Firefox 18- */
+       color: #fff;
+    }
+        .widgetSearch ::-moz-placeholder {  /* Firefox 19+ */
+       color: #fff;
+    }
+    .widgetSearch :-ms-input-placeholder {
+       color: #fff;
+    }
+    
+
+	.widgetSearch .widgetBody .widgetSearchBox855e0fd1-9495-455f-b2f2-9b72e8e26d6d
+	{
+        color: #fff;
+		font-family: Arial;
+height: 65px;
+border-radius: 33px;
+border: 1px solid rgba(255,255,255,0);
+background: rgba(255,255,255,.0);
+padding: 0 80px 0 20px;
+
+
+	}
+	.widgetSearch .widgetBody .widgetSearchButton855e0fd1-9495-455f-b2f2-9b72e8e26d6d
+	{
+		margin: 5px; padding-top: .50em; 
+padding-right: .75em;
+	}
+	.widgetSearch .widgetSearch-onlyDept855e0fd1-9495-455f-b2f2-9b72e8e26d6d
+	{
+		display: inline-block;
+		color: #333;
+		
+		
+		 padding-top: 10px;
+	}
+	#ysnSearchOnlyDept855e0fd1-9495-455f-b2f2-9b72e8e26d6d
+	{
+		position: relative;
+		top: .125em;
+	}
+
+</style>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">
+
+
+	<script type="text/javascript">
+	//Updates search icons href to have the correct queryString
+	function searchBtnApplyQuery() {
+		document.getElementById("btnSearchIcon").href = "/Search?searchPhrase=" + document.getElementById("searchField855e0fd1-9495-455f-b2f2-9b72e8e26d6d").value;
+    }
+	</script>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><div data-cpRole="structuralContainer" id="navContainerTS">
+<div class="siteWrap3"><nav data-cpRole="nav" id="mainNav" class="siteNav mainNav" role="navigation">
+<ol id="mainNavMenu" data-parent="1" class="rootNavMenu" role="menu"><!--
+--><li id="MainItem27" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="27" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavYourGovernment" class="navMainItem mainNavItem mainNavItem1" href="/27/Your-Government" target="_self">Your Government</a><!--
+			--><!--
+			--></li><!----><li id="MainItem31" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="31" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavOurResidents" class="navMainItem mainNavItem mainNavItem2" href="/31/Our-Residents" target="_self">Our Residents</a><!--
+			--><!--
+			--></li><!----><li id="MainItem101" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="101" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavForVisitors" class="navMainItem mainNavItem mainNavItem3" href="/101/For-Visitors" target="_self">For Visitors</a><!--
+			--><!--
+			--></li><!----><li id="MainItem35" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="35" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavDoingBusiness" class="navMainItem mainNavItem mainNavItem4" href="/35/Doing-Business" target="_self">Doing Business</a><!--
+			--><!--
+			--></li><!----><li id="MainItem9" class="topMenuItem" aria-haspopup="true" role="menuitem" data-pageid="9" data-displaymegamenu="True"><!--
+			--><!--
+			--><a id="mainNavIWantTo" class="navMainItem mainNavItem mainNavItem5" href="/9/I-Want-To" target="_self">I Want To</a><!--
+			--><!--
+			--></li><!---->
+</ol>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var menuID = 'mainNavMenu';
+			var menuType = MAIN_MENU;
+
+			//setup menu manager properties for main menu
+			if (!menuManager.mobileMainNav && true)
+				menuManager.adjustMainItemsWidth('#' + menuID);
+			menuManager.isMainMenuEditable = false;
+			menuManager.mainMenuMaxSubMenuLevels = 4;
+			menuManager.setMOMMode(2, menuType);
+
+			//Init main menu
+			var setupDraggable = menuManager.isMainMenuEditable;
+			var urlToGetHiddenMenus = '/Pages/MenuMain/HiddenMainSubMenus?pageID=1&moduleID=&themeID=1&menuContainerID=mainNav';
+
+			menuManager.setupMenu(menuID, 'mainNav', menuType, setupDraggable, urlToGetHiddenMenus);
+			menuManager.mainMenuInit = true;
+			menuManager.mainMenuTextResizer = false;
+			if (1.00 > 0)
+				menuManager.mainMenuTextResizerRatio = 1.00;
+			if (window.isResponsiveEnabled)
+				menuManager.mainMenuReady.resolve();
+
+		});
+	</script>
+
+
+<aside data-cpRole="megaMenu" id="megaMenu" class="megaMenu" style="display: none;"><input type="hidden" id="megaMenuPopupDirection" value="0"><input type="hidden" id="megaMenuWidthReference" value="0"><aside data-cpRole="contentContainer" id="mainNavMegaMenu27" class="contentTop mainNavMegaMenu megaMenuContainer pageID_27 hidden" data-orientation="horizontal">	<div id="cca286c0af-8832-4109-820d-76171da07c42" data-containerid="a286c0af-8832-4109-820d-76171da07c42" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu31" class="contentTop mainNavMegaMenu megaMenuContainer pageID_31 hidden" data-orientation="horizontal">	<div id="cc4b8e96eb-91f3-4f34-8818-0910b0fb1ea3" data-containerid="4b8e96eb-91f3-4f34-8818-0910b0fb1ea3" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu101" class="contentTop mainNavMegaMenu megaMenuContainer pageID_101 hidden" data-orientation="horizontal">	<div id="cc5cb6ea26-a1bf-4a64-b5e4-79b49f8b75c2" data-containerid="5cb6ea26-a1bf-4a64-b5e4-79b49f8b75c2" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu35" class="contentTop mainNavMegaMenu megaMenuContainer pageID_35 hidden" data-orientation="horizontal">	<div id="cceeb9684a-b657-49a5-867f-880e78affadd" data-containerid="eeb9684a-b657-49a5-867f-880e78affadd" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside><aside data-cpRole="contentContainer" id="mainNavMegaMenu9" class="contentTop mainNavMegaMenu megaMenuContainer pageID_9 hidden" data-orientation="horizontal">	<div id="ccc5159620-4d10-4a9a-85d8-181cb45c190e" data-containerid="c5159620-4d10-4a9a-85d8-181cb45c190e" class="pageContent cpGrid cpGrid24">
+				                
+
+
+
+	</div>
+</aside></aside></nav></div>
+</div>
+</header><div data-cpRole="structuralContainer" id="bannerSizingTS">
+<div data-cpRole="structuralContainer" id="welcomeContentTS">
+<div class="siteWrap3"><div data-cpRole="contentContainer" id="welcomeTS">	<div id="cc74285da0-a5ce-4b1c-958d-eaa2bcf4d7ab" data-containerid="74285da0-a5ce-4b1c-958d-eaa2bcf4d7ab" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+
+
+
+			<div id="bannerImagesJSON2" class="hidden"></div>
+				<div id="bannerSlideshowControls_banner1" class="bannerSlideshowControlsNew none " style="display:none">
+					<button id="arrowPrev_banner1" class="arrowNew prev cp-Btn--nonStyled" aria-label="Banner Arrow Previous"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowLeft"></use></svg></button>
+					<button id="arrowNext_banner1" class="arrowNew next cp-Btn--nonStyled" aria-label="Banner Arrow Next"><svg class=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#iconSlideshowArrowRight"></use></svg></button>
+				</div>
+			<script type="text/javascript">
+				onOrLive($(window), function () {
+					$.when(window.Pages.rwdSetupComplete)
+						.done(function () {
+							renderExternalBannerSlideshow('banner1',
+									{"BannerOptionID":2,"ThemeID":1,"SlotName":"banner1","Name":"Default","IsDefault":true,"BannerMode":2,"SlideShowSlideTiming":null,"SlideshowTransition":0,"SlideShowTransitionTiming":null,"ImageScale":true,"ImageAlignment":1,"ImageScroll":true,"MuteSound":true,"VideoType":0,"Status":40,"SlideshowControlsPosition":0,"SlideshowControlsAlignment":0,"SlideshowBannerControlsColorScheme":0,"BannerImages":[{"BannerImageID":59,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=63","Height":400,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":0,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""},{"BannerImageID":58,"BannerOptionID":2,"FileName":"/ImageRepository/Document?documentID=65","Height":400,"Width":2200,"StartingOn":null,"StoppingOn":null,"IsLink":false,"LinkAddress":null,"Sequence":1,"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/","AltText":""}],"BannerVideos":[],"RecordStatus":0,"ModifiedBy":0,"ModifiedOn":"\/Date(-62135575200000)\/"},
+								'/App_Themes/Interior/Images/',
+								'Rotating',
+								'1');
+						});
+				}, "load");				
+			</script>
+
+
+</div>
+</div><!-- Content container --><div data-cpRole="structuralContainer" id="mainContainerTS"><div class="inner">
+<div class="siteWrap"><div data-cpRole="structuralContainer" id="mainWrapTS" class="mainWrap" role="main">
+<div data-cpRole="structuralContainer" id="outerContentWrapTS" class="outerContentWrap"><div data-animationClass="" data-trigger="pageloadAnimationTrigger" class="hidden hiddenAnimations"></div>
+<div data-cpRole="structuralContainer" id="contentWrapTS" class="contentWrap">
+<div data-cpRole="breadCrumbs" id="breadCrumbs" class="breadCrumbContainer">		<ol class="semanticList breadCrumbs">
+			<li><a class="breadCrumb" href="/">Home</a></li><li><a class="breadCrumb" href="/27/Your-Government">Your Government</a></li><li><a class="breadCrumb" href="/245/Departments">Departments</a></li><li><a class="breadCrumb" href="/256/Electric">Electric</a></li><li><a class="breadCrumb" href="/269/Customers-Residential">Customers (Residential)</a></li><li id="currentBCPage" data-pageid="272">Energy Conservation and Rebates </li>
+		</ol>
+
+	   
+    
+</div><div data-cpRole="mainContentContainer" id="moduleContent">
+	
+	<div id="page" class="moduleContentNew">
+		
+
+	<input id="hdnPageID" name="hdnPageID" type="hidden" value="272" />
+	<input id="hdnParentID" name="hdnParentID" type="hidden" value="269" />
+	<input id="hdnVersionID" name="hdnVersionID" type="hidden" value="4539" />
+	<input id="pageMenuTitle" name="pageMenuTitle" type="hidden" value="Energy Conservation and Rebates " />
+	<input id="pageShowFeatureColumn" name="pageShowFeatureColumn" type="hidden" value="True" />
+	<input id="hdnIsLayoutPage" name="hdnIsLayoutPage" type="hidden" value="False" />
+	<input id="hdnPageStatus" name="hdnPageStatus" type="hidden" value="Published" />
+
+				<h1 id="versionHeadLine" class="headline">
+
+Energy Conservation and Rebates&#160;		</h1>
+	
+		<div id="cc5f8c90dc-b4cb-431b-90ee-10648f8df655" data-containerid="5f8c90dc-b4cb-431b-90ee-10648f8df655" class="pageContent cpGrid cpGrid24"  data-contentcontainerbreakpoint="30" data-smoothscrolling="True">
+			
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="8ce847d4-4602-499e-99d7-32f889227da9">				
+	<div class="row nest first wide">
+	
+	<div class="inner col col24 first last idb72987d7-5f5e-48d7-a635-234c133675c7" style="" data-widgetcontainerid="b72987d7-5f5e-48d7-a635-234c133675c7">	
+<div class="widget editor pageStyles narrow" id="divEditor349b6a09-5ba1-46e7-8b8c-9b5f9c237eaa" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p>The Town offers rebates on select Energy Star appliances, electric heat pumps,<a href="https://www.energystar.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);"><img src="/ImageRepository/Document?documentId=316" class="fr-fir fr-dii" alt="Energy Star"></a> and Energy Star equipment. Danvers Electric customers who purchased an Energy Star certified appliance within 1 year of application submission may be eligible for a rebate. &nbsp;Look for the <a href="https://www.energystar.gov/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">Energy Star</a> logo on the yellow Energy Guide that comes on all appliances for energy savings. Additionally, please check the SEER and/or HSPF rating requirements to confirm eligibility on associated equipment.</p><p>Visit the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">Online Rebate Portal</a>.</p><p>Please note, all rebates are not to exceed 50% of the total purchase price excluding tax.&nbsp;</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '349b6a09-5ba1-46e7-8b8c-9b5f9c237eaa'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+	
+	<div class="inner col col24 first last id3aa63a6d-d861-4210-96ad-549be75d7287" style="" data-widgetcontainerid="3aa63a6d-d861-4210-96ad-549be75d7287">	
+
+	<div id="divTabbed6ded6641-e8a7-4e41-9e9c-cd06a37fe549" class="widget widgetTabbed narrow skin43 accordionTabs" data-widgetid="6ded6641-e8a7-4e41-9e9c-cd06a37fe549" >
+
+		<div class="cpTabPanels">
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_0" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_0" aria-expanded="false"
+><span class="tabName editable" data-sequence="0" data-tabname="Central air conditioning units " contenteditable="false">Central air conditioning units </span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_0" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditor41979f61-e548-4e9a-b06d-06bae3ba0ca6" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$115</strong> - Central air conditioning units must be EnergyStar rated and have a SEER(x) rating of 16.5 or higher.&nbsp;</p><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a <a href="/DocumentCenter/View/319" rel="noopener" target="_blank">Central Air Conditioning Unit Rebate Application (PDF)</a>, fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '41979f61-e548-4e9a-b06d-06bae3ba0ca6'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_1" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_1" aria-expanded="false"
+><span class="tabName editable" data-sequence="1" data-tabname="cordless electric lawn equipment " contenteditable="false">cordless electric lawn equipment </span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_1" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditor6cca8a3c-b395-48d6-a482-3c2130bce104" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h2 id="isPasted"><br></h2><table style="width: 100%;"><thead><tr><th>Equipment (Cordless)</th><th>Lifetime of Device&nbsp;</th><th>Rebate Per Item&nbsp;</th></tr></thead><tbody><tr><td style="width: 33.3333%;">Riding Lawn Mower</td><td style="width: 33.3333%;">10 years&nbsp;</td><td style="width: 33.3333%;">$200</td></tr><tr><td style="width: 33.3333%;">Push Lawn Mower&nbsp;</td><td style="width: 33.3333%;">10 years&nbsp;</td><td style="width: 33.3333%;">$150</td></tr><tr><td style="width: 33.3333%;">Snow Blower&nbsp;</td><td style="width: 33.3333%;">10 years&nbsp;</td><td style="width: 33.3333%;">$200</td></tr><tr><td style="width: 33.3333%;">String Trimmers and Edgers&nbsp;</td><td style="width: 33.3333%;">5 years&nbsp;</td><td style="width: 33.3333%;">$40</td></tr><tr><td style="width: 33.3333%;">Hedge Trimmers</td><td style="width: 33.3333%;">5 years&nbsp;</td><td style="width: 33.3333%;">$40</td></tr><tr><td style="width: 33.3333%;">Leaf Blowers</td><td style="width: 33.3333%;">5 years&nbsp;</td><td style="width: 33.3333%;">$40</td></tr><tr><td style="width: 33.3333%;">Pressure Washers</td><td style="width: 33.3333%;">5 years&nbsp;</td><td style="width: 33.3333%;">$50</td></tr><tr><td style="width: 33.3333%;">Chain and Pole Saws</td><td style="width: 33.3333%;">5 years&nbsp;</td><td style="width: 33.3333%;">$50&nbsp;</td></tr><tr><td style="width: 33.3333%;">Rototiller&nbsp;</td><td style="width: 33.3333%;">5 years&nbsp;</td><td style="width: 33.3333%;">$40</td></tr></tbody></table><h2 style="text-align: left;"><br></h2><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print an <a aria-label="Electric Lawn Equipment Rebate Application (PDF) Opens in new window" href="/DocumentCenter/View/317" rel="noopener" target="_blank">Electric Lawn Equipment Rebate Application (PDF)</a>, fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '6cca8a3c-b395-48d6-a482-3c2130bce104'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_2" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_2" aria-expanded="false"
+><span class="tabName editable" data-sequence="2" data-tabname="dehumidifiers" contenteditable="false">dehumidifiers</span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_2" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditor58916a1b-8b0b-443a-a74a-566a673ad96b" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$25</strong> - Dehumidifiers must be EnergyStar rated.&nbsp;</p><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a<a href="/DocumentCenter/View/320" rel="noopener" target="_blank">&nbsp;Dehumidifier Rebate Application (PDF)</a>, fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '58916a1b-8b0b-443a-a74a-566a673ad96b'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_3" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_3" aria-expanded="false"
+><span class="tabName editable" data-sequence="3" data-tabname="electric heat pump units" contenteditable="false">electric heat pump units</span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_3" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditor6ed72825-222a-4837-9685-90f3d01ede57" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$4,000 (max)</strong> - Electric Heat Pump Units<span style="color: rgb(69, 69, 69); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">- Single and Multi-Head Ductless (aka non-ducted) and Ducted Systems</span></p><ul style="box-sizing: border-box; margin: 1em 0px 1.4em; padding: 0px 0px 0px 2em; font-family: Arial; font-style: normal; font-weight: 400; color: rgb(69, 69, 69); line-height: 1.5; border: 0px none; display: block; width: inherit; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none; font-style: normal; font-weight: 400;">$1,000/ton (Maximum $4,000) (1 ton = 12,000 BTU/hr)&nbsp;<ul><li><strong>Ducted -&nbsp;</strong>Heat pump units must be EnergyStar rated, have a SEER* rating of 16 or higher and a HSPF** of 9.5 or higher</li><li><p><strong>Ductless -&nbsp;</strong>Heat pump units must be EnergyStar rated, have a SEER* rating of 18 or higher and a HSPF** of 10 or higher</p></li></ul></li><li style="box-sizing: border-box; margin-bottom: 0.35em; border: 0px none; font-style: normal; font-weight: 400;">For combination units (heat pump/AC), only the heat pump rebate will be issued.</li></ul><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print an <a aria-label="Electric Heat Pump Unit Rebate Application (PDF) Opens in new window" href="/DocumentCenter/View/319" rel="noopener" target="_blank">Electric Heat Pump Unit Rebate Application (PDF)</a>, fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p><p>(x) <strong>Note</strong>: The Seasonal Energy Efficiency Ratio (SEER) is a measure of the cooling efficiency of a system. The higher the SEER number, the more efficiently the system operates.</p><p>(x)(x) <strong>Note</strong>: The Heating Seasonal Performance Factor (HSPF) is used to measure the efficiency of air source heat pumps. The higher the HSPF rating of a unit, the more energy efficient it is.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '6ed72825-222a-4837-9685-90f3d01ede57'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_4" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_4" aria-expanded="false"
+><span class="tabName editable" data-sequence="4" data-tabname="hybrid water heat pump" contenteditable="false">hybrid water heat pump</span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_4" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditorb317228c-8e55-48a4-8a71-50e42ca38422" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$300&nbsp;</strong>- Hybrid water heater heat pumps must be EnergyStar rated</p><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a <a aria-label="Hybrid Water Heater Heat Pump Rebate Application (PDF) Opens in new window" href="/DocumentCenter/View/320" rel="noopener" target="_blank">Hybrid Water Heater Heat Pump Rebate Application (PDF)</a>, fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'b317228c-8e55-48a4-8a71-50e42ca38422'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_5" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_5" aria-expanded="false"
+><span class="tabName editable" data-sequence="5" data-tabname="Level 2 EV chargers" contenteditable="false">Level 2 EV chargers</span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_5" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditorb25c6413-0a4f-4977-a5ec-065281c05f3d" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$300</strong> - &nbsp;Level 2 EV Chargers (240V)</p><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a <a aria-label="Plug-in Electric Vehicle Charger Rebate Application (PDF), Opens in new window" href="/DocumentCenter/View/318" rel="noopener" target="_blank">Plug-in Electric Vehicle Charger Rebate Application (PDF),</a> fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'b25c6413-0a4f-4977-a5ec-065281c05f3d'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_6" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_6" aria-expanded="false"
+><span class="tabName editable" data-sequence="6" data-tabname="refrigerators" contenteditable="false">refrigerators</span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_6" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditorce81d262-1821-47cf-b08f-e3bd259516be" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$100&nbsp;</strong>- Refrigerators must be EnergyStar rated</p><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a <a href="/DocumentCenter/View/320" rel="noopener" target="_blank">Refrigerator Rebate Application (PDF)</a><a aria-label="Plug-in Electric Vehicle Charger Rebate Application (PDF), Opens in new window" href="/DocumentCenter/View/318" rel="noopener" target="_blank">,</a> fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'ce81d262-1821-47cf-b08f-e3bd259516be'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_7" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_7" aria-expanded="false"
+><span class="tabName editable" data-sequence="7" data-tabname="room air conditioning units " contenteditable="false">room air conditioning units </span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_7" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditor36c39759-436c-494a-b430-ceffe7130a04" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$45&nbsp;</strong>- Room air conditioners must be EnergyStar rated and must be replacing an older unit which has been properly disposed of (a Receipt of Disposal from the Town is required)</p><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a <a aria-label="Room Air Conditioning Unit Rebate Application (PDF) Opens in new window" href="/DocumentCenter/View/320" rel="noopener" target="_blank">Room Air Conditioning Unit Rebate Application (PDF)</a><a aria-label="Plug-in Electric Vehicle Charger Rebate Application (PDF), Opens in new window" href="/DocumentCenter/View/318" rel="noopener" target="_blank">,</a> fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '36c39759-436c-494a-b430-ceffe7130a04'));
+	});
+</script>
+</div>
+				</div>
+					<ol class="tabbedWidgetNarrow cpTabs  accordion" >
+						<li class="">	<a href="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_8" class="tabButton"  aria-controls="#tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_8" aria-expanded="false"
+><span class="tabName editable" data-sequence="8" data-tabname="wireless-enabled smart thermostat " contenteditable="false">wireless-enabled smart thermostat </span></a>
+</li>
+					</ol>
+				<div class="tabbedWidget cpTabPanel " style="display: none;" id="tab6ded6641-e8a7-4e41-9e9c-cd06a37fe549_8" role="region">
+
+<div class="widget editor pageStyles narrow" id="divEditorfccdb7d0-65b4-4cec-859a-0b4b3c4a116b" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted"><strong>$50</strong> - Wireless-Enabled / Smart Thermostats<span style="color: rgb(69, 69, 69); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&nbsp;(</span><a href="https://thesmartsavingsprogram.com/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; user-select: auto; color: rgb(24, 113, 197); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Additional $60 Smart Thermostat Program incentive for Nest Users</a><span style="color: rgb(69, 69, 69); font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">)</span>&nbsp;</p><ul><li><strong>$25&nbsp;</strong>on Programmable Thermostats (Non-Wifi)</li></ul><p>Rebate forms may be submitted online through the <a href="https://plus.anbetrack.com/ene/#/Utility" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; outline: 0px; user-select: auto; color: rgb(9, 47, 82); text-decoration: underline; font-family: Arial; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Online Rebate Portal</a> if you attach the required backup documentation. You can also obtain a copy of a rebate application at Town Offices or print a <a href="/DocumentCenter/View/320" rel="noopener" target="_blank">Smart Thermostat Rebate Application (PDF)</a><a aria-label="Plug-in Electric Vehicle Charger Rebate Application (PDF), Opens in new window" href="/DocumentCenter/View/318" rel="noopener" target="_blank">,</a> fill it out completely and mail it or bring it to the address on the application with the required backup documentation. Please contact the DPW with any questions.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'fccdb7d0-65b4-4cec-859a-0b4b3c4a116b'));
+	});
+</script>
+</div>
+				</div>
+					</div>
+	</div>
+	<script type="text/javascript">
+
+		//If responsive not enabled, execute this after a timeout
+		if(!isResponsiveEnabled)
+		{
+			window.setTimeout(function(){
+				var tabbedWidgetID = 'divTabbed6ded6641-e8a7-4e41-9e9c-cd06a37fe549';
+				typeof setTabbedWidgetsTabHeight === "function" && setTabbedWidgetsTabHeight(tabbedWidgetID);
+			}, 1500);
+		}
+
+		function reinitCarousels() {
+			if (window.carouselsToInit) {
+				for (var i = 0; i < window.carouselsToInit.length; i++) {
+					carouselsToInit[i]();
+				}
+			}
+		}
+		function sizeTabbedContent(element){
+			if(window.Pages){
+				if(window.Pages.onResizeHandlers){
+					var setTabbedInterval = setInterval(function () {
+						window.Pages.onResizeHandlers.forEach(function(car){car();});
+					}, 25)
+
+
+					setTimeout(function () {
+						clearInterval(setTabbedInterval);
+						if ($.cookie("enableLiveEdit") === "true") {
+							setInterval(function () {
+								window.Pages.onResizeHandlers.forEach(function(car){car();});
+							}, 2000);
+						}
+					}, 2500);
+					element.onclick="window.setTimeout(function(){reinitCarousels();},2);"
+				}
+			}
+		}
+
+		function adjustTab(e) {
+			e.preventDefault();
+			window.setTimeout(function(){
+				reinitCarousels();
+			}, 2);
+			sizeTabbedContent(this);
+		}
+
+		var tabButtons = document.querySelectorAll("#divTabbed6ded6641-e8a7-4e41-9e9c-cd06a37fe549 .tabButton");
+
+		tabButtons.forEach(function (tabButton) {
+			tabButton.addEventListener("click", adjustTab);
+		});
+
+	</script>
+
+
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="ab287fb4-0a6c-49c7-831f-248dac92cdb0">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last ida1b9f6c0-5b82-4acc-bf30-a1ec97f2de45" style="" data-widgetcontainerid="a1b9f6c0-5b82-4acc-bf30-a1ec97f2de45">	
+<div class="widget editor pageStyles narrow" id="divEditora7de534c-4ed7-4bb7-bfb2-aa44efe41cfe" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <p id="isPasted">Danvers Electric has partnered with Energy New England to process and administer the energy conservation rebate program. &nbsp;Additional information about Energy New England, Danvers energy saving rebates, the EV charger rebate program, free energy assessments, and Danvers Electric programs can be found on the <a href="https://ene.org/ene-sustainability/danvers-electric-division/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">ENE Site</a>.</p><p>Learn about <a href="https://ene.org/ene-sustainability/danvers-electric-division/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">Energy Saving Rebates and Programs</a>.</p><h2>Questions?</h2><p>Online application is in the following. &nbsp;If you have any questions, please <a href="mailto:jelie@danversma.gov">email Jeff Elie</a> our Energy Resources Manager.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'a7de534c-4ed7-4bb7-bfb2-aa44efe41cfe'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="c34e030e-a6d6-416f-ba14-65e58ef605c1">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id76760dd3-7f01-4603-8bb2-6872457014a3" style="" data-widgetcontainerid="76760dd3-7f01-4603-8bb2-6872457014a3">	
+<div class="widget editor pageStyles narrow" id="divEditorc32c1547-f0d0-49d5-b59d-3d37c85b35b5" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline" id="isPasted">Schedule a Remote Home Energy Assessment</h1><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1.4em; border: 0px none; font-style: normal; font-weight: 400; color: rgb(69, 69, 69); font-family: Arial; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Being at home so much may increase your utility bills. Let Danvers Electric help you make an energy savings plan.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1.4em; border: 0px none; font-style: normal; font-weight: 400; color: rgb(69, 69, 69); font-family: Arial; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">By using the video feature on your iPhone or Android phone, our contractor Energy New England (ENE) can capture information about your home that they need to create a comprehensive Home Energy Assessment Report. They will set up a call that takes about an hour. They&apos;ll email you the report and schedule a follow-up call with you to review it and make a short- and long-term plan.</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1.4em; border: 0px none; font-style: normal; font-weight: 400; color: rgb(69, 69, 69); font-family: Arial; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Danvers residents can call ENE at 888-772-4242,&nbsp;<a href="mailto:solutions@ene.org" style="box-sizing: border-box; user-select: auto; color: rgb(24, 113, 197); text-decoration: underline;">email Energy New England</a>, or&nbsp;<a href="http://ene.org/ene-sustainability/home-energy-assessment/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" style="box-sizing: border-box; user-select: auto; color: rgb(24, 113, 197); text-decoration: underline;">visit the Energy New England site</a> to schedule a&nbsp;<strong style="box-sizing: border-box; font-weight: 700;">free</strong> remote home energy assessment today.</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + 'c32c1547-f0d0-49d5-b59d-3d37c85b35b5'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="e7514bae-8254-458a-a109-45854f998b7c">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idf5d42b15-072b-4b1b-8b37-34f3a62f39b4" style="" data-widgetcontainerid="f5d42b15-072b-4b1b-8b37-34f3a62f39b4">	
+<div class="widget editor pageStyles narrow" id="divEditor5b6960a1-7cb9-4244-9b30-17ffcbde24ef" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}'>
+        <div class="fr-view">
+
+
+        <h1 class="headline" id="isPasted">Danvers Smart Savings Program</h1><p>Danvers Electric is offering a demand management program to residential and small business customers. If you have a Google Nest smart thermostat connected to your central air conditioner you can participate! You will earn direct payments <strong>and</strong> your participation helps lower the electricity peak, which benefits everyone in Danvers and New England.</p><h3>Customer Benefits</h3><ul><li>Adopt leading consumer technology and save energy year round</li><li>$60 gift card for joining program</li><li>$20 gift card for participating this summer</li></ul><p>Go to the <a href="/271/Electric-Savings-Programs">Electric Saving Program page</a> to enroll in the SmartSavings program today!</p>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function (e) {		
+	    renderSlideshowIfApplicable($('#divEditor' + '5b6960a1-7cb9-4244-9b30-17ffcbde24ef'));
+	});
+</script>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+		</div>
+
+	</div>
+
+	
+	<div class="newCP">
+
+	</div>
+</div>
+</div><aside data-cpRole="contentContainer" id="featureColumn" class="secondaryContent">	<div id="ccd6923f64-2522-4bce-8783-61ad1b416b69" data-containerid="d6923f64-2522-4bce-8783-61ad1b416b69" class="pageContent cpGrid cpGrid24 showInMobile" data-contentcontainerbreakpoint="40">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="42d7c4db-5235-46f8-9cf0-257463e2afe8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last idfdb1d90b-12d0-4b05-89fe-4a9c768f3806" style="" data-widgetcontainerid="fdb1d90b-12d0-4b05-89fe-4a9c768f3806">	
+
+
+
+
+
+
+
+
+<div data-widget-id="d6561b8c-56f1-4aaa-a915-9daa0d0fd12e" data-moduleWidgetType="cityDirectory" data-widget-controller-path="/CityDirectory/Widget">
+	<div id="cityDirectoryWidgetd6561b8c-56f1-4aaa-a915-9daa0d0fd12e" class="widget widgetStaffDirectory skin43 wide" >
+			<div class="widgetHeader">
+					<h3><a style="" href= /Directory.aspx>Contact Us</a></h3>
+							</div>
+						<ol class="semanticList">
+			<li class="widgetItem h-card">
+
+
+				<h4 class="widgetTitle field p-name">
+					Jeff Elie
+					
+				</h4>
+				<div class="field p-job-title">Energy Resources Manager</div>
+						<div class="field u-email"><a href="mailto:jelie@danversma.gov">Email Jeff Elie </a></div>
+
+
+
+
+
+				<br />
+			</li>
+		<li class="widgetItem h-card">
+
+				<h4 class="widgetTitle field p-name">Public Works - Electric Division</h4>
+
+
+
+				<div class="field h-adr">
+					<strong>Physical Address</strong>
+<button class="viewMap" data-moduleId="4" onclick="new CivicPlus.Maps().LoadMap(document.getElementById('googleMap26'), '100%', $(document.getElementById('googleMap26')).next('.infotext').children('.address').text());">View Map</button>					<br />
+					<span class="p-street-address">1 Burroughs Street</span><br />
+					<span class="locality">Danvers</span>, <span class="p-region">MA</span> <span class="p-postal-code">01923</span>
+
+				</div>
+				<br />
+
+					<script type="text/javascript">
+							$(document).ready(function () {
+								var mode = 2;
+								loadGoogleMapsScript(mode, 'loadMaps');
+							});
+					</script>
+					<div class="field">
+						<br>
+						<div class="mapWrapLazyLoaded">
+							<div id="googleMap26" class="googleMap" style=""></div>
+							<div style="display: none" class="infotext">
+								<div class="address">1 Burroughs Street  Danvers MA 01923</div>
+							</div>
+						</div>
+						<a href="https://www.google.com/maps/place/1+Burroughs+Street++Danvers+MA+01923" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" class="mapLink" title="Open location on Google Maps">Directions</a>
+					</div>
+					<br />
+
+
+				<div class="field p-tel">Phone <a href="tel:9787740005">978-774-0005</a></div>
+							<div class="field">Fax 978-774-5623</div>
+										<br />
+
+				<div class="field p-note">
+
+					<h3 class="subhead2">Hours</h3><p>Monday through Wednesday<br>7 am to 3 pm</p><p>Thursday<br>7 am to 5:30 pm</p><p>Friday&nbsp;<br>7 am to noon</p>
+				</div>
+				<br />
+
+
+		</li>
+									</ol>
+	</div>
+</div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</aside>
+</div><div data-cpRole="structuralContainer" id="siteSidebarTS" class="siteSidebar"><div data-animationClass="" data-trigger="pageloadAnimationTrigger" class="hidden hiddenAnimations"></div>
+<aside data-cpRole="contentContainer" id="sidebarContainer1TS">	<div id="ccc4474567-58f0-4532-9151-b4dce80e5bd4" data-containerid="c4474567-58f0-4532-9151-b4dce80e5bd4" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside><nav data-cpRole="nav" id="secondaryNav" class="siteNav secondaryNav">
+
+
+
+
+	<ol role="menu" id="secondaryMenusecondaryNav" data-parent="272" class="rootNavMenu accordionNav">
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem270" data-pageid="270">
+		<div class="accordionNavItem">
+			<a href="/270/Danvers-Drives-Electric" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Danvers Drives Electric</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem801" data-pageid="801">
+		<div class="accordionNavItem">
+			<a href="/801/Electric-Vehicle-Time-of-Use-Rate" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Electric Vehicle Time of Use Rate </a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem274" data-pageid="274">
+		<div class="accordionNavItem">
+			<a href="/274/Residential-Solar-PV-Program" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Residential Solar PV Program</a>
+		</div>
+			</li>
+	<li role="menuitem" aria-haspopup="true" class="topMenuItem sideNavLi hasAccordionChildren" id="SideItem271" data-pageid="271">
+		<div class="accordionNavItem">
+			<a href="/271/Smart-Savings-Program" target="_self" class="navMainItem secondaryNavItem cpComponent" data-type="SecondaryMainItem">Smart Savings Program</a>
+		</div>
+			</li>
+
+	</ol>
+
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            //setup menu manager properties for secondary menu
+            menuManager.isSideMenuEditable = false;
+		    menuManager.sideMenuMaxSubMenuLevels = 4;
+            menuManager.sideMenuHasCustomLinks = false;
+        });
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('*[id^="SideItem"]').each(function () {
+				var ids = $('[id="' + this.id + '"]');
+				if (ids.length > 1)
+					$.each(ids, function (index, value) {
+						value.id = value.id + '_' + index;
+					});
+			});
+
+			$('.hasAccordionChildren .openAccordionNav').click(function (e) {
+				e.preventDefault();
+				showHideAccordionMenuForSecondaryNav($(this));
+			});
+
+			$("#secondaryNav .grippy").each(function () {
+				menuManager.setupDraggableElement($(this), SIDE_MENU, '#secondaryNav');
+			});
+
+			$("#secondaryNav li").each(function () {
+				menuManager.setupDroppableAccordionElement($(this), SIDE_MENU);
+			});
+		});
+	</script>
+
+
+
+</nav><aside data-cpRole="contentContainer" id="sidebarContainer2TS">	<div id="ccc716bd91-da89-45f1-8fcd-6b635d52aa58" data-containerid="c716bd91-da89-45f1-8fcd-6b635d52aa58" class="pageContent cpGrid cpGrid24 showInMobile">
+				                
+
+
+
+	</div>
+</aside>
+</div>
+</div></div></div>
+</div><!-- GBs --><div data-cpRole="structuralContainer" id="gbsContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="gbsTS">	<div id="cc6a9896dd-224f-4cc1-8f5c-135cbcb1b008" data-containerid="6a9896dd-224f-4cc1-8f5c-135cbcb1b008" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="35">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col12 first" style="" data-widgetcontainerid="b28935ba-d25d-446c-9691-1dafdba5bfe4">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last id28338275-8922-48e0-bb22-a6921f37b8b0" style="" data-widgetcontainerid="28338275-8922-48e0-bb22-a6921f37b8b0">	
+<div data-widget-id="9a7a0e06-00c4-458c-80d2-150241a4a31a" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget9a7a0e06-00c4-458c-80d2-150241a4a31a" class="widget widgetGraphicLinks skin45 widgetOptionSet30 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid3 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/pay" target="_self" class="fancyButton fancyButton48 " >
+		<span>
+			<span><span class="text">Payments</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton48.fancyButton:link,.fancyButton48.fancyButton:visited, .fancyButton48div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=125');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 120px;
+position: relative;
+}
+
+.fancyButton48:after {
+content: '';
+height: 3px;
+width: 50px;
+border-radius: 30px;
+background: #2859a7;
+position: absolute;
+top: 125px;
+left: calc(50% - 25px);
+transition:.3s ease-in-out;}
+.fancyButton48.fancyButton:hover,.fancyButton48.fancyButton:focus,.fancyButton48.fancyButton:active,.fancyButton48.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=124');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 130px;
+
+
+}
+.fancyButton48:hover:after, .fancyButton48:focus:after, .fancyButton48:active:after, .fancyButton48.mouseover:after {
+width: 90px;
+background: #2690FA;
+left: calc(50% - 43px);
+transition:.3s ease-in-out;}
+.fancyButton48.fancyButton:link > span,.fancyButton48.fancyButton:visited > span, .fancyButton48div.fancyButton > span{
+}
+.fancyButton48.fancyButton:hover > span,.fancyButton48.fancyButton:focus > span,.fancyButton48.fancyButton:active > span,.fancyButton48.fancyButton.hover > span{
+}
+.fancyButton48.fancyButton .text{
+	color: #454545;
+	font-size: 1em;
+	font-family: "Source Sans Pro";
+	padding-top: 9.3em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 9.3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;text-transform: uppercase;}
+.fancyButton48.fancyButton:hover .text,.fancyButton48.fancyButton:focus .text,.fancyButton48.fancyButton:active .text,.fancyButton48.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/677/Notification-Sign-Up" target="_self" class="fancyButton fancyButton49 " >
+		<span>
+			<span><span class="text">Notify Me®</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton49.fancyButton:link,.fancyButton49.fancyButton:visited, .fancyButton49div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=126');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 120px;
+position: relative;
+}
+
+.fancyButton49:after {
+content: '';
+height: 3px;
+width: 50px;
+border-radius: 30px;
+background: #2859a7;
+position: absolute;
+top: 125px;
+left: calc(50% - 25px);
+transition:.3s ease-in-out;}
+.fancyButton49.fancyButton:hover,.fancyButton49.fancyButton:focus,.fancyButton49.fancyButton:active,.fancyButton49.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=118');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 130px;
+
+
+}
+.fancyButton49:hover:after, .fancyButton49:focus:after, .fancyButton49:active:after, .fancyButton49.mouseover:after {
+width: 90px;
+background: #2690FA;
+left: calc(50% - 43px);
+transition:.3s ease-in-out;}
+.fancyButton49.fancyButton:link > span,.fancyButton49.fancyButton:visited > span, .fancyButton49div.fancyButton > span{
+}
+.fancyButton49.fancyButton:hover > span,.fancyButton49.fancyButton:focus > span,.fancyButton49.fancyButton:active > span,.fancyButton49.fancyButton.hover > span{
+}
+.fancyButton49.fancyButton .text{
+	color: #454545;
+	font-size: 1em;
+	font-family: "Source Sans Pro";
+	padding-top: 9.3em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 9.3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;text-transform: uppercase;}
+.fancyButton49.fancyButton:hover .text,.fancyButton49.fancyButton:focus .text,.fancyButton49.fancyButton:active .text,.fancyButton49.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/320/Employment-Opportunities" target="_self" class="fancyButton fancyButton50 " >
+		<span>
+			<span><span class="text">Employment</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton50.fancyButton:link,.fancyButton50.fancyButton:visited, .fancyButton50div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=119');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out; 
+background-size: 120px;
+position: relative;
+}
+
+.fancyButton50:after {
+content: '';
+height: 3px;
+width: 50px;
+border-radius: 30px;
+background: #2859a7;
+position: absolute;
+top: 125px;
+left: calc(50% - 25px);
+transition:.3s ease-in-out;}
+.fancyButton50.fancyButton:hover,.fancyButton50.fancyButton:focus,.fancyButton50.fancyButton:active,.fancyButton50.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=121');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 130px;
+
+
+}
+.fancyButton50:hover:after, .fancyButton50:focus:after, .fancyButton50:active:after, .fancyButton50.mouseover:after {
+width: 90px;
+background: #2690FA;
+left: calc(50% - 43px);
+transition:.3s ease-in-out;}
+.fancyButton50.fancyButton:link > span,.fancyButton50.fancyButton:visited > span, .fancyButton50div.fancyButton > span{
+}
+.fancyButton50.fancyButton:hover > span,.fancyButton50.fancyButton:focus > span,.fancyButton50.fancyButton:active > span,.fancyButton50.fancyButton.hover > span{
+}
+.fancyButton50.fancyButton .text{
+	color: #454545;
+	font-size: 1em;
+	font-family: "Source Sans Pro";
+	padding-top: 9.3em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 9.3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;text-transform: uppercase;}
+.fancyButton50.fancyButton:hover .text,.fancyButton50.fancyButton:focus .text,.fancyButton50.fancyButton:active .text,.fancyButton50.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col12 last" style="" data-widgetcontainerid="c7bcb2fa-ba89-40cb-960a-931700b7745b">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col12 first last id56193c92-a065-431d-b15d-d6a414a85281" style="" data-widgetcontainerid="56193c92-a065-431d-b15d-d6a414a85281">	
+<div data-widget-id="1eaf628b-2e87-4497-9412-9d70b3d48c5a" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget1eaf628b-2e87-4497-9412-9d70b3d48c5a" class="widget widgetGraphicLinks skin45 widgetOptionSet30 wide" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid3 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/AgendaCenter" target="_self" class="fancyButton fancyButton51 " >
+		<span>
+			<span><span class="text">Agendas &amp; Minutes</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton51.fancyButton:link,.fancyButton51.fancyButton:visited, .fancyButton51div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=120');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out; 
+background-size: 120px;
+position: relative;
+}
+
+.fancyButton51:after {
+content: '';
+height: 3px;
+width: 50px;
+border-radius: 30px;
+background: #2859a7;
+position: absolute;
+top: 125px;
+left: calc(50% - 25px);
+transition:.3s ease-in-out;}
+.fancyButton51.fancyButton:hover,.fancyButton51.fancyButton:focus,.fancyButton51.fancyButton:active,.fancyButton51.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=115');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 130px;
+
+
+}
+.fancyButton51:hover:after, .fancyButton51:focus:after, .fancyButton51:active:after, .fancyButton51.mouseover:after {
+width: 90px;
+background: #2690FA;
+left: calc(50% - 43px);
+transition:.3s ease-in-out;}
+.fancyButton51.fancyButton:link > span,.fancyButton51.fancyButton:visited > span, .fancyButton51div.fancyButton > span{
+}
+.fancyButton51.fancyButton:hover > span,.fancyButton51.fancyButton:focus > span,.fancyButton51.fancyButton:active > span,.fancyButton51.fancyButton.hover > span{
+}
+.fancyButton51.fancyButton .text{
+	color: #454545;
+	font-size: 1em;
+	font-family: "Source Sans Pro";
+	padding-top: 9.3em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 9.3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;text-transform: uppercase;}
+.fancyButton51.fancyButton:hover .text,.fancyButton51.fancyButton:focus .text,.fancyButton51.fancyButton:active .text,.fancyButton51.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/668/Highlights" target="_self" class="fancyButton fancyButton53 " >
+		<span>
+			<span><span class="text">Projects and Development</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton53.fancyButton:link,.fancyButton53.fancyButton:visited, .fancyButton53div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=1861');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out; 
+background-size: 120px;
+position: relative;
+}
+
+.fancyButton53:after {
+content: '';
+height: 3px;
+width: 50px;
+border-radius: 30px;
+background: #2859a7;
+position: absolute;
+top: 125px;
+left: calc(50% - 25px);
+transition:.3s ease-in-out;}
+.fancyButton53.fancyButton:hover,.fancyButton53.fancyButton:focus,.fancyButton53.fancyButton:active,.fancyButton53.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=1862');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 130px;
+
+
+}
+.fancyButton53:hover:after, .fancyButton53:focus:after, .fancyButton53:active:after, .fancyButton53.mouseover:after {
+width: 90px;
+background: #2690FA;
+left: calc(50% - 43px);
+transition:.3s ease-in-out;}
+.fancyButton53.fancyButton:link > span,.fancyButton53.fancyButton:visited > span, .fancyButton53div.fancyButton > span{
+}
+.fancyButton53.fancyButton:hover > span,.fancyButton53.fancyButton:focus > span,.fancyButton53.fancyButton:active > span,.fancyButton53.fancyButton.hover > span{
+}
+.fancyButton53.fancyButton .text{
+	color: #454545;
+	font-size: 1em;
+	font-family: "Source Sans Pro";
+	padding-top: 9.3em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 9.3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;text-transform: uppercase;}
+.fancyButton53.fancyButton:hover .text,.fancyButton53.fancyButton:focus .text,.fancyButton53.fancyButton:active .text,.fancyButton53.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;
+}
+.fancyButton53.fancyButton .textStyle1{
+	color: #454545;
+	font-size: 1em;
+	font-weight: 300;
+	text-decoration: none;
+text-transform: uppercase;}
+.fancyButton53.fancyButton:hover .textStyle1, .fancyButton53.fancyButton.hover .textStyle1{
+	text-decoration: none;
+
+}
+</style>
+
+ </div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks">
+
+<div>
+	<a href="/469/Pay" target="_self" class="fancyButton fancyButton52 " >
+		<span>
+			<span><span class="text">Permits</span></span>
+		</span>
+	</a>
+</div>
+		<style scoped="scoped">.fancyButton52.fancyButton:link,.fancyButton52.fancyButton:visited, .fancyButton52div.fancyButton{
+	background-image: url('/ImageRepository/Document?documentID=123');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out; 
+background-size: 120px;
+position: relative;
+}
+
+.fancyButton52:after {
+content: '';
+height: 3px;
+width: 50px;
+border-radius: 30px;
+background: #2859a7;
+position: absolute;
+top: 125px;
+left: calc(50% - 25px);
+transition:.3s ease-in-out;}
+.fancyButton52.fancyButton:hover,.fancyButton52.fancyButton:focus,.fancyButton52.fancyButton:active,.fancyButton52.fancyButton.hover{
+	background-image: url('/ImageRepository/Document?documentID=122');
+	background-repeat: no-repeat;
+	background-position: center top;
+transition:.3s ease-in-out;
+background-size: 130px;
+
+
+}
+.fancyButton52:hover:after, .fancyButton52:focus:after, .fancyButton52:active:after, .fancyButton52.mouseover:after {
+width: 90px;
+background: #2690FA;
+left: calc(50% - 43px);
+transition:.3s ease-in-out;}
+.fancyButton52.fancyButton:link > span,.fancyButton52.fancyButton:visited > span, .fancyButton52div.fancyButton > span{
+}
+.fancyButton52.fancyButton:hover > span,.fancyButton52.fancyButton:focus > span,.fancyButton52.fancyButton:active > span,.fancyButton52.fancyButton.hover > span{
+}
+.fancyButton52.fancyButton .text{
+	color: #454545;
+	font-size: 1em;
+	font-family: "Source Sans Pro";
+	padding-top: 9.3em;
+	font-weight: 600;
+	text-decoration: none;
+	padding-top: 9.3em;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;text-transform: uppercase;}
+.fancyButton52.fancyButton:hover .text,.fancyButton52.fancyButton:focus .text,.fancyButton52.fancyButton:active .text,.fancyButton52.fancyButton.hover .text{
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+transition:.3s ease-in-out;
+}
+</style>
+
+ </div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div><!-- Calendar/Carousel --><!-- <div data-cpRole="structuralContainer" id="homeContainer1">
+    <div class="siteWrap">
+      <div data-cpRole="contentContainer" id="homeContent1a"></div>
+    </div>
+  </div> --><!-- Footer --><footer data-cpRole="structuralContainer" id="footerContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="footerTS">	<div id="cc207db281-334d-4924-848c-43a3d0f2c5b9" data-containerid="207db281-334d-4924-848c-43a3d0f2c5b9" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile" data-contentcontainerbreakpoint="45">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col6 first" style="" data-widgetcontainerid="54ff6123-4c8f-49c1-a5e0-8a872d65e7ee">				
+	<div class="row nest first wide">
+	
+	<div class="inner col col6 first last id65418532-85e6-40a0-861b-6c2d7c30f823" style="" data-widgetcontainerid="65418532-85e6-40a0-861b-6c2d7c30f823">	
+    <div data-widget-id="89bd2901-54a2-4e59-a088-226e9c23959f" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv89bd2901-54a2-4e59-a088-226e9c23959f" class="widget widgetInfoAdvanced skin39 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-label="Info Advanced">
+			<header class="widgetHeader" id="header89bd2901-54a2-4e59-a088-226e9c23959f">
+		<div class="">
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><img src="/ImageRepository/Document?documentId=69" class="fr-dib" alt="Danvers Town Seal"></p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv89bd2901-54a2-4e59-a088-226e9c23959f .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+	<div class="row nest last wide">
+	
+	<div class="inner col col6 first last idde584e14-a5bc-4754-9853-93729cf2c292" style="" data-widgetcontainerid="de584e14-a5bc-4754-9853-93729cf2c292">	
+<div data-widget-id="63bc8cfa-8433-4993-b5f5-f239921a0a19" data-widget-controller-path="/GraphicLinks/Widget">
+
+
+
+
+<div id="graphicLinkWidget63bc8cfa-8433-4993-b5f5-f239921a0a19" class="widget widgetGraphicLinks skin55 widgetOptionSet27 wide" data-elementqueryclasses='{"wide-narrow":"min-width:2em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' data-modulewidgettype="graphicLinks">
+	<div class="widgetHeader">
+		<div class="">
+				</div>
+	</div>
+	<div class="widgetBody cpGrid cpGrid4 ">	
+			<div class="row   wide"><!--
+--><div class="col col1 first "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="https://www.facebook.com/townofdanvers" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self"  aria-label=" Facebook graphic"><img src="/ImageRepository/Document?documentID=48" 
+     class="graphicButtonLink" alt=" Facebook" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=48'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=48'"
+     onfocus="this.src='/ImageRepository/Document?documentID=48'" 
+	onblur="this.src='/ImageRepository/Document?documentID=48'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="https://www.instagram.com/townofdanvers/" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self"  aria-label=" Instagram graphic"><img src="/ImageRepository/Document?documentID=49" 
+     class="graphicButtonLink" alt=" Instagram" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=49'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=49'"
+     onfocus="this.src='/ImageRepository/Document?documentID=49'" 
+	onblur="this.src='/ImageRepository/Document?documentID=49'"> </a></div><!--
+--></div></div><!----><div class="col col1  "><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="https://twitter.com/TownofDanvers" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self"  aria-label=" Twitter graphic"><img src="/ImageRepository/Document?documentID=50" 
+     class="graphicButtonLink" alt=" Twitter" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=50'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=50'"
+     onfocus="this.src='/ImageRepository/Document?documentID=50'" 
+	onblur="this.src='/ImageRepository/Document?documentID=50'"> </a></div><!--
+--></div></div><!----><div class="col col1  last"><div class="semanticList"><!--
+	    --><div class="widgetItem GraphicLinks"><a class="widgetDesc widgetGraphicLinksLink" href="/youtube" target="_self"  aria-label=" YouTube graphic"><img src="/ImageRepository/Document?documentID=51" 
+     class="graphicButtonLink" alt=" YouTube" 
+     onmouseover="this.src='/ImageRepository/Document?documentID=51'" 
+	onmouseout="this.src='/ImageRepository/Document?documentID=51'"
+     onfocus="this.src='/ImageRepository/Document?documentID=51'" 
+	onblur="this.src='/ImageRepository/Document?documentID=51'"> </a></div><!--
+--></div></div><!--			--></div>
+	</div>
+	<div class="widgetFooter">
+			</div>
+</div>
+
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col1" style="" data-widgetcontainerid="71bf868c-f6d8-41a5-a3b4-4bc48d848676">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col1 first last idf1d8d4e8-164d-443a-baf1-66a5c149b3a0" style="" data-widgetcontainerid="f1d8d4e8-164d-443a-baf1-66a5c149b3a0">	
+
+<div class="widget widgetSpacer" id="ceb778a8-a30b-45aa-8d69-fc2b37c55beb"></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6" style="" data-widgetcontainerid="1e68ca3b-7097-4536-8d1e-cb81d931a2a8">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id8715348c-c21a-4999-ac1a-1e994ed3ed9c" style="" data-widgetcontainerid="8715348c-c21a-4999-ac1a-1e994ed3ed9c">	
+    <div data-widget-id="19b45eff-29ff-475e-8b53-e8651f153839" data-widget-controller-path="/InfoAdvanced/Widget">
+
+
+
+
+
+	<section id="divInfoAdv19b45eff-29ff-475e-8b53-e8651f153839" class="widget widgetInfoAdvanced skin37 widgetOptionSet5 wide" data-modulewidgettype="infoAdv" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="header19b45eff-29ff-475e-8b53-e8651f153839">
+			<header class="widgetHeader" id="header19b45eff-29ff-475e-8b53-e8651f153839">
+		<div class="">
+					<h3 >Contact Us</h3>
+								</div>
+	</header>
+	<div class="widgetBody  cpGrid cpGrid1 ">
+		<div class="row  wide">
+					<div class="col col1 first last">
+						<ol class="pageStyles semanticList">
+
+<li class="InfoAdvanced widgetItem fr-view">
+	<p><strong>Town of Danvers</strong><br>1 Sylvan Street
+<br>Danvers, MA 01923
+</p><p>Phone: <a href="tel:978-777-0001">978-777-0001</a></p>
+</li>						</ol>
+					</div>
+		</div>
+	</div>
+	<div class="widgetFooter">
+
+	</div>
+
+	</section>
+
+
+
+<script type="text/javascript">
+	//Render slideshow if info advacned items contain one.
+	$(document).ready(function (e) {
+		$('#divInfoAdv19b45eff-29ff-475e-8b53-e8651f153839 .InfoAdvanced.widgetItem').each(function () {
+			renderSlideshowIfApplicable($(this));		
+		});
+	});
+</script></div>	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col6" style="" data-widgetcontainerid="b6507005-02a6-408c-875e-296f1d69193b">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col6 first last id5bcdc156-f26f-4225-bdba-61a56575e4c7" style="" data-widgetcontainerid="5bcdc156-f26f-4225-bdba-61a56575e4c7">	
+	<div data-widget-id="82a8ba3d-3be4-4c1e-9f00-21e8b94fb460" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklink82a8ba3d-3be4-4c1e-9f00-21e8b94fb460" class="widget widgetQuickLinks skin37 widgetOptionSet40 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeader82a8ba3d-3be4-4c1e-9f00-21e8b94fb460">
+			<header class="widgetHeader" id="quickLinksHeader82a8ba3d-3be4-4c1e-9f00-21e8b94fb460">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=15" >Quick Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/Archive.aspx?AMID=39&amp;Type=Recent" target="_self" >Budgets</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/DocumentCenter/View/256/Town-Bylaws-PDF" target="_self" >Bylaws</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/788/Flag-Status" target="_self" >Flag Status</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://resilient.danversma.gov" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self" >Resilient Danvers</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="https://strategic.danversma.gov" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);" target="_self" >Strategic Danvers</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/378/Curbside-Collection" target="_self" >Trash and Recycling</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!----><div class="outer col col5 last" style="" data-widgetcontainerid="1c229b71-5e70-455c-bb67-135ef075812f">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col5 first last id34729990-6c5b-4962-8102-adc455e22e31" style="" data-widgetcontainerid="34729990-6c5b-4962-8102-adc455e22e31">	
+	<div data-widget-id="b0d5ea4d-a162-48f2-bcc4-291c1d5367aa" data-widget-controller-path="/QuickLinks/Widget">
+
+
+
+
+
+ 
+
+
+	<section id="widgetQuicklinkb0d5ea4d-a162-48f2-bcc4-291c1d5367aa" class="widget widgetQuickLinks skin37 widgetOptionSet40 narrow" data-modulewidgettype="quickLinks" data-elementqueryclasses='{"wide-narrow":"min-width:25em"}' data-elementquerymatch='matchMultiColumn' data-elementqueryunmatch='unmatchMultiColumn' aria-labelledby="quickLinksHeaderb0d5ea4d-a162-48f2-bcc4-291c1d5367aa">
+			<header class="widgetHeader" id="quickLinksHeaderb0d5ea4d-a162-48f2-bcc4-291c1d5367aa">
+		<div class="">
+					<h3><a  style="" href="/QuickLinks.aspx?CID=16" >Site Links</a></h3>
+						</div>
+	</header>
+	<div class="widgetBody cpGrid cpGrid1 ">
+        <div class="row  narrow">
+				<div class="col col1 first last">
+					<ol class="semanticList">
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/" target="_self" >Home</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/sitemap" target="_self" >Site Map</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/directory.aspx" target="_self" >Contact Us</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/DocumentCenter/View/995/Danvers-Social-Media-Policy-PDF" target="_blank"  aria-label="Social Media Policy (PDF) opens in new window">Social Media Policy (PDF)</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/553/Accessibility" target="_self" >Accessibility</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/copyright" target="_self" >Copyright Notices</a>
+        <div class="widgetMeta"></div>
+    </li>
+
+    <li style="position:relative" class="widgetItem QuickLinks">
+        <a class="widgetDesc widgetQuickLinksLink" href="/554/Privacy-Policy" target="_self" >Privacy Policy</a>
+        <div class="widgetMeta"></div>
+    </li>
+					</ol>
+				</div>
+		</div>
+        
+	</div>
+	<div class="widgetFooter">
+	</div>
+	<div class="addItemModal hidden">
+		<div class="url hidden">/QuickLinks.aspx</div>
+	</div>
+
+	</section>
+</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</footer><!-- Powered By --><div data-cpRole="structuralContainer" id="poweredByContainerTS">
+<div class="siteWrap"><div data-cpRole="contentContainer" id="poweredByTS">	<div id="cc4a75886b-f695-419c-86c1-3b708d5c21d2" data-containerid="4a75886b-f695-419c-86c1-3b708d5c21d2" class="pageContent cpGrid cpGrid24 isLockedContainer showInMobile">
+				                
+
+		<div class="row outer wide"><!--
+--><div class="outer col col24 first last" style="" data-widgetcontainerid="e39c572b-ba3f-482e-a366-fa697f77e8f7">				
+	<div class="row nest first last wide">
+	
+	<div class="inner col col24 first last id8a0bb3c9-c541-4a4b-82f4-fc866a9d4962" style="" data-widgetcontainerid="8a0bb3c9-c541-4a4b-82f4-fc866a9d4962">	
+ 
+	<div data-widget-id='78493e56-ed58-4dcf-8904-01d539a618b7' data-moduleName="customHtml" id='widgetCustomHtml78493e56-ed58-4dcf-8904-01d539a618b7' class="widget widgetCustomHtml skin39 narrow" >
+	<div class="widgetBody pageStyles" id="widgetBody78493e56-ed58-4dcf-8904-01d539a618b7">
+		<div id="customHtml78493e56-ed58-4dcf-8904-01d539a618b7"><div><style>
+  /* CP icon */
+  .cpBylineIconTS {
+    color: #fff;
+  }
+  /* CP Text */
+  .cpBylineTextTS,
+  .cpBylineTextTS a:link {
+    color: #fff;
+  }
+
+  .cpBylineTS {
+    text-align: center;
+  }
+  
+  .cpBylineIconTS {
+    fill: currentColor;
+    width: 39px;
+    height: 26px;
+    display: inline;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="widgetItem cpBylineTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" class="cpBylineIconTS">
+    <path class="c" d="M73.4,23.2h-19v16.7h19c2.8,0,5,2.2,5,5c0,2.8-2.2,5-5,5h-19v28.4h5.5l11.3-11.7h2.2c11.9,0,21.6-9.7,21.6-21.6C95,33,85.3,23.2,73.4,23.2"></path>
+    <path class="p" d="M45.8,66.5H26.6C14.7,66.5,5,56.8,5,44.9C5,33,14.7,23.2,26.6,23.2h19.1v16.7H26.6c-2.8,0-5,2.2-5,5c0,2.8,2.2,5,5,5h19.1V66.5z"></path>
+  </svg>
+  <span class="cpBylineTextTS">Government Websites by <a href="https://connect.civicplus.com/referral" onkeypress="this.onclick();" onclick="return showExternalSiteDialog(this);">CivicPlus&reg;</a></span>
+</div>
+</div></div>
+	</div>
+	</div>
+	</div> <!-- inner column -->
+
+	</div> <!-- inner row -->
+
+			</div><!-- outer column --><!--		--></div> <!-- outer row -->
+
+
+	</div>
+</div></div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+
+
+	<script src="/-840181428.js" type="text/javascript"></script>
+	<!----------Google Translate (Mobile Friendly)--------->
+
+<style>
+  #google-translate-container {
+    float: right;
+    padding: 3px 5px 0px 0px;
+    position: fixed; 
+    bottom: 16px; 
+    right: 10px; 
+    z-index: 5;
+  }
+  
+  .goog-te-combo, .goog-te-banner *, .goog-te-ftab *, .goog-te-menu *, .goog-te-menu2 *, .goog-te-balloon * {
+    font-family: arial;
+    font-size: 10pt;
+    background-image: url("https://www.gstatic.com/images/branding/product/2x/translate_24dp.png");
+    background-position: 5px 5px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    text-indent: 16px;
+    background-color: #fff;
+    color: #000 !important;
+  }
+  
+  .goog-logo-link {
+    display: none !important;
+  }
+  
+  .goog-te-gadget {
+    color: transparent !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo {
+    margin: 2px 0 !important;
+    border-radius: 15px !important;
+    }
+  
+  .goog-te-combo{
+    border: 1px solid !important;
+    border-color: #bcc9d7 #96a3b1 #96a3b1 #bcc9d7 !important;
+    border-radius: 50px !important;
+    height:31px !important;
+    padding: 0 1px 0 .25rem !important;
+                width: 156px;
+  }
+
+  #launcher-wrapper {
+    bottom: 50px !important;
+  }
+
+</style>
+
+<div id="google-translate-container">
+  <div id="google_translate_element">
+  </div>
+</div>
+
+<script>
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+    // begin accessibility compliance
+    $('img.goog-te-gadget-icon').attr('alt','Google Translate');
+    $('div#goog-gt-tt div.logo img').attr('alt','translate');
+    $('div#goog-gt-tt .original-text').css('text-align','left');
+    $('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+    $('.goog-te-combo').attr('aria-label','google translate languages');
+    $('svg.goog-te-spinner').attr('title','Google Translate Spinner');
+    $('.goog-te-gadget-simple .goog-te-menu-value span').css('color','#000000');
+  }
+
+  $(function() {
+    $.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+  });
+
+</script>
+
+<!--------------End Google Translate----------------->
+
+
+	<script type="text/javascript">
+		$(function () {
+			document.cookie = "responsiveGhost=0; path=/";
+		});
+		onOrLive($(window), function () {
+			$('body').addClass('doneLoading').removeClass('hideContent');
+
+			if ($('#404Content').length > 0)
+				$('div#bodyWrapper').css('padding', '0px');
+		}, 'load');
+	</script>
+
+	<noscript>
+		<style>
+			body.hideContent {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+		
+<div style="display: none;">
+	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+		<symbol id="iconArrow--left" viewbox="0 0 25 25">
+			<title>Arrow Left</title>
+			<polygon style="fill:currentcolor" points="18.044,25 19.498,23.545 8.409,12.454 19.408,1.455 17.954,0 5.502,12.452"></polygon>
+		</symbol>
+
+		<symbol id="iconArrow--right" viewbox="0 0 25 25">
+			<title>Arrow Right</title>
+			<polygon style="fill:currentcolor" points="6.957,0 5.502,1.455 16.591,12.546 5.592,23.545 7.047,25 19.498,12.548"></polygon>
+		</symbol>
+
+	</svg>
+</div>
+	<script type="text/javascript">loadCSS('//fonts.googleapis.com/css?family=Poppins:500,500italic,600,600italic,700,700italic,italic,regular|Source+Sans+Pro:300,300italic,600,600italic,700,700italic,italic,regular|');</script>
+	
+
+	<div class="hidden activeWidgetSkinComponentsOnPageJson">[]</div>
+		<div style="display: none;">
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+				<symbol id="iconSlideshowArrowLeft" viewBox="0 0 22.68 40">
+					<title>Slideshow Left Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M20,40a2.67,2.67,0,0,1-1.9-.79L.79,21.9a2.68,2.68,0,0,1,0-3.79L18.1.79a2.68,2.68,0,1,1,3.79,3.79L6.47,20,21.89,35.42A2.68,2.68,0,0,1,20,40Z"></path>
+					</g>
+				</symbol>
+				<symbol id="iconSlideshowArrowRight" viewBox="0 0 22.68 40">
+					<title>Slideshow Right Arrow</title>
+					<g>
+						<path style="fill:currentcolor;" d="M2.68,0a2.67,2.67,0,0,1,1.9.79L21.89,18.1a2.68,2.68,0,0,1,0,3.79L4.58,39.21A2.68,2.68,0,0,1,.79,35.42L16.21,20,.79,4.58A2.68,2.68,0,0,1,2.68,0Z"></path>
+					</g>
+				</symbol>
+			</svg>
+		</div>
+	
+	
+
+	</body>
+</html>
