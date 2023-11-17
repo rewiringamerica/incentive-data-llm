@@ -43,7 +43,7 @@ The current structure is that the LLM looks for all `.txt` files in a given fold
 
 ### Sending the data to the LLM
 1. Compile if necessary with `tsc`.
-2. Run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter.
+2. Run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is 30 times as expensive, so you can actually do work with real monetary consequences if you're not careful here.
 3. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. We will run into rate limits if you send more than ~40 requests at once, so if you have lots of files, use the `--wait` parameter (in milliseconds) to put some time in between each request. Usually a couple seconds is fine.
 4. The script writes outputs a specific run subfolder in the `out/` directory. The script will print your RunID, though it's timestamp-based, so should be the most recent one. In that folder, you should see:
    1. An `output.csv` containing the parsed data

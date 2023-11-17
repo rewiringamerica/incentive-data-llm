@@ -45,7 +45,7 @@ export class GptWrapper {
     if (this.model_family == "gpt4") {
       model = token_count > 4096 ? 'gpt-4-32k' : 'gpt-4'
     } else if (this.model_family == "gpt") {
-      model = token_count > 4096 ? "gpt-3.5-turbo-16k" : "gpt-3.5-turbo"
+      model = 'gpt-3.5-turbo-1106'
     } else {
       throw new Error(`Invalid model_family supplied; must be gpt or gpt4 for GPT models: ${this.model_family}`)
     }
