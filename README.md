@@ -2,7 +2,11 @@
 
 ## Overview
 
-An LLM should be used as a first pass at incentive data, as it **will** make mistakes that a human would not make. The value is primarily being able to do it at scale, since there is some cleanup that you'll want to do with the results, and some of the steps take roughly the same amount of time if you're doing them for 10 rows vs 500. If you prefer, you can steal the prompt and feed smaller batches of text to an interactive model (e.g the ChatGPT model at chat.openai.com), though you still will have to pay the cleanup penalty eventually.
+An LLM should be used as a first pass at incentive data, as it **will** make mistakes that a human would not make. Nonetheless, it should save a significant amount of time for incentives data gathering, because:
+
+1) humans are much better at reviewing existing text than populating it themselves
+2) the model can work at impressive scale
+3) the model is correct somewhere around 75% percentage of the time, depending on how you measure it
 
 There are parts of this process that are still pretty manual/painful; the good news is that you have to do them once and then you can run multiple LLM iterations over the data easily.
 
@@ -39,25 +43,28 @@ The current structure is that the LLM looks for all `.txt` files in a given fold
 
 ### Sending the data to the LLM
 1. Compile if necessary with `tsc`.
-1. Run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags.
-1. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. Right now we send all files in parallel to the LLM because we're not operating at a level where rate limiting is a concern: we can have 3,500 requests per minute throughout our organization.
-2. At the end, the script will output a CSV file into the `out/` directory. You should also pay attention to the console log – it's possible that the LLM will respond with malformed JSON. Right now, we just log these cases, so you have to tinker with it manually and then reintegrate it with the CSV.
+2. Run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter.
+3. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. We will run into rate limits if you send more than ~40 requests at once, so if you have lots of files, use the `--wait` parameter (in milliseconds) to put some time in between each request. Usually a couple seconds is fine.
+4. The script writes outputs a specific run subfolder in the `out/` directory. The script will print your RunID, though it's timestamp-based, so should be the most recent one. In that folder, you should see:
+   1. An `output.csv` containing the parsed data
+   2. An `outputs/` directory containing all the JSON associated with each input file
+   3. A `parameters.json` file saving the details of the run so we can figure out what worked and what didn't
+   4. Possibly, a `dropped_files.json` which will list any files that had errors to retry. You can rerun these by passing the same command as before with the `-r` flag (e.g. `-r incentives_data/ca/31.txt incentives_data/mn/17.txt`) to restrict the run just to certain text files.
 
 ### Post-processing the data
-This data should be considered a rough first pass. You'll end up making a lot of changes, but hopefull it'll still save time.
+This data should be considered a rough first pass. You'll end up making a lot of changes, but it should still save time.
 
-Here are some of the post-processing steps I would recommend:
-1. Pull the data into Google Sheets (File -> Import).
-1. Reintegrate any missing files that were dropped by the model (see above).
-1. Go to anywhere amount_type is missing and populate that field.
-1. For any rows with amount_type = `dollar per unit`, check the units are correct.
-1. For any rows with amount_type = `percentage`, check for any rows where the field is “inverted” – e.g. right now, if the text says, “$100, not to exceed 25% of cost”, then the LLM may record it as a rebate of 25% percentage rather than $100. That said, we don’t actually have a way to represent percentage-based maximums right now anyway (see [thread](https://rewiringameri-g3x1100.slack.com/archives/C05S7N7Q5GE/p1696521688127919)), so arguably keeping it as a percentage with a dollar maximum is still accurate.
-1. For all other `percentage` rows, confirm that the LLM hasn't missed an amount_maximum. This is easy to check by adding a column with `=REGEXEXTRACT(<cell containing program_description>,"\$[0-9,]+")`, which will flag any dollar amounts.
-1. Program description – these are probably best to just skim for anything that looks awkward and try to batch-edit as much as possible.
+We have a doc that describes recommended post-processing steps here: https://docs.google.com/document/d/1pCIBaYrSiT9ufA9tVqPpZlrbjNGrvZd9ZfItEjjyvJc.
 
+## Evals
 
+We have a basic eval framework set up to evaluate how a model did. This requires some file setup:
 
-## Limitations
-1. We don't have a partial recovery if a file comes back and isn't legitimate JSON; we just drop that file (though you would get a console error so make sure to check).
-1. We have no insight into the relationship between files and billing. We could pretty easily dump this information to the console so folks know how "big" their requests are and how much they are costing.
-1. This is based on a naive and fairly short approach to prompt engineering – it is possible we can get much better performance with more experimentation, fine-tuning, splitting the task up, etc.
+1. In each folder in `incentives/data` that you want to evaluate, you need golden files with suffix `_golden.json`, e.g. `1_golden.json` is the golden file for `1.txt`. These are JSON files that contain the incentives as they *should* appear. 
+
+2. Then execute a model run as described above, retaining the RunID. Run `node build/run_evals.js -r <run_id>` to run your eval. You'll see a `diffs.json` and `report.csv` in the `out/<run_id>` folder now, containing the "raw" diffs and then a summary report.
+
+A few caveats for evals:
+1. We only have the ability to compare two JSON files with the same number of incentives in the same order right now, so in practice, it's typically best to use an artificial test set specifically constructed for this purpose.
+
+2. LLMs are not deterministic. In practice, this isn't a major issue for GPT3.5 and PaLM 2 – they are deterministic enough so that the metrics don't vary much between runs. For GPT4, I recommend you run at least 3 trials and inspect how similar the numbers are before being confident you're seeing a meaningful change.
