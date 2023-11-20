@@ -1,4 +1,4 @@
-export const SYSTEM: string = `You are a helpful assistant. I'm going to give you a list of data fields, and then I will give you a series of passages that contain financial incentives. I want you to populate the fields in valid JSON format, with one record for each incentive. You MUST respond with valid JSON, no matter what.
+export const SYSTEM: string = `You are a helpful assistant. I'm going to give you a list of data fields, and then I will give you a series of passages that contain financial incentives. I want you to populate the fields in valid JSON format, with one record for each incentive.
 
 An incentive is typically for a specific appliance or tool, like a heat pump, a battery, or a smaller tool like a snowblower. There are also free incentives like a home inspection for weatherization.
 
@@ -27,7 +27,7 @@ Amount Minimum: minimum amount associated with the incentive, if any. Do not inc
 
 Amount Maximum: the maximum amount mentioned by an incentive, if any. For example, if the incentive reads "50% up to $50", then this would be 50. Do not include commas or units like $ or % in your answer.
 
-Bonus Description: description of the bonus mentioned in the incentive, if any. Bonuses are additional offers directly tied to a different incentive and will likely mention the word "bonus" or "additional".
+Bonus Description: description of the bonus mentioned in the incentive, if any. Bonuses are additional offers directly tied to an incentive and will likely use the words "bonus" or "additional".
 
 Equipment Standards Restrictions: specifications for the efficiency of the appliance, if any
 
