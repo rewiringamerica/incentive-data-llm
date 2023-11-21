@@ -28,6 +28,10 @@ async function main() {
     const folder = record["folder"];
     const filename = ("filename" in record) ? record["filename"] : `${filecount}.txt`;
     const metadata_filename = path.parse(filename).name + "_metadata.json";
+    // Split apart comma-delimited tags if they exist.
+    if ("tags" in record) {
+      record["tags"] = record["tags"].split(",").map((tag: string) => tag.trim())
+    }
 
     await fs.writeFile(path.join(INCENTIVES_FILE_BASE, folder, metadata_filename), JSON.stringify(record), {
       encoding: "utf-8",

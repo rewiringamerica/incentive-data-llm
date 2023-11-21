@@ -1,15 +1,16 @@
-
 import { AsyncParser } from '@json2csv/node';
 import { program, Option, OptionValues } from 'commander';
 
 import fs = require('node:fs/promises');
 import path = require('node:path');
 
+
 import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, OUTPUT_SUBDIR, CSV_OPTS } from './constants.js';
 import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE_2_USER } from "./prompt.js"
 
 import { queryPalm } from "./palm_wrapper.js";
 import { GptWrapper } from "./gpt_wrapper.js";
+import { Metadata } from "./metadata.js"
 
 
 program
@@ -22,16 +23,20 @@ program
 program.parse();
 
 
-async function retrieveMetadata(folder: string, file: string): Promise<object> {
+async function retrieveMetadata(folder: string, file: string): Promise<Metadata> {
   const metadata_file = path.parse(file).name + "_metadata.json"
+  let contents: string = ""
   try {
-    const metadata = await fs.readFile(path.join(INCENTIVES_FILE_BASE, folder, metadata_file), { encoding: 'utf8' })
-    return JSON.parse(metadata);
+    contents = await fs.readFile(path.join(INCENTIVES_FILE_BASE, folder, metadata_file), { encoding: 'utf8' })
+    const metadata: Metadata = JSON.parse(contents)
+    return metadata
   } catch (err) {
-    // This is expected.
-    // TODO(separate file not found error from other things that might go wrong)
-    console.log(`No metadata file found: ${path.join(INCENTIVES_FILE_BASE, folder, file)}`);
-    return {};
+    if (err instanceof SyntaxError) {
+      console.log(`Error parsing metadata in ${metadata_file}: contents are ${contents}; error is ${err}`)
+    } else {
+      console.log(`No metadata file found: ${path.join(INCENTIVES_FILE_BASE, folder, file)}`);
+    }
+    return {}
   }
 }
 
@@ -78,11 +83,11 @@ async function main() {
         continue;
       }
 
-      const metadata_json = await retrieveMetadata(folder, file);
-      for (const field in metadata_json) {
+      const metadata = await retrieveMetadata(folder, file);
+      for (const field in metadata) {
         metadata_fields.add(field);
       }
-      if ("tags" in metadata_json && metadata_json['tags'] == "index") {
+      if (metadata.tags !== undefined && metadata.tags.includes("index")) {
         console.log(`Skipping ${path.join(folder, file)} because we detected an index tag`)
         continue;
       }
@@ -109,7 +114,7 @@ async function main() {
             record['state'] = folder;
             record['file'] = file; // For debugging.
             record['order'] = incentive_order_key;
-            combined = { ...record, ...metadata_json };
+            combined = { ...record, ...metadata };
             output.push(combined);
             file_records.push(combined)
             incentive_order_key += 1;
