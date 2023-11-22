@@ -11,6 +11,7 @@ import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE
 import { queryPalm } from "./palm_wrapper.js";
 import { GptWrapper } from "./gpt_wrapper.js";
 import { Metadata } from "./metadata.js"
+import { generateHomeownerRenterField } from './post_processing/homeowner_renter.js';
 
 
 program
@@ -111,6 +112,7 @@ async function main() {
             records = [records]
           }
           for (const record of records) {
+            generateHomeownerRenterField(record)
             record['state'] = folder;
             record['file'] = file; // For debugging.
             record['order'] = incentive_order_key;
