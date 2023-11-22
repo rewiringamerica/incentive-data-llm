@@ -149,7 +149,7 @@ export class Differ {
         base.grade = Grade.MissingPredicted
       } else if (Object.hasOwn(predicted, k) && !(Object.hasOwn(golden, k))) {
         base.grade = Grade.MissingGolden
-      } else if (golden[k].toLowerCase() == predicted[k].toLowerCase()) {
+      } else if (String(golden[k]).toLowerCase() == String(predicted[k]).toLowerCase()) {
         base.grade = Grade.CaseInsensitiveMatch
       } else {
         if (FUZZY_MATCH_FIELDS.includes(k)) {
