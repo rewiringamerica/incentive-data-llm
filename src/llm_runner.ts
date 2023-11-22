@@ -4,7 +4,6 @@ import { program, Option, OptionValues } from 'commander';
 import fs = require('node:fs/promises');
 import path = require('node:path');
 
-
 import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, OUTPUT_SUBDIR, CSV_OPTS } from './constants.js';
 import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE_2_USER } from "./prompt.js"
 
@@ -12,6 +11,7 @@ import { queryPalm } from "./palm_wrapper.js";
 import { GptWrapper } from "./gpt_wrapper.js";
 import { Metadata } from "./metadata.js"
 import { generateHomeownerRenterField } from './post_processing/homeowner_renter.js';
+import { cleanupEnumFields } from './post_processing/cleanup_enum_fields.js';
 
 
 program
@@ -105,17 +105,22 @@ async function main() {
         console.log(`Got response from ${path.join(INCENTIVES_FILE_BASE, folder, file)}`)
         try {
           let records = JSON.parse(msg);
-          let incentive_order_key = 0;
-          const file_records: object[] = []
-          let combined: object = {};
           if (!(Symbol.iterator in Object(records))) {
             records = [records]
           }
+
+          let incentive_order_key = 0;
+          const file_records: object[] = []
+          let combined: object = {};
           for (const record of records) {
+            cleanupEnumFields(record)
             generateHomeownerRenterField(record)
-            record['state'] = folder;
-            record['file'] = file; // For debugging.
-            record['order'] = incentive_order_key;
+
+            if (!('folder' in metadata)) {
+              metadata['folder'] = folder;
+            }
+            metadata['file'] = file; // For debugging.
+            metadata['order'] = incentive_order_key;
             combined = { ...record, ...metadata };
             output.push(combined);
             file_records.push(combined)
