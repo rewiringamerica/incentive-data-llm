@@ -11,6 +11,8 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+const LOG_TOKEN_COUNTS = false
+
 export class GptWrapper {
   model_family: string
 
@@ -41,9 +43,11 @@ export class GptWrapper {
     for (const message of messages) {
       token_count += encode(message.content!).length;
     }
+    if (LOG_TOKEN_COUNTS) console.log(token_count)
+
     let model: string = ""
     if (this.model_family == "gpt4") {
-      model = token_count > 4096 ? 'gpt-4-32k' : 'gpt-4'
+      model = 'gpt-4-1106-preview'
     } else if (this.model_family == "gpt") {
       model = 'gpt-3.5-turbo-1106'
     } else {
