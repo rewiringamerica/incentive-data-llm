@@ -1,17 +1,13 @@
-import { ChatCompletionRequestMessage, Configuration, OpenAIApi } from "openai";
-
-import { encode } from 'gpt-3-encoder';
+import { OpenAI } from 'openai';
 import { config } from 'dotenv';
 
 config();
 
-const configuration = new Configuration({
+const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   organization: "org-ddLfNAZlZhWVu6YToH5DHQno",
 });
-const openai = new OpenAIApi(configuration);
 
-const LOG_TOKEN_COUNTS = false
 
 export class GptWrapper {
   model_family: string
@@ -20,9 +16,9 @@ export class GptWrapper {
     this.model_family = model_family
   }
 
-  generateMessagesGpt(text: string, system: string, examples: [string, string][]): ChatCompletionRequestMessage[] {
+  generateMessagesGpt(text: string, system: string, examples: [string, string][]): OpenAI.ChatCompletionMessageParam[] {
 
-    const output: ChatCompletionRequestMessage[] = [];
+    const output: OpenAI.ChatCompletionMessageParam[] = [];
     output.push({ role: "system", content: system });
     for (const [user, assistant] of examples) {
       output.push({ role: "user", content: user });
@@ -38,12 +34,6 @@ export class GptWrapper {
       throw new TypeError("Input text can't be empty string");
     }
     const messages = this.generateMessagesGpt(input_text, system, examples);
-    // Count tokens for the purpose of deciding if we need a model with a longer context window (which is more expensive).
-    let token_count = 100; // We give a bit of buffer to account for other tokens needed to form the request.
-    for (const message of messages) {
-      token_count += encode(message.content!).length;
-    }
-    if (LOG_TOKEN_COUNTS) console.log(token_count)
 
     let model: string = ""
     if (this.model_family == "gpt4") {
@@ -55,12 +45,13 @@ export class GptWrapper {
     }
 
     try {
-      const completion = await openai.createChatCompletion({
+      const completion = await openai.chat.completions.create({
         model: model,
         messages: messages,
         temperature: 0.0,
+        seed: 0,
       });
-      return completion.data.choices[0].message!.content!;
+      return completion.choices[0].message!.content!;
     } catch (error) {
       if (error instanceof Error) {
         console.error(`Error with OpenAI API request: ${error.message}`)
