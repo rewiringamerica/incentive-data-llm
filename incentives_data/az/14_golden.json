@@ -1,0 +1,20 @@
+[
+  {
+    "ID": "AZ-8",
+    "Data Source URL(s)": "https://www.srpnet.com/energy-savings-rebates/home/rebates/insulation",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Salt River Project",
+    "Program Title": "Heat pump water heater rebate",
+    "Program URL": "https://www.srpnet.com/energy-savings-rebates/home/rebates/heat-pump-water-heater",
+    "Technology": "Heat Pump Water Heater (HPWH)",
+    "Program Description": "$500 rebate for at least 2.8 UEW HPWH installed by contractor licensed in Arizona between July 1, 2023 and April 30, 2024",
+    "Program Status": "Active",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "$500",
+    "Amount Type": "dollar amount",
+    "Number": "500",
+    "Equipment Standards Restrictions": "ENERGY STAR certified HPWH that meets minimum efficiency ratings with a Uniform Energy Factor (UEF) of 2.8 or better",
+    "Contractor Restrictions": "licensed in Arizona",
+    "Other Restrictions": "must be permanent SRP residential electric customer who lives in a single-family detached home, single-family attached home, mobile home or apartment/condo; not available for new construction; installed in a home that has had permanent electric service from SRP for more than one year"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "ID": "AZ-21",
+    "Data Source URL(s)": "https://www.uesaz.com/efficient-home-program/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "UniSource Energy Services",
+    "Program Title": "Weatherization assistance",
+    "Program URL": "https://www.uesaz.com/weatherization-assistance/",
+    "Technology": "Weatherization \r\n(insulation and air sealing)",
+    "Program Description": "energy efficiency retrofits to the homes of income-qualifying customers",
+    "Program Status": "Active",
+    "Rebate Type": "Assistance program",
+    "Income Restrictions": "Income limit for household gross income over the past 12 months"
+  },
+  {
+    "ID": "AZ-22",
+    "Data Source URL(s)": "https://www.uesaz.com/efficient-home-program/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "UniSource Energy Services",
+    "Program Title": "Efficient Home Program",
+    "Program URL": "https://www.uesaz.com/efficient-home-program/",
+    "Technology": "Other",
+    "Technology (If selected 'Other')": "heat pump purchase and installation with early retirement of qualifying existing system",
+    "Program Description": "up to $900 rebate for heat pump quality installation with early retirement of qualifying existing system",
+    "Program Status": "Active",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "up to $900",
+    "Amount Type": "dollar amount",
+    "Number": "900",
+    "Amount Maximum": "$900",
+    "Contractor Restrictions": "licensed UES Efficient Home Program participating contractors"
+  },
+  {
+    "ID": "AZ-23",
+    "Data Source URL(s)": "https://www.uesaz.com/efficient-home-program/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "UniSource Energy Services",
+    "Program Title": "Efficient Home Program",
+    "Program URL": "https://www.uesaz.com/efficient-home-program/",
+    "Technology": "Other",
+    "Technology (If selected 'Other')": "heat pump purchase and installation",
+    "Program Description": "up to $650 rebate for heat pump purchase and installation ",
+    "Program Status": "Active",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "up to $650",
+    "Amount Type": "dollar amount",
+    "Number": "650",
+    "Amount Maximum": "$650",
+    "Contractor Restrictions": "licensed UES Efficient Home Program participating contractors"
+  }
+]

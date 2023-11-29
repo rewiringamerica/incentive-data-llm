@@ -1,0 +1,24 @@
+[
+  {
+    "ID": "AZ-20",
+    "Data Source URL(s)": "https://www.tep.com/efficient-home-program/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Tucson Electric Power",
+    "Program Title": "EV Charger Rebates",
+    "Program URL": "https://www.tep.com/electric-vehicles/#/find/nearest?fuel=ELEC&location=tucson,%20az&ev_levels=all",
+    "Technology": "Electric Vehicle Charger",
+    "Program Description": "Claim a rebate from TEP of up to $500 on EV chargers",
+    "Program Status": "Active",
+    "Program Start* (MM/DD/YYYY)": "1/1/2023",
+    "Program End* (MM/DD/YYYY)": "12/31/2023",
+    "Rebate Type": "Account credit",
+    "Rebate Value": "$200 for less than 30 amps\r\n$300 for 30 to 49 amps\r\n$500 for 50 or more amps",
+    "Amount Type": "dollar amount",
+    "Number": "500",
+    "Unit": "Other",
+    "Amount Minimum": "$200",
+    "Amount Maximum": "$500",
+    "Equipment Standards Restrictions": "new Level 2 or higher EVC. Tesla Mobile Connector, Rivian Portable Charger, WebGo Dual Volt, and other mobile, portable, and dual volt chargers are not eligible. Rebates are not offered on used, resold or refurbished chargers.",
+    "Other Restrictions": "maximum of two incentives are allowed per premise for each charger purchased for home use with a highway-approved battery electric vehicle or plug-in hybrid electric vehicle; Be on an active Time-of-Use (TOU) rate plan and remain on the plan for a minimum of two years; Customers agree to allow a TEP representative to enter their home to verify a qualified charger has been installed that meets program requirements."
+  }
+]

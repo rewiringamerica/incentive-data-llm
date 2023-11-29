@@ -1,1 +1,46 @@
-[{"ID":"CO-28","Data Source URL(s)":"https://www.csu.org/Pages/Furnace.aspx","Authority Level*":"Utility","Authority (Name)*":"Colorado Springs Utilities","Program Title*":"Residential Efficiency Rebate Program","Program URL":"https://www.csu.org/Pages/Furnace.aspx","Technology*":"HVAC - Air Source Heat Pump","Program Description \n(guideline)":"Rebate up to $500 for an Energy Star certified ducted or ductless air source heat pump.","Program Status":"Active","Program Start":"1/1/2023","Program End":"12/31/2023","Rebate Type":"Rebate (post purchase)","Rebate Value*":"$500","Amount Type*":"dollar amount","Number*":"500","Amount Maximum":"$500","Equipment Standards Restrictions":"See Energy Star certified ducted and ductless heat pumps.","Contractor Restrictions":"Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.","Homeowner/ Renter":"Homeowner","Other Restrictions":"• This rebate is for retrofit applications only and does not apply to new construction\n• Two (2) rebates available per service address every three years\n• Provide a Pikes Peak Regional Building Department permit number and pass inspection to qualify for the rebate.\n• Heat Pump shall be utilized for total cooling and partial heating. A control system shall be in place to switch from heat pump to\nfurnace at defined temperature based on building loads and equipment size. Defined switchover temperature should be known by the\nowner in case it is needed in the future. "},{"ID":"CO-29","Data Source URL(s)":"https://www.csu.org/Pages/Furnace.aspx","Authority Level*":"Utility","Authority (Name)*":"Colorado Springs Utilities","Program Title*":"Residential Efficiency Rebate Program","Program URL":"https://www.csu.org/Pages/Furnace.aspx","Technology*":"HVAC - Air Source Heat Pump","Program Description \n(guideline)":"Rebate up to $1000 for a qualifying cold climate air source heat pump.","Program Status":"Active","Program Start":"1/1/2023","Program End":"12/31/2023","Rebate Type":"Rebate (post purchase)","Rebate Value*":"$1,000","Amount Type*":"dollar amount","Number*":"1000","Amount Maximum":"$1,000","Equipment Standards Restrictions":"See NEEP certified cold climate air source heat pump equipment standards here.","Contractor Restrictions":"Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.","Homeowner/ Renter":"Homeowner","Other Restrictions":"• This rebate is for retrofit applications only and does not apply to new construction.\n• Provide a Pikes Peak Regional Building Department permit number and pass inspection to qualify for the rebate.\n• Existing gas-fired heating appliance may be left in place to handle extreme conditions as long a control system is in place to prioritize\nequipment function.\n• Two (2) rebates available per service address every three years. "}]
+[
+  {
+    "ID": "CO-28",
+    "Data Source URL(s)": "https://www.csu.org/Pages/Furnace.aspx",
+    "Authority Level*": "Utility",
+    "Authority (Name)*": "Colorado Springs Utilities",
+    "Program Title*": "Residential Efficiency Rebate Program",
+    "Program URL": "https://www.csu.org/Pages/Furnace.aspx",
+    "Technology*": "HVAC - Air Source Heat Pump",
+    "Program Description \n(guideline)": "Rebate up to $500 for an Energy Star certified ducted or ductless air source heat pump.",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value*": "$500",
+    "Amount Type*": "dollar amount",
+    "Number*": "500",
+    "Amount Maximum": "$500",
+    "Equipment Standards Restrictions": "See Energy Star certified ducted and ductless heat pumps.",
+    "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.",
+    "Homeowner/ Renter": "Homeowner",
+    "Other Restrictions": "• This rebate is for retrofit applications only and does not apply to new construction\n• Two (2) rebates available per service address every three years\n• Provide a Pikes Peak Regional Building Department permit number and pass inspection to qualify for the rebate.\n• Heat Pump shall be utilized for total cooling and partial heating. A control system shall be in place to switch from heat pump to\nfurnace at defined temperature based on building loads and equipment size. Defined switchover temperature should be known by the\nowner in case it is needed in the future. "
+  },
+  {
+    "ID": "CO-29",
+    "Data Source URL(s)": "https://www.csu.org/Pages/Furnace.aspx",
+    "Authority Level*": "Utility",
+    "Authority (Name)*": "Colorado Springs Utilities",
+    "Program Title*": "Residential Efficiency Rebate Program",
+    "Program URL": "https://www.csu.org/Pages/Furnace.aspx",
+    "Technology*": "HVAC - Air Source Heat Pump",
+    "Program Description \n(guideline)": "Rebate up to $1000 for a qualifying cold climate air source heat pump.",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value*": "$1,000",
+    "Amount Type*": "dollar amount",
+    "Number*": "1000",
+    "Amount Maximum": "$1,000",
+    "Equipment Standards Restrictions": "See NEEP certified cold climate air source heat pump equipment standards here.",
+    "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.",
+    "Homeowner/ Renter": "Homeowner",
+    "Other Restrictions": "• This rebate is for retrofit applications only and does not apply to new construction.\n• Provide a Pikes Peak Regional Building Department permit number and pass inspection to qualify for the rebate.\n• Existing gas-fired heating appliance may be left in place to handle extreme conditions as long a control system is in place to prioritize\nequipment function.\n• Two (2) rebates available per service address every three years. "
+  }
+]

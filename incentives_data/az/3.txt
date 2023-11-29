@@ -3,19 +3,36 @@ Approved by the ACC, Mohave Electric is proud to announce our new program, Mohav
 
 With the increasing support for renewable energy resources, Mohave Electric now offers both commercial and residential rebates for installing electric vehicle charging stations. Charging stations must be Level 2 or higher, have programable controls and/or have wi-fi capabilities, and must not be used during On-Peak periods.
 
-At MEC, we understand the increasing number of Electric Vehicles (EV) will drive the need for residential EV charging stations at a member’s home. A rebate of $1,000 will be available for each qualifying charging station.
+At MEC, we understand the increasing number of Electric Vehicles (EV) will drive the need for residential EV charging stations at a member’s home. A rebate of $1,000 will be available for each qualifying charging station up to ½ of the price of installing the charger.
 
-The Commercial EV Charging Station Program assists members within MEC’s service territory by reimbursing funds used to install Level 2, or greater, Electric Vehicle charging stations available for MEC members and the public. A rebate of $2,750 will be available for each qualifying charging station.
 
 Rebate application must be accompanied by installation receipts and signed off building permits.
 
-RESIDENTIAL & COMMERCIAL REBATE APPLICATION
+o Rebates will be paid to the Coop Member on the account only, rebate cannot be assigned to a third party.
+o All installations must be made by Arizona licensed Electricians.
+o Charger must be for a highway rated vehicle (no golf cart chargers).
+o A commercial unit with multiple ports or plugs, is considered one unit and is eligible for a
+single rebate.
+o A qualifying Level 2 (240 volt) charging station must be new and be wall or pedestal mounted (not portable).
+
+
 Battery Rebate
 Mohave Electric is also now offering a commercial and residential battery rebate for our members for battery stations that are purchased and installed after January 9, 2022.
 
 This new Residential / Commercial Battery Storage Program supports member’s renewable energy, maximizes savings on member’s electric bills, and reduces MEC’s peak demand. A rebate of $500 for each qualifying battery installation program will incentivize Mohave Electric members to install 5 kWh, minimum usable capacity battery unit. Battery units must have programable controls and/or have wi-fi capabilities and must not be charged during On-Peak periods.
-
-Rebate application must be accompanied by installation receipts and approved building permits.
-
-For more information on Mohave Charged, please reach out to our Energy Management Specialist at 928-758-0539.
-
+o The SunWatts Solar Battery Rebate provides Residential and Commercial Members with a onetime rebate toward the purchase and installation of a battery for use with a member owned
+renewable energy system.
+o Batteries may require updated electric panel or electric service at additional expense to
+the member.
+o Rebates are limited to one rebate per new battery system purchase per service address.
+o Rebates will be paid to the Coop Member on the account only, rebate cannot be assigned to a
+third party.
+o All installations must be made by Arizona licensed Electricians and inspected by an MEC
+representative.
+o There must be a label on the main electric panel stating that there is a battery backup system,
+labels on the charge controller, DC Disconnect switches, critical load sun-panel, combiners, and
+the batteries or battery enclosure. Labels must be Embossed plastic and be riveted or bolted in
+place.
+o Eligible battery systems must meet the minimum requirements of a 5kWh usable capacity
+rating and a warranty of at least 10 years or 5000 cycles, with one cycle being defined as
+a full discharge. The system must also be programmable to operate in self consumption mode.

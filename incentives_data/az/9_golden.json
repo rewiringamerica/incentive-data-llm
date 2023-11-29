@@ -1,0 +1,21 @@
+[
+  {
+    "ID": "AZ-7",
+    "Data Source URL(s)": "https://www.srpnet.com/energy-savings-rebates/home/rebates/insulation",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Salt River Project",
+    "Program Title": "Insulation Rebate",
+    "Program URL": "https://www.srpnet.com/energy-savings-rebates/home/rebates/insulation",
+    "Technology": "Weatherization \r\n(insulation and air sealing)",
+    "Program Description": "Save up to 75% on attic insulation professionally installed, up to $600",
+    "Program Status": "Active",
+    "Rebate Type": "Point of sale rebate",
+    "Rebate Value": "75%, up to $600",
+    "Amount Type": "percent",
+    "Number": "0.75",
+    "Amount Maximum": "600",
+    "Equipment Standards Restrictions": "Based on improvement of existing insulation's R-value; existing insulation with either an effective R-value less than R-19 or greater than R-19 with proof of underperformance that is improved to R-38 is eligible",
+    "Contractor Restrictions": "BPI-certified and licensed in Arizona",
+    "Other Restrictions": "Must be a current SRP residential electric customer who lives in a single-family detached or attached home or an apartment or condo; new construction and mobile homes are not eligible"
+  }
+]

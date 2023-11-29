@@ -1,0 +1,19 @@
+[
+  {
+    "ID": "AZ-9",
+    "Data Source URL(s)": "https://www.srpnet.com/energy-savings-rebates/home/rebates/insulation",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Salt River Project",
+    "Program Title": "Home electric vehicle (EV) charger rebate\r\n",
+    "Program URL": "https://www.srpnet.com/energy-savings-rebates/home/rebates/ev-charger",
+    "Technology": "Electric Vehicle Charger",
+    "Program Description": "$250 off a new Level 2 Electric Vehicle smart charger",
+    "Program Status": "Active",
+    "Rebate Type": "Point of sale rebate, Rebate (post purchase)",
+    "Rebate Value": "$250",
+    "Amount Type": "dollar amount",
+    "Number": "250",
+    "Equipment Standards Restrictions": "Tesla Mobile Connector, Rivian Portable Charger and other portable chargers are not eligible",
+    "Other Restrictions": "Purchases through auction websites (Ebay, and others) are not eligible"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "ID": "AZ-5",
+    "Data Source URL(s)": "https://www.mohaveelectric.com/energy-solutions/rebates/mohave-charged-rebates/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Mohave Electric Cooperative",
+    "Program Title": "SunWatts Renewable Energy and Rebate Program",
+    "Program URL": "https://www.mohaveelectric.com/energy-solutions/renewable-energy/sunwatts-renewable-energy-program/",
+    "Technology": "Rooftop Solar",
+    "Program Description": "Rebate of 5 cents per watt ($50 per kW), up to $2500, for residential photovolatic and wind systems",
+    "Program Status": "Active",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "Incentives are 5 cents per watt ($50 per kW), up to a maximum system size of 50 kW. The incentive cap is $2,500",
+    "Amount Type": "dollar per unit",
+    "Number": "50",
+    "Unit": "kilowatt",
+    "Amount Maximum": "2500",
+    "Other Restrictions": "Leased systems are not eligible for incentives"
+  }
+]

@@ -1,1 +1,24 @@
-[{"ID":"CO-30","Data Source URL(s)":"https://www.csu.org/Pages/WaterHeater.aspx","Authority Level*":"Utility","Authority (Name)*":"Colorado Springs Utilities","Program Title*":"Residential Efficiency Rebate Program","Program URL":"https://www.csu.org/Pages/WaterHeater.aspx","Technology*":"Heat Pump Water Heater (HPWH)","Program Description \n(guideline)":"Rebate up to $200 on an Energy Star certified heat pump water heater","Program Status":"Active","Program Start":"1/1/2023","Program End":"12/31/2023","Rebate Type":"Rebate (post purchase)","Rebate Value*":"$200","Amount Type*":"dollar amount","Number*":"200","Amount Maximum":"$200","Equipment Standards Restrictions":"• Uniform energy factor of 2.20 for 120V/15A.\n• Must be ENERGY STAR certified.\n","Contractor Restrictions":"Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.\n","Homeowner/ Renter":"Homeowner","Other Restrictions":"• This rebate is for retrofit applications only and does not apply to new construction.\n• Provide a Pikes Peak Regional Building Department permit number and pass inspection to qualify for the rebate\n• Must be installed according to manufacturer’s instructions, including ducting for heat exchanger airflow when recommended by\nmanufacturer.\n• Two (2) rebates available per service address every three years"}]
+[
+  {
+    "ID": "CO-30",
+    "Data Source URL(s)": "https://www.csu.org/Pages/WaterHeater.aspx",
+    "Authority Level*": "Utility",
+    "Authority (Name)*": "Colorado Springs Utilities",
+    "Program Title*": "Residential Efficiency Rebate Program",
+    "Program URL": "https://www.csu.org/Pages/WaterHeater.aspx",
+    "Technology*": "Heat Pump Water Heater (HPWH)",
+    "Program Description \n(guideline)": "Rebate up to $200 on an Energy Star certified heat pump water heater",
+    "Program Status": "Active",
+    "Program Start": "1/1/2023",
+    "Program End": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value*": "$200",
+    "Amount Type*": "dollar amount",
+    "Number*": "200",
+    "Amount Maximum": "$200",
+    "Equipment Standards Restrictions": "• Uniform energy factor of 2.20 for 120V/15A.\n• Must be ENERGY STAR certified.\n",
+    "Contractor Restrictions": "Work must be performed by a Colorado Contractor. Do-it-yourself work does not qualify.\n",
+    "Homeowner/ Renter": "Homeowner",
+    "Other Restrictions": "• This rebate is for retrofit applications only and does not apply to new construction.\n• Provide a Pikes Peak Regional Building Department permit number and pass inspection to qualify for the rebate\n• Must be installed according to manufacturer’s instructions, including ducting for heat exchanger airflow when recommended by\nmanufacturer.\n• Two (2) rebates available per service address every three years"
+  }
+]

@@ -33,7 +33,7 @@ async function main() {
       record["tags"] = record["tags"].split(",").map((tag: string) => tag.trim())
     }
 
-    await fs.writeFile(path.join(INCENTIVES_FILE_BASE, folder, metadata_filename), JSON.stringify(record), {
+    await fs.writeFile(path.join(INCENTIVES_FILE_BASE, folder, metadata_filename), JSON.stringify(record, null, 2), {
       encoding: "utf-8",
       flag: "w"
     });

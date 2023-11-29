@@ -1,0 +1,41 @@
+[
+  {
+    "ID": "AZ-1",
+    "Data Source URL(s)": "https://www.mohaveelectric.com/energy-solutions/rebates/mohave-charged-rebates/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Mohave Electric Cooperative",
+    "Program Title": "Mohave Charged Rebates",
+    "Program URL": "https://www.mohaveelectric.com/energy-solutions/rebates/mohave-charged-rebates/",
+    "Technology": "Electric Vehicle Charger",
+    "Program Description": "Rebate of $1,000 available for each qualifying Electric Vehicle charging station, up to 50% of price",
+    "Program Status": "Active",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "Up to $1000, or no more than 1/2 of the price of installing the charger",
+    "Amount Type": "percent",
+    "Number": "0.5",
+    "Amount Maximum": 1000,
+    "Equipment Standards Restrictions": "Must be Level 2 or higher, 240 volt.",
+    "Contractor Restrictions": "Installation must be made by Arizona licensed Electricians",
+    "Other Restrictions": "Must have programable controls and/or have wi-fi capabilities, and must not be used during On-Peak periods. Must be wall or pedestal mounted (not portable). Must be for a highway rated vehicle (no golf cart chargers)"
+  },
+  {
+    "ID": "AZ-6",
+    "Data Source URL(s)": "https://www.mohaveelectric.com/energy-solutions/rebates/mohave-charged-rebates/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Mohave Electric Cooperative",
+    "Program Title": "Mohave Heat Battery Rebate",
+    "Program URL": "https://www.mohaveelectric.com/energy-solutions/rebates/mohave-charged-rebates/",
+    "Technology": "Battery Storage",
+    "Program Description": "Rebate of $500 for each 5 kWh minimum usable capacity battery unit installed on or after Jan 9, 2022",
+    "Program Status": "Active",
+    "Program Start* (MM/DD/YYYY)": "1/9/2022",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "$500 for each install 5kWh-minimum capacity battery",
+    "Amount Type": "dollar per unit",
+    "Number": "500",
+    "Unit": "unit",
+    "Equipment Capacity Restrictions": "5 kWh, minimum usable capacity battery unit",
+    "Equipment Standards Restrictions": "Must have programable controls and/or have wi-fi capabilities and must not be charged during On-Peak periods",
+    "Other Restrictions": "rebate application must be accompanied by installation receipts and approved building permits"
+  }
+]

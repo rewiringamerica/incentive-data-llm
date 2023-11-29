@@ -64,7 +64,7 @@ async function main() {
     const promise = differ.compareData(shortName, JSON.parse(golden_data), predicted_data).then((diff) => {
       diffs.push(...diff);
     }).catch((err) => {
-      console.log(`error: ${err}`);
+      console.log(`diffing error: ${err}`);
     });
     promises.push(promise);
 

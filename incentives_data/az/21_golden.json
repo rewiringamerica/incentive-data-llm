@@ -1,0 +1,21 @@
+[
+  {
+    "ID": "AZ-19",
+    "Data Source URL(s)": "https://www.tep.com/efficient-home-program/",
+    "Authority Level": "Utility",
+    "Authority (Name)": "Tucson Electric Power",
+    "Program Title": "Efficient Home Water Heating",
+    "Program URL": "https://www.tep.com/efficient-home-water-heating/",
+    "Technology": "Heat Pump Water Heater (HPWH)",
+    "Program Description": "$400 rebate for TEP residential customers who purchase and installation of an Energy Star HPWH equipped with a wireless, programmable timer/controller",
+    "Program Status": "Active",
+    "Program Start* (MM/DD/YYYY)": "1/1/2023",
+    "Program End* (MM/DD/YYYY)": "12/31/2023",
+    "Rebate Type": "Rebate (post purchase)",
+    "Rebate Value": "$400",
+    "Amount Type": "dollar amount",
+    "Equipment Standards Restrictions": "new heat pump water heater with a timer/controller, either included with the unit or purchased and installed separately in this calendar year; timer/controller must be connected to Wi-Fi with a strong signal strength; Program the timer/controller to not operate during on-peak hours of 3–7 p.m",
+    "Contractor Restrictions": "must be installed by a licensed installer, who must provide proof that the work was properly permitted",
+    "Other Restrictions": "product must be purchased from a local retailer, the TEP Marketplace or an online retailer, not to include eBay or other resale sites, that ships the item to the customer’s service address in TEP’s territory; Allow a TEP representative to visit and enter your property to verify program requirements are met"
+  }
+]
