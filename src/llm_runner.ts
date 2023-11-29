@@ -126,7 +126,7 @@ async function main() {
             file_records.push(combined)
             incentive_order_key += 1;
           }
-          await fs.writeFile(path.join(OUTPUT_FILE_BASE, runId, OUTPUT_SUBDIR, folder, file.replace(".txt", "_output.json")), JSON.stringify(file_records), {
+          await fs.writeFile(path.join(OUTPUT_FILE_BASE, runId, OUTPUT_SUBDIR, folder, file.replace(".txt", "_output.json")), JSON.stringify(file_records, null, 2), {
             encoding: "utf-8",
             flag: "w"
           })
