@@ -5,4 +5,5 @@ export interface Metadata {
 
   "folder"?: string;
   "tags"?: string[];
+  "Data URL"?: string;
 }
