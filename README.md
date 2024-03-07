@@ -26,12 +26,12 @@ If doing a state refresh, the steps are the largely the same, except that #2 is 
 
 ### API Onboarding
 
-1. This assumes you have node, npm, typescript installed.
-1. Clone the repo and run `npm install` to install dependencies.
+1. This assumes you have node, yarn, typescript installed.
+1. Clone the repo and run `yarn` to install dependencies.
    1. For GPT models, ask an account owner (most Incentive API devs have been invited) for an invite to our OpenAI account. Create an API key and put it in a `.env` file with `OPENAI_API_KEY=<api key>`.
-      1. Compile with `tsc`, then run `node build/test_request_gpt.js`. If it works, it will print 3 jokes to the console.
+      1. Compile and then run `node build/test_request_gpt.js`. If it works, it will print 3 jokes to the console.
    2. For Google models, ask an account owner (currently, just Dan) for an invite to our account. Download a credentials JSON file and then set `export GOOGLE_APPLICATION_CREDENTIALS=<path/to/credentials/file>` from the command-line.
-      1. Compile with `tsc`, then run `node build/test_request_palm.js`. If it works, it will print 3 jokes to the console.
+      1. Compile and then run `node build/test_request_palm.js`. If it works, it will print 3 jokes to the console.
 1. Congrats, you've sent your first request(s) to an LLM!
 
 ### URL Collection
@@ -46,7 +46,7 @@ The only requirement is that this file **must** contain a `folder` column that c
 
 Create a new state folder (or more generally, any new folder) under `incentives_data/`, using the `<folder>` value you put in the sheet above.
 
-Compile and run `node build/create_metadata_files.js -i <your_input_file.csv>`. This will create a bunch of metadata files in `incentives_data/<folder>` that will be used to propagate the metadata you included above. It will also assign each row a numeric ID and use that as the basis for filenames; e.g. the first non-header row in your spreadsheet is associated with `0.txt` and `0_metadata.json`.
+Compile and then run `node build/create_metadata_files.js -i <your_input_file.csv>`. This will create a bunch of metadata files in `incentives_data/<folder>` that will be used to propagate the metadata you included above. It will also assign each row a numeric ID and use that as the basis for filenames; e.g. the first non-header row in your spreadsheet is associated with `0.txt` and `0_metadata.json`.
 
 ### Text generation
 
@@ -78,7 +78,7 @@ If you don't want to send a particular row to the LLM for any reason, just clear
 
 Whether achieved manually or partially automated, you should now have a bunch of text files in a folder under `incentives_data/` containing the text from the websites that is in a state where a human or AI would have a decent shot of extracting meaningful information from it.
 
-1. Compile and run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
+1. Compile and then run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
 2. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. There's also the potential for rate-limiting, so if you have lots of files, use the `--wait` parameter (in milliseconds) to put some time in between each request. Usually a couple seconds is fine.
 3. The script writes outputs to a specific subfolder with a RunID in the `out/` directory. The script will print your RunID, though it's timestamp-based and should be the most recent one. In that folder, you should see:
    1. An `output.csv` containing the parsed data
