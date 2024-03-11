@@ -1,53 +1,29 @@
+import { SCHEMA_METADATA, SchemaMetadata } from "./incentive_schema.js";
+
+export function renderSchema(schema: SchemaMetadata): string {
+  return (
+    "Data Fields:\n" +
+    Object.entries(schema)
+      .map(([, metadata]) => {
+        let output = `${metadata.display_name}: ${metadata.text}`;
+        if (metadata.required) output += " Required field.";
+        if (metadata.values) {
+          output += ` It should be one of the following values: ${metadata.values.join(
+            ", "
+          )}.`;
+        }
+        return output;
+      })
+      .join("\n\n") +
+    "\n"
+  );
+}
+
 export const SYSTEM: string = `You are a helpful assistant. I'm going to give you a list of data fields, and then I will give you a series of passages that contain financial incentives. I want you to populate the fields in valid JSON format, with one record for each incentive.
 
 An incentive is typically for a specific appliance or tool, like a heat pump, a battery, or a smaller tool like a snowblower. There are also free incentives like a home inspection for weatherization.
 
-Data fields:
-Technology: required field. This is a enum. It should be one of the following values (ignoring quotes if they appear): Heat Pump Heating and Cooling (HVAC), HVAC - Air Source Heat Pump, Ground Source Heat Pump (GSHP) / Geothermal HP, HVAC - Air to Water Heat Pump, HVAC - Ducted Heat Pump, HVAC - Ductless Heat Pump, Heat Pump Water Heater (HPWH), New Electric Vehicle, Used Electric Vehicle, Electric Vehicle Charger, Rooftop Solar, Battery Storage, Heat Pump Dryers / Clothes Dryer, Electric Stove, Weatherization (insulation and air sealing), Electric wiring, Electric panel, "Electric lawn equipment (mower, edger, leaf blower, weedwhacker)", Smart Thermostat, E - Bike, Induction Cooktop, Other
-
-Program Description: required field. a brief summary of the incentive, including the amount (such as dollar value or percentage), Technology, and the most important restrictions, if any. No more than 150 characters.
-
-Program Status: required field. This is an enum. It should be one of the following values: Active, Expired, Paused, Unknown
-
-Program Start: if the text mentions a start date for which the program is valid or for which customers must purchase equipment, it goes here (if any)
-
-Program End: if the text mentions an end date for which the program is valid or for which customers must purchase equipment, it goes here (if any)
-
-Rebate Type: required field. This field should be one or more of Point of Sale rebate, Rebate (post purchase), Account Credit, Tax Credit, or assistance program (free service). If the passage indicates the rebate is an instant rebate or applied at time of purchase, it is Point of Sale rebate. If it mentions receiving a check or mailing in an application after purchase, it is Rebate (post purchase). If it says it will apply it as a credit on the utility bill, it is Account Credit. And if it mentions tax credits, it is a Tax Credit.
-
-Rebate Value: required field. A free-text version of the value of the rebate (e.g. $2, $500 per ton). If the rebate has both a percentage cap (e.g. 25% of costs) and a dollar maximum (up to $3,000), include both.
-
-Number: required field. Only the number of the Rebate Value. If the Rebate Value is "$2,500", it would be 2500, and if the Rebate Value is "$100 / ton", it would be 100. Give percentages as a decimal; e.g. 25% is 0.25. If the incentive has both a percentage and a dollar maximum, give the percentage.
-
-Amount Type: required field. This is an enum. Possible values are: "dollar amount", "percent", or "dollar per unit", depending on how the Rebate Value is expressed.
-
-Unit: if the Amount type is amount per unit, then this will be the corresponding unit, such as ton, sq ft, or kilowatt
-
-Amount Minimum: minimum amount associated with the incentive, if any. Do not include commas or units like $ or % in your answer.
-
-Amount Maximum: the maximum amount mentioned by an incentive, if any. For example, if the incentive reads "50% up to $50", then this would be 50. Do not include commas or units like $ or % in your answer.
-
-Bonus Description: description of the bonus mentioned in the incentive, if any. Bonuses are additional offers directly tied to an incentive and will likely use the words "bonus" or "additional".
-
-Equipment Standards Restrictions: specifications for the efficiency of the appliance, if any
-
-Equipment Capacity Restrictions: requirements for the size or capacity of the unit
-
-Contractor Restrictions: requirements for who the unit is installed by, such as whether a licensed contractor is required
-
-Income Restrictions: if the customer has any restrictions on their income in order to claim the rebate
-
-Tax-Filing Status Restrictions: if there are any restrictions on the customer's tax-filing status (e.g. single or joint filing), list them here
-
-Homeowner/Renter: if the incentive specifically mentions being available for a particular customer type, fill it here. Valid options are Homeowner, Renter, or Both. Leave blank if it's not specifically mentioned.
-
-Other Restrictions: for other important restrictions not covered by the above
-
-Stacking Details: for any restrictions on how rebates can be combined. For example, if there is a dollar limit across multiple incentives, that would go here. Note that limits for a single incentive should be listed in Other Restrictions.
-
-Financing Details: if information is given related to how to finance the project, include it here
-
-The following are required fields and you must create an answer for them: Technology, Program Description, Program Start, Rebate Type, Rebate Value, number, and Amount Type.`
+${renderSchema(SCHEMA_METADATA)}`;
 
 export const EXAMPLE_1_USER: string = `Air Source Heat Pump Water Heater Rebate
 These incentives are valid for purchases made between January 1, 2023, and December 31, 2023.
@@ -89,7 +65,7 @@ A detailed receipt listing of your purchase and the photo of  your product or sp
 Submission of this application does not guarantee a rebate. 
 Rebate Amounts
 Single Stage Snow Blower - 25% of Price up to $150
-Riding Lawn Mower - 50% of price up to $1000`
+Riding Lawn Mower - 50% of price up to $1000`;
 
 export const EXAMPLE_1_RESPONSE: string = `[
     {
@@ -100,9 +76,9 @@ export const EXAMPLE_1_RESPONSE: string = `[
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
       "Rebate Value": "$350 per heating ton",
-      "Number": 350,
-      "Amount Type": "dollar per unit",
-      "Unit": "heating ton",
+      "Amount Type": "Dollar Per Unit",
+      "Amount Number": 350,
+      "Amount Unit": "heating ton",
       "Equipment Standards Restrictions": "Must be Energy Star® rated.",
       "Equipment Capacity Restrictions": "30 Gallon Minimum",
       "Other Restrictions": "Backup units, electric resistance water heaters, and tankless water heaters are not eligible."
@@ -115,8 +91,8 @@ export const EXAMPLE_1_RESPONSE: string = `[
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
       "Rebate Value": "$60",
-      "Number": 60,
-      "Amount Type": "dollar amount",
+      "Amount Type": "Dollar Amount",
+      "Amount Number": 60,
       "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
     },
     {
@@ -127,8 +103,8 @@ export const EXAMPLE_1_RESPONSE: string = `[
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
       "Rebate Value": "$120",
-      "Number": 120,
-      "Amount Type": "dollar amount",
+      "Amount Type": "Dollar Amount",
+      "Amount Number": 120,
       "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
     },
     {
@@ -139,36 +115,36 @@ export const EXAMPLE_1_RESPONSE: string = `[
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
       "Rebate Value": "$350",
-      "Number": 350,
-      "Amount Type": "dollar amount",
+      "Amount Type": "Dollar Amount",
+      "Amount Number": 350,
       "Equipment Standards Restrictions": "Must be an Induction Cooktop (30" or Larger).",
       "Contractor Restrictions": "Must be installed by a licensed ENERGYSTAR-certified contractor."
     },
     {
-      "Technology": "Electric outdoor equipment",
+      "Technology": "Electric Outdoor Equipment",
       "Program Description": "25% of price up to $150 for Single Stage Snow Blower",
       "Program Status": "Active",
       "Program Start": "1/1/2023",
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
       "Rebate Value": "25% of price up to $150",
-      "Number": 0.25,
-      "Amount Type": "percent",
+      "Amount Type": "Percent",
+      "Amount Number": 0.25,
       "Amount Maximum": 150
     },
     {
-      "Technology": "Electric outdoor equipment",
+      "Technology": "Electric Outdoor Equipment",
       "Program Description": "50% of price up to $1000 for Riding Lawn Mower",
       "Program Status": "Active",
       "Program Start": "1/1/2023",
       "Program End": "12/31/2023",
       "Rebate Type": "Account Credit",
       "Rebate Value": "50% of price up to $1000",
-      "Number": 0.5,
-      "Amount Type": "percent",
+      "Amount Type": "Percent",
+      "Amount Number": 0.5,
       "Amount Maximum": 1000
     }
-]`
+]`;
 
 export const EXAMPLE_2_USER: string = `Electric Vehicles (EVs)
 This incentive is currently paused due to lack of funds.
@@ -196,7 +172,7 @@ Neighborhood Electric Vehicle (NEV) | $250
 Draws electricity from a battery to operate drive train and is capable of being charged from an external source
 Has not been modified from the original equipment manufacturer power train specifications
 Has a gross vehicle weight rating of 3,000 pounds or less
-Has a maximum speed of 25 mph`
+Has a maximum speed of 25 mph`;
 
 export const EXAMPLE_2_RESPONSE = `[
   {
@@ -205,8 +181,8 @@ export const EXAMPLE_2_RESPONSE = `[
     "Program Status": "Paused",
     "Rebate Type": "Point of sale rebate",
     "Rebate Value": "$750 capped at 50% of price",
-    "Number": 0.5,
-    "Amount Type": "percent",
+    "Amount Type": "Percent",
+    "Amount Number": 0.5,
     "Amount Maximum": "750",
     "Equipment Standards Restrictions": "Has a maximum speed of at least 65 mph",
     "Equipment Capacity Restrictions": "Has a gross vehicle weight rating of 8,500 pounds or less",
@@ -220,8 +196,8 @@ export const EXAMPLE_2_RESPONSE = `[
     "Program Status": "Paused",
     "Rebate Type": "Point of sale rebate",
     "Rebate Value": "$250 capped at 50% of price",
-    "Number": 0.5,
-    "Amount Type": "percent",
+    "Amount Type": "Percent",
+    "Amount Number": 0.5,
     "Amount Maximum": "250",
     "Equipment Standards Restrictions": "Has a maximum speed of at least 65 mph",
     "Equipment Capacity Restrictions": "Has a gross vehicle weight rating of 8,500 pounds or less",
@@ -235,8 +211,8 @@ export const EXAMPLE_2_RESPONSE = `[
     "Program Status": "Paused",
     "Rebate Type": "Point of sale rebate",
     "Rebate Value": "$250 capped at 50% of price",
-    "Number": 0.5,
-    "Amount Type": "percent",
+    "Amount Type": "Percent",
+    "Amount Number": 0.5,
     "Amount Maximum": "250",
     "Equipment Standards Restrictions": "Has a maximum speed of 25 mph",
     "Equipment Capacity Restrictions": "Has a gross vehicle weight rating of 3,000 pounds or less",
@@ -244,4 +220,4 @@ export const EXAMPLE_2_RESPONSE = `[
     "Stacking Details": "Limit 1 rebate of each type per member per year.",
     "Financing Details": "Financing Details is available via Empower Loans. For more details, see www.empower.com."
   }
-]`
+]`;
