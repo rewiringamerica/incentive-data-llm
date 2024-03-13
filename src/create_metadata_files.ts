@@ -1,7 +1,7 @@
 import { program } from 'commander';
 
-import fs = require('node:fs/promises');
-import path = require('node:path');
+import fs from 'node:fs/promises';
+import path from 'node:path';
 import { parse } from 'csv-parse/sync';
 
 program

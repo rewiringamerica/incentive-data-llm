@@ -29,24 +29,24 @@ If doing a state refresh, the steps are the largely the same, except that #2 is 
 1. This assumes you have node, yarn, typescript installed.
 1. Clone the repo and run `yarn` to install dependencies.
    1. For GPT models, ask an account owner (most Incentive API devs have been invited) for an invite to our OpenAI account. Create an API key and put it in a `.env` file with `OPENAI_API_KEY=<api key>`.
-      1. Compile and then run `node build/test_request_gpt.js`. If it works, it will print 3 jokes to the console.
+      1. Compile and then run `npx tsx src/test_request_gpt.ts`. If it works, it will print 3 jokes to the console.
    2. For Google models, ask an account owner (currently, just Dan) for an invite to our account. Download a credentials JSON file and then set `export GOOGLE_APPLICATION_CREDENTIALS=<path/to/credentials/file>` from the command-line.
       1. Compile and then run `node build/test_request_palm.js`. If it works, it will print 3 jokes to the console.
 1. Congrats, you've sent your first request(s) to an LLM!
 
 ### URL Collection
 
-Collect a list of all of the URLs you want to retrieve incentives content from. For each row in the [Tier 1 data sheet](https://docs.google.com/spreadsheets/d/19CmS4HbFEfL2DzXcyXMiz_uI8fqxpeUkHbKWnq5sviE/edit#gid=0), you may end up with multiple URLs. The URLs in the Tier 1 sheet are like program URLs that introduce the program; what you care about for this process is the actual data source URL(s), since you're going to `curl` them. Unfortunately, this part is manual and it can take a while – up to a couple hours for larger states.
+Collect a list of all of the URLs you want to retrieve incentives content from. For each row in the [Tier 1 data sheet](https://docs.google.com/spreadsheets/d/19CmS4HbFEfL2DzXcyXMiz_uI8fqxpeUkHbKWnq5sviE/edit#gid=0), you may end up with multiple URLs. The URLs in the Tier 1 sheet are like program URLs that introduce the program; what you care about for this process is the actual data source URL(s), since you're going to `curl` them. This works best if the URLs are as specific about individual incentives as possible, so you may end up with 1 URL per project. Unfortunately, this part is manual and it can take a while – up to a couple hours for larger states.
 
 Note that if you are doing a refresh of a state, you likely have the URLs already – they should be in the existing data in the `Data Source URL(s)` columm (or similar).
 
-To use the URLs in the rest of the process, create a Google sheet with each URL you want to visit on a different line. You can include arbitrary metadata as well that isn't found on the website itself, such as the Authority and Program names, other URLs, etc. There is also a rudimentary `tags` column – the only tag currently used is `index` for websites that don't contain incentive information themselves, but contain links to other pages that do. We collect these to eventually enable change detection on those sites. In any case, feel free to define your own tags if helpful.
+To use the URLs in the rest of the process, create a Google sheet with each URL you want to visit on a different line. You can include arbitrary metadata as well that isn't found on the website itself, such as the Authority and Program names, other URLs, etc. There is also a rudimentary `tags` column – the only tag currently used is `index` for websites that don't contain incentive information themselves, but contain links to other pages that do. We collect these to eventually enable change detection on those sites. In any case, feel free to define your own tags if helpful. Example spreadsheet is [here](https://docs.google.com/spreadsheets/d/1ycS542inm4Ntn_fvayyq9x5wqFKTulcoSKj8CVVkQHw/edit#gid=416315587).
 
-The only requirement is that this file **must** contain a `folder` column that corresponds to the folder you will create in the repo where your data will live. The URL column doesn't actually matter since the next script won't read it directly. Download as CSV and put it in the `in/` folder.
+The only requirement is that this file **must** contain a `folder` column that corresponds to the folder you will create in the repo where your data will live. The URL column doesn't actually matter since the next script won't read it directly. Create a folder called `in/` in the root directory, then download as CSV and put it in the `in/` folder.
 
 Create a new state folder (or more generally, any new folder) under `incentives_data/`, using the `<folder>` value you put in the sheet above.
 
-Compile and then run `node build/create_metadata_files.js -i <your_input_file.csv>`. This will create a bunch of metadata files in `incentives_data/<folder>` that will be used to propagate the metadata you included above. It will also assign each row a numeric ID and use that as the basis for filenames; e.g. the first non-header row in your spreadsheet is associated with `0.txt` and `0_metadata.json`.
+Compile and then run `npx tsx src/create_metadata_files.ts -i <your_input_file.csv>`. This will create a bunch of metadata files in `incentives_data/<folder>` that will be used to propagate the metadata you included above. It will also assign each row a numeric ID and use that as the basis for filenames; e.g. the first non-header row in your spreadsheet is associated with `0.txt` and `0_metadata.json`.
 
 ### Text generation
 
@@ -58,7 +58,7 @@ The current file structure is that the LLM looks for all `.txt` files in a given
 
 If grabbing the text data manually, run: `for i in {0..23}; do touch $i.txt; done` (replacing `23` based on the number of text files you need to create). If using the automated approaches below, skip this step.
 
-#### Semi-Automated Text Retrieval
+#### Semi-Automated Text Retrieval (Recommended)
 
 TODO: put as much of this in a bash script as is feasible.
 
@@ -70,7 +70,10 @@ TODO: put as much of this in a bash script as is feasible.
 
 #### Text Generation Review
 
-At this point, you should have a `.txt` for every URL. Optionally, go through the text files and clean them up – that could be removing text from the beginning or end that isn't incentive-related, cleaning up tables that didn't parse well, etc. You might need to open the original website or PDF in some cases (there are typically extensions for your code editor so you can do these side-by-side).
+At this point, you should have a `.txt` for every URL. 
+
+1. Go through the text files and ensure that each one is populated. Occasionally websites are Javascript-oriented so the HTML doesn't have any meaningful text to extract. If that's the case, you'll need to generate these incentives manually later. 
+2. Clean up the txt files. That could be removing text from the beginning or end that isn't incentive-related, cleaning up tables that didn't parse well, etc. You might need to open the original website or PDF in some cases (there are typically extensions for your code editor so you can do these side-by-side). You also may want to delete any incentives from the txt files that we don't care about (i.e., refrigerator, lawn equipment, etc).
 
 If you don't want to send a particular row to the LLM for any reason, just clear out the text or delete the file. You can also add `index` to the `tags` field of the metadata CSV (or metadata file) as described above.
 
@@ -78,19 +81,27 @@ If you don't want to send a particular row to the LLM for any reason, just clear
 
 Whether achieved manually or partially automated, you should now have a bunch of text files in a folder under `incentives_data/` containing the text from the websites that is in a state where a human or AI would have a decent shot of extracting meaningful information from it.
 
-1. Compile and then run the script: `node build/llm_runner.js --folder=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
+1. Compile and then run the script from the root directory: `npx tsx src/llm_runner.ts --folders <state folder with incentives>`. Run `npx tsx src/llm_runner.ts --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
 2. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. There's also the potential for rate-limiting, so if you have lots of files, use the `--wait` parameter (in milliseconds) to put some time in between each request. Usually a couple seconds is fine.
 3. The script writes outputs to a specific subfolder with a RunID in the `out/` directory. The script will print your RunID, though it's timestamp-based and should be the most recent one. In that folder, you should see:
    1. An `output.csv` containing the parsed data
    2. An `outputs/` directory containing all the JSON associated with each input file
    3. A `parameters.json` file saving the details of the run so we can figure out what worked and what didn't
    4. Possibly, a `dropped_files.json` which will list any files that had errors to retry. You can rerun these by passing the same command as before with the `-r` flag (e.g. `-r incentives_data/ca/31.txt incentives_data/mn/17.txt`) to restrict the run just to certain text files.
+4. If there are any files in `dropped_files.json`, review and fix them. The most common cause of error is that the LLM models have limits on the length of their output, 4k characters for GPT and 8k characters for PaLM. If this is the case, you'll see some `Error parsing json: SyntaxError: Unexpected token` or similar errors in the console, because the output is being cutoff resulting in malformed JSON. To fix this you can either:
+   - Review the input txt files and delete any irrelevant incentives, if there are any
+   - Split up the txt files into `1.1.txt`, `1.2.txt`, etc
 
 ### Reviewing the output
 
 This data should be considered a rough first pass. You'll end up making a lot of changes, but it should still save time.
 
 We have a doc that describes recommended post-processing steps here: https://docs.google.com/document/d/1pCIBaYrSiT9ufA9tVqPpZlrbjNGrvZd9ZfItEjjyvJc.
+
+### Cleaning up the spreadsheet
+1. If there were any Javascript-based websites that weren't able to be parsed into txt files, manually go through those websites and add the incentives to the spreadsheet
+2. Add any missing data
+3. Ensure that the data and columns match what the spreadsheet-to-json script is expecting
 
 ## Evals
 
