@@ -1,8 +1,8 @@
 import { AsyncParser } from '@json2csv/node';
 import { program, Option, OptionValues } from 'commander';
 
-import fs from 'node:fs/promises';
-import path from 'node:path';
+import fs = require('node:fs/promises');
+import path = require('node:path');
 
 import { INCENTIVES_FILE_BASE, OUTPUT_FILE_BASE, OUTPUT_SUBDIR, CSV_OPTS } from './constants.js';
 import { SYSTEM, EXAMPLE_1_RESPONSE, EXAMPLE_1_USER, EXAMPLE_2_RESPONSE, EXAMPLE_2_USER } from "./prompt.js"
