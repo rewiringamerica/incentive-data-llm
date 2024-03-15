@@ -34,12 +34,12 @@ If doing a state refresh, the steps are the largely the same, except that #2 is 
       1. Compile and then run `node build/test_request_palm.js`. If it works, it will print 3 jokes to the console.
 3. Congrats, you've sent your first request(s) to an LLM!
 4. Download `Xpdf command line tools` from https://www.xpdfreader.com/download.html. This will be used later during the text generation step.
-5. Download an html-to-text converter. If you're on Mac, you can skip this step, as Mac comes with one already installed (`textutil`)
+5. If you're planning on doing semi-automated text retrieval (recommended), download an html-to-text converter. If you're on Mac, you can skip this step, as Mac comes with one already installed (`textutil`). If you're retrieving the text manually skip this step. 
 
 
 ### URL Collection
 
-Collect a list of all of the URLs you want to retrieve incentives content from. For each row in the [Tier 1 data sheet](https://docs.google.com/spreadsheets/d/19CmS4HbFEfL2DzXcyXMiz_uI8fqxpeUkHbKWnq5sviE/edit#gid=0), you may end up with multiple URLs. The URLs in the Tier 1 sheet are like program URLs that introduce the program; what you care about for this process is the actual data source URL(s), since you're going to `curl` them. This works best if the URLs are as specific about individual incentives as possible, so make sure to click through to individual incentive pages rather than summary pages if they exist. The pages we're trying to collect should contain all the detail that might appear in the captured incentive. Note that the tier 1 spreadsheet is usually complete but might be missing some programs, for example city-level programs in major cities. Check around for thise. Unfortunately, this part is manual and it can take a while – up to a couple hours for larger states.
+Collect a list of all of the URLs you want to retrieve incentives content from. For each row in the [Tier 1 data sheet](https://docs.google.com/spreadsheets/d/19CmS4HbFEfL2DzXcyXMiz_uI8fqxpeUkHbKWnq5sviE/edit#gid=0), you may end up with multiple URLs. The URLs in the Tier 1 sheet are like program URLs that introduce the program; what you care about for this process is the actual data source URL(s), since you're going to `curl` them. This works best if the URLs are as specific about individual incentives as possible, so make sure to click through to individual incentive pages rather than summary pages if they exist. The pages we're trying to collect should contain all the detail that might appear in the captured incentive. Note that the tier 1 spreadsheet is usually complete but might be missing some programs, for example city-level programs in major cities. Check around for those. Unfortunately, this part is manual and it can take a while – up to a couple hours for larger states.
 
 Note that if you are doing a refresh of a state, you likely have the URLs already – they should be in the existing data in the `Data Source URL(s)` columm (or similar).
 
@@ -86,7 +86,7 @@ Whether achieved manually or partially automated, you should now have a bunch of
 
 1. Compile and then run the script from the root directory: `node build/llm_runner.js --folders=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
    1. For the next few steps, start by using `palm` or `gpt` until you're able to generate output files without errors.
-   2. Once the files are ready for the final run, you can use `gpt4`. Check https://platform.openai.com/usage to ensure that costs are not getting too high
+   2. Once the files are ready for the final run, you can use `gpt4`. Check https://platform.openai.com/usage to ensure that costs are not getting too high.
 2. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. There's also the potential for rate-limiting, so if you have lots of files, use the `--wait` parameter (in milliseconds) to put some time in between each request. Usually a couple seconds is fine.
 3. The script writes outputs to a specific subfolder with a RunID in the `out/` directory. The script will print your RunID, though it's timestamp-based and should be the most recent one. In that folder, you should see:
    1. An `output.csv` containing the parsed data
@@ -101,10 +101,9 @@ Whether achieved manually or partially automated, you should now have a bunch of
 
 This data should be considered a rough first pass. You'll end up making a lot of changes, but it should still save time.
 
-1. We have a doc that describes recommended post-processing steps here: https://docs.google.com/document/d/1pCIBaYrSiT9ufA9tVqPpZlrbjNGrvZd9ZfItEjjyvJc. Use this to review the data.
-2. Add any missing data that the LLM did not populate. This often includes bonus details, stacking details, income qualifiers, homeowner/renter requirements, etc.
-3. Ensure that the data types and columns match what the spreadsheet-to-json script is expecting
-4. Finally, run the spreadsheet-to-json script and fix any errors
+We have a doc that describes recommended post-processing steps here: https://docs.google.com/document/d/1pCIBaYrSiT9ufA9tVqPpZlrbjNGrvZd9ZfItEjjyvJc.
+
+After running through the steps in that doc and thoroughly checking the incentives, finally run the [spreadsheet-to-json script](https://github.com/rewiringamerica/api.rewiringamerica.org/blob/main/scripts/README.md#spreadsheet-to-json) and fix any errors.
 
 ## Evals
 
