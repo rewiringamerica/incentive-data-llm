@@ -9,7 +9,7 @@ export const CSV_OPTS = {
     "Unit", "Amount Minimum", "Amount Maximum", "Bonus Description",
     "Equipment Standards Restrictions", "Equipment Capacity Restrictions",
     "Contractor Restrictions", "Income Restrictions", "Tax - Filing Status Restrictions",
-    "Homeowner / Renter", "Other Restrictions", "Stacking Details", "Financing Details"
+    "Homeowner/Renter", "Other Restrictions", "Stacking Details", "Financing Details"
   ]
 };
 

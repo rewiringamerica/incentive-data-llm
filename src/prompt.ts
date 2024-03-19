@@ -23,6 +23,8 @@ export const SYSTEM: string = `You are a helpful assistant. I'm going to give yo
 
 An incentive is typically for a specific appliance or tool, like a heat pump, a battery, or a smaller tool like a snowblower. There are also free incentives like a home inspection for weatherization.
 
+Please send the response in plain text without code formatting.
+
 ${renderSchema(SCHEMA_METADATA)}`;
 
 export const EXAMPLE_1_USER: string = `Air Source Heat Pump Water Heater Rebate
