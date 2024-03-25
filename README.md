@@ -29,9 +29,9 @@ If doing a state refresh, the steps are the largely the same, except that #2 is 
 1. This assumes you have node, yarn, typescript installed.
 2. Clone the repo and run `yarn` to install dependencies.
    1. For GPT models, ask an account owner (most Incentive API devs have been invited) for an invite to our OpenAI account. Create an API key and put it in a `.env` file with `OPENAI_API_KEY=<api key>`.
-      1. Compile and then run `node build/test_request_gpt.js`. If it works, it will print 3 jokes to the console.
+      1. Compile and then run `node build/src/test_request_gpt.js`. If it works, it will print 3 jokes to the console.
    2. For Google models, ask an account owner (currently, just Dan) for an invite to our account. Download a credentials JSON file and then set `export GOOGLE_APPLICATION_CREDENTIALS=<path/to/credentials/file>` from the command-line.
-      1. Compile and then run `node build/test_request_palm.js`. If it works, it will print 3 jokes to the console.
+      1. Compile and then run `node build/src/test_request_palm.js`. If it works, it will print 3 jokes to the console.
 3. Congrats, you've sent your first request(s) to an LLM!
 4. Download `Xpdf command line tools` from https://www.xpdfreader.com/download.html. This will be used later during the text generation step.
 5. If you're planning on doing semi-automated text retrieval (recommended), download an html-to-text converter. If you're on Mac, you can skip this step, as Mac comes with one already installed (`textutil`). If you're retrieving the text manually skip this step. 
@@ -49,7 +49,7 @@ The only requirement is that this file **must** contain a `folder` column that c
 
 Create a new state folder (or more generally, any new folder) under `incentives_data/`, using the `<folder>` value you put in the sheet above.
 
-Compile and then run `node build/create_metadata_files.js -i <your_input_file.csv>`. This will create a bunch of metadata files in `incentives_data/<folder>` that will be used to propagate the metadata you included above. It will also assign each row a numeric ID and use that as the basis for filenames; e.g. the first non-header row in your spreadsheet is associated with `0.txt` and `0_metadata.json`.
+Compile and then run `node build/src/create_metadata_files.js -i <your_input_file.csv>`. This will create a bunch of metadata files in `incentives_data/<folder>` that will be used to propagate the metadata you included above. It will also assign each row a numeric ID and use that as the basis for filenames; e.g. the first non-header row in your spreadsheet is associated with `0.txt` and `0_metadata.json`.
 
 ### Text generation
 
@@ -84,7 +84,7 @@ If you don't want to send a particular row to the LLM for any reason, just clear
 
 Whether achieved manually or partially automated, you should now have a bunch of text files in a folder under `incentives_data/` containing the text from the websites that is in a state where a human or AI would have a decent shot of extracting meaningful information from it.
 
-1. Compile and then run the script from the root directory: `node build/llm_runner.js --folders=<name of folder with text data>`. Run `node build/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
+1. Compile and then run the script from the root directory: `node build/src/llm_runner.js --folders=<name of folder with text data>`. Run `node build/src/llm_runner.js --help` for details on other flags. We use the PaLM model by default, but this can be controlled with the `--model_family` or `-m` parameter. Note that while supplying `gpt` or `palm` (default) are relatively cheap, `gpt4` is more expensive, so you can have real monetary consequences if you're not careful.
    1. For the next few steps, start by using `palm` or `gpt` until you're able to generate output files without errors.
    2. Once the files are ready for the final run, you can use `gpt4`. Check https://platform.openai.com/usage to ensure that costs are not getting too high.
 2. It will take a few minutes. Apparently there are periodic cases where the API times out after 10 minutes, but these are rare. There's also the potential for rate-limiting, so if you have lots of files, use the `--wait` parameter (in milliseconds) to put some time in between each request. Usually a couple seconds is fine.
@@ -113,7 +113,7 @@ This requires some file setup:
 
 1. In each folder in `incentives/data` that you want to evaluate, you need golden files with suffix `_golden.json`, e.g. `1_golden.json` is the golden file for `1.txt`. These are JSON files that contain the incentives as they _should_ appear; in other words, the answer key.
 
-2. Then execute a model run as described in the previous section, retaining the RunID. Run `node build/run_evals.js -r <run_id>` to run your eval. You'll see a `diffs.json` and `report.csv` in the `out/<run_id>` folder now, containing the "raw" diffs and then a summary report.
+2. Then execute a model run as described in the previous section, retaining the RunID. Run `node build/src/run_evals.js -r <run_id>` to run your eval. You'll see a `diffs.json` and `report.csv` in the `out/<run_id>` folder now, containing the "raw" diffs and then a summary report.
 
 3. To interpret the output: we grade every key (field) that the model is requested to produce. For all keys, we first investigate whether it is missing in both the golden and predicted (model-produced) output, missing in only one, or populated in both. If populated in both, we compare the two. For all fields, we start by looking for an case-insensitive match. If we don't find it, for shorter fields, we'll use a fuzzy matching algorithm, and for longer ones, we actually send it back to the model to grade its own response! The fuzzy match is binary (FuzzyMatch or FuzzyNoMatch), but the model grading has four levels to give a bit more nuance in the answer.
 

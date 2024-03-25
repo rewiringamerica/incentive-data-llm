@@ -14,7 +14,7 @@ t.test('generateHomeownerRenterField() generates Homeowner/Renter', t => {
   for (const testCase of testCases) {
     const incentive: Incentive = testCase.input
     generateHomeownerRenterField(incentive)
-    t.equal(incentive["Homeowner/Renter"], testCase.want, testCase.name)
+    t.equal(incentive["Homeowner / Renter"], testCase.want, testCase.name)
   }
 
   t.end()
