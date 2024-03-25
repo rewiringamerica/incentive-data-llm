@@ -1,0 +1,83 @@
+This institution is an equal opportunity provider.                                                            2024 Energy Efficiency Incentive Form
+
+ELIGIBILITY CRITERIA
+
+ New equipment must be installed on the cooperative's lines and connected to the PPCS load management system.
+ Incentive not to exceed the equipment cost.
+ Incentives not allowed for a measure and a component of that measure. For example, if an air source heat pump has a variable speed blower motor,
+
+      the air source heat pump qualifies for an incentive but not the variable speed blower motor.
+ Incentives are in place through December 31, 2024. Funds are limited so submit required documentation as soon as possible.
+ Required documentation must be submitted within 3 months of the install date.
+ Additional eligibility criteria may apply. The program is subject to change or cancellation without notice. Contact the cooperative for details.
+ Required documentation listed below must be submitted no later than 3 months after the install date.
+
+       This incentive form
+       A copy of your receipt or invoice for each item with purchase price(s) circled
+       Documentation showing the equipment has been installed
+
+Submit required documentation to:                   Pierce Pepin Cooperative Services, Attn: Electric$ense Program
+                                                    PO Box 420, Ellsworth, WI 54011
+
+MEMBER INFORMATION (Please fill out entire section)
+
+Member Name                                                                            Email
+
+                                                                                       Email addresses will be used for cooperative communication only.
+
+Address                                                                                Account                          Phone
+
+City                                                State       Zip                    Date                             Member Signature
+
+Incentive for:          Residential          Farm   Commercial       Industrial            Institution/Government         Other:
+
+INCENTIVE INFORMATION                               (Please fill in gray shaded boxes for requested incentives)
+
+                   Equipment                                                                                  Size                                                       Total
+
+                                                                                              Size is based on 12,000                                                     Size x
+                                                                                                                                                                        Quantity
+                                                           Specifications                            btuh/ton             Equipment       Quantity Incentive
+                                                                                       If < 1 ton, round up to nearest ¼      Cost                                           x
+                                                                                                                                                              $300/ton  Incentive
+                                                                                                        ton                                                   $300/ton
+                                                                                                                                                              $300/ton
+                                                                                       If > 1 ton, round up to nearest ½
+
+                                                                                                              ton
+
+Heat Pump - Air Source - Central Ducted             SEER2 14.3+, HSPF2 7.5+ OR
+                                                    SEER 15+, HSPF 8.8+
+
+Heat Pump - Ductless MiniSplit                      SEER2 14.3+, HSPF2 7.5+ OR
+                                                    SEER 15+, HSPF 8.8+
+
+Heat Pump - Commercial Air Source & PTHPs           < 20 ton: EER 11+
+                                                    20 to < 60 ton: EER 10.5+
+                                                     60 ton: EER 10+
+
+Heat Pump - Geothermal                                                                                                                                        $500/ton
+
+New Furnace with Efficient ECM Blower Motor         The AHRI certificate must state the unit is either:                                                       $35/unit
+Smart Thermostat                                    1) Variable speed OR                                                                                      $25/unit
+                                                    2) kWh/yr (Eae)  670
+
+                                                    Is air conditioning present?                         Yes        No
+
+                                                    Honeywell or Emerson brand thermostat
+                                                    Enrolled in Load Management Program
+
+                                                                                                                        Total Incentive Amount Requested:
+
+ADDITIONAL INFORMATION (Please enter information below to qualify for incentive)
+
+Manufacturer or Brand Name:                                AHRI Certified Reference                                       SEER or EER value:
+Required for all equipment                                 Number:                                                        Required for Air Source Heat Pumps
+                                                           Required for all equipment
+                                                                                                                          Total Incentive Issued: $
+                                                                               OFFICE USE ONLY
+
+Approved                Not Approved - Reason:
+
+Cooperative Representative:                                                                                               Date:
+
