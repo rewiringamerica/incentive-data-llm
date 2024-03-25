@@ -19,7 +19,7 @@ export interface Incentive {
   "Contractor Restrictions"?: string;
   "Income Restrictions"?: string;
   "Tax-Filing Status Restrictions"?: string;
-  "Homeowner/Renter"?: string;
+  "Homeowner / Renter"?: string;
   "Other Restrictions"?: string;
   "Stacking Details"?: string;
   "Financing Details"?: string;
