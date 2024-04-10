@@ -1,0 +1,206 @@
+EV ACCELERATE AT HOME
+Easy Electric Vehicle Charging at Home.
+Charging your electric vehicle (EV) at home is convenient, and it just got even easier. With EV Accelerate At Home, you can save on charging with a Level 2 charger, and weâ€™ll do all the work to set you up.
+I need a Level 2 charger
+I will use my own Level 2 charger
+Xcel Energy Provided Charger
+This option is ideal if you would like to rent an Xcel Energy charger that is installed and maintained
+￼
+You select a Level 2 charger from one of our two pre-qualified options
+￼
+We install your charger and maintain it
+￼
+You save with an off-peak charging schedule
+ELIGIBILITY
+	•	Drive an electric vehicle (all-electric or plug-in hybrid)
+	•	Live in a residence that receives electric service from Xcel Energy in Wisconsin
+	•	Have access to Wi-Fi at the charging location
+Enroll Now
+*Since your charger will be Wi-Fi enabled, please confirm that the installation location has Wi-Fi access. If signal strength in this location is below 3 bars, you may need to install a Wi-Fi booster before the electrician arrives to install the charger. Be sure to have your Wi-Fi password available for connecting the charger during installation.
+
+Rent the Charger From Us
+	•	Monthly Payment: $7.00
+	•	Included in Monthly Payment
+	◦	Data/service fees
+	◦	Electrician initial visit
+	◦	Charger Relocation
+	•	Included in Upfront Payment: N/A
+	•	Not Included in Program: 240-volt circuit wiring from panel to charger location
+	•	Permit Fees*
+PROGRAM COSTS/PRICING
+Option
+Monthly Payment
+Warranty
+Included in Monthly Payment
+Not Included in Program
+Rent the charger from us
+$18
+Lifetime warranty
+	•	Charger
+	•	Charger Install and set-up
+	•	Data/service fees
+	•	Unlimited maintenance as long as you participate in the program
+	•	Charger Relocation in Xcel Energy territory
+	•	Charger Removal
+	•	240-volt circuit wiring from panel to charger location1
+	•	Permit Fees2
+Our qualified electricians can perform this work for you at the time of installation and will provide you with a quote prior to that work. Use our online tool to help estimate potential costs for additional wiring. A qualified electrician from Xcel Energy's trusted network will contact you within 2 business days of enrollment confirmation to schedule the installation of your new charger. If adding a new electric service and meter, the current wait time is 6 weeks.
+* Permit Fees are not included in the monthly or upfront pricing. Your electrician will pull all necessary permits for the work that needs to be completed and you will pay the electrician directly for the permits.
+CHARGING HOURS & RATES
+With either program option, youâ€™ll have access to electricity pricing that can save you money on charging. Your Level 2 charger will be programmed to charge only during off-peak hours, between midnight and 6 a.m. every day. Your EV will automatically charge during the lowest cost time period, but you can always charge during other times if you need to.
+	•	Fuel cost charges, resource adjustments, and local taxes and fees are not included in the monthly or upfront prices and will be applied upon billing.
+	•	Details about cancellation options and costs are found in FAQ.
+
+
+￼
+Overnight, off-peak hours are between midnight and 8 a.m. for your EV. Your homeâ€™s energy use will continue to be billed at its current rate. There are no peak hours on New Yearâ€™s Day, Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving, or Christmas Day. Mid-peak hours still apply.
+
+CHARGER OPTIONS
+You can select either the ChargePoint Home Flex or Enel X Way JuiceBox. Both chargers are ENERGY STARÂ®-certified and UL Listed for safety.
+
+All chargers in the program must be hardwired to a 240-volt circuit.
+
+Note: Xcel Energy does not endorse one EV charger over the other.
+
+Tesla owners will need an adapter.
+ChargePoint Home Flex
+￼
+Hardwired Connection
+￼
+50 amps, 12 kW maximum
+￼
+23 ft. cord
+￼
+J1772 plug
+￼
+Wi-Fi enabled
+￼
+
+Details
+Enel X Way JuiceBox
+￼
+Hardwired Connection
+￼
+40 amps, 9.6 kW maximum
+￼
+25 ft. cord
+￼
+J1772 plug
+￼
+Wi-Fi enabled
+￼
+
+Details
+To ensure compatibility with eligible level 2 chargers, a non-GFCI circuit is required.
+
+FREQUENTLY ASKED QUESTIONS
+
+
+CHARGER INFORMATION
+What is a Level 2 charger?
++
+There are two common household levels of EV charging - Level 1 and 2. Level 1 - Can provide 4 to 6 miles range for every hour of charging. EVs come with a standard Level 1 charger that plugs into a typical household outlet (120-volt). Level 2 - Faster and more convenient charging, providing 25 to 40 miles range for every hour of charging. Needs a dedicated 240-volt circuit (like an electric clothes dryer).
+What if I already own a Level 2 charger?
++
+If you own either a ChargePoint Home Flex or Enel X Way JuiceBox charger, you may be able to participate in this program. Please select the customer-owned charger option on the enrollment application and we will send an electrician to your home to ensure that your charging station qualifies. You will be responsible for installing 240-volt circuit wiring, from the panel to the charger location, if needed. There is a monthly data and service fee of $7.00 to gain access to electricity pricing that can save you money on off-peak charging. You will be responsible for the maintenance of the charger. Currently, other Level 2 chargers are not compatible with the program.
+Where do I find my charger's ID or serial number?
++
+Here is a guide with instructions on how to find your ChargePoint Home Flex serial number or Enel X Way JuiceBox ID number and your meter number.
+If you are still having issues finding this information, please contact an Electric Vehicle Advisor at 800.895.4999.
+What if my charger malfunctions?
++
+A common fix for most issues is to turn the charger on and off. Start by turning the power to the charger off by flicking the breaker switch in your electric panel. Wait 5 minutes, then turn the power back on. Your charger should automatically reconnect to your Wi-Fi and resume charging as originally scheduled. Xcel Energy-Provided Charger: If this troubleshooting process does not work, please contact us at ElectricVehicles@xcelenergy.com then contact the charger manufacturer at the phone number below. Describe the issue and indicate that you are participating in the Xcel Energy EV Accelerate At Home program. The manufacturer will help troubleshoot and work with you to identify the resolution. Please take note of the ticket number that you receive from the manufacturer in case that information is needed in the future.  Customer-Owned Charger: Contact your manufacturer at the number below, they will help troubleshoot and will work with you to identify the resolution. Xcel Energy does not provide maintenance for your charger.  ChargePoint Support 877-850-4562 Enel X Way Support 844-584-2329
+Why are only two Level 2 chargers eligible for this program?
++
+Through a formal vetting and approval process, we selected chargers that fulfilled program requirements of providing access to your charging data while keeping your bills low. We use this charging data to bill your EV energy use at the discounted rate for off-peak charging. As technologies change and improve, we will continue to explore additional options for customers to participate in this program.
+INSTALLATION PROCESS
+What is included in the installation service?
++
+The installation service in this program only includes the set-up and hardwiring of the Level 2 charger. This service does not include permit fees or any additional electrical work such as circuit wiring or any circuit rework needed to ensure charger compatibility, or panel upgrades, which may be required to set up your charging location for a 240-volt circuit
+What is included in the inspection service with customer-owned charger?
++
+The inspection service in this program only includes the set-up and hardwiring of the Level 2 charger and verifying charger eligibility. This service does not include permit fees or any additional electrical work, such as circuit wiring or any circuit rework needed to ensure charger compatibility, or panel upgrades, which may be required to set up your charging location for a 240-volt circuit.
+What if the electrician determines my charging station does not qualify?
++
+If a qualified electrician inspects your charger and determines it does not qualify, the electrician and/or Xcel Energy will notify you on next steps you would need to take to participate in this program. You can still rent an Xcel Energy charging station if yours does not qualify.
+How much does additional circuit wiring or panel upgrades typically cost?
++
+The program cost does not include additional circuit wiring that may be required to add a new 240-volt outlet. Those costs depend on your homeâ€™s unique electrical setup and wiring. Our electricians can help you understand the actual costs of any additional work unique to your home. To complete any additional electrical work, you can use our electrician and pay them directly or choose another electrician.
+If I'm accepted into the program, when will my charging station be installed?
++
+Once you receive an email confirmation that you are accepted into the program, an electrician from Xcel Energyâ€™s network will contact you within 2 business days to schedule installation typically within 4 weeks. You or your authorized representative (over 18) must be present during the appointment. These timelines are rough estimates and subject to change. If you are also installing a separate meter and service for the charger, this may take 6 weeks or more.
+If I'm accepted into the customer-provided option, when will my benefits start?
++
+Once you receive an email confirmation that you are accepted into EV Accelerate At Home with your own charger, an electrician from Xcel Energyâ€™s network will contact you within 2 business days to schedule the inspection within 4 weeks. You or your authorized representative (over 18) must be present during the appointment. Once your charger, wiring, and data have been reviewed and accepted your benefits will start. Your charger eligibility may be confirmed upon your first billing cycle (4-6 weeks from the inspection visit). See FAQ â€“ Issues with Inspection of my customer-owned charger if there are any issues during the inspection, Xcel Energy cannot accept your application at this time. These timelines are rough estimates and are subject to change. If you are also installing a separate meter and service for the charger, this may take 6 weeks or more.
+Which electricians do you partner with in Wisconsin?
++
+We work with skilled electricians who are experienced in installing Level 2 chargers for electric vehicles. Here are the electricians we partner with in Wisconsin.
+PROGRAM INFORMATION
+Where can I find the Terms & Conditions of the EV Accelerate At Home Program?
++
+You can find program Terms & Conditions here
+How does the electricity pricing in this program work?
++
+With EV Accelerate At Home, the price of the electricity you use to charge your EV varies depending on the time of day. That means your bill will depend on how much electricity you use to charge your EV and when you charge it. (The electricity you use in your home will continue to be billed at your current rate.)
+Your Level 2 charger will be programmed to charge only during off-peak hours, between midnight and 6 a.m. So, you can rest assured that your EV is automatically charging during the lowest cost time period. No need to go to the garage at midnight to plug in!
+If you need to occasionally charge your EV during other times, you can easily adjust your charging schedule. Details about adjusting the scheduled charging time are found in the FAQ â€œWhat if I need to adjust my scheduled charging time?
+If you would like more information on reading your bill, click here to see a Bill Explainer.
+What if I need to adjust my scheduled charging time?
++
+If you need to occasionally charge your EV outside your selected charging schedule, you can easily adjust your scheduled charging time.
+	•	Through your charger: Use your charger manufacturer's app to override the scheduled charging time and charge immediately. (Tesla drivers will use the Tesla app vs charger app.)
+	◦	If you have a ChargePoint Charger, you can "double pump" the charger by plugging in, unplugging and plugging back into the car charging port.
+	▪	Your charger will revert to your scheduled charging time the next time you plug in your EV.
+	◦	Enel X Way Juicebox - you will need to go through the EV JuiceNet Mobile App
+	▪	From the main menu, swipe to the right.
+	•	Through your vehicle: You'll adjust your charging schedule through your vehicle's app.
+If you would like to choose a different charging schedule, please contact us at ElectricVehicles@xcelenergy.com. ElectricVehicles@xcelenergy.com.
+Can I participate if I rent my home?
++
+Customers who are renting their home (detached single family home, townhome, row house, or duplex) must have a separately metered service for that home and have the building ownerâ€™s written consent to participate in this program.
+Can I participate if Iâ€™m enrolled in the Time of Day rate?
++
+Yes. If you are already enrolled in our Time of Day rate, you can enroll if you meet all other eligibility requirements.
+Xcel Energy-Provided Charger: Like all other participants, you will rent the charger that we will install and maintain, but the monthly fee is slightly different at $13.00 per month. If you sign up for the Time of Day rate, your EV charging will also be billed at the Time of Day rate, not the EV Accelerate At Home EV charging rate. For more information see: Time of Day Customer-Owned Charger: If you own your charger you do not have to be enrolled in EV Accelerate At Home to benefit from the Time of Day rates you are currently participating in.
+Can I participate if Iâ€™m enrolled in an Xcel Energy on-site solar program?
++
+If you are enrolled in Net Metering, you must sign up for the Time of Day rate (and meet all other eligibility) to enroll in this program. Xcel Energy-Provided Charger: Like all other participants, you will have a choice to either rent or own the charger that we will install and maintain, but the monthly fee is $13.00. or $3.00 if you buy the charger and installation up front. If you sign up for the Time of Day rate, your EV charging will also be billed at the Time of Day rate, not the EV Accelerate At Home EV charging rate.  Customer-Owned Charger: Customers who are participating in an on-site Solar or plan to switch to an on-site solar are not eligible for the EV Accelerate At Home program with their own charger.
+What is included in charger maintenance and warranty?
++
+If you rent the charger from us and stay in the program, ongoing maintenance is included in your monthly fee and you are eligible for a lifetime warranty for your charger. Maintenance is not included for customers who bring their own charger.
+What if I am not able to charge my EV overnight?
++
+You may still participate in this program, but it will likely not be the best option for you. The program is designed for EV drivers who can charge their vehicles overnight when energy prices are the lowest. However, if you need to occasionally charge your EV during peak and mid-peak times, you will have that option, but you will be charged at the higher rates.
+What If I am moving and would like to take my charger?
++
+Xcel Energy-Provided Charger: Please contact us at ElectricVehicles@xcelenergy.com at least 60 days prior to the moving date. If you are moving within our service territory, we will send an electrician to remove the charger and install it at your new property. The relocation fee will be confirmed and billed by the electrician. Customer-Owned Charger: Please contact us at ElectricVehicles@xcelenergy.com at least 60 days prior to the moving date. If you are moving within our service territory, we will send an electrician to remove the charger and install it at your new property. The relocation fee will be confirmed and billed by the electrician.
+What if I need to cancel my participation?
++
+Please contact us at ElectricVehicles@xcelenergy.com to cancel your participation. If you are renting the charger from us, Xcel Energy will have one of our partnered electricians arrange a date and time with you to remove the charger. You also have the option to buy the charger for the estimated remaining value of your specific charger.
+How can I enroll more than once?
++
+To enroll in EV Accelerate At Home more than once at the same premise/account you must apply through a "guest" account (see below steps). Currently, you will receive an error if the second enrollment is done through MyAccount.
+
+	•	Steps to Enroll: Click the "Enroll Now" button on this page > Enter zip code for where charging station will be located > Select if you have electric services with Xcel Energy > Select "Residential" > Select if you have Wi-Fi at the premise > Select "Continue as Guest".
+	•	ChargePoint Customers with Two Chargers: ChargePoint does not currently have the capabilities to have two charging stations registered to one account. If you have two ChargePoint chargers, then two email addresses must be used to create two separate accounts per serial number.
+
+
+For additional information about getting set up with charging your EV, email us at electricvehicles@xcelenergy.com or call us at 800.895.4999 to speak with one of our Electric Vehicle Advisors.
+￼
+Figures shown on this page are estimates based on data provided by third-parties. This material is provided for informational purposes only and should not be relied on for tax, legal, or financial advice.â€¯ Neither ZappyRideÂ® nor J.D. PowerÂ® provides tax, legal or financial advice. You should independently verify the estimates provided here before engaging in any transaction.
+Electric vehicles
+Compare Vehicles
+Incentives
+Charging Stations
+Dealers
+Events
+￼
+￼￼￼￼￼
+Â©2024 Xcel Energy. All Rights Reserved.
+Terms & Conditions
+Privacy Policy
+Accessibility
+Connect Blog
+
+
+Feedback
